@@ -1,0 +1,142 @@
+[
+    {
+      "Question": "彼は背が高いうえ（　　）、ハンサムだ。",
+      "Option": ["は", "で", "に", "が"],
+      "Analysis": "知识点6\nハンサム（handsome）",
+      "Unit": 1,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "面接を（　　）上で、採用するかどうかを決める。",
+      "Option": ["する", "した", "している", "していた"],
+      "Analysis": "知识点7和知识点16",
+      "Unit": 1,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "休み（　　）うちに、部屋を片付けましょう。",
+      "Option": ["な", "の", "を", "が"],
+      "Analysis": "知识点6",
+      "Unit": 1,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "新聞の活字が小さいので、読み（　　）。",
+      "Option": ["にくい", "やすい", "かたい", "ぎみだ"],
+      "Analysis": "憎い（にくい）\n固い（かたい）",
+      "Unit": 1,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "皆の前で約束した以上（　　）、二度と同じようなことをしてはいけない。",
+      "Option": ["に", "が", "で", "は"],
+      "Analysis": "知识点3\n既然你已经在大家面前做出了这个承诺，你就不能再做那样的事情了。",
+      "Unit": 1,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "田中先生は学生を叱る一方（　　）、ほめることも忘れない。",
+      "Option": ["で", "に", "は", "も"],
+      "Analysis": "知识点4\n田中先生虽然责骂学生，但也从来不忘记表扬他们。",
+      "Unit": 1,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "ここ数年、海水の温度が（　　）一方だ。",
+      "Option": ["高くなる", "高くする", "高い", "高かった"],
+      "Analysis": "知识点5",
+      "Unit": 1,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "友だちと公園を散歩している（　　）、雨が降り出してきた。",
+      "Option": ["あいだを", "うえで", "あいだに", "うえは"],
+      "Analysis": "知识点1",
+      "Unit": 1,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "二人は仕事の（　　）、よきライバルだ。",
+      "Option": ["うえの", "あいだで", "あいだに", "うえで"],
+      "Analysis": "知识点8\nライバル竞争对手",
+      "Unit": 1,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "皆の（　　）、無事に頂上までたどりついた。",
+      "Option": ["おかげで", "おかげか", "おかげだ", "おかげに"],
+      "Analysis": "知识点10",
+      "Unit": 1,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "このお酒は変なにおい（　　）する。",
+      "Option": ["で", "を", "の", "が"],
+      "Analysis": "知识点13",
+      "Unit": 2,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "電話番号が合っでいる（　　）、ちょっと確認してみる。",
+      "Option": ["から", "でめに", "かどうか", "なら"],
+      "Analysis": "知识点16",
+      "Unit": 2,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "近ごろ彼女は授業に（　　）がちだ。",
+      "Option": ["遅れる", "遅れ", "遅れない", "遅れた"],
+      "Analysis": "知识点15",
+      "Unit": 2,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "3分（　　）電車がホームに入る。",
+      "Option": ["おきに", "うちに", "によれば", "までに"],
+      "Analysis": "知识点11",
+      "Unit": 2,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "暑いですね。ビールか（　　）か冷たい物が飲みたいですね。",
+      "Option": ["どこ", "だれ", "なに", "どれ"],
+      "Analysis": "知识点17",
+      "Unit": 2,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "最近の若者の行動は、大人たちにはなかなか理解し（　　）。",
+      "Option": ["にくい", "がたい", "すぎる", "はじめる"],
+      "Analysis": "知识点14",
+      "Unit": 2,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "走っていけば終電に間に合う（　　）しれない。",
+      "Option": ["かな", "かも", "かしら", "から"],
+      "Analysis": "知识点18",
+      "Unit": 2,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "この問題を解決しないと、大変なことが（　　）。",
+      "Option": ["起こるはずがない", "起こらないようになった", "起こる恐れがある", "起こらないかもしれない"],
+      "Analysis": "知识点12",
+      "Unit": 2,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "この論文は5つのパート（　　）なっている。",
+      "Option": ["しか", "まで", "でも", "から"],
+      "Analysis": "知识点19的用法2",
+      "Unit": 2,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "値段から（　　）、この店ほうがお得だ。",
+      "Option": ["言っては", "言うと", "言え", "言っても"],
+      "Analysis": "知识点20",
+      "Unit": 2,
+      "Correct Answer": 2
+    }
+]

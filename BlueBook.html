@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>选择题系统</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .left {
+      flex: 2;
+      padding-right: 20px;
+    }
+    .right {
+      flex: 1;
+      border-left: 2px solid #ccc;
+      padding-left: 20px;
+    }
+    .question {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .options button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+    }
+    .correct {
+      background-color: #c8f7c5 !important;
+      border-color: green;
+    }
+    .wrong {
+      background-color: #f7c5c5 !important;
+      border-color: red;
+    }
+    .navigation {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .analysis-button {
+      visibility: hidden;
+    }
+    .analysis-text {
+      white-space: pre-wrap;
+      font-size: 15px;
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .start-screen {
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="start-screen" id="startScreen">
+  <h2>请选择单元或随机抽取 10 题</h2>
+  <select id="unitSelector">
+    <option disabled selected>加载中...</option>
+  </select>
+  <br><br>
+  <button onclick="startQuiz()">开始答题</button>
+</div>
+
+<div class="container" id="quizScreen" style="display:none;">
+  <div class="left">
+    <div class="question" id="questionText"></div>
+    <div class="options" id="optionsContainer"></div>
+    <div class="navigation">
+      <button onclick="prevQuestion()">← 上一题</button>
+      <button id="analysisBtn" class="analysis-button" onclick="showAnalysis()">查看解析</button>
+      <button onclick="nextQuestion()">下一题 →</button>
+    </div>
+  </div>
+  <div class="right">
+    <h3>解析</h3>
+    <div class="analysis-text" id="analysisText">请选择选项后点击“查看解析”以显示内容。</div>
+  </div>
+</div>
+
+<script>
+  let allData = [];
+  let filteredData = [];
+  let currentIndex = 0;
+  let userAnswers = [];
+
+  // 加载 JSON 文件并初始化 Unit 下拉框
+  fetch("BlueBook_N3_01.json")
+    .then(res => res.json())
+    .then(json => {
+      allData = json;
+      const unitSet = new Set(json.map(q => q.Unit));
+      const unitSelector = document.getElementById("unitSelector");
+      unitSelector.innerHTML = `<option disabled selected>请选择单元</option>`;
+      unitSet.forEach(unit => {
+        const opt = document.createElement("option");
+        opt.value = unit;  // 保持数字
+        opt.textContent = `Unit ${unit}`;
+        unitSelector.appendChild(opt);
+      });
+      const optRandom = document.createElement("option");
+      optRandom.value = "__RANDOM__";
+      optRandom.textContent = "随机抽取 10 题";
+      unitSelector.appendChild(optRandom);
+    });
+
+  function startQuiz() {
+    const selectedUnit = document.getElementById("unitSelector").value;
+    if (!selectedUnit) return alert("请选择一个单元！");
+    if (selectedUnit === "__RANDOM__") {
+      filteredData = allData.sort(() => Math.random() - 0.5).slice(0, 10);
+    } else {
+      filteredData = allData.filter(q => Number(q.Unit) === Number(selectedUnit));
+    }
+
+    if (filteredData.length === 0) {
+      alert("该单元没有题目，请检查 JSON 数据！");
+      return;
+    }
+
+    userAnswers = new Array(filteredData.length).fill(null);
+    currentIndex = 0;
+    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("quizScreen").style.display = "flex";
+    renderQuestion(currentIndex);
+  }
+
+  function renderQuestion(index) {
+    const question = filteredData[index];
+    const qText = document.getElementById("questionText");
+    const container = document.getElementById("optionsContainer");
+    const analysisBtn = document.getElementById("analysisBtn");
+    const analysisText = document.getElementById("analysisText");
+
+    qText.textContent = `${index + 1}. ${question.Question}`;
+    container.innerHTML = "";
+    analysisBtn.style.visibility = "hidden";
+    analysisText.textContent = "请选择选项后点击“查看解析”以显示内容。";
+
+    question.Option.forEach((opt, i) => {
+      const btn = document.createElement("button");
+      btn.textContent = opt;
+      btn.onclick = () => {
+        if (userAnswers[index] == null) {
+          userAnswers[index] = i + 1;
+          checkAnswer(i + 1, btn, question["Correct Answer"]);
+          analysisBtn.style.visibility = "visible";
+        }
+      };
+      container.appendChild(btn);
+    });
+
+    if (userAnswers[index] != null) {
+      const selected = userAnswers[index];
+      const buttons = document.querySelectorAll(".options button");
+      buttons.forEach(btn => btn.disabled = true);
+      if (selected === question["Correct Answer"]) {
+        buttons[selected - 1].classList.add("correct");
+      } else {
+        buttons[selected - 1].classList.add("wrong");
+        buttons[question["Correct Answer"] - 1].classList.add("correct");
+      }
+      analysisBtn.style.visibility = "visible";
+    }
+  }
+
+  function checkAnswer(selected, button, correct) {
+    const buttons = document.querySelectorAll(".options button");
+    buttons.forEach(btn => btn.disabled = true);
+    if (selected === correct) {
+      button.classList.add("correct");
+    } else {
+      button.classList.add("wrong");
+      buttons[correct - 1].classList.add("correct");
+    }
+  }
+
+  function showAnalysis() {
+    const analysis = filteredData[currentIndex]["Analysis"];
+    document.getElementById("analysisText").textContent = analysis || "暂无解析";
+  }
+
+  function nextQuestion() {
+    if (currentIndex < filteredData.length - 1) {
+      currentIndex++;
+      renderQuestion(currentIndex);
+    }
+  }
+
+  function prevQuestion() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      renderQuestion(currentIndex);
+    }
+  }
+</script>
+
+</body>
+</html>
