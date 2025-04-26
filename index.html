@@ -56,6 +56,28 @@
     }
     .analysis-button {
       visibility: hidden;
+      font-size: 16px;
+      border: none !important;
+      outline: none;
+      padding: 5px 30px 5px 30px;
+      background: #ce9be3;
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      -webkit-box-shadow: 4px 4px 8px 2px rgba(200, 211, 227, 0.3),
+        -2px -2px 4px 1px rgba(181, 192, 227, 0.2);
+      box-shadow: 4px 4px 8px 2px rgba(200, 211, 227, 0.3),
+        -2px -2px 4px 1px rgba(181, 192, 227, 0.2);
+      -webkit-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+      margin: 0 5px; /* 左右间距 5px */
+    }
+    .analysis-button:hover {
+      -webkit-box-shadow: 4px 4px 8px 3px rgba(200, 211, 227, 0.5),
+        -2px -2px 4px 1px rgba(181, 192, 227, 0.4);
+      box-shadow: 4px 4px 8px 3px rgba(200, 211, 227, 0.5),
+        -2px -2px 4px 1px rgba(181, 192, 227, 0.4);
     }
     .analysis-text {
       white-space: pre-wrap;
@@ -66,6 +88,33 @@
     }
     .start-screen {
       max-width: 800px;
+    }
+    .theme-base-button{
+      font-size: 16px;
+      border: none !important;
+      outline: none;
+      padding: 5px 30px 5px 30px;
+      background: #0984e3;
+      background: -o-linear-gradient(70deg, #0984e3 0%, #5dc5f8 120%);
+      background: linear-gradient(20deg, #0984e3 0%, #5dc5f8 120%);
+      color: #fff;
+      border-radius: 6px;
+      cursor: pointer;
+      -webkit-box-shadow: 4px 4px 8px 2px rgba(9, 133, 227, 0.3),
+        -2px -2px 4px 1px rgba(9, 133, 227, 0.2);
+      box-shadow: 4px 4px 8px 2px rgba(9, 133, 227, 0.3),
+        -2px -2px 4px 1px rgba(9, 133, 227, 0.2);
+      -webkit-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+      margin: 0 5px; /* 左右间距 5px */
+    }
+
+    .theme-base-button:hover {
+      -webkit-box-shadow: 4px 4px 8px 3px rgba(9, 133, 227, 0.5),
+        -2px -2px 4px 1px rgba(9, 133, 227, 0.4);
+      box-shadow: 4px 4px 8px 3px rgba(9, 133, 227, 0.5),
+        -2px -2px 4px 1px rgba(9, 133, 227, 0.4);
     }
   </style>
   <script src="book_list.js"></script>
@@ -84,7 +133,7 @@
     <option disabled selected>请先选择一本书</option>
   </select>
   <br><br>
-  <button onclick="startQuiz()">开始答题</button>
+  <button onclick="startQuiz()" class="theme-base-button">开始答题</button>
 </div>
 
 <div class="container" id="quizScreen" style="display:none;">
@@ -92,9 +141,9 @@
     <div class="question" id="questionText"></div>
     <div class="options" id="optionsContainer"></div>
     <div class="navigation">
-      <button onclick="prevQuestion()">← 上一题</button>
+      <button onclick="prevQuestion()" class="theme-base-button">← 上一题</button>
       <button id="analysisBtn" class="analysis-button" onclick="showAnalysis()">查看解析</button>
-      <button onclick="nextQuestion()">下一题 →</button>
+      <button onclick="nextQuestion()" class="theme-base-button">下一题 →</button>
     </div>
   </div>
   <div class="right">
