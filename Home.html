@@ -68,13 +68,20 @@
       max-width: 800px;
     }
   </style>
+  <script src="book_list.js"></script>
+  <script src="BlueBook_N3.js"></script>
 </head>
 <body>
 
 <div class="start-screen" id="startScreen">
+  <h2>请选择一本书</h2>
+  <select id="bookSelector">
+    <option disabled selected>加载中...</option>
+  </select>
+  <br><br>
   <h2>请选择单元或随机抽取 10 题</h2>
   <select id="unitSelector">
-    <option disabled selected>加载中...</option>
+    <option disabled selected>请先选择一本书</option>
   </select>
   <br><br>
   <button onclick="startQuiz()">开始答题</button>
@@ -102,29 +109,52 @@
   let currentIndex = 0;
   let userAnswers = [];
 
-  // 加载 JSON 文件并初始化 Unit 下拉框
-  fetch("BlueBook_N3_01.json")
-    .then(res => res.json())
-    .then(json => {
-      allData = json;
-      const unitSet = new Set(json.map(q => q.Unit));
-      const unitSelector = document.getElementById("unitSelector");
-      unitSelector.innerHTML = `<option disabled selected>请选择单元</option>`;
-      unitSet.forEach(unit => {
-        const opt = document.createElement("option");
-        opt.value = unit;  // 保持数字
-        opt.textContent = `Unit ${unit}`;
-        unitSelector.appendChild(opt);
-      });
-      const optRandom = document.createElement("option");
-      optRandom.value = "__RANDOM__";
-      optRandom.textContent = "随机抽取 10 题";
-      unitSelector.appendChild(optRandom);
+  // 第一步：加载书籍列表
+  // 直接用 bookList
+  const bookListData = bookList;
+
+  const bookSelector = document.getElementById("bookSelector");
+  // 清除“加载中...”这个 option，但保留一个默认提示
+  bookSelector.innerHTML = `<option disabled selected>请选择一本书</option>`;
+
+  bookListData.forEach((book, idx) => {
+    const opt = document.createElement("option");
+    opt.value = idx;  // 把下拉框的 value 设成书的索引
+    opt.textContent = book.Title;
+    document.getElementById("bookSelector").appendChild(opt);
+  });
+
+  // 当选择了书本之后，加载对应题库
+  document.getElementById("bookSelector").addEventListener("change", function() {
+    const selectedIdx = this.value;
+    if (selectedIdx === undefined || selectedIdx === null || selectedIdx === "") return;
+
+    const unitSelector = document.getElementById("unitSelector");
+    unitSelector.innerHTML = `<option disabled selected>加载中...</option>`;
+
+    const bookInfo = bookList[selectedIdx];
+    const dataVarName = bookInfo.DataVar;
+    allData = window[dataVarName];  // <-- 动态拿变量里的题目数据
+
+    const unitSet = new Set(allData.map(q => q.Unit));
+    unitSelector.innerHTML = `<option disabled selected>请选择单元</option>`;
+    unitSet.forEach(unit => {
+      const opt = document.createElement("option");
+      opt.value = unit;
+      opt.textContent = `Unit ${unit}`;
+      unitSelector.appendChild(opt);
     });
+
+    const optRandom = document.createElement("option");
+    optRandom.value = "__RANDOM__";
+    optRandom.textContent = "随机抽取 10 题";
+    unitSelector.appendChild(optRandom);
+  });
 
   function startQuiz() {
     const selectedUnit = document.getElementById("unitSelector").value;
     if (!selectedUnit) return alert("请选择一个单元！");
+
     if (selectedUnit === "__RANDOM__") {
       filteredData = allData.sort(() => Math.random() - 0.5).slice(0, 10);
     } else {
