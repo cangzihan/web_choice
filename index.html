@@ -116,6 +116,28 @@
       box-shadow: 4px 4px 8px 3px rgba(9, 133, 227, 0.5),
         -2px -2px 4px 1px rgba(9, 133, 227, 0.4);
     }
+
+    /* 基本重置 */
+    select {
+      /*-webkit-appearance: none;*/ /* 移除默认的下拉箭头 */
+      /*-moz-appearance: none;*/
+      /*appearance: none;*/
+      outline: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      padding: 8px 12px;
+      font-size: 16px;
+      color: #333;
+      width: 200px;
+      cursor: pointer;
+      transition: border-color 0.3s ease;
+    }
+
+    /* 禁用选项的样式 */
+    select option[disabled] {
+      color: #999;
+    }
   </style>
   <script src="book_list.js"></script>
   <script src="BlueBook_N3.js"></script>
@@ -147,8 +169,13 @@
     </div>
   </div>
   <div class="right">
-    <h3>解析</h3>
-    <div class="analysis-text" id="analysisText">请选择选项后点击“查看解析”以显示内容。</div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3>解析</h3>
+      <button onclick="goBackToStart()" style="font-size: 14px; padding: 5px 10px;">返回首页</button>
+    </div>
+    <div class="analysis-text" id="analysisText">
+      请选择选项后点击“查看解析”以显示内容。
+    </div>
   </div>
 </div>
 
@@ -289,6 +316,11 @@
       currentIndex--;
       renderQuestion(currentIndex);
     }
+  }
+
+  function goBackToStart() {
+    document.getElementById("quizScreen").style.display = "none";   // 隐藏答题界面
+    document.getElementById("startScreen").style.display = "block"; // 显示选书界面
   }
 </script>
 
