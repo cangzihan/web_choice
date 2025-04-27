@@ -141,6 +141,7 @@
   </style>
   <script src="book_list.js"></script>
   <script src="BlueBook_N3.js"></script>
+  <script src="GPT_N3.js"></script>
 </head>
 <body>
 
@@ -150,7 +151,7 @@
     <option disabled selected>加载中...</option>
   </select>
   <br><br>
-  <h2>请选择单元或随机抽取 10 题</h2>
+  <h2>请选择单元或随机抽取题目</h2>
   <select id="unitSelector">
     <option disabled selected>请先选择一本书</option>
   </select>
@@ -221,19 +222,28 @@
       unitSelector.appendChild(opt);
     });
 
-    const optRandom = document.createElement("option");
-    optRandom.value = "__RANDOM__";
-    optRandom.textContent = "随机抽取 10 题";
-    unitSelector.appendChild(optRandom);
+    const optRandom_10 = document.createElement("option");
+    optRandom_10.value = "__RANDOM_10__";
+    optRandom_10.textContent = "随机抽取 10 题";
+    unitSelector.appendChild(optRandom_10);
+
+    const optRandom_15 = document.createElement("option");
+    optRandom_15.value = "__RANDOM_15__";
+    optRandom_15.textContent = "随机抽取 15 题";
+    unitSelector.appendChild(optRandom_15);
   });
 
   function startQuiz() {
     const selectedUnit = document.getElementById("unitSelector").value;
     if (!selectedUnit) return alert("请选择一个单元！");
 
-    if (selectedUnit === "__RANDOM__") {
+    if (selectedUnit === "__RANDOM_10__") {
       filteredData = allData.sort(() => Math.random() - 0.5).slice(0, 10);
-    } else {
+    }
+    else if (selectedUnit === "__RANDOM_15__") {
+      filteredData = allData.sort(() => Math.random() - 0.5).slice(0, 15);
+    }
+    else {
       filteredData = allData.filter(q => Number(q.Unit) === Number(selectedUnit));
     }
 
@@ -285,6 +295,7 @@
         buttons[question["Correct Answer"] - 1].classList.add("correct");
       }
       analysisBtn.style.visibility = "visible";
+      showAnalysis();
     }
   }
 
