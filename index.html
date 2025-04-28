@@ -297,6 +297,23 @@
       analysisBtn.style.visibility = "visible";
       showAnalysis();
     }
+
+    // 控制上一题/下一题按钮状态。如果这道题是最后一题则禁用下一题按钮，如果这道题是第一题则禁用上一题按钮
+    const prevBtn = document.querySelector(".navigation button:nth-child(1)");
+    const nextBtn = document.querySelector(".navigation button:nth-child(3)");
+
+    if (index === 0){
+        prevBtn.style.visibility = "hidden";
+    }
+    else {
+        prevBtn.style.visibility = "visible";
+    }
+    if  (index === filteredData.length - 1){
+        nextBtn.style.visibility = "hidden";
+    }
+    else {
+        nextBtn.style.visibility = "visible";
+    }
   }
 
   function checkAnswer(selected, button, correct) {
