@@ -138,6 +138,30 @@
     select option[disabled] {
       color: #999;
     }
+
+    #questionText {
+      white-space: pre-wrap; /* 解决问题中含有换行符"\n“的时候，渲染不会换行*/
+    }
+
+    .nav-btn {
+      width: 36px;
+      height: 36px;
+      margin: 2px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .nav-btn.correct {
+      background-color: #c8f7c5;
+      border-color: green;
+    }
+
+    .nav-btn.wrong {
+      background-color: #f7c5c5;
+      border-color: red;
+    }
   </style>
   <script src="book_list.js"></script>
   <script src="BlueBook_N3.js"></script>
@@ -179,8 +203,13 @@
     </div>
   </div>
 </div>
+<div id="questionNav" style="margin-top: 20px; display: grid; grid-template-columns: repeat(20, auto); gap: 8px;"></div>
 
 <script>
+  // display: grid：用网格布局。
+  // grid-template-columns: repeat(20, auto)：一行最多20列，每列自动宽度。
+  // gap: 5px：按钮之间留5px的间距。
+  // 超过20个按钮，会自动换行到下一行。
   let allData = [];
   let filteredData = [];
   let currentIndex = 0;
@@ -257,6 +286,26 @@
     document.getElementById("startScreen").style.display = "none";
     document.getElementById("quizScreen").style.display = "flex";
     renderQuestion(currentIndex);
+
+    // 下方按钮
+    const navContainer = document.getElementById("questionNav");
+    navContainer.innerHTML = ""; // 清空旧的
+    filteredData.forEach((_, idx) => {
+      const btn = document.createElement("button");
+      btn.textContent = idx + 1;
+      btn.id = `navBtn${idx}`;  // 加 ID
+      btn.className = "nav-btn"; // 加 class，用于 CSS 统一样式
+      btn.style.padding = "6px 10px";
+      btn.style.borderRadius = "4px";
+      btn.style.border = "1px solid #aaa";
+      btn.style.cursor = "pointer";
+
+      btn.onclick = () => {
+        currentIndex = idx;
+        renderQuestion(currentIndex);
+      };
+      navContainer.appendChild(btn);
+    });
   }
 
   function renderQuestion(index) {
@@ -325,6 +374,14 @@
       button.classList.add("wrong");
       buttons[correct - 1].classList.add("correct");
     }
+
+    // 高亮题号按钮
+    const navBtn = document.querySelector(`#navBtn${currentIndex}`);
+    if (selected === correct) {
+      navBtn.classList.add("correct");
+    } else {
+      navBtn.classList.add("wrong");
+    }
   }
 
   function showAnalysis() {
@@ -349,6 +406,9 @@
   function goBackToStart() {
     document.getElementById("quizScreen").style.display = "none";   // 隐藏答题界面
     document.getElementById("startScreen").style.display = "block"; // 显示选书界面
+
+    // 👉 清空题号按钮
+    document.getElementById("questionNav").innerHTML = "";
   }
 </script>
 
