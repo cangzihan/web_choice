@@ -162,6 +162,11 @@
       background-color: #f7c5c5;
       border-color: red;
     }
+
+    .annotated-word {
+      color: #122e73;
+      cursor: pointer;
+    }
   </style>
   <script src="book_list.js"></script>
   <script src="BlueBook_N3.js"></script>
@@ -315,7 +320,13 @@
     const analysisBtn = document.getElementById("analysisBtn");
     const analysisText = document.getElementById("analysisText");
 
-    qText.textContent = `${index + 1}. ${question.Question}`;
+    // 渲染带注释的问题文本
+    const rawText = question.Question;
+    const renderedHTML = rawText.replace(/\[([^\]]+)\]\{([^\}]+)\}/g, (match, visible, note) => {
+      return `<span class="annotated-word" data-note="${note}">${visible}</span>`;
+    });
+
+    qText.innerHTML = `${index + 1}. ${renderedHTML}`;
     container.innerHTML = "";
     analysisBtn.style.visibility = "hidden";
     analysisText.textContent = "请选择选项后点击“查看解析”以显示内容。";
@@ -363,6 +374,14 @@
     else {
         nextBtn.style.visibility = "visible";
     }
+
+    document.querySelectorAll(".annotated-word").forEach(span => {
+      span.addEventListener("click", () => {
+        const note = span.getAttribute("data-note");
+        const analysisText = document.getElementById("analysisText");
+        analysisText.textContent = note;
+      });
+    });
   }
 
   function checkAnswer(selected, button, correct) {

@@ -1,13 +1,13 @@
 window.bluebook_n3 = [
     {
-      "Question": "彼は背が高いうえ（　　）、ハンサムだ。",
+      "Question": "彼は[背]{せ}が[高]{たか}いうえ（　　）、ハンサムだ。",
       "Option": ["は", "で", "に", "が"],
       "Analysis": "知识点6\nハンサム（handsome）",
       "Unit": 1,
       "Correct Answer": 3
     },
     {
-      "Question": "面接を（　　）上で、採用するかどうかを決める。",
+      "Question": "[面接]{めんせつ}を（　　）上で、[採用]{さいよう}するかどうかを[決]{き}める。",
       "Option": ["する", "した", "している", "していた"],
       "Analysis": "知识点7和知识点16",
       "Unit": 1,
@@ -513,7 +513,7 @@ window.bluebook_n3 = [
     {
       "Question": "困ったこと（　　）、出発する前に彼と連絡が取れない状態だ。",
       "Option": ["が", "に", "で", "も"],
-      "Analysis": "知识点36\n问题是，在他离开之前我无法联系到他。",
+      "Analysis": "知识点36\n问题是（不幸的是），在他离开之前我无法联系到他。",
       "Unit": 4,
       "Correct Answer": 2
     },
@@ -541,15 +541,85 @@ window.bluebook_n3 = [
     {
       "Question": "今夜、彼と会う約束をしたが、急用が入ったので予定をキャンセルすることに（　　）。",
       "Option": ["なくなった", "した", "できた", "なった"],
-      "Analysis": "我本来约好今晚和他见面，但是出现了紧急事件，所以我决定取消我们的计划。",
+      "Analysis": "知识点38\n我本来约好今晚和他见面，但是出现了紧急事件，所以我决定取消我们的计划。",
       "Unit": 4,
       "Correct Answer": 2
     },
     {
       "Question": "吉田さんと駅の改札口で待ち合わせることに（　　）。",
       "Option": ["なっている", "なりたかった", "なりたい", "なる"],
-      "Analysis": "知识点40",
+      "Analysis": "知识点40\nGPT-4o句子分析\n吉田さんと	和吉田先生一起（\"と\"表示共同的人）\n駅の改札口で	在车站的检票口（“で”表示地点）\n待ち合わせる	约好见面、碰头",
       "Unit": 4,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "彼女はアメリカに行くことを親に（　　）言わなかった。",
+      "Option": ["こそ", "さえ", "ばかり", "だけ"],
+      "Analysis": "知识点44",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "たいした病気ではないので、心配すること（　　）ない。",
+      "Option": ["が", "に", "は", "も"],
+      "Analysis": "知识点41",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "その問題についてはいま調査の（　　）なので、何も申し上げることはできません。",
+      "Option": ["最中", "最後", "最上", "最低"],
+      "Analysis": "知识点43",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[今朝]{けさ}、[朝寝坊]{あさねぼう，睡懒觉}をして何も食べ（　　）会社に来た。",
+      "Option": ["ずで", "なしで", "ずに", "ず"],
+      "Analysis": "知识点50\n食べます\n- ます形：たべます\n- て形：たべて\n- 字典形：たべる\n- ない形：たべない\n- た形：たべた",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "この曲はそんなに難しくないので、（　　）すぐできるようになるよ。",
+      "Option": ["練習ほどしなければ", "練習まですれば", "練習だけしなければ", "練習さえすれば"],
+      "Analysis": "知识点45",
+      "Unit": 5,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "きのうは[母]{はは}に3時間も家の掃除を手伝わ（　　）。",
+      "Option": ["された", "させた", "なかった", "られた"],
+      "Analysis": "知识点46（注意例句）\n昨天，妈妈让我帮她打扫房子三个小时。 / 昨天被母亲要求帮忙打扫房间，一打扫就是三个小时。\n通义千问3-235B-A22B解析：\nThe correct answer is された, forming the phrase 手伝わされた.\nThis sentence uses the causative-passive construction, which expresses that the speaker was compelled (often unwillingly) to perform an action. Here's the breakdown:\n\n手伝う (to help) → causative form 手伝わせる (to make/help someone do).\nThe passive form of the causative is 手伝わされる (to be made to help).\nIn the past tense, it becomes 手伝わされた.\nStructure explanation:\n\n昨日は母に indicates \"Yesterday, by my mother.\"\n3時間も家の掃除を手伝わされた means \"was made to help clean the house for three hours.\"\n\nさせた: Causative past tense, implying the speaker made someone else act, which contradicts the context (the mother is the one forcing the action).\nなかった: Negative past tense, which would negate the sentence (e.g., \"did not help\"), conflicting with the intended meaning.\nられた: Ambiguous without proper conjugation; while passive/potential forms exist, the correct causative-passive form requires された here.",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "\nA「毎日スポーツグラフに通っていますか。」\nB「いいえ、金曜日と日曜日（　　）行かないです。」",
+      "Option": ["しか", "だけ", "でも", "から"],
+      "Analysis": "知识点47",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "桜の（　　）は言葉では表現できないほどだ。",
+      "Option": ["美しさ", "美しい", "美しく", "美しくて"],
+      "Analysis": "知识点42",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "ここまで来たら、頑張る（　　）。",
+      "Option": ["おかげだ", "しかない", "ためだ", "だとう"],
+      "Analysis": "知识点48\n既然已经走到这一步，我别无选择，只能尽力而为\nGPT-4o句子分析\n「ここまで」= 到现在为止，到这个地步。\n「来たら」= 是动词「来る」的た形+仮定形「～たら」，表示“如果已经来了的话 / 既然都来了”。",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[経済]{けいざい}（　　）理由で、学校を中退した。",
+      "Option": ["上の", "中の", "内は", "下の"],
+      "Analysis": "知识点49",
+      "Unit": 5,
       "Correct Answer": 1
     }
 ]
