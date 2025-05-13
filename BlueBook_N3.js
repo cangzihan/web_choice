@@ -707,10 +707,129 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
-      "Question": "[経済]{けいざい}（　　）理由で、学校を中退した。",
+      "Question": "経済（　　）理由で、学校を中退した。",
       "Option": ["上の", "中の", "内は", "下の"],
       "Analysis": "知识点49",
       "Unit": 5,
       "Correct Answer": 1
+    },
+    {
+      "Question": "この記事を読んで水の（　　）がよく分かった。",
+      "Option": ["大切で", "大切", "大切だ", "大切さ"],
+      "Analysis": "知识点42",
+      "Unit": 5,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この薬さえ（　　）、頭痛がすぐ治まるよ。",
+      "Option": ["飲めば", "飲むと", "飲んでも", "飲むから"],
+      "Analysis": "知识点45\n只要你服用这种药，你的头痛就会立即消失。",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "クラスメートの中でこの曲をうまく弾けるのは彼女しか（　　）。",
+      "Option": ["ない", "いない", "ある", "いる"],
+      "Analysis": "知识点47，知识点48\n通义千问3-235B-A22B解析：\nThe sentence structure 「〜しかいない」 is used to emphasize that only a specific person (or people) exists or fulfills a condition. Here, the subject is 彼女 (she), a person, so the negative form of いる (to exist for living beings) is required:\n\nクラスメートの中でこの曲をうまく弾けるのは彼女しかいない\n(\"Among classmates, only she can play this song well\").\nBreakdown of options:\n\n- ない: Incorrect. Used for inanimate objects (e.g., 本しかない = \"only books exist\").\n- いる: Incorrect. Positive form; contradicts the exclusivity implied by しか.\n- ある: Incorrect. Also for inanimate objects and existence, not applicable here.\nThe correct choice is いない, as it matches the context of a living person (彼女) and completes the structure 〜しかいない (only).\n\nAnswer: いない",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "過去のことを気に（　　）、前向きに考えなさい。",
+      "Option": ["しずに", "せずで", "せずに", "なくて"],
+      "Analysis": "不要沉湎于过去，要积极思考。",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "責任は彼のほうにあるから、君がわざわざ謝る（　　）。",
+      "Option": ["こともある", "ことにした", "ことをする", "ことはない"],
+      "Analysis": "知识点41",
+      "Unit": 5,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "会場に（　　）、会社から連絡が入って、「すぐに戻れ」と言われた。",
+      "Option": ["向かっている最中に", "向かっている間は", "向かいていながら", "向かっているところは"],
+      "Analysis": "知识点43\n在我前往会场的路上，我接到了公司的电话，让我马上回来。",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "両親が私たちの結婚に反対しているので、結婚披露宴に（　　）。",
+      "Option": ["さえ出席してくれなかった", "さえ出席するだろう", "出席しなければならない", "出席したほうがいいだろう"],
+      "Analysis": "知识点44",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "食事をした（　　）、散歩に行く。",
+      "Option": ["あとで", "あとに", "あとが", "あとも"],
+      "Analysis": "知识点59",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "テレビの音が大き（　　）から、ちょっと小さくして。",
+      "Option": ["という", "すぎる", "やすい", "ぐらい"],
+      "Analysis": "知识点52、知识点30",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "いろいろ苦労した（　　）、やっと原稿を完成した。",
+      "Option": ["末に", "つから", "まで", "以上は"],
+      "Analysis": "知识点51",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "彼とは何も言わ（　　）、お互いの気持ちが分かる。",
+      "Option": ["ずに", "にども", "ずとも", "だって"],
+      "Analysis": "知识点53、知识点53\n彼とは何も言わずとも、お互いの気持ちが分かる。",
+      "Unit": 6,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "寝不足の（　　）気分がすっきりしない。",
+      "Option": ["せいに", "せいか", "せいだ", "せいを"],
+      "Analysis": "知识点54\n通义千问3-235B-A22B解析：\nThe sentence structure \"〜のせいか、〜\" is used to suggest that a certain condition or reason might be the cause of the following situation. In this case, \"寝不足のせいか、気分がすっきりしない\" translates to \"Perhaps because of lack of sleep, the mood doesn't feel refreshed.\"\n\n- せいに: Incorrect. The particle \"に\" does not fit here to indicate causation in this context.\n- せいだ: Incorrect. While \"せいだ\" can state a reason directly (e.g., 寝不足のせいだ → \"It's because of lack of sleep\"), it does not logically connect to the second clause in this sentence.\n- せいを: Incorrect. \"を\" marks an object, which is irrelevant here.\nThe correct choice is せいか, as it implies a tentative or explanatory cause-and-effect relationship.\n\nAnswer: せいか",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "三年前に、彼に一度会った（　　）、その後音信不通の状態だ。",
+      "Option": ["しか", "きり", "ほど", "ので"],
+      "Analysis": "知识点60",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "受賞した吉報を電話で知らせ、両親（　　）喜ばせた。",
+      "Option": ["に", "が", "を", "で"],
+      "Analysis": "知识点55的【注意】部分",
+      "Unit": 6,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "こんなに晴れているので、雨がおり（　　）。",
+      "Option": ["そうがある", "そうもない", "そうになった", "そうだ"],
+      "Analysis": "知识点57",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "チャンスがあれば、ぜひ一度海外に行ってみたい（　　）。",
+      "Option": ["ことだ", "くらい", "ほど", "ものだ"],
+      "Analysis": "知识点58",
+      "Unit": 6,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "早くしないとた授業に遅れる（　　）。",
+      "Option": ["か", "ぞ", "ね", "の"],
+      "Analysis": "知识点56",
+      "Unit": 6,
+      "Correct Answer": 2
     }
 ]

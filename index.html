@@ -12,6 +12,10 @@
       align-items: center;
       padding: 20px;
     }
+    .dark-theme {
+        background-color: #012;
+        color: #fff;
+    }
     .container {
       display: flex;
       width: 100%;
@@ -199,9 +203,12 @@
     </div>
   </div>
   <div class="right">
+    <div style="display: flex; justify-content: space-between; align-items: right;">
+      <button onclick="toggleTheme()" style="font-size: 14px; padding: 5px 10px;">@</button>
+      <button onclick="goBackToStart()" style="font-size: 14px; padding: 5px 10px;">返回首页</button>
+    </div>
     <div style="display: flex; justify-content: space-between; align-items: center;">
       <h3>解析</h3>
-      <button onclick="goBackToStart()" style="font-size: 14px; padding: 5px 10px;">返回首页</button>
     </div>
     <div class="analysis-text" id="analysisText">
       请选择选项后点击“查看解析”以显示内容。
@@ -428,6 +435,19 @@
 
     // 👉 清空题号按钮
     document.getElementById("questionNav").innerHTML = "";
+  }
+
+  // 切换主题并保存到本地存储
+  function toggleTheme() {
+      const body = document.querySelector('body');
+
+      if (body.classList.contains('dark-theme')) {
+          body.classList.remove('dark-theme');
+          localStorage.setItem('theme', 'light'); // 保存为“明亮模式”
+      } else {
+          body.classList.add('dark-theme');
+          localStorage.setItem('theme', 'dark'); // 保存为“黑暗模式”
+      }
   }
 </script>
 
