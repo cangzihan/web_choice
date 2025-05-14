@@ -707,129 +707,248 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
-      "Question": "経済（　　）理由で、学校を中退した。",
+      "Question": "[経済]{けいざい}（　　）[理由]{りゆう}で、[学校]{がっこう}を[中退]{ちゅうたい}した。",
       "Option": ["上の", "中の", "内は", "下の"],
       "Analysis": "知识点49",
       "Unit": 5,
       "Correct Answer": 1
     },
     {
-      "Question": "この記事を読んで水の（　　）がよく分かった。",
+      "Question": "この[記事]{きじ}を[読んで]{よんで}[水]{みず}の（　　）がよく[分か]{わか}った。",
       "Option": ["大切で", "大切", "大切だ", "大切さ"],
       "Analysis": "知识点42",
       "Unit": 5,
       "Correct Answer": 4
     },
     {
-      "Question": "この薬さえ（　　）、頭痛がすぐ治まるよ。",
+      "Question": "この[薬]{くすり}さえ（　　）、[頭痛]{ずつう}がすぐ[治ま]{おさま}るよ。",
       "Option": ["飲めば", "飲むと", "飲んでも", "飲むから"],
       "Analysis": "知识点45\n只要你服用这种药，你的头痛就会立即消失。",
       "Unit": 5,
       "Correct Answer": 1
     },
     {
-      "Question": "クラスメートの中でこの曲をうまく弾けるのは彼女しか（　　）。",
+      "Question": "[クラスメート]{くらすめーと}の[中]{なか}でこの[曲]{きょく}をうまく[弾け]{ひけ}るのは[彼女]{かのじょ}しか（　　）。",
       "Option": ["ない", "いない", "ある", "いる"],
       "Analysis": "知识点47，知识点48\n通义千问3-235B-A22B解析：\nThe sentence structure 「〜しかいない」 is used to emphasize that only a specific person (or people) exists or fulfills a condition. Here, the subject is 彼女 (she), a person, so the negative form of いる (to exist for living beings) is required:\n\nクラスメートの中でこの曲をうまく弾けるのは彼女しかいない\n(\"Among classmates, only she can play this song well\").\nBreakdown of options:\n\n- ない: Incorrect. Used for inanimate objects (e.g., 本しかない = \"only books exist\").\n- いる: Incorrect. Positive form; contradicts the exclusivity implied by しか.\n- ある: Incorrect. Also for inanimate objects and existence, not applicable here.\nThe correct choice is いない, as it matches the context of a living person (彼女) and completes the structure 〜しかいない (only).\n\nAnswer: いない",
       "Unit": 5,
       "Correct Answer": 2
     },
     {
-      "Question": "過去のことを気に（　　）、前向きに考えなさい。",
+      "Question": "[過去]{かこ}のことを[気に]{きに}（　　）、[前向き]{まえむき}に[考え]{かんがえ}なさい。",
       "Option": ["しずに", "せずで", "せずに", "なくて"],
       "Analysis": "不要沉湎于过去，要积极思考。",
       "Unit": 5,
       "Correct Answer": 3
     },
     {
-      "Question": "責任は彼のほうにあるから、君がわざわざ謝る（　　）。",
+      "Question": "[責任]{せきにん}は[彼の]{かの}ほうにあるから、[君]{くん}がわざわざ[謝る]{あやまる}（　　）。",
       "Option": ["こともある", "ことにした", "ことをする", "ことはない"],
       "Analysis": "知识点41",
       "Unit": 5,
       "Correct Answer": 4
     },
     {
-      "Question": "会場に（　　）、会社から連絡が入って、「すぐに戻れ」と言われた。",
+      "Question": "[会場]{かいじょう}に（　　）、[会社]{かいしゃ}から[連絡]{れんらく}が[入っ]{いっっ}て、「すぐに[戻れ]{もどれ}」と[言わ]{いわ}れた。",
       "Option": ["向かっている最中に", "向かっている間は", "向かいていながら", "向かっているところは"],
       "Analysis": "知识点43\n在我前往会场的路上，我接到了公司的电话，让我马上回来。",
       "Unit": 5,
       "Correct Answer": 1
     },
     {
-      "Question": "両親が私たちの結婚に反対しているので、結婚披露宴に（　　）。",
+      "Question": "[両親]{りょうしん}が[私たち]{わたしたち}の[結婚]{けっこん}に[反対]{はんたい}しているので、[結婚披露宴]{けっこんひろうえん}に（　　）。",
       "Option": ["さえ出席してくれなかった", "さえ出席するだろう", "出席しなければならない", "出席したほうがいいだろう"],
       "Analysis": "知识点44",
       "Unit": 5,
       "Correct Answer": 1
     },
     {
-      "Question": "食事をした（　　）、散歩に行く。",
+      "Question": "\n「[斉藤]{さいとう}さん、どうして[弁護士]{べんごし}の[仕事]{しごと}を[辞め]{やめ}たんですか。」\n「いや、[自分]{じぶん}から[辞め]{やめ}たんじゃなくて、（　　）んだ。」",
+      "Option": ["辞めさせてください", "辞めさせていただいた", "辞めさせられた", "辞めさせてもらった"],
+      "Analysis": "知识点46",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "この[二つ]{ふたつ}の[商品]{しょうひん}は[外見]{がいけん}からすれば[全く]{まったく}[同じ]{おなじ}なんだけど、（　　）。",
+      "Option": ["機能も同じだ", "機能が異なる", "機能には問題がない", "機能には問題がある"],
+      "Analysis": "显然后一个句子是前一个句子的转折",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[先週]{せんしゅう}からずっと[歯]{は}が[痛く]{いたく}て、[歯医者]{はいしゃ}に（　　）。",
+      "Option": ["見ることになった", "見てあげるしかない", "見たことがない", "見てもらうことにした"],
+      "Analysis": "知识点38、知识点48\n通义千问3-235B-A22B解析：\nThe sentence structure 「〜てもらうことにした」 is used to express a decision to receive a service or action from someone else, which fits the context of visiting a dentist for treatment.\n\n「先週からずっと歯が痛くて、歯医者に見てもらうことにした。」\n(\"Since my tooth has been hurting all week, I decided to go to the dentist for treatment.\")\nBreakdown of Options:\n- 見ることになった: Incorrect. \"見る\" (to look) does not convey the idea of receiving medical care.\n- 見てあげるしかない: Incorrect. \"あげる\" implies giving something to someone else, but the subject here needs to receive care, not provide it.\n- 見たことがない: Incorrect. This means \"haven't seen,\" which contradicts the context of seeking help for a toothache.\n- 見てもらうことにした: Correct. \"見てもらう\" means \"to get checked by someone,\" and \"ことにした\" indicates a decision, making this the logical choice.\nAnswer: 看てもらうことにした",
+      "Unit": 5,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "きのうの[夜]{よる}はあまり[食欲]{しょくよく}がなくて、[何も]{なにも}（　　）[寝た]{ねた}。",
+      "Option": ["食べずに", "食べなくて", "食べてから", "食べるいじょう"],
+      "Analysis": "知识点50",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "はじめてその[遊園地]{ゆうえんち}に[行った]{いった}[時]{とき}、[スケール]{すけーる}の（　　）に[驚い]{おどろい}た。",
+      "Option": ["大きいこと", "大きいもの", "大きさ", "大きいの"],
+      "Analysis": "知识点42",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[午後]{ごご}の[会議]{かいぎ}の（　　）に、[携帯電話]{けいたいでんわ}がなり[出し]{だし}てびっくりした。",
+      "Option": ["最中", "こと", "うえは", "ぐらい"],
+      "Analysis": "知识点43\n原题有一个汉字打不出来\n当我的手机在下午的会议期间开始响起时，我感到很惊讶。",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[食事]{しょくじ}をした（　　）、[散歩]{さんぽ}に[行く]{いく}。",
       "Option": ["あとで", "あとに", "あとが", "あとも"],
       "Analysis": "知识点59",
       "Unit": 6,
       "Correct Answer": 1
     },
     {
-      "Question": "テレビの音が大き（　　）から、ちょっと小さくして。",
+      "Question": "[テレビ]{てれび}の[音]{おと}が[大き]{おおき}（　　）から、ちょっと[小さく]{ちーさく}して。",
       "Option": ["という", "すぎる", "やすい", "ぐらい"],
       "Analysis": "知识点52、知识点30",
       "Unit": 6,
       "Correct Answer": 2
     },
     {
-      "Question": "いろいろ苦労した（　　）、やっと原稿を完成した。",
+      "Question": "いろいろ[苦労]{くろう}した（　　）、やっと[原稿]{げんこう}を[完成し]{かんせいし}た。",
       "Option": ["末に", "つから", "まで", "以上は"],
       "Analysis": "知识点51",
       "Unit": 6,
       "Correct Answer": 1
     },
     {
-      "Question": "彼とは何も言わ（　　）、お互いの気持ちが分かる。",
+      "Question": "[彼]{かれ}とは[何も]{なにも}[言わ]{いわ}（　　）、お[互い]{たがい}の[気持ち]{きもち}が[分か]{わか}る。",
       "Option": ["ずに", "にども", "ずとも", "だって"],
-      "Analysis": "知识点53、知识点53\n彼とは何も言わずとも、お互いの気持ちが分かる。",
+      "Analysis": "知识点53、知识点50\n即使什么都不说，我们也明白彼此的感受。",
       "Unit": 6,
       "Correct Answer": 3
     },
     {
-      "Question": "寝不足の（　　）気分がすっきりしない。",
+      "Question": "[寝不足]{ねぶそく}の（　　）[気分]{きぶん}がすっきりしない。",
       "Option": ["せいに", "せいか", "せいだ", "せいを"],
       "Analysis": "知识点54\n通义千问3-235B-A22B解析：\nThe sentence structure \"〜のせいか、〜\" is used to suggest that a certain condition or reason might be the cause of the following situation. In this case, \"寝不足のせいか、気分がすっきりしない\" translates to \"Perhaps because of lack of sleep, the mood doesn't feel refreshed.\"\n\n- せいに: Incorrect. The particle \"に\" does not fit here to indicate causation in this context.\n- せいだ: Incorrect. While \"せいだ\" can state a reason directly (e.g., 寝不足のせいだ → \"It's because of lack of sleep\"), it does not logically connect to the second clause in this sentence.\n- せいを: Incorrect. \"を\" marks an object, which is irrelevant here.\nThe correct choice is せいか, as it implies a tentative or explanatory cause-and-effect relationship.\n\nAnswer: せいか",
       "Unit": 6,
       "Correct Answer": 2
     },
     {
-      "Question": "三年前に、彼に一度会った（　　）、その後音信不通の状態だ。",
+      "Question": "[三年前]{さんねんまえ}に、[彼]{かれ}に[一度]{いちど}[会っ]{あっ}た（　　）、その[後]{のち}[音信不通]{おんしんふつう}の[状態]{じょうたい}だ。",
       "Option": ["しか", "きり", "ほど", "ので"],
       "Analysis": "知识点60",
       "Unit": 6,
       "Correct Answer": 2
     },
     {
-      "Question": "受賞した吉報を電話で知らせ、両親（　　）喜ばせた。",
+      "Question": "[受賞]{じゅしょう}した[吉報]{きっぽう}を[電話]{でんわ}で[知らせ]{しらせ}、[両親]{りょうしん}（　　）[喜ば]{よろこば}せた。",
       "Option": ["に", "が", "を", "で"],
       "Analysis": "知识点55的【注意】部分",
       "Unit": 6,
       "Correct Answer": 3
     },
     {
-      "Question": "こんなに晴れているので、雨がおり（　　）。",
+      "Question": "こんなに[晴れ]{はれ}ているので、[雨]{あめ}がおり（　　）。",
       "Option": ["そうがある", "そうもない", "そうになった", "そうだ"],
       "Analysis": "知识点57",
       "Unit": 6,
       "Correct Answer": 2
     },
     {
-      "Question": "チャンスがあれば、ぜひ一度海外に行ってみたい（　　）。",
+      "Question": "[チャンス]{ちゃんす}があれば、ぜひ[一度]{いちど}[海外]{かいがい}に[行って]{いって}みたい（　　）。",
       "Option": ["ことだ", "くらい", "ほど", "ものだ"],
       "Analysis": "知识点58",
       "Unit": 6,
       "Correct Answer": 4
     },
     {
-      "Question": "早くしないとた授業に遅れる（　　）。",
+      "Question": "[早く]{はやく}しないとた[授業]{じゅぎょう}に[遅れ]{おくれ}る（　　）。",
       "Option": ["か", "ぞ", "ね", "の"],
       "Analysis": "知识点56",
       "Unit": 6,
       "Correct Answer": 2
+    },
+    {
+      "Question": "[自分]{じぶん}の[家]{いえ}に[帰っ]{かえっ}た（　　）で、ゆっくり[休ん]{やすん}でください。",
+      "Option": ["よう", "あいだ", "ところ", "つもり"],
+      "Analysis": "知识点65",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[誰]{だれ}（　　）ほかの[人]{にん}に[話し]{はなし}たくないことがあるだろう。",
+      "Option": ["だって", "も", "にも", "では"],
+      "Analysis": "知识点66\n每个人都有不想与他人谈论的事情。",
+      "Unit": 7,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[過去]{かこ}も[未来]{みらい}もない。あるのは[今]{いま}（　　）なんだ。",
+      "Option": ["しか", "だけ", "まで", "でも"],
+      "Analysis": "知识点61\n没有过去，也没有未来。我们所拥有的只是现在。",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "お[手伝い]{てつだい}さんは[部屋]{へや}の[中]{なか}だけでなく、[庭]{にわ}（　　）[掃除]{そうじ}してくれた。",
+      "Option": ["を", "も", "は", "が"],
+      "Analysis": "直接根据大体意思选，知识点62\n女佣不仅打扫了房间，还打扫了花园。",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[写真]{しゃしん}を[見る]{みる}だけ（　　）、その[人]{にん}がいいかどうか[分か]{わか}らない。",
+      "Option": ["では", "には", "のは", "たら"],
+      "Analysis": "知识点63、知识点16",
+      "Unit": 7,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "（　　）みんなに[反対]{はんたい}されても、[アフリカ]{あふりか: Africa}へ[行く]{いく}つもりだ。",
+      "Option": ["たとえ", "そんな", "だって", "ただ"],
+      "Analysis": "知识点67",
+      "Unit": 7,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[彼は]{かれは}[秋葉原]{あきはばら}へ[行く]{いく}（　　）、[新しい]{あたらしい}[電気製品]{でんきせいひん}を[買っ]{かっ}てくる。",
+      "Option": ["としても", "だけでなく", "たびに", "つもりで"],
+      "Analysis": "知识点69\n行きます\n- ます形：いきます\n- て形：いって\n- 字典形：いく\n- ない形：いかない\n- た形：いった",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[今夜]{こんや}の[夕食]{ゆうしょく}は[何]{なに}（　　）しますか。",
+      "Option": ["か", "ぞ", "ね", "の"],
+      "Analysis": "其他选项离谱",
+      "Unit": 7,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "ここに[引っ越し]{ひっこし}てきた（　　）、あたりの[様子]{ようす}がよく[分か]{わか}らない。",
+      "Option": ["くらいで", "ばかりで", "すえに", "ことに"],
+      "Analysis": "知识点68\n我刚搬到这里，对这个地区不太了解。",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[夕方]{ゆうがた}になると[寒く]{さむく}なるので、[帽子]{ぼうし}をかぶって（　　）いいですよ。",
+      "Option": ["行くだけ", "行くから", "行くまで", "行ったほうが"],
+      "Analysis": "知识点70",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この[話]{はなし}は[聞か]{きか}なかった（　　）。",
+      "Option": ["ことにしよう", "ことにしそうもない", "ことになりたいものだ", "ことになるしかない"],
+      "Analysis": "知识点64、知识点48\n通义千问3-235B-A22B解析：\nThe sentence structure 「〜ないことにする」 is used to decide to treat something as if it didn’t happen or to pretend ignorance. Here, the phrase 「聞かなかったことにしよう」 translates to \"Let’s pretend I didn’t hear this story\" or \"I’ll act as if I didn’t hear it.\"\n\nWhy the other options are incorrect:\nことにしそうもない\nMeans \"unlikely to become that way.\"\nDoesn’t fit the context of making a decision or pretense.\nことになりたいものだ\nImplies \"I wish it would become that way,\" which doesn’t align with the idea of ignoring or pretending.\nことになるしかない\nMeans \"there’s no choice but for it to become that way.\"\nIllogical here, as the sentence isn’t about inevitability.\nFinal Answer:\nこの話は聞かなかったことにしよう。\n(\"As for this story, I’ll pretend I didn’t hear it.\")\n\nAnswer: ことにしよう",
+      "Unit": 7,
+      "Correct Answer": 1
     }
 ]
