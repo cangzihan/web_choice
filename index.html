@@ -457,6 +457,21 @@
           localStorage.setItem('theme', 'dark'); // 保存为“黑暗模式”
       }
   }
+
+  function applyDefaultThemeByTime() {
+    const hour = new Date().getHours(); // 当前小时数
+    const body = document.querySelector('body');
+
+    // 如果没有用户设置，按时间设置
+    if (hour >= 0 && hour < 5) {
+        body.classList.add('dark-theme');
+    } else {
+        body.classList.remove('dark-theme');
+    }
+  }
+
+applyDefaultThemeByTime();
+
 </script>
 
 </body>

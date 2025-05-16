@@ -875,6 +875,69 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
+      "Question": "[今回]{こんかい}の[試合]{しあい}こそ、[絶対]{ぜったい}[優勝]{ゆうしょう}してみせる（　　）。",
+      "Option": ["ぞ", "かな", "か", "こと"],
+      "Analysis": "知识点56",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "このあたりの[物件]{ぶっけん}は[高]{たか}（　　）、[普通]{ふつう}の[サラリーマン]{さらりーまん}では[買え]{かえ}そうもない。",
+      "Option": ["すぎて", "ぎみで", "きれて", "がちで"],
+      "Analysis": "知识点52看例句\n这里的房价很贵，所以普通工薪族似乎不太可能买得起。",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "いろいろと（　　）[後で]{あとで}、[事件]{じけん}の[真相]{しんそう}が[明らか]{あきらか}になるだろう。",
+      "Option": ["調査して", "調査する", "調査した", "調査しない"],
+      "Analysis": "根据句意判定完成时，知识点59",
+      "Unit": 6,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[彼女]{かのじょ}は[買い物]{かいもの}に[出た]{でた}きり、[夜]{よる}に（　　）ので[心配]{しんぱい}だ。",
+      "Option": ["なって帰ってください", "なって帰ってきた", "なって帰っていない", "なって帰るしかない"],
+      "Analysis": "知识点60/根据句意排除1、2选项，知识点48排除4选项",
+      "Unit": 6,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "あれこれと[迷っ]{まよっ}た[末]{まつ}に、（　　）。",
+      "Option": ["別のものを買ったほうがいい", "別のものを買った", "別のものを買うことができる", "別のものも買ったかった"],
+      "Analysis": "知识点51\n通义千问3-235B-A22B解析：\nExplanation:\n\nThe phrase 「迷った末に」 (after much deliberation) indicates a conclusion reached after a lengthy process. The sentence is in past tense, so the blank should describe what actually happened as a result of the deliberation.\n別のものを買った (I bought something else) directly follows the logic of a decision being made and executed after consideration.\nThe other options are less fitting:\n1. 別のものを買ったほうがいい (I should have bought something else) implies a regretful suggestion, not a concrete action.\n3. 別のものを買うことができる (I can buy something else) refers to ability, not a completed action.\n4. 別のものも買ったかった is grammatically incorrect (should be 買いたかった) and illogical in context.\nThus, 別のものを買った best completes the sentence by showing the outcome of the deliberation.",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[時間]{じかん}が[十分]{じゅうぶん}あるから、そんなに（　　）。",
+      "Option": ["急がなければならない", "急いでください", "急ぐのはいいだろう", "急がずともいい"],
+      "Analysis": "知识点53",
+      "Unit": 6,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[最近]{さいきん}、[ストレス]{すとれす}を[抱え]{かかえ}ているせいか、[夜]{よる}２、３[時に]{ときに}なっても（　　）。",
+      "Option": ["眠くなってきた", "眠るようにする", "さっそく寝よう", "なかなか眠れない"],
+      "Analysis": "语感、知识点54",
+      "Unit": 6,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[私]{わたし}は[ピアノ]{ぴあの}をひくのが[嫌い]{きらい}だったが、[子ども]{こども}の[頃に]{ごろに}[母]{はは}に（　　）。",
+      "Option": ["習われた", "習わせてあげた", "習わされた", "習わせてもらった"],
+      "Analysis": "知识点46（注意例句）",
+      "Unit": 6,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "この[仕事]{しごと}は[量]{りょう}が[多い]{おおい}ので、[一人]{ひとり}の[力]{ちから}では（　　）。",
+      "Option": ["できそうもない", "できそうではない", "できるそうだ", "できるそうだろう"],
+      "Analysis": "知识点57",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
       "Question": "[自分]{じぶん}の[家]{いえ}に[帰っ]{かえっ}た（　　）で、ゆっくり[休ん]{やすん}でください。",
       "Option": ["よう", "あいだ", "ところ", "つもり"],
       "Analysis": "知识点65",
@@ -945,10 +1008,115 @@ window.bluebook_n3 = [
       "Correct Answer": 4
     },
     {
-      "Question": "この[話]{はなし}は[聞か]{きか}なかった（　　）。",
+      "Question": "[今回]{こんかい}の[事件]{じけん}は[新聞]{しんぶん}だけでなく、[週刊誌]{しゅうかんし}に（　　）[載っ]{のっ}ているよ。",
+      "Option": ["を", "が", "で", "も"],
+      "Analysis": "知识点62",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\nA「[早く]{はやく}やってくれよ。」\nB「（　　）、ほんとうに[暇]{ひま}がないんだもん。」",
+      "Option": ["だって", "し", "のに", "たら"],
+      "Analysis": "知识点66",
+      "Unit": 7,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "うちの[クラス]{くらす}で[男]{おとこ}の[学生]{がくせい}は[中村]{なかむら}さん（　　）です。",
+      "Option": ["から", "だけ", "まで", "ごろ"],
+      "Analysis": "知识点61",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[彼は]{かれは}[クリスマス]{くりすます}（　　）たびに、[プレゼント]{ぷれぜんと}を[贈っ]{おくっ}てくれる。",
+      "Option": ["と", "に", "の", "で"],
+      "Analysis": "知识点69，名词+の+たびに",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "たとえこの[仕事]{しごと}が[嫌で]{いやで}も、（　　）。",
+      "Option": ["やらなくてもかまわない", "やらないでください", "やらなければならない", "やればいいようだ"],
+      "Analysis": "知识点67\n即使我讨厌这份工作，我也必须做。\nGPT-4o成分分析：\n1. やら\n→ 「やる」的 未然形（表示未发生的动作），用于构成否定或假定句型。\n2. なければ\n→ 「ない」（否定形）的 ば形（假定形），相当于“如果不……”。\n所以：\nやらなければ = 如果不做……\n3. ならない\n→ 表示“不行”、“不可以”的意思。\n\n当和「なければ」结合时，构成：\n\nやらなければならない = 如果不做就不行 → 必须做",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "その[話]{はなし}は[聞か]{きか}なかった（　　）。",
       "Option": ["ことにしよう", "ことにしそうもない", "ことになりたいものだ", "ことになるしかない"],
       "Analysis": "知识点64、知识点48\n通义千问3-235B-A22B解析：\nThe sentence structure 「〜ないことにする」 is used to decide to treat something as if it didn’t happen or to pretend ignorance. Here, the phrase 「聞かなかったことにしよう」 translates to \"Let’s pretend I didn’t hear this story\" or \"I’ll act as if I didn’t hear it.\"\n\nWhy the other options are incorrect:\nことにしそうもない\nMeans \"unlikely to become that way.\"\nDoesn’t fit the context of making a decision or pretense.\nことになりたいものだ\nImplies \"I wish it would become that way,\" which doesn’t align with the idea of ignoring or pretending.\nことになるしかない\nMeans \"there’s no choice but for it to become that way.\"\nIllogical here, as the sentence isn’t about inevitability.\nFinal Answer:\nこの話は聞かなかったことにしよう。\n(\"As for this story, I’ll pretend I didn’t hear it.\")\n\nAnswer: ことにしよう",
       "Unit": 7,
       "Correct Answer": 1
+    },
+    {
+      "Question": "[君]{きみ}、ちょっとこっちへ（　　）まえ。",
+      "Option": ["来た", "来る", "来て", "来ない"],
+      "Analysis": "知识点71\n(答案和AI不一致1/3)\nGPT-4o解析：\n整句翻译：\n“你，稍微到这边来一下。”\n\n「こっちへ」：往这边\n「まえ」：命令的结尾（口语）\n\n🔧 关键点：语气是命令句\n日语的命令句有几种形式，其中之一是「〜て」形 + 命令语气结尾（比如「～て まえ」或直接「～て」）\n\n「来て」是动词「来る」的て形，表示请求或命令，如：\n\n「ちょっと来て」——“来一下”\n\n「早く来て」——“快来”\n\n而「〜まえ」这种口语命令形式加强了语气，类似说：\n“来一下啊！”\n“快点过来！”\n\n❌ 错误选项分析：\n\n来る（辞書形 / 原形）\n　→ 表示“来”，但直接用「来るまえ」不通顺，也不是命令。\n\n来て ✅（て形）\n　→ 正确，表示命令/请求。\n\n来ない（否定）\n　→ 表示“不来”，和句子意思不符。",
+      "Unit": 8,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "あの[人]{ひと}（　　）、いつもうそばかり[言って]{いって}いる。",
+      "Option": ["のに", "から", "ったら", "とは"],
+      "Analysis": "知识点74",
+      "Unit": 8,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[日曜日]{にちようび}だっ（　　）[大丈夫]{だいじょうぶ}です。[引越し]{ひっこし}を[手伝い]{てつだい}ますよ。",
+      "Option": ["なら", "たら", "ても", "とは"],
+      "Analysis": "知识点73\n如果是星期天，那就没问题。我帮你搬家。",
+      "Unit": 8,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[マイホーム]{My Home}を[買う]{かう}（　　）、[貯金]{ちょきん}している。",
+      "Option": ["ために", "によって", "ばかりに", "まえに"],
+      "Analysis": "知识点72",
+      "Unit": 8,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "せっかくのお[誕生日]{たんじょうび}[パーティー]{ぱーてぃー}なので、ほかの[友]{とも}だちも（　　）どう？",
+      "Option": ["誘うから", "誘ったら", "誘う", "誘って"],
+      "Analysis": "知识点76\n既然是生日聚会，为什么不也邀请一些其他朋友呢？",
+      "Unit": 8,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[子ども]{こども}は[泥]{どろ}（　　）になって[家]{いえ}に[帰っ]{かえっ}てきた。",
+      "Option": ["だらけ", "っぽい", "ぎみ", "みたい"],
+      "Analysis": "知识点75",
+      "Unit": 8,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "この[計画]{けいかく}、[部長]{ぶちょう}が[賛成]{さんせい}してくれる（　　）。",
+      "Option": ["こともある", "たりする", "だろう", "しかない"],
+      "Analysis": "知识点77\n经理可能会同意这个计划。",
+      "Unit": 8,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[彼]{かれ}が[持っ]{もっ}てきてくれた[ワイン]{わいん}を[全部]{ぜんぶ}[飲ん]{のん}（　　）。",
+      "Option": ["ちゃった", "じゃった", "ました", "だった"],
+      "Analysis": "知识点78，注意例句\n(答案和AI不一致2/1)\n我把他带来的酒都喝光了。\nGPT-4o解析：\n句型：\n「Vてしまう」表示 动作完全结束，有时带有 遗憾、无奈 或 彻底做完 的语气。\n\n→ 口语中「〜てしまう」会变成：\n\n动词以 て结尾 → 〜ちゃう\n\n动词以 で结尾 → 〜じゃう\n\n这里「飲む」（喝）→ て形是「飲んで」→ 变口语形式是「飲んじゃう」\n但这题是过去式 → 「飲んじゃった」\n\n但因为选项中只有「ちゃった」，说明考察的是更简化的口语表达：\n「飲んでしまった」→ 口语 → 「飲んじゃった」→ 更口语 → 「飲んちゃった」（❌错误说法）\n所以其实标准的说法是「飲んじゃった」，但口语中也会听到简化为「飲んちゃった」。\n\n不过：\n「飲んちゃった」虽然能听到，但在标准用法里 「飲んじゃった」才是正确。\n\n但这题中 ちゃった 正是考察 「〜てしまった」的简化口语形式。\n- ました：\n普通过去式，无法表达 “喝完了” 的语气。\n\n- だった：\n名词/形容动词过去式，与动词不搭配，语法错误。",
+      "Unit": 8,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[斉藤]{さいとう}さんの[結婚式]{けっこんしき}はいつでした（　　）。",
+      "Option": ["っけ", "か", "った", "って"],
+      "Analysis": "知识点79",
+      "Unit": 8,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "あそこに「[止ま]{とま}れ」（　　）[書い]{かい}てあるよ。",
+      "Option": ["に", "った", "っけ", "って"],
+      "Analysis": "知识点80",
+      "Unit": 8,
+      "Correct Answer": 4
     }
 ]
