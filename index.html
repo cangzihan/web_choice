@@ -462,6 +462,17 @@
     const hour = new Date().getHours(); // 当前小时数
     const body = document.querySelector('body');
 
+    // 优先读取用户本地存储的选择
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+        } else {
+            body.classList.remove('dark-theme');
+        }
+        return;
+    }
+
     // 如果没有用户设置，按时间设置
     if (hour >= 0 && hour < 5) {
         body.classList.add('dark-theme');
