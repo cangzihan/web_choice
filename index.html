@@ -179,6 +179,15 @@
       color: rgb(160,245,235);
       cursor: pointer;
     }
+
+    #languageSelect {
+      padding: 2px 6px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: white;
+      color: #333;
+    }
   </style>
   <script src="book_list.js"></script>
   <script src="BlueBook_N3.js"></script>
@@ -187,6 +196,12 @@
 <body>
 
 <div class="start-screen" id="startScreen">
+  <div id="languageSwitcher" style="position: absolute; top: 10px; right: 10px;">
+    <select id="languageSelect" onchange="changeLanguage()" style="padding: 3px 6px; font-size: 14px; border-radius: 4px; width: 100px;">
+      <option value="zh">🇨🇳 中文</option>
+      <option value="en">🇬🇧 EN</option>
+    </select>
+  </div>
   <h2>请选择一本书</h2>
   <select id="bookSelector">
     <option disabled selected>加载中...</option>
@@ -234,6 +249,48 @@
   let filteredData = [];
   let currentIndex = 0;
   let userAnswers = [];
+
+  const translations = {
+    zh: {
+      selectBook: "请选择一本书",
+      selectUnit: "请选择单元或随机抽取题目",
+      startQuiz: "开始答题",
+      loading: "加载中...",
+      chooseBookFirst: "请先选择一本书"
+    },
+    en: {
+      selectBook: "Please select a book",
+      selectUnit: "Please select a unit or choose random questions",
+      startQuiz: "Start Quiz",
+      loading: "Loading...",
+      chooseBookFirst: "Please select a book first"
+    }
+  };
+
+  function changeLanguage() {
+    const lang = document.getElementById("languageSelect").value;
+    localStorage.setItem("lang", lang); // 保存用户选择
+    applyLanguage(lang);
+  }
+
+  function applyLanguage(lang) {
+    const t = translations[lang];
+    const bookSelector = document.getElementById("bookSelector");
+    const currentOption = bookSelector.options[0];
+
+    if (bookSelector.disabled) {
+      // 加载中
+      currentOption.textContent = t.loading;
+    } else {
+      // 加载完成但未选择书
+      currentOption.textContent = t.chooseBookFirst;
+    }
+
+    document.querySelector("#startScreen h2:nth-of-type(1)").textContent = t.selectBook;
+    document.querySelector("#startScreen h2:nth-of-type(2)").textContent = t.selectUnit;
+    document.querySelector("#unitSelector option").textContent = t.chooseBookFirst;
+    document.querySelector(".theme-base-button").textContent = t.startQuiz;
+  }
 
   // 第一步：加载书籍列表
   // 直接用 bookList
@@ -480,6 +537,7 @@
         body.classList.remove('dark-theme');
     }
   }
+
 
 applyDefaultThemeByTime();
 

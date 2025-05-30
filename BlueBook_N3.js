@@ -212,7 +212,7 @@ window.bluebook_n3 = [
     {
       "Question": "この[問題]{もんだい}を[解決]{かいけつ}しないと、[大変]{たいへん}なことが（　　）。",
       "Option": ["起こるはずがない", "起こらないようになった", "起こる恐れがある", "起こらないかもしれない"],
-      "Analysis": "知识点12",
+      "Analysis": "知识点12，知识点18",
       "Unit": 2,
       "Correct Answer": 3
     },
@@ -611,7 +611,7 @@ window.bluebook_n3 = [
     {
       "Question": "この小説の[主人公]{しゅじんこう}は[超能力]{ちょうのうりょく}を持っていて、[未来]{みらい}のことを（　　）。",
       "Option": ["予知するかもしれない", "予知するようになった", "予知することにした", "予知することができる"],
-      "Analysis": "知识点35",
+      "Analysis": "知识点35，知识点18",
       "Unit": 4,
       "Correct Answer": 4
     },
@@ -812,7 +812,7 @@ window.bluebook_n3 = [
       "Correct Answer": 1
     },
     {
-      "Question": "[テレビ]{てれび}の[音]{おと}が[大き]{おおき}（　　）から、ちょっと[小さく]{ちーさく}して。",
+      "Question": "[テレビ]{TV}の[音]{おと}が[大き]{おおき}（　　）から、ちょっと[小さく]{ちーさく}して。",
       "Option": ["という", "すぎる", "やすい", "ぐらい"],
       "Analysis": "知识点52、知识点30",
       "Unit": 6,
@@ -1050,14 +1050,14 @@ window.bluebook_n3 = [
       "Correct Answer": 1
     },
     {
-      "Question": "うちの[クラス]{くらす}で[男]{おとこ}の[学生]{がくせい}は[中村]{なかむら}さん（　　）です。",
+      "Question": "うちの[クラス]{Class}で[男]{おとこ}の[学生]{がくせい}は[中村]{なかむら}さん（　　）です。",
       "Option": ["から", "だけ", "まで", "ごろ"],
       "Analysis": "知识点61",
       "Unit": 7,
       "Correct Answer": 2
     },
     {
-      "Question": "[彼は]{かれは}[クリスマス]{くりすます}（　　）たびに、[プレゼント]{ぷれぜんと}を[贈っ]{おくっ}てくれる。",
+      "Question": "[彼は]{かれは}[クリスマス]{Christmas}（　　）たびに、[プレゼント]{ぷれぜんと}を[贈っ]{おくっ}てくれる。",
       "Option": ["と", "に", "の", "で"],
       "Analysis": "知识点69，名词+の+たびに",
       "Unit": 7,
@@ -1071,11 +1071,60 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
+      "Question": "よく（　　）だが、またどこかに[間違い]{まちがい}があるかもしれない。",
+      "Option": ["確認になったこと", "確認しておいたつもり", "確認したこと", "確認だったつもり"],
+      "Analysis": "知识点18\n虽然我自以为已经确认过了，但也许还是会有哪里出错了。\n確認になったこと\n✖ 不自然，\"〜になったこと\" 表达不通顺，意义也不明确。\n\n確認しておいたつもり\n✔ 正确答案。\n\"〜つもり\" 表示“自以为……”，“確認しておいた\" 是“事先确认过”，\n合起来就是：“我以为我事先确认过了”。\n\n確認したこと\n✖ 语法上没错，但意思是“曾经确认过”，不能表达“自己认为已经做了”的语气，缺乏\"つもり\"表示主观想法。\n\n確認だったつもり\n✖ “確認だった”语法错误，名词“確認”不能接“だったつもり”这种结构。",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
       "Question": "その[話]{はなし}は[聞か]{きか}なかった（　　）。",
       "Option": ["ことにしよう", "ことにしそうもない", "ことになりたいものだ", "ことになるしかない"],
       "Analysis": "知识点64、知识点48\n通义千问3-235B-A22B解析：\nThe sentence structure 「〜ないことにする」 is used to decide to treat something as if it didn’t happen or to pretend ignorance. Here, the phrase 「聞かなかったことにしよう」 translates to \"Let’s pretend I didn’t hear this story\" or \"I’ll act as if I didn’t hear it.\"\n\nWhy the other options are incorrect:\nことにしそうもない\nMeans \"unlikely to become that way.\"\nDoesn’t fit the context of making a decision or pretense.\nことになりたいものだ\nImplies \"I wish it would become that way,\" which doesn’t align with the idea of ignoring or pretending.\nことになるしかない\nMeans \"there’s no choice but for it to become that way.\"\nIllogical here, as the sentence isn’t about inevitability.\nFinal Answer:\nこの話は聞かなかったことにしよう。\n(\"As for this story, I’ll pretend I didn’t hear it.\")\n\nAnswer: ことにしよう",
       "Unit": 7,
       "Correct Answer": 1
+    },
+    {
+      "Question": "この[テレビ]{TV}は[先月]{せんげつ}（　　）、もう[壊れ]{こわれ}てしまった。",
+      "Option": ["買いたいことがあるが", "買ったばかりなのに", "買うかどうかについて", "買ったところなのに"],
+      "Analysis": "知识点68",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "きれいごど（　　）ではすまないよ。ちゃんと[努力]{どりょく}しないと[何も]{なにも}[変わ]{かわ}らない。",
+      "Option": ["しか", "こそ", "まで", "だけ"],
+      "Analysis": "知识点63，直接根据句意+知识点61",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[ゴールデンウィーク]{Golden Week}[中]{なか}はどこも[人]{にん}でいっぱいなので、[外出]{がいしゅつ}を（　　）よ。",
+      "Option": ["避けたほうがいい", "避けることができない", "避けないほうがいい", "避けないことができない"],
+      "Analysis": "知识点70+根据句意判断肯否定",
+      "Unit": 7,
+      "Correct Answer": 1 
+    },
+    {
+      "Question": "[彼ら]{かれら}は[今回]{こんかい}の[試合]{しあい}に[絶対]{ぜったい}（　　）[練習]{れんしゅう}に[励ん]{はげん}でいる。",
+      "Option": ["負けるだろう", "負けないつもりで", "負けそうにないで", "負けたあとで"],
+      "Analysis": "因为他这次考试绝对不打算挂科-->つもり",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[故郷は]{ふるさとは}（　　）[変わ]{かわ}っていって、[昔]{むかし}の[風景]{ふうけい}がだんだんなくなってしまう。",
+      "Option": ["帰るまえに", "帰ったあとで", "帰るたびに", "帰るさいちゅうに"],
+      "Analysis": "知识点69",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[健康]{けんこう}によくないので、[夜更かし]{よふかし}を（　　）。",
+      "Option": ["しないことになる", "しただけではいけない", "しそうではない", "しないほうがいい"],
+      "Analysis": "知识点70+根据句意判断肯否定",
+      "Unit": 7,
+      "Correct Answer": 4
     },
     {
       "Question": "[君]{きみ}、ちょっとこっちへ（　　）まえ。",
@@ -1192,9 +1241,51 @@ window.bluebook_n3 = [
     {
       "Question": "[初めて]{はじめて}[ギョーザ]{煎饺}を（　　）、[意外]{いがい}と[難しか]{むずかしか}った。",
       "Option": ["作るために", "作ったそうで", "作ってみるから", "作ってみたら"],
-      "Analysis": "知识点73",
+      "Analysis": "知识点73用法2\nWhen I tried making gyoza for the first time, it was surprisingly difficult.",
       "Unit": 8,
       "Correct Answer": 4
+    },
+    {
+      "Question": "A「[日本経済]{にほんけいざい}の[資料]{しりょう}ですか。それでしたら、[インターネット]{Internet}で（　　）。」\nB「そうですね。そうします。」",
+      "Option": ["調べようと思います", "調べたらどうですか", "調べそうにもない", "調べてくださいませんか"],
+      "Analysis": "知识点76",
+      "Unit": 8,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "このこと、[彼]{かれ}が（　　）だろうか。",
+      "Option": ["信じてくれる", "信じていただく", "信じたりする", "信じてほしい"],
+      "Analysis": "知识点77，信じてくれる是常见短语\n他会相信这个吗？",
+      "Unit": 8,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "この[小説]{しょうせつ}はつまらないかな（　　）だけど、[結構]{けっこう，不翻译}[面白か]{おもしろか}ったよ。",
+      "Option": ["って思ってみたん", "って思ってよかった", "って思っていたん", "って思うだから"],
+      "Analysis": "知识点80用法1，句子普通形+って（言う・思う・書く）,但是知道这些之后这道题的答案还是选不出来\n我以为这本小说会很无聊，但实际上相当有趣。\n通义千问3-235B-A22B解析：\nThe sentence structure contrasts a past assumption with a present realization. The phrase 「って思っていたん」 (from 思っていた + ん) effectively conveys the speaker's previous belief that the novel was boring, which is then contrasted by the unexpected enjoyment (\"だけど、結構面白かったよ\").\n\nOption 1 (って思ってみたん): Incorrect. 「みたん」 implies \"tried thinking,\" which doesn't fit the context of a held belief.\nOption 2 (って思ってよかった): Incorrect. 「よかった」 suggests a fortunate outcome, but the sentence isn’t about the thought being fortunate.\nOption 4 (って思うだから): Incorrect. 「から」 indicates a reason, but the sentence isn’t explaining why the speaker thought it was boring; it’s contrasting the past thought with the result.\nCompleted Sentence:\n「この小説はつまらないかなって思っていたんだけど、結構面白かったよ。」\n(\"I thought this novel was boring, but it was actually quite interesting.\")",
+      "Unit": 8,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[今回]{こんかい}の[試合]{しあい，游戏/比赛}では、どの[チーム]{team}が（　　）。",
+      "Option": ["優勝するだろう", "優勝するぞ", "優勝したいものだ", "優勝したつもりだろう"],
+      "Analysis": "哪支球队会赢得这场比赛？\n通义千问3-235B-A22B解析：\nThe sentence asks which team will win the championship in the upcoming match.\n\nOption 1 (優勝するだろう): Correct.\nThis expresses a neutral prediction (\"which team will probably win?\"). The particle だろう (\"probably\") fits naturally in a question speculating about the future outcome.\nOption 2 (優勝するぞ): Incorrect.\nThe ending ぞ adds strong conviction or determination (e.g., a declaration of victory). However, this is too assertive for a question asking for an open-ended prediction.\nOption 3 (優勝したいものだ): Incorrect.\nThis translates to \"wants to win the championship,\" focusing on desire rather than the actual outcome. The sentence structure does not align with expressing a wish.\nOption 4 (優冠したつもりだろう): Incorrect.\nThis implies \"thinks they have already won,\" which contradicts the context of predicting a future result.",
+      "Unit": 8,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "あれ？[受験票]{じゅけんひょう}、どこに（　　）。",
+      "Option": ["置いたいの", "置いたっけ", "置いてくれる", "置くとか"],
+      "Analysis": "知识点79",
+      "Unit": 8,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[渡辺]{わたなべ}さんはあした[美術館]{びじゅつかん}へ（　　）[言って]{いって}ました。",
+      "Option": ["行くって", "行くっけ", "行くんっで", "行っちゃう"],
+      "Analysis": "知识点80用法1，句子普通形+って（言う・思う・書く）",
+      "Unit": 8,
+      "Correct Answer": 1
     },
     {
       "Question": "[雨]{あめ}が[降っ]{ふっ}て（　　）。[窓]{まど}を[閉め]{しめ}ましょう。",
@@ -1255,7 +1346,7 @@ window.bluebook_n3 = [
     {
       "Question": "[試験]{しけん}に[合格]{ごうかく}して（　　）しょうがない。",
       "Option": ["うれしい", "うれし", "うれしくて", "うれしいの"],
-      "Analysis": "我很高兴通过了考试。",
+      "Analysis": "知识点89\n我很高兴通过了考试。",
       "Unit": 9,
       "Correct Answer": 3
     },
@@ -1297,7 +1388,7 @@ window.bluebook_n3 = [
     {
       "Question": "[親友]{しんゆう}が[転校]{てんこう}してしまって、[寂しく]{さびしく}て（　　）。",
       "Option": ["しょうがない", "ください", "なりました", "ありません"],
-      "Analysis": "我最好的朋友转学了，我感到非常孤独。",
+      "Analysis": "知识点89\n我最好的朋友转学了，我感到非常孤独。",
       "Unit": 9,
       "Correct Answer": 1
     },
@@ -1321,6 +1412,27 @@ window.bluebook_n3 = [
       "Analysis": "知识点93",
       "Unit": 10,
       "Correct Answer": 2
+    },
+    {
+      "Question": "あそこに[置い]{おい}てある[雑誌]{ざっし}を（　　）ちょうだい。",
+      "Option": ["取り", "取って", "取る", "取らない"],
+      "Analysis": "知识点92",
+      "Unit": 10,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[彼女]{かのじょ}にそこまで[言わ]{いわ}れると、もう[黙っ]{だまって：住口}（　　）いられない。",
+      "Option": ["ては", "ても", "たら", "から"],
+      "Analysis": "知识点95\n她一这么说，我就再也忍不住沉默了。",
+      "Unit": 10,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[実際に]{じっさいに}[読んで]{よんで}みて（　　）、この[本]{ほん}のおもしろさがわかる。",
+      "Option": ["はたして", "いつのまにか", "いったん", "はじめて"],
+      "Analysis": "知识点96",
+      "Unit": 10,
+      "Correct Answer": 4
     },
     {
       "Question": "[天気予報]{てんきよほう}（　　）、[午後]{ごご}から[雨]{あめ}が[降り]{おり}[出し]{だし}た。",
@@ -1393,6 +1505,20 @@ window.bluebook_n3 = [
       "Correct Answer": 1
     },
     {
+      "Question": "[掲示板]{けいじばん}の[知らせ]{しらせ}によると、[期末]{きまつ}[テスト]{てすと}は[来月]{らいげつ}から[始ま]{はじま}る（　　）。",
+      "Option": ["こそ", "とか", "くらい", "くせに"],
+      "Analysis": "知识点118",
+      "Unit": 12,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[娘]{むすめ}の[恋人]{こいびと}は[私たち]{わたしたち}の[期待]{きたい}（　　）[人]{にん}であった。",
+      "Option": ["について", "としたら", "ところに", "どおりの"],
+      "Analysis": "知识点117\n我女儿的对象正是我们所期待的。\nについて：关于/大约\nとしたら：如果是这样",
+      "Unit": 12,
+      "Correct Answer": 4
+    },
+    {
       "Question": "お[誕生日]{たんじょうび}の[プレゼント]{present}なら[ブローチ]{brooch, 胸针}（　　）いかがですか。",
       "Option": ["なんか", "よりも", "ほうが", "だけで"],
       "Analysis": "知识点130/いかがですか是不确定的问，所以前面是一个有关疑问的词",
@@ -1414,7 +1540,7 @@ window.bluebook_n3 = [
       "Correct Answer": 4
     },
     {
-      "Question": "[彼女]{かのじょ}は[趣味]{しゅみ}（　　）[ピアノ]{ぴあの}を[習っ]{ならっ}ている。",
+      "Question": "[彼女]{かのじょ}は[趣味]{しゅみ}（　　）[ピアノ]{Piano}を[習っ]{ならっ}ている。",
       "Option": ["として", "まえに", "のまま", "わけで"],
       "Analysis": "知识点121",
       "Unit": 13,
@@ -1433,5 +1559,33 @@ window.bluebook_n3 = [
       "Analysis": "知识点122的接续2，知识点1，名词+の+あいだ/あいだに=在...期间，名词+とともに=随着",
       "Unit": 13,
       "Correct Answer": 3
+    },
+    {
+      "Question": "[運転]{うんてん}するときは、（　　）なければならない。",
+      "Option": ["集中", "集中せ", "集中し", "集中する"],
+      "Analysis": "知识点128\n集中:\n- ます形：集中します\n- て形：集中して\n- 字典形：集中する\n- ない形：集中しない\n- た形：集中した",
+      "Unit": 13,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[彼]{かれ}がすぐに[来て]{きて}くれたので、（　　）[済ん]{すん}だ。",
+      "Option": ["待たずに", "待たなくて", "待つまでに", "待つために"],
+      "Analysis": "知识点124，注意例句\n他马上就来了，所以我不用等。\n通义千问3-235B-A22B解析：\nThe sentence means: \"Because he came immediately, (　　) was completed.\" The blank describes how the action was completed due to his prompt arrival.\n\nOption 1 (待たずに): Correct.\nThis translates to \"without waiting,\" fitting the context. His immediate arrival meant there was no need to wait, so the task was completed swiftly.\nCompleted Sentence:\n「彼がすぐに来てくれたので、待たずに済んだ。」\n(\"Because he came immediately, it was completed without waiting.\")\nOption 2 (待たなくて): Incorrect.\nWhile 待たなくて (from 待たない + て) can imply \"didn’t have to wait,\" it is typically followed by verbs like すむ (e.g., 待たなくて済む: \"didn’t have to wait\"). Here, the structure 待たずに済んだ (completed without waiting) is more natural than 待たなくて済んだ.\nOption 3 (待つまでに): Incorrect.\nThis means \"by the time of waiting,\" which contradicts the idea of his prompt arrival eliminating the need to wait.\nOption 4 (待つために): Incorrect.\nThis translates to \"in order to wait,\" which does not align with the context of avoiding waiting.\nKey Grammar Note:\n\n待たずに emphasizes the manner of completion (\"without waiting\").\n待たなくて focuses on the absence of necessity (\"didn’t have to wait\"), but the phrasing 待たずに済んだ is more idiomatic here.",
+      "Unit": 13,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[卒業論文]{そつぎょうろんぶん}を[提出]{ていしゅつ}する[前]{まえ}に、その[中の]{なかの}[一部]{いちぶ}を（　　）[直し]{なおし}た。",
+      "Option": ["書く", "書き", "書け", "書い"],
+      "Analysis": "知识点126",
+      "Unit": 13,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[電話]{でんわ}で[済む]{すむ}ことだから、わざわざ（　　）なくてもいい。",
+      "Option": ["行か", "行く", "行き", "行け"],
+      "Analysis": "知识点129，常见句型行かなくてもいい\n行きます\n- ます形：いきます\n- て形：いって\n- 字典形：いく\n- ない形：いかない\n- た形：いった",
+      "Unit": 13,
+      "Correct Answer": 1
     }
 ]
