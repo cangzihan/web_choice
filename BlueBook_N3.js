@@ -23,7 +23,7 @@ window.bluebook_n3 = [
     {
       "Question": "[新聞]{しんぶん}の[活字]{かつじ}が[小さい]{ちーさい}ので、[読み]{よみ}（　　）。",
       "Option": ["にくい", "やすい", "かたい", "ぎみだ"],
-      "Analysis": "憎い（にくい）\n固い（かたい）\n报纸上的字体太小，很难看清。",
+      "Analysis": "知识点137\n憎い（にくい）\n固い（かたい）\n报纸上的字体太小，很难看清。\n読みます\n- ます形：よみます\n- て形：よんで\n- 字典形：よむ\n- ない形：よまない\n- た形：よんだ",
       "Unit": 1,
       "Correct Answer": 1
     },
@@ -107,7 +107,7 @@ window.bluebook_n3 = [
     {
       "Question": "この[携帯電話]{けいたいでんわ}は[ボタン]{ぼたん}が[大きく]{おおきく}て、お[年寄り]{としより}にもやさしく（　　）。",
       "Option": ["使いにくい", "使いやすい", "使いすぎる", "使えばいい"],
-      "Analysis": "这款手机的按键较大，方便老年人使用。",
+      "Analysis": "知识点137\n这款手机的按键较大，方便老年人使用。\n使います\n- ます形：つかいます\n- て形：つかって\n- 字典形：つかう\n- ない形：つかわない\n- た形：つかった",
       "Unit": 1,
       "Correct Answer": 2
     },
@@ -198,7 +198,7 @@ window.bluebook_n3 = [
     {
       "Question": "[最近]{さいきん}の[若者]{わかもの}の[行動]{こうどう}は、[大人]{おとな}たちにはなかなか[理解]{りかい}し（　　）。",
       "Option": ["にくい", "がたい", "すぎる", "はじめる"],
-      "Analysis": "知识点14",
+      "Analysis": "知识点14，知识点137，动词ます形+がたい/にくい，がたい侧重于主观感觉难",
       "Unit": 2,
       "Correct Answer": 2
     },
@@ -758,7 +758,7 @@ window.bluebook_n3 = [
     {
       "Question": "[両親]{りょうしん}が[私たち]{わたしたち}の[結婚]{けっこん}に[反対]{はんたい}しているので、[結婚披露宴]{けっこんひろうえん}に（　　）。",
       "Option": ["さえ出席してくれなかった", "さえ出席するだろう", "出席しなければならない", "出席したほうがいいだろう"],
-      "Analysis": "知识点44",
+      "Analysis": "知识点44，知识点70",
       "Unit": 5,
       "Correct Answer": 1
     },
@@ -905,7 +905,7 @@ window.bluebook_n3 = [
     {
       "Question": "あれこれと[迷っ]{まよっ}た[末]{まつ}に、（　　）。",
       "Option": ["別のものを買ったほうがいい", "別のものを買った", "別のものを買うことができる", "別のものも買ったかった"],
-      "Analysis": "知识点51\n通义千问3-235B-A22B解析：\nExplanation:\n\nThe phrase 「迷った末に」 (after much deliberation) indicates a conclusion reached after a lengthy process. The sentence is in past tense, so the blank should describe what actually happened as a result of the deliberation.\n別のものを買った (I bought something else) directly follows the logic of a decision being made and executed after consideration.\nThe other options are less fitting:\n1. 別のものを買ったほうがいい (I should have bought something else) implies a regretful suggestion, not a concrete action.\n3. 別のものを買うことができる (I can buy something else) refers to ability, not a completed action.\n4. 別のものも買ったかった is grammatically incorrect (should be 買いたかった) and illogical in context.\nThus, 別のものを買った best completes the sentence by showing the outcome of the deliberation.",
+      "Analysis": "知识点51，知识点70\n通义千问3-235B-A22B解析：\nExplanation:\n\nThe phrase 「迷った末に」 (after much deliberation) indicates a conclusion reached after a lengthy process. The sentence is in past tense, so the blank should describe what actually happened as a result of the deliberation.\n別のものを買った (I bought something else) directly follows the logic of a decision being made and executed after consideration.\nThe other options are less fitting:\n1. 別のものを買ったほうがいい (I should have bought something else) implies a regretful suggestion, not a concrete action.\n3. 別のものを買うことができる (I can buy something else) refers to ability, not a completed action.\n4. 別のものも買ったかった is grammatically incorrect (should be 買いたかった) and illogical in context.\nThus, 別のものを買った best completes the sentence by showing the outcome of the deliberation.",
       "Unit": 6,
       "Correct Answer": 2
     },
@@ -1409,7 +1409,7 @@ window.bluebook_n3 = [
     {
       "Question": "[田中]{たなか}[選手]{せんしゅ}がこんなに[早く]{はやく}[引退]{いんたい}するのは、[残念]{ざんねん}（　　）ならない。",
       "Option": ["は", "で", "の", "たまれます"],
-      "Analysis": "知识点93",
+      "Analysis": "知识点93，な形容词+でならない",
       "Unit": 10,
       "Correct Answer": 2
     },
@@ -1433,6 +1433,20 @@ window.bluebook_n3 = [
       "Analysis": "知识点96",
       "Unit": 10,
       "Correct Answer": 4
+    },
+    {
+      "Question": "[今日は]{こんにちは}[誕生日]{たんじょうび}なので、[彼]{かれ}に[迎え]{むかえ}にき（　　）。",
+      "Option": ["てほしい", "ておく", "てくれた", "てあった"],
+      "Analysis": "知识点99",
+      "Unit": 10,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "ほら、やればできるん（　　）。",
+      "Option": ["ほうがいい", "じゃないか", "じゃなかった", "べきでない"],
+      "Analysis": "瞧，只要你尝试，你就能做到。\n通义千问3-235B-A22B解析：\nThe sentence structure is an encouraging affirmation:\n「ほら、やればできるんじゃない。」\n(\"Come on, you can do it if you try, right?\")\n\nOption 1 (ほうがいい): Incorrect.\nほうがいい suggests a comparison (\"better to...\") or advice, but this sentence is not about choosing between options or giving advice.\nOption 2 (じゃないか): ✅ Correct.\nじゃないか turns the statement into a rhetorical question, seeking agreement or reinforcing confidence. It softens the assertion and adds a motivational tone:\n\"You can do it if you try, can’t you?\"\nOption 3 (じゃなかった): Incorrect.\nThis is past-tense negation (\"was not\"), which doesn’t fit the context of an ongoing or future possibility.\nOption 4 (べきでない): Incorrect.\nべきでない means \"should not,\" which contradicts the encouraging tone of やればできる (\"you can do it\").\nCompleted Sentence:\n「ほら、やればできるんじゃない。」\n(\"Come on, you can do it if you try, right?\")\n\nThe phrase やればできる is commonly followed by じゃないか to create an uplifting, persuasive statement.",
+      "Unit": 10,
+      "Correct Answer": 2
     },
     {
       "Question": "[天気予報]{てんきよほう}（　　）、[午後]{ごご}から[雨]{あめ}が[降り]{おり}[出し]{だし}た。",
@@ -1519,6 +1533,27 @@ window.bluebook_n3 = [
       "Correct Answer": 4
     },
     {
+      "Question": "[名札]{なふだ: 姓名标签}（　　）、[自分]{じぶん}の[名前]{なまえ}を[書い]{かい}た[カード]{card}のことです。",
+      "Option": ["ということは", "というと", "というのは", "といったら"],
+      "Analysis": "知识点113",
+      "Unit": 12,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[庭]{にわ}には[アジサイ]{绣球花}（　　）、[バラ]{玫瑰}（　　）、いろいろな[花]{はな}が[咲い]{さい}ている。",
+      "Option": ["でも/でも", "も/も", "や/や", "とか/とか"],
+      "Analysis": "知识点119",
+      "Unit": 12,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[田中]{たなか}さん（　　）、[最近]{さいきん}、[人]{にん}が[変わ]{かわ}ったように[一生懸命]{いっしょうけんめい}[働い]{はたらい}ている。",
+      "Option": ["といえば", "としたら", "というか", "どおりに"],
+      "Analysis": "知识点112用法1，名词+というと/といえば",
+      "Unit": 12,
+      "Correct Answer": 1
+    },
+    {
       "Question": "お[誕生日]{たんじょうび}の[プレゼント]{present}なら[ブローチ]{brooch, 胸针}（　　）いかがですか。",
       "Option": ["なんか", "よりも", "ほうが", "だけで"],
       "Analysis": "知识点130/いかがですか是不确定的问，所以前面是一个有关疑问的词",
@@ -1587,5 +1622,75 @@ window.bluebook_n3 = [
       "Analysis": "知识点129，常见句型行かなくてもいい\n行きます\n- ます形：いきます\n- て形：いって\n- 字典形：いく\n- ない形：いかない\n- た形：いった",
       "Unit": 13,
       "Correct Answer": 1
+    },
+    {
+      "Question": "[出張中]{しゅっちょうちゅう：出差}の[部長]{ぶちょう}（　　）、[山下]{やました}さんが[会議]{かいぎ}に[出席]{しゅっせき}した。",
+      "Option": ["によって", "にかえて", "にかわって", "について"],
+      "Analysis": "知识点135",
+      "Unit": 14,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "（　　）ここは[郊外]{こうがい}だから、[買い物]{かいもの}には[不便]{ふべん}だ。",
+      "Option": ["なにしろ", "なにも", "せっかく", "おそらく"],
+      "Analysis": "知识点131",
+      "Unit": 14,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[息子]{むすこ}の[高校]{こうこう}[入学]{にゅうがく}[祝い]{いわい}（　　）[何]{なに}がいいかな。",
+      "Option": ["で", "に", "の", "を"],
+      "Analysis": "知识点133",
+      "Unit": 14,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "あいつはほかの[人]{にん}の[言う]{いう}ことを[聞か]{きか}ないから、（　　）にくい。",
+      "Option": ["説得した", "説得する", "説得し", "説得して"],
+      "Analysis": "知识点137",
+      "Unit": 14,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[新宿]{しんじゅく}に[行く]{いく}（　　）、[電車]{でんしゃ}で[行った]{いった}ほうがいいと[思い]{おもい}ます。",
+      "Option": ["ので", "なら", "から", "たら"],
+      "Analysis": "知识点132，知识点70",
+      "Unit": 14,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[浅草]{あさくさ}の[近く]{ちかく}（　　）、[三社]{さんしゃ}[祭り]{まつり}が[行わ]{おこなわ}れた。",
+      "Option": ["において", "にとって", "として", "にしたら"],
+      "Analysis": "知识点134",
+      "Unit": 14,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[大都会]{だいとかい}（　　）、[田舎]{いなか}のほうは[静か]{しずか}で[物価]{ぶっか}も[安い]{やすい}。",
+      "Option": ["で比べて", "が比べて", "だ比べて", "に比べ"],
+      "Analysis": "知识点138",
+      "Unit": 14,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[今回]{こんかい}の[交通事故]{こうつうじこ}（　　）[資料]{しりょう}を[集め]{あつめ}ている。",
+      "Option": ["に伴って", "にしても", "に関する", "によれば"],
+      "Analysis": "知识点136",
+      "Unit": 14,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[参加]{さんか}する（　　）、[参加]{さんか}しない（　　）、[早め]{はやめ}に[連絡]{れんらく}したほうがいい。",
+      "Option": ["にしろ/にしろ", "など/など", "につれ/につれ", "たり/たり"],
+      "Analysis": "知识点139，知识点70",
+      "Unit": 14,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "A「[電車]{でんしゃ}で[行く]{いく}のですか」\nB「いいえ、[バス]{bus}（　　）します。」",
+      "Option": ["で", "に", "を", "が"],
+      "Analysis": "知识点140",
+      "Unit": 14,
+      "Correct Answer": 2
     }
 ]

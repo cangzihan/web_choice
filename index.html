@@ -197,9 +197,10 @@
 
 <div class="start-screen" id="startScreen">
   <div id="languageSwitcher" style="position: absolute; top: 10px; right: 10px;">
-    <select id="languageSelect" onchange="changeLanguage()" style="padding: 3px 6px; font-size: 14px; border-radius: 4px; width: 100px;">
+    <select id="languageSelect" onchange="changeLanguage()" style="padding: 3px 6px; font-size: 14px; border-radius: 4px; width: 105px;">
       <option value="zh">🇨🇳 中文</option>
       <option value="en">🇬🇧 EN</option>
+      <option value="jp">🇯🇵 日本語</option>
     </select>
   </div>
   <h2>请选择一本书</h2>
@@ -264,6 +265,13 @@
       startQuiz: "Start Quiz",
       loading: "Loading...",
       chooseBookFirst: "Please select a book first"
+    },
+    jp: {
+      selectBook: "本を選択してください",
+      selectUnit: "ユニットを選択するか、トピックをランダムに選択してください",
+      startQuiz: "質問に答え始める",
+      loading: "読み込み中...",
+      chooseBookFirst: "まず本を選択してください"
     }
   };
 
