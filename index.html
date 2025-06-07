@@ -546,6 +546,11 @@
     }
   }
 
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("lang") || "zh";
+    document.getElementById("languageSelect").value = savedLang;
+    applyLanguage(savedLang);
+  });
 
 applyDefaultThemeByTime();
 
