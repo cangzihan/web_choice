@@ -257,21 +257,24 @@
       selectUnit: "请选择单元或随机抽取题目",
       startQuiz: "开始答题",
       loading: "加载中...",
-      chooseBookFirst: "请先选择一本书"
+      chooseBookFirst: "请先选择一本书",
+      warningNoQuestion: "该单元没有题目，请检查 JSON 数据！"
     },
     en: {
       selectBook: "Please select a book",
       selectUnit: "Please select a unit or choose random questions",
       startQuiz: "Start Quiz",
       loading: "Loading...",
-      chooseBookFirst: "Please select a book first"
+      chooseBookFirst: "Please select a book first",
+      warningNoQuestion: "There is no question for this unit, please check the JSON data!"
     },
     jp: {
       selectBook: "本を選択してください",
       selectUnit: "ユニットを選択するか、トピックをランダムに選択してください",
       startQuiz: "質問に答え始める",
       loading: "読み込み中...",
-      chooseBookFirst: "まず本を選択してください"
+      chooseBookFirst: "まず本を選択してください",
+      warningNoQuestion: "ユニットに問題はないので、JSON データを確認してください。"
     }
   };
 
@@ -348,6 +351,8 @@
   });
 
   function startQuiz() {
+    const savedLang = localStorage.getItem("lang") || "zh";
+    const t = translations[savedLang];
     const selectedUnit = document.getElementById("unitSelector").value;
     if (!selectedUnit) return alert("请选择一个单元！");
 
@@ -362,7 +367,7 @@
     }
 
     if (filteredData.length === 0) {
-      alert("该单元没有题目，请检查 JSON 数据！");
+      alert(t.warningNoQuestion);
       return;
     }
 

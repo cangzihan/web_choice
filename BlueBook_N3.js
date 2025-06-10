@@ -56,7 +56,7 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[二人]{ふたり}は[仕事]{しごと}の（　　）、よき[ライバル]{らいばる}だ。",
+      "Question": "[二人]{ふたり}は[仕事]{しごと}の（　　）、よき[ライバル]{竞争对手}だ。",
       "Option": ["うえの", "あいだで", "あいだに", "うえで"],
       "Analysis": "知识点8\nライバル竞争对手",
       "Unit": 1,
@@ -231,7 +231,7 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
-      "Question": "10[メートル]{めーとる}おき（　　）[木]{き}を[植え]{うえ}る。",
+      "Question": "10[メートル]{米}おき（　　）[木]{き}を[植え]{うえ}る。",
       "Option": ["と", "で", "に", "が"],
       "Analysis": "知识点11",
       "Unit": 2,
@@ -245,7 +245,7 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "この[プレゼント]{ぷれぜんと}は（　　）かどうか[分か]{わか}りませんが、どうぞお[受け取り]{うけとり}ください。",
+      "Question": "この[プレゼント]{present}は（　　）かどうか[分か]{わか}りませんが、どうぞお[受け取り]{うけとり}ください。",
       "Option": ["お気をつける", "お気にする", "お気になる", "お気に入る"],
       "Analysis": "知识点16\n我不知道你是否会喜欢这个礼物，但请接受它。",
       "Unit": 2,
@@ -259,7 +259,7 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
-      "Question": "[ライター]{らいたー}か（　　）[火]{ひ}をつけるものを[貸し]{かし}てください。",
+      "Question": "[ライター]{writer}か（　　）[火]{ひ}をつけるものを[貸し]{かし}てください。",
       "Option": ["なにか", "なにも", "なんでも", "なに"],
       "Analysis": "知识点17\n你能借我一个打火机或者其他可以生火的东西吗？\nライター: lighter",
       "Unit": 2,
@@ -1176,7 +1176,7 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[彼]{かれ}が[持っ]{もっ}てきてくれた[ワイン]{わいん}を[全部]{ぜんぶ}[飲ん]{のん}（　　）。",
+      "Question": "[彼]{かれ}が[持っ]{もっ}てきてくれた[ワイン]{wine}を[全部]{ぜんぶ}[飲ん]{のん}（　　）。",
       "Option": ["ちゃった", "じゃった", "ました", "だった"],
       "Analysis": "知识点78，注意例句\n(答案和AI不一致2/1)\n我把他带来的酒都喝光了。\nGPT-4o解析：\n句型：\n「Vてしまう」表示 动作完全结束，有时带有 遗憾、无奈 或 彻底做完 的语气。\n\n→ 口语中「〜てしまう」会变成：\n\n动词以 て结尾 → 〜ちゃう\n\n动词以 で结尾 → 〜じゃう\n\n这里「飲む」（喝）→ て形是「飲んで」→ 变口语形式是「飲んじゃう」\n但这题是过去式 → 「飲んじゃった」\n\n但因为选项中只有「ちゃった」，说明考察的是更简化的口语表达：\n「飲んでしまった」→ 口语 → 「飲んじゃった」→ 更口语 → 「飲んちゃった」（❌错误说法）\n所以其实标准的说法是「飲んじゃった」，但口语中也会听到简化为「飲んちゃった」。\n\n不过：\n「飲んちゃった」虽然能听到，但在标准用法里 「飲んじゃった」才是正确。\n\n但这题中 ちゃった 正是考察 「〜てしまった」的简化口语形式。\n- ました：\n普通过去式，无法表达 “喝完了” 的语气。\n\n- だった：\n名词/形容动词过去式，与动词不搭配，语法错误。",
       "Unit": 8,
@@ -1449,14 +1449,14 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
-      "Question": "その[マンション]{まんしょん}は[駅]{えき}から[離れ]{はなれ}ているので、[家賃]{やちん}が（　　）のではないかと[思う]{おもう}けど。",
+      "Question": "その[マンション]{公寓}は[駅]{えき}から[離れ]{はなれ}ているので、[家賃]{やちん}が（　　）のではないかと[思う]{おもう}けど。",
       "Option": ["安い", "安くない", "安かった", "安く"],
       "Analysis": "知识点97/4本身错误，い形容词肯定没有く，根据时态（一般现在时）排除3,根据首尾句意判断肯否定\n公寓离车站较远，所以我觉得租金很便宜。",
       "Unit": 10,
       "Correct Answer": 1
     },
     {
-      "Question": "[コピー]{こぴー}[機の]{きの}[使い方]{つかいかた}がわからないので、[一度]{いちど}やって（　　）くれませんか。",
+      "Question": "[コピー]{copy}[機の]{きの}[使い方]{つかいかた}がわからないので、[一度]{いちど}やって（　　）くれませんか。",
       "Option": ["うかがって", "拝見して", "お会いになって", "みせて"],
       "Analysis": "知识点100\n我不太会用复印机，可以请您示范一次吗？",
       "Unit": 10,
@@ -1472,9 +1472,30 @@ window.bluebook_n3 = [
     {
       "Question": "よかったら、どうぞ（　　）みてください。",
       "Option": ["作った", "作り", "作る", "作って"],
-      "Analysis": "知识点101\n作ります\n- ます形：作ります\n- て形：作って\n- 字典形：作る\n- ない形：作らない\n- た形：作った",
+      "Analysis": "两个动词て形连在一起的结构比较常见，知识点101\n作ります\n- ます形：作ります\n- て形：作って\n- 字典形：作る\n- ない形：作らない\n- た形：作った",
       "Unit": 11,
       "Correct Answer": 4
+    },
+    {
+      "Question": "[彼は]{かれは}[何を]{なにを}[言わ]{いわ}れ（　　）にこにこしていて[怒ら]{いから}ない[人]{にん}だ。",
+      "Option": ["ても", "たら", "から", "には"],
+      "Analysis": "知识点102",
+      "Unit": 11,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "きょう、[山田]{やまだ}さんに[会え]{あえ}（　　）。",
+      "Option": ["てよかった", "ていた", "ておいた", "てきた"],
+      "Analysis": "知识点107\n通义千问3-235B-A22B解析：\nThe sentence structure \"会え（　　）\" requires a phrase that expresses a positive outcome or realization after being able to meet someone.\n\n- てよかった: Expresses relief or satisfaction (\"I'm glad I could...\"). This fits perfectly with the context of appreciating the opportunity to meet Yamada-san.\n- ていた: Indicates past progressive tense (e.g., \"was meeting\"), which does not align with the sentence’s intent.\n- ておいた: Refers to a prior action done in preparation, which is irrelevant here.\n- てきた: Suggests movement toward the speaker (e.g., \"came to meet\"), which does not match the sentence structure.\nStructure:\n[Verb (potential form)] + てよかった\n= \"I’m glad I could [do something].\"\n\nCorrect Sentence:\nきょう、山田さんに会えてよかった。\n(I’m glad I could meet Mr. Yamada today.)",
+      "Unit": 11,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[作文]{さくぶん}を[書く]{かく}[時]{とき}、[修正液]{しゅうせいえき}を（　　）かまいませんか。",
+      "Option": ["使いながら", "使っても", "使うぐらい", "使うのに"],
+      "Analysis": "知识点103",
+      "Unit": 11,
+      "Correct Answer": 2
     },
     {
       "Question": "[天気予報]{てんきよほう}（　　）、[午後]{ごご}から[雨]{あめ}が[降り]{おり}[出し]{だし}た。",
@@ -1512,7 +1533,7 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[ネックレス]{ねっくれす}（　　）[首]{くび}につける[飾り]{かざり}ものだ。",
+      "Question": "[ネックレス]{necklace}（　　）[首]{くび}につける[飾り]{かざり}ものだ。",
       "Option": ["とは", "には", "ことは", "ものは"],
       "Analysis": "知识点113\n项链是戴在脖子上的装饰品。",
       "Unit": 12,
@@ -1582,7 +1603,7 @@ window.bluebook_n3 = [
       "Correct Answer": 1
     },
     {
-      "Question": "[ニュース]{にゅーす}によれば、[来週]{らいしゅう}から[電気料金]{でんきりょうきん}が（　　）。",
+      "Question": "[ニュース]{news}によれば、[来週]{らいしゅう}から[電気料金]{でんきりょうきん}が（　　）。",
       "Option": ["上げるようになっている", "上げるようにしている", "上げるというものだ", "上げるということだ"],
       "Analysis": "知识点111",
       "Unit": 12,
@@ -1682,7 +1703,7 @@ window.bluebook_n3 = [
     {
       "Question": "[運転]{うんてん}するときは、（　　）なければならない。",
       "Option": ["集中", "集中せ", "集中し", "集中する"],
-      "Analysis": "知识点128\n集中:\n- ます形：集中します\n- て形：集中して\n- 字典形：集中する\n- ない形：集中しない\n- た形：集中した",
+      "Analysis": "知识点128\n开车时，你需要集中注意力。\n集中:\n- ます形：集中します\n- て形：集中して\n- 字典形：集中する\n- ない形：集中しない\n- た形：集中した",
       "Unit": 13,
       "Correct Answer": 3
     },
@@ -1869,6 +1890,118 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
+      "Question": "[ゴルフ]{golf}の[練習]{れんしゅう}は[毎週]{まいしゅう}の[土曜日]{どようび}（　　）しましょうか。",
+      "Option": ["が", "を", "で", "に"],
+      "Analysis": "知识点140注意例句",
+      "Unit": 14,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[飛行機]{ひこうき}（　　）[弱い]{よわい}のなら、[新幹線]{しんかんせん}で[行く]{いく}しかないだろう。",
+      "Option": ["の", "で", "に", "と"],
+      "Analysis": "知识点133用法2\n如果您有飞行恐惧症，唯一的选择就是乘坐新干线。",
+      "Unit": 14,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[和食]{わしょく}は[中華料理]{ちゅうかりょうり}（　　）、[味]{あじ}があっさりしている。",
+      "Option": ["にかけて", "に比べて", "に限らず", "にかわり"],
+      "Analysis": "知识点138",
+      "Unit": 14,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "\nA「[日本人]{にほんじん}は[大晦日]{おおみそか}の[夜]{よる}、[何を]{なにを}[食べ]{たべ}ますか。」\nB「[大晦日]{おおみそか}の[夜]{よる}（　　）[家族]{かぞく}で[年越し]{としこし}そばを[食べ]{たべ}るのが[普通]{ふつう}ね。」",
+      "Option": ["なら", "から", "でも", "とき"],
+      "Analysis": "知识点132",
+      "Unit": 14,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[今年]{こんねん}の[新入生]{しんにゅうせい}の[入学式]{にゅうがくしき}は[大講堂]{だいこうどう}（　　）[行わ]{おこなわ}れるそうだ。",
+      "Option": ["にとって", "にくらべて", "につれて", "において"],
+      "Analysis": "知识点134",
+      "Unit": 14,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[何しろ]{なにしろ}[ゴールデンウィーク]{Golden Week}だから、（　　）。",
+      "Option": ["ホテルはとても広い", "ホテルから近い", "どのホテルも予約でいっぱいだ", "ホテルに行くところ"],
+      "Analysis": "知识点131",
+      "Unit": 14,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "この[コート]{coat}は[私]{わたし}（　　）[大きす]{おおきす}ぎる。",
+      "Option": ["より", "には", "では", "にも"],
+      "Analysis": "通义千问3-235B-A22B解析：\nThe sentence \"このコートは私（　　）大きすぎる\" expresses that the coat is too large for the speaker. The particle には is used to indicate the subject of comparison or evaluation in such contexts.\n\nより: Used for comparisons (e.g., \"more than\"), but this sentence is not comparing the coat to the speaker.\nでは: Typically indicates a location or topic (e.g., \"in/at...\"), which does not fit here.\nにも: Combines \"に\" (target) and \"も\" (also/even), but the sentence does not imply \"even for me.\"\nStructure:\n[Person] + には + [Adjective] + すぎる\n= \"[Adjective] is too much for [person].\"\n\nCorrect Sentence:\nこのコートは私には大きすぎる。\n(This coat is too big for me.)",
+      "Unit": 15,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[日本人]{にほんじん}は[目上]{めうえ}の[人]{にん}（　　）、[敬語]{けいご}を[使う]{つかう}。",
+      "Option": ["に対して", "といえば", "に伴って", "としたら"],
+      "Analysis": "知识点141",
+      "Unit": 15,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[名]{めい}も（　　）ぬ[町]{まち}の[風景]{ふうけい}に[感動]{かんどう}した。",
+      "Option": ["知れない", "知れる", "知ら", "知らない"],
+      "Analysis": "知识点149",
+      "Unit": 15,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[規定]{きてい}（　　）、[ルール]{rule}[違反]{いはん}の[選手]{せんしゅ}は[処罰]{しょばつ}を[受ける]{うける}。",
+      "Option": ["にかわって", "にしろ", "によって", "にとって"],
+      "Analysis": "知识点147",
+      "Unit": 15,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[彼は]{かれは}[社会学]{しゃかいがく}（　　）[研究]{けんきゅう}している。",
+      "Option": ["にしても", "について", "において", "にかわり"],
+      "Analysis": "知识点142",
+      "Unit": 15,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[会館]{かいかん}の[ロビー]{lobby}（　　）[記念写真]{きねんしゃしん}を[撮る]{とる}ことになっている。",
+      "Option": ["にて", "には", "にも", "に"],
+      "Analysis": "知识点144\n将在大厅拍摄纪念照。",
+      "Unit": 15,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "この[手紙]{てがみ}は[私]{わたし}（　　）とって、かけがえのない[宝物]{たからもの}です。",
+      "Option": ["を", "で", "が", "に"],
+      "Analysis": "知识点145\n这封信对我来说是无可替代的财富。",
+      "Unit": 15,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[天気予報]{てんきよほう}（　　）、[午後]{ごご}から[雪]{ゆき}が[降る]{ふる}そうだ。。",
+      "Option": ["によると", "によって", "によっては", "により"],
+      "Analysis": "知识点148注意例句，知识点147",
+      "Unit": 15,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[時]{とき}がたつ（　　）、[嫌な]{いやな}ことも[忘れ]{わすれ}る。",
+      "Option": ["につれて", "につれる", "につれは", "につれも"],
+      "Analysis": "知识点143",
+      "Unit": 15,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[毎日]{まいにち}[部屋]{へや}の[窓]{まど}を[開け]{ひらけ}（　　）ならぬ。",
+      "Option": ["なら", "には", "ねば", "ない"],
+      "Analysis": "知识点150",
+      "Unit": 15,
+      "Correct Answer": 3
+    },
+    {
       "Question": "[作業]{さぎょう}を[開始]{かいし}する[前]{まえ}に[注意]{ちゅうい}（　　）ことを[読んで]{よんで}おいてください。",
       "Option": ["すべきで", "すべきに", "すべき", "すべし"],
       "Analysis": "知识点160的注意部分",
@@ -1904,7 +2037,7 @@ window.bluebook_n3 = [
       "Correct Answer": 1
     },
     {
-      "Question": "この[リモコン]{りもこん}は[テレビ]{てれび}をつける（　　）[使い]{つかい}ます。",
+      "Question": "この[リモコン]{遥控}は[テレビ]{TV}をつける（　　）[使い]{つかい}ます。",
       "Option": ["のは", "のが", "のに", "とは"],
       "Analysis": "知识点153",
       "Unit": 16,
