@@ -321,6 +321,8 @@
   // 当选择了书本之后，加载对应题库
   document.getElementById("bookSelector").addEventListener("change", function() {
     const selectedIdx = this.value;
+    const savedLang = localStorage.getItem("lang") || "zh";
+    const t = translations[savedLang];
     if (selectedIdx === undefined || selectedIdx === null || selectedIdx === "") return;
 
     const unitSelector = document.getElementById("unitSelector");
@@ -331,7 +333,7 @@
     allData = window[dataVarName];  // <-- 动态拿变量里的题目数据
 
     const unitSet = new Set(allData.map(q => q.Unit));
-    unitSelector.innerHTML = `<option disabled selected>请选择单元</option>`;
+    unitSelector.innerHTML = `<option disabled selected>` + t.selectUnit + `</option>`;
     unitSet.forEach(unit => {
       const opt = document.createElement("option");
       opt.value = unit;

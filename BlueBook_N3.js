@@ -1493,9 +1493,44 @@ window.bluebook_n3 = [
     {
       "Question": "[作文]{さくぶん}を[書く]{かく}[時]{とき}、[修正液]{しゅうせいえき}を（　　）かまいませんか。",
       "Option": ["使いながら", "使っても", "使うぐらい", "使うのに"],
-      "Analysis": "知识点103",
+      "Analysis": "知识点103，注意例句",
       "Unit": 11,
       "Correct Answer": 2
+    },
+    {
+      "Question": "「[心]{こころ}」（　　）[小説]{しょうせつ}を[読んだ]{よんだ}ことがありますか。",
+      "Option": ["よりも", "ところ", "という", "によって"],
+      "Analysis": "知识点109，直接根据意思判断",
+      "Unit": 11,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "いまさら（　　）、もう[遅い]{おそい}。",
+      "Option": ["後悔しても", "後悔したら", "後悔するほど", "後悔すること"],
+      "Analysis": "前后句意思有转折关系-->选も，知识点102",
+      "Unit": 11,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[春]{はる}に（　　）[桜]{さくら}が[咲く]{さく}。",
+      "Option": ["なるか", "なっても", "なると", "なれば"],
+      "Analysis": "知识点108，前后句意思存在顺接关系，か表示疑问不确定性排除，も表示转折排除，ば表示假设排除",
+      "Unit": 11,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "いまさら[彼]{かれ}を（　　）[始ま]{はじま}らない。",
+      "Option": ["責めると", "責めても", "責めるなら", "責めないで"],
+      "Analysis": "知识点102，知识点132。动词て形+も：即使；动词普通形+なら：如果",
+      "Unit": 11,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[夜更かし]{よふかし}が[体]{からだ}によくない（　　）をみんな[知って]{しって}いる。",
+      "Option": ["ということ", "というもの", "ように", "ところ"],
+      "Analysis": "知识点110\n大家都知道熬夜对健康不利。\n通义千问3-235B-A22B解析：\nThe sentence structure requires a nominalizer to turn the clause \"夜更かしが体によくない\" (staying up late is bad for health) into a noun phrase, which becomes the object of \"知っている\" (know).\n\n- ということ:\nThis phrase is used to state a general truth or fact. It fits perfectly here because the sentence conveys that \"everyone knows the fact that staying up late is bad for health.\"\nExample:\n「勉強することが大切だということを知っています」\n(I know the fact that studying is important.)\n- というもの:\nUsed to define or exemplify something (e.g., \"what is called...\"). It does not fit here because the sentence is not explaining what \"staying up late\" is, but rather stating a known truth.\n- ように:\nIndicates a manner or comparison (e.g., \"like...\" or \"as if...\"). It cannot function as a nominalizer in this context.\n- ところ:\nRefers to a physical place or point in time. It does not align with the sentence’s intent.\nCorrect Sentence:\n夜更かしが体によくないということをみんな知っている。\n(Everyone knows the fact that staying up late is bad for health.)",
+      "Unit": 11,
+      "Correct Answer": 1
     },
     {
       "Question": "[天気予報]{てんきよほう}（　　）、[午後]{ごご}から[雨]{あめ}が[降り]{おり}[出し]{だし}た。",
@@ -1932,6 +1967,55 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
+      "Question": "[病気]{びょうき}で[入院]{にゅういん}している[母]{はは}にかわって、（　　）。",
+      "Option": ["父が料理を作ってくれた", "父なら会ったことがある", "父はきっと元気になるだろう", "父は一度も来てくれなかった"],
+      "Analysis": "知识点135",
+      "Unit": 14,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "お[茶]{ちゃ}の[歴史]{れきし}に[関し]{かんし}ては、（　　）。",
+      "Option": ["討論した人が増えている", "また次回の授業で討論しよう", "討論する人がなくなっている", "討論したところだった"],
+      "Analysis": "知识点136",
+      "Unit": 14,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "この[道路]{どうろ}は[今]{いま}[工事中]{こうじちゅう}なので、[自動車]{じどうしゃ}は（　　）。",
+      "Option": ["通りそうだ", "通るようになった", "通りやすい", "通りにくい"],
+      "Analysis": "知识点137\n通るようになった: 有可能通过",
+      "Unit": 14,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[自分]{じぶん}でやるにしても、ほかの[人]{にん}と[協力]{きょうりょく}するにしても、（　　）。",
+      "Option": ["ますます忙しくなった", "納得のいく仕事をしたい", "仕事の量が減ってきた", "仕事が終わったらしい"],
+      "Analysis": "知识点139\nますます忙しくなった: 我越来越忙了\n納得のいく仕事をしたい: 我想做一份令人满意的工作\n仕事が終わったらしい: 看起来工作已经完成了",
+      "Unit": 14,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[次回]{じかい}の[環境]{かんきょう}[会議]{かいぎ}は[上海]{しゃんはい}（　　）[開か]{ひらか}れるそうだ。",
+      "Option": ["における", "において", "にかわって", "にかんして"],
+      "Analysis": "知识点134",
+      "Unit": 14,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[梅雨]{つゆ}の[季節]{きせつ}は[湿度]{しつど}が[高く]{たかく}て[洗濯物]{せんたくもの}が（　　）。",
+      "Option": ["乾きにくい", "干しやすい", "乾きやすい", "干しにくい"],
+      "Analysis": "知识点137，知识点170，排除2,3",
+      "Unit": 14,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[中古]{ちゅうこ}の[パソコン]{PC}を（　　）、その[店]{みせ}がおすすめです。",
+      "Option": ["買うと", "買えば", "買うに", "買うなら"],
+      "Analysis": "知识点132",
+      "Unit": 14,
+      "Correct Answer": 4
+    },
+    {
       "Question": "この[コート]{coat}は[私]{わたし}（　　）[大きす]{おおきす}ぎる。",
       "Option": ["より", "には", "では", "にも"],
       "Analysis": "通义千问3-235B-A22B解析：\nThe sentence \"このコートは私（　　）大きすぎる\" expresses that the coat is too large for the speaker. The particle には is used to indicate the subject of comparison or evaluation in such contexts.\n\nより: Used for comparisons (e.g., \"more than\"), but this sentence is not comparing the coat to the speaker.\nでは: Typically indicates a location or topic (e.g., \"in/at...\"), which does not fit here.\nにも: Combines \"に\" (target) and \"も\" (also/even), but the sentence does not imply \"even for me.\"\nStructure:\n[Person] + には + [Adjective] + すぎる\n= \"[Adjective] is too much for [person].\"\n\nCorrect Sentence:\nこのコートは私には大きすぎる。\n(This coat is too big for me.)",
@@ -2069,6 +2153,76 @@ window.bluebook_n3 = [
       "Option": ["ほど", "ばかり", "べき", "ぐらい"],
       "Analysis": "知识点156",
       "Unit": 16,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[日本]{にっぽん}の[福岡]{ふくおか}（　　）[長崎]{ながさき}といったところに[行って]{いって}みたい。",
+      "Option": ["や", "と", "も", "に"],
+      "Analysis": "表列举一般用や，知识点169",
+      "Unit": 17,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[冷蔵庫]{れいぞうこ}を[修理]{しゅうり}するのに、1ヵ[月]{がつ}（　　）かかった。",
+      "Option": ["で", "も", "か", "の"],
+      "Analysis": "知识点167",
+      "Unit": 17,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "ここにたどり[着く]{つく}（　　）2[時間]{じかん}[以上]{いじょう}[歩き]{あるき}[続け]{つづけ}た。",
+      "Option": ["たら", "まま", "まで", "なら"],
+      "Analysis": "知识点162用法5\n步行了两个多小时才到达这里。",
+      "Unit": 17,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[渡辺]{わたなべ}[君]{くん}（　　）[面白い]{おもしろい}[人]{にん}はいない。",
+      "Option": ["ほど", "ばかり", "ごろ", "まで"],
+      "Analysis": "只有1选项意思合理，知识点161，知识点156",
+      "Unit": 17,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[彼は]{かれは}[髪]{かみ}を[長く]{ながく}[伸ばし]{のばし}ていて[女性]{じょせい}（　　）だ。",
+      "Option": ["みたいに", "みたい", "みたいな", "みたいだ"],
+      "Analysis": "知识点164",
+      "Unit": 17,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "\nA「どうして[連絡]{れんらく}してくれなかったんだ。」\nB「だって[忙しい]{いそがしい}んだ（　　）。」",
+      "Option": ["ところ", "の", "もん", "こと"],
+      "Analysis": "知识点168，知识点151，の表示疑问，确定，命令，もん表示因为",
+      "Unit": 17,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[夏休み]{なつやすみ}には[子ども]{こども}[向け]{むけ}（　　）[テレビ]{TV}[番組]{ばんぐみ}が[多い]{おおい}。",
+      "Option": ["の", "で", "へ", "に"],
+      "Analysis": "根据句意判断此处少一个“的”的成分，知识点166的注意部分",
+      "Unit": 17,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "この[スキー]{滑雪}[場]{ば}は[傾斜]{けいしゃ}がきついので、[初心者]{しょしんしゃ}には（　　）いない。",
+      "Option": ["向いて", "高く", "向き", "高かない"],
+      "Analysis": "知识点165排除3，因此只能选1\n通义千问3-235B-A22B解析：\nThe sentence structure \"初心者には（　　）いない\" requires an expression indicating unsuitability. The phrase 向いていない (literally \"not facing toward\") is a common idiom meaning \"not suitable for\" or \"not suited to.\"\n\n- 向いて: The て-form of 向く (to face/toward), combined with いない, forms 向いていない (\"not suitable\").\nExample:\nこの仕事は私には向いていない = \"This job isn't suitable for me.\"\n- 高く: Adverbial form of 高い (\"high/expensive\"), which does not relate to suitability.\n- 向き: Noun/continuative form of 向く, but cannot pair with いない to form a meaningful phrase.\n- 高かない: Invalid grammatical form; likely a typo for 向かない (the correct i-adjective for \"unsuitable\").\nCorrect Sentence:\nこのスキー場は傾斜がきついので、初心者には向いていない。\n(This ski resort has steep slopes, so it’s not suitable for beginners.)\n\nKey Point:\n- 向いていない = \"not suitable\" (idiomatic use of 向く + いない).\n- 向かない is an alternative i-adjective meaning the same thing, but the sentence structure here requires the て-form + いない.",
+      "Unit": 17,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[彼の]{かの}[名前]{なまえ}は（　　）やすい。",
+      "Option": ["覚えた", "覚えて", "覚え", "覚える"],
+      "Analysis": "知识点170",
+      "Unit": 17,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[レポート]{repoort}は[来週]{らいしゅう}の[水曜日]{すいようび}（　　）[提出]{ていしゅつ}してください。",
+      "Option": ["までが", "までに", "まで", "までも"],
+      "Analysis": "知识点163",
+      "Unit": 17,
       "Correct Answer": 2
     }
 ]
