@@ -44,17 +44,17 @@ def test():
     print(annotated_text)
 
 
-def main():
+def process_file(fname):
     """
     主函数：
     读取 JS 文件中的题干行（包含 "Question" 关键字），
     对其中的日语句子进行假名注释，并写入新文件。
     最后将临时文件替换原文件。
     """
-    with open("BlueBook_N3.js", 'r', encoding='utf-8') as f:
+    with open(f"{fname}.js", 'r', encoding='utf-8') as f:
         content = f.readlines()
 
-    with open("BlueBook_N3_temp.js", 'w+', encoding='utf-8') as f:
+    with open(f"{fname}_temp.js", 'w+', encoding='utf-8') as f:
         for line in content:
             if "Question" in line:
                 question = line.split('"')[3]
@@ -64,7 +64,13 @@ def main():
                 f.write(line)
 
     # 替换原文件
-    os.replace("BlueBook_N3_temp.js", "BlueBook_N3.js")
+    os.replace(f"{fname}_temp.js", f"{fname}.js")
    # os.remove("BlueBook_N3_temp.js")
+
+
+def main():
+    process_file("BlueBook_N3")
+    process_file("Simulate_N3")
+
 
 main()
