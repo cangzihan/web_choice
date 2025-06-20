@@ -13,5 +13,10 @@ const bookList = [
     Title: "完全模拟N3",
     Path: "Simulate_N3.js",
     DataVar: "simulate_n3"
+  },
+  {
+    Title: "JLPT",
+    Path: "JLPT_Test.js",
+    DataVar: "jlpt_test"
   }
 ];

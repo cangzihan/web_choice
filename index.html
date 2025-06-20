@@ -193,6 +193,7 @@
   <script src="BlueBook_N3.js"></script>
   <script src="GPT_N3.js"></script>
   <script src="Simulate_N3.js"></script>
+  <script src="JLPT_Test.js"></script>
 </head>
 <body>
 
@@ -353,6 +354,31 @@
     unitSelector.appendChild(optRandom_15);
   });
 
+  function shuffleOptionsAndFixAnswer(q) {
+    const originalOptions = q.Option;
+    const correctIndex = q["Correct Answer"] - 1;
+
+    // 创建索引数组并打乱
+    const indices = originalOptions.map((_, i) => i);
+    for (let i = indices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+
+    // 生成新的选项顺序
+    const shuffledOptions = indices.map(i => originalOptions[i]);
+
+    // 找到正确答案的新位置
+    const newCorrectIndex = indices.indexOf(correctIndex);
+
+    // 返回新结构
+    return {
+      ...q,
+      Option: shuffledOptions,
+      "Correct Answer": newCorrectIndex + 1 // 仍然用 1 开始
+    };
+  }
+
   function startQuiz() {
     const savedLang = localStorage.getItem("lang") || "zh";
     const t = translations[savedLang];
@@ -368,6 +394,9 @@
     else {
       filteredData = allData.filter(q => Number(q.Unit) === Number(selectedUnit));
     }
+
+    // 对每题打乱选项并修正正确答案
+    filteredData = filteredData.map(shuffleOptionsAndFixAnswer);
 
     if (filteredData.length === 0) {
       alert(t.warningNoQuestion);
