@@ -259,9 +259,9 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
-      "Question": "[ライター]{writer}か（　　）[火]{ひ}をつけるものを[貸し]{かし}てください。",
+      "Question": "[ライター]{lighter}か（　　）[火]{ひ}をつけるものを[貸し]{かし}てください。",
       "Option": ["なにか", "なにも", "なんでも", "なに"],
-      "Analysis": "知识点17\n你能借我一个打火机或者其他可以生火的东西吗？\nライター: lighter",
+      "Analysis": "知识点17\n你能借我一个打火机或者其他可以生火的东西吗？",
       "Unit": 2,
       "Correct Answer": 1
     },
@@ -275,7 +275,7 @@ window.bluebook_n3 = [
     {
       "Question": "だれでも（　　）[思い]{おもい}でが[一つ]{ひとつ}や[二つ]{ふたつ}はあるだろう。",
       "Option": ["忘れがる", "忘れるような", "忘れたまま", "忘れがたい"],
-      "Analysis": "知识点14\n每个人大概都有一两件难忘的回忆。",
+      "Analysis": "知识点14，知识点25用法2\n每个人大概都有一两件难忘的回忆。",
       "Unit": 2,
       "Correct Answer": 4
     },
@@ -296,7 +296,7 @@ window.bluebook_n3 = [
     {
       "Question": "[今]{いま}の[状況]{じょうきょう}（　　）、[週末]{しゅうまつ}には[観客]{かんきゃく}が[百万人]{ひゃくまんにん}を[超え]{こえ}ると[予想]{よそう}される。",
       "Option": ["うちに", "だけあり", "によっては", "からすると"],
-      "Analysis": "知识点22（第3单元），知识点9",
+      "Analysis": "知识点22（第3单元），知识点9，知识点147",
       "Unit": 2,
       "Correct Answer": 4
     },
@@ -387,7 +387,7 @@ window.bluebook_n3 = [
     {
       "Question": "[他人]{たにん}に[何を]{なにを}[言わ]{いわ}れても、[彼女]{かのじょ}のことを[信じ]{しんじ}（　　）います。",
       "Option": ["きって", "たい", "おわって", "はじめて"],
-      "Analysis": "不管别人怎么说，我都相信她。\nGPT-4o解答：这道题考的是动词连用形+きる的用法，简单说，它考的是：\n动词连用形 + きる\n表示“彻底地～、完全地～”的意思。\n「信じきる」= “完全相信、坚定地相信”。\nおわって(做完了)：动作结束，不符合语境",
+      "Analysis": "知识点28的用法2\n不管别人怎么说，我都相信她。\nGPT-4o解答：这道题考的是动词连用形+きる的用法，简单说，它考的是：\n动词连用形 + きる\n表示“彻底地～、完全地～”的意思。\n「信じきる」= “完全相信、坚定地相信”。\nおわって(做完了)：动作结束，不符合语境",
       "Unit": 3,
       "Correct Answer": 1
     },
@@ -401,7 +401,7 @@ window.bluebook_n3 = [
     {
       "Question": "[彼女]{かのじょ}の[表情]{ひょうじょう}（　　）、[何か]{なにか}があったみたい。",
       "Option": ["からすれば", "からでは", "によって", "のでは"],
-      "Analysis": "知识点22\n看她的表情，好像出事了。\n「何か」= 什么东西、某件事\n「が」= 主语助词（强调“有什么”） \n「あった」= 有了 / 发生了\n「みたい」= 好像、似乎",
+      "Analysis": "知识点22，知识点147\n看她的表情，好像出事了。\n「何か」= 什么东西、某件事\n「が」= 主语助词（强调“有什么”） \n「あった」= 有了 / 发生了\n「みたい」= 好像、似乎",
       "Unit": 3,
       "Correct Answer": 1
     },
@@ -420,7 +420,7 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[ゲーム]{げーむ}ばかり（　　）、[彼は]{かれは}まじめに[受験勉強]{じゅけんべんきょう}していないことがわかる。",
+      "Question": "[ゲーム]{game}ばかり（　　）、[彼は]{かれは}まじめに[受験勉強]{じゅけんべんきょう}していないことがわかる。",
       "Option": ["やっていないと思うが", "やっていないことからして", "やっていると思うが", "やっていることからして"],
       "Analysis": "知识点21\n他把所有时间都花在玩游戏上，这表明他没有认真学习以备入学考试。\nまじめに：认真地\n受験勉強（じゅけんべんきょう）：备考学习，指为考试而学习\nしていない：没有在进行（学习）\nことがわかる：可以得知、可以看出",
       "Unit": 3,
@@ -429,14 +429,14 @@ window.bluebook_n3 = [
     {
       "Question": "[彼は]{かれは}[最近]{さいきん}、[競馬]{けいば}に[夢中]{むちゅう}で、[長年]{ながねん}の[貯金]{ちょきん}を（　　）。",
       "Option": ["使いきってしまった", "使いたくはない", "使われてしまった", "使わないでください"],
-      "Analysis": "他最近迷上了赛马，把多年来的积蓄全都花光了。\nGPT-4o解析：\n① 使いきってしまった\n→「使いきる」＝用光、用尽。\n→「〜てしまった」＝表示遗憾或者动作已经完成。\n→合起来就是：把长期存下来的积蓄全都花光了（而且还有点遗憾或者不得已的感觉）。✅\n② 使いたくはない\n→不想用，不符合上文的结果（说的是已经用掉了）。\n③ 使われてしまった\n→被别人用掉了（使われる是被动形），这里主语是「彼」，说的是自己用掉，不是被别人用掉。\n④ 使わないでください\n→请不要使用，完全不符合逻辑。",
+      "Analysis": "知识点28注意例句，他最近迷上了赛马，把多年来的积蓄全都花光了。\nGPT-4o解析：\n① 使いきってしまった\n→「使いきる」＝用光、用尽。\n→「〜てしまった」＝表示遗憾或者动作已经完成。\n→合起来就是：把长期存下来的积蓄全都花光了（而且还有点遗憾或者不得已的感觉）。✅\n② 使いたくはない\n→不想用，不符合上文的结果（说的是已经用掉了）。\n③ 使われてしまった\n→被别人用掉了（使われる是被动形），这里主语是「彼」，说的是自己用掉，不是被别人用掉。\n④ 使わないでください\n→请不要使用，完全不符合逻辑。",
       "Unit": 3,
       "Correct Answer": 1
     },
     {
-      "Question": "「[彼女]{かのじょ}のお[誕生日]{たんじょうび}に、[何を]{なにを}[プレゼント]{ぷれぜんと}したらいいかな...」\n「そうね。[彼女]{かのじょ}は[新しい]{あたらしい}かばんを（　　）みたいよ。」",
+      "Question": "「[彼女]{かのじょ}のお[誕生日]{たんじょうび}に、[何を]{なにを}[プレゼント]{present}したらいいかな...」\n「そうね。[彼女]{かのじょ}は[新しい]{あたらしい}かばんを（　　）みたいよ。」",
       "Option": ["ほしい", "ほしがっている", "ほしくない", "ほしがらない"],
-      "Analysis": "“我该送她什么生日礼物呢？”\n“嗯，我想她想要一个新包。”",
+      "Analysis": "知识点25注意例句\n“我该送她什么生日礼物呢？”\n“嗯，我想她想要一个新包。”",
       "Unit": 3,
       "Correct Answer": 2
     },
@@ -534,7 +534,7 @@ window.bluebook_n3 = [
     {
       "Question": "[オリンピック]{おりんぴっく}は4[年]{ねん}（　　）[開か]{ひらか}れる。",
       "Option": ["という", "ごとに", "によって", "あいだ"],
-      "Analysis": "知识点37",
+      "Analysis": "知识点37，知识点147",
       "Unit": 4,
       "Correct Answer": 2
     },
@@ -560,7 +560,7 @@ window.bluebook_n3 = [
       "Correct Answer": 1
     },
     {
-      "Question": "鈴木さんという方がいますか。（　　）方にこの[小包]{こづつ}みを渡してくれませんか。",
+      "Question": "[鈴木]{すずき}さんという[方が]{ほうが}いますか。（　　）[方]{ほう}にこの[小包]{こづつみ}みを[渡し]{わたし}てくれませんか。",
       "Option": ["この", "その", "あの", "どの"],
       "Analysis": "知识点33\nIs there anyone named Suzuki? Could you please give this package to him?\n",
       "Unit": 4,
@@ -597,7 +597,7 @@ window.bluebook_n3 = [
     {
       "Question": "[予定]{よてい}より15分遅れるということは、[講演]{こうえん}は9時45分から（　　）。",
       "Option": ["終わるということになる", "終わることができる", "始まるということになる", "始まることができる"],
-      "Analysis": "知识点39\n根据から排除1，2选项",
+      "Analysis": "知识点39\n根据から排除「終わる」",
       "Unit": 4,
       "Correct Answer": 3
     },
@@ -898,7 +898,7 @@ window.bluebook_n3 = [
     {
       "Question": "[彼女]{かのじょ}は[買い物]{かいもの}に[出た]{でた}きり、[夜]{よる}に（　　）ので[心配]{しんぱい}だ。",
       "Option": ["なって帰ってください", "なって帰ってきた", "なって帰っていない", "なって帰るしかない"],
-      "Analysis": "知识点60/根据句意排除1、2选项，知识点48排除4选项",
+      "Analysis": "知识点60/根据句意排除「ください」「てきた」，知识点48排除「しかない」",
       "Unit": 6,
       "Correct Answer": 3
     },
@@ -1057,7 +1057,7 @@ window.bluebook_n3 = [
       "Correct Answer": 2
     },
     {
-      "Question": "[彼は]{かれは}[クリスマス]{Christmas}（　　）たびに、[プレゼント]{ぷれぜんと}を[贈っ]{おくっ}てくれる。",
+      "Question": "[彼は]{かれは}[クリスマス]{Christmas}（　　）たびに、[プレゼント]{present}を[贈っ]{おくっ}てくれる。",
       "Option": ["と", "に", "の", "で"],
       "Analysis": "知识点69，名词+の+たびに",
       "Unit": 7,
@@ -1150,7 +1150,7 @@ window.bluebook_n3 = [
     {
       "Question": "[マイホーム]{My Home}を[買う]{かう}（　　）、[貯金]{ちょきん}している。",
       "Option": ["ために", "によって", "ばかりに", "まえに"],
-      "Analysis": "知识点72",
+      "Analysis": "知识点72，知识点147",
       "Unit": 8,
       "Correct Answer": 1
     },
@@ -1451,7 +1451,7 @@ window.bluebook_n3 = [
     {
       "Question": "その[マンション]{公寓}は[駅]{えき}から[離れ]{はなれ}ているので、[家賃]{やちん}が（　　）のではないかと[思う]{おもう}けど。",
       "Option": ["安い", "安くない", "安かった", "安く"],
-      "Analysis": "知识点97/4本身错误，い形容词肯定没有く，根据时态（一般现在时）排除3,根据首尾句意判断肯否定\n公寓离车站较远，所以我觉得租金很便宜。",
+      "Analysis": "知识点97/4本身错误，い形容词肯定没有く，根据时态（一般现在时）排除「安かった」,根据首尾句意判断肯否定\n公寓离车站较远，所以我觉得租金很便宜。",
       "Unit": 10,
       "Correct Answer": 1
     },
@@ -1500,7 +1500,7 @@ window.bluebook_n3 = [
     {
       "Question": "「[心]{こころ}」（　　）[小説]{しょうせつ}を[読んだ]{よんだ}ことがありますか。",
       "Option": ["よりも", "ところ", "という", "によって"],
-      "Analysis": "知识点109，直接根据意思判断",
+      "Analysis": "知识点109，直接根据意思判断，知识点147",
       "Unit": 11,
       "Correct Answer": 3
     },
@@ -1661,7 +1661,7 @@ window.bluebook_n3 = [
     {
       "Question": "[手術]{しゅじゅつ}をしなければ（　　）[病気]{びょうき}ではないので、[心配]{しんぱい}しないでください。",
       "Option": ["いけないというほどの", "いけるというほどの", "いけないほうがいい", "いけるほうがいい"],
-      "Analysis": "知识点114，排除3,4\n别担心，这不是什么需要手术的严重疾病。\nいけないというほどの：并没有达到\nいけるというほどの：足以",
+      "Analysis": "知识点114，排除「ほうがいい」\n别担心，这不是什么需要手术的严重疾病。\nいけないというほどの：并没有达到\nいけるというほどの：足以",
       "Unit": 12,
       "Correct Answer": 1
     },
@@ -1857,7 +1857,7 @@ window.bluebook_n3 = [
     {
       "Question": "[出張中]{しゅっちょうちゅう：出差}の[部長]{ぶちょう}（　　）、[山下]{やました}さんが[会議]{かいぎ}に[出席]{しゅっせき}した。",
       "Option": ["によって", "にかえて", "にかわって", "について"],
-      "Analysis": "知识点135",
+      "Analysis": "知识点135，知识点147",
       "Unit": 14,
       "Correct Answer": 3
     },
@@ -1892,7 +1892,7 @@ window.bluebook_n3 = [
     {
       "Question": "[浅草]{あさくさ}の[近く]{ちかく}（　　）、[三社]{さんしゃ}[祭り]{まつり}が[行わ]{おこなわ}れた。",
       "Option": ["において", "にとって", "として", "にしたら"],
-      "Analysis": "知识点134",
+      "Analysis": "知识点134，知识点121",
       "Unit": 14,
       "Correct Answer": 1
     },
@@ -2004,7 +2004,7 @@ window.bluebook_n3 = [
     {
       "Question": "[梅雨]{つゆ}の[季節]{きせつ}は[湿度]{しつど}が[高く]{たかく}て[洗濯物]{せんたくもの}が（　　）。",
       "Option": ["乾きにくい", "干しやすい", "乾きやすい", "干しにくい"],
-      "Analysis": "知识点137，知识点170，排除2,3",
+      "Analysis": "知识点137，知识点170，排除「やすい」",
       "Unit": 14,
       "Correct Answer": 1
     },
@@ -2088,7 +2088,7 @@ window.bluebook_n3 = [
     {
       "Question": "[田中]{たなか}さん（　　）、[仕事]{しごと}が[人生]{じんせい}のすべてである。",
       "Option": ["によって", "に向けて", "にとって", "にかわって"],
-      "Analysis": "知识点145",
+      "Analysis": "知识点145，知识点147",
       "Unit": 15,
       "Correct Answer": 3
     },
@@ -2249,7 +2249,7 @@ window.bluebook_n3 = [
     {
       "Question": "この[スキー]{滑雪}[場]{ば}は[傾斜]{けいしゃ}がきついので、[初心者]{しょしんしゃ}には（　　）いない。",
       "Option": ["向いて", "高く", "向き", "高かない"],
-      "Analysis": "知识点165排除3，因此只能选1\n通义千问3-235B-A22B解析：\nThe sentence structure \"初心者には（　　）いない\" requires an expression indicating unsuitability. The phrase 向いていない (literally \"not facing toward\") is a common idiom meaning \"not suitable for\" or \"not suited to.\"\n\n- 向いて: The て-form of 向く (to face/toward), combined with いない, forms 向いていない (\"not suitable\").\nExample:\nこの仕事は私には向いていない = \"This job isn't suitable for me.\"\n- 高く: Adverbial form of 高い (\"high/expensive\"), which does not relate to suitability.\n- 向き: Noun/continuative form of 向く, but cannot pair with いない to form a meaningful phrase.\n- 高かない: Invalid grammatical form; likely a typo for 向かない (the correct i-adjective for \"unsuitable\").\nCorrect Sentence:\nこのスキー場は傾斜がきついので、初心者には向いていない。\n(This ski resort has steep slopes, so it’s not suitable for beginners.)\n\nKey Point:\n- 向いていない = \"not suitable\" (idiomatic use of 向く + いない).\n- 向かない is an alternative i-adjective meaning the same thing, but the sentence structure here requires the て-form + いない.",
+      "Analysis": "知识点165排除「向き」，因此只能选1\n通义千问3-235B-A22B解析：\nThe sentence structure \"初心者には（　　）いない\" requires an expression indicating unsuitability. The phrase 向いていない (literally \"not facing toward\") is a common idiom meaning \"not suitable for\" or \"not suited to.\"\n\n- 向いて: The て-form of 向く (to face/toward), combined with いない, forms 向いていない (\"not suitable\").\nExample:\nこの仕事は私には向いていない = \"This job isn't suitable for me.\"\n- 高く: Adverbial form of 高い (\"high/expensive\"), which does not relate to suitability.\n- 向き: Noun/continuative form of 向く, but cannot pair with いない to form a meaningful phrase.\n- 高かない: Invalid grammatical form; likely a typo for 向かない (the correct i-adjective for \"unsuitable\").\nCorrect Sentence:\nこのスキー場は傾斜がきついので、初心者には向いていない。\n(This ski resort has steep slopes, so it’s not suitable for beginners.)\n\nKey Point:\n- 向いていない = \"not suitable\" (idiomatic use of 向く + いない).\n- 向かない is an alternative i-adjective meaning the same thing, but the sentence structure here requires the て-form + いない.",
       "Unit": 17,
       "Correct Answer": 1
     },
@@ -2406,5 +2406,194 @@ window.bluebook_n3 = [
       "Analysis": "知识点189",
       "Unit": 19,
       "Correct Answer": 3
+    },
+    {
+      "Question": "[学校]{がっこう}の[代表]{だいひょう}（　　）[今回]{こんかい}の[スポーツ]{sports}[大会]{たいかい}に[出場]{しゅつじょう}する。",
+      "Option": ["たいして", "にして", "ように", "として"],
+      "Analysis": "知识点121，知识点173的注意1和知识点175排除「ように」\n我将作为学校的代表参加这次运动会。",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[田中]{たなか}さん（　　）[新しい]{あたらしい}[チーム]{team}ができた。",
+      "Option": ["からして", "にかわって", "を中心に", "をして"],
+      "Analysis": "知识点190",
+      "Unit": 19,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[母]{はは}は[私]{わたし}のために[心]{こころ}を（　　）、[弁当]{べんとう}を[作っ]{つくっ}てくれた。",
+      "Option": ["集めて", "こんで", "こもって", "こめて"],
+      "Analysis": "知识点189",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "さっき[田中]{たなか}さんから[電話]{でんわ}があって、[都合]{つごう}が[悪く]{わるく}て[来ら]{こら}れないんだ（　　）。",
+      "Option": ["もん", "と", "っけ", "って"],
+      "Analysis": "知识点194",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[留学]{りゅうがく}を（　　）、[自分]{じぶん}の[国]{くに}のいいところと[悪い]{わるい}ところに[気づ]{きづ}いた。",
+      "Option": ["ばかりで", "きっかけに", "ためで", "おかげで"],
+      "Analysis": "知识点188",
+      "Unit": 19,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "きのうの[野球]{やきゅう}の[観戦]{かんせん}では[大好き]{だいすき}な[山本]{やまもと}[選手]{せんしゅ}が（　　）、[残念]{ざんねん}だった。",
+      "Option": ["見られなくて", "見られないで", "見るれなくても", "見られないでも"],
+      "Analysis": "知识点181可能态",
+      "Unit": 19,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "\nA「[最近]{さいきん}、どう。[順調]{じゅんちょう}に[行って]{いって}いる？」\nB「（　　）よ。[仕事]{しごと}が[見つ]{みつ}かれなくて、もう[悲惨]{ひさん}な[状態]{じょうたい}なのよ。」",
+      "Option": ["順調なことがない", "順調ではないわけがない", "順調ではない", "順調なわけがない"],
+      "Analysis": "知识点183，注意部分\n我过得不太好。我找不到工作，很痛苦。",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "1[日]{にち}に10[ページ]{Page}ぐらい[読め]{よめ}ば、[二ヶ月]{にかげつ}でこの[本]{ほん}が（　　）。",
+      "Option": ["読まれるところだ", "読まれるほうだ", "読み終わりそうになった", "読み終わるわけだ"],
+      "Analysis": "知识点184",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[映画]{えいが}は（　　）が、[舞台劇]{ぶたいげき}のほうが[好き]{すき}だ。",
+      "Option": ["見たものではない", "見ないわけではない", "見させるものではない", "見させるわけではない"],
+      "Analysis": "知识点185\n我不介意看电影，但我更喜欢舞台剧。",
+      "Unit": 19,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[父]{ちち}から[デジタルビデオ]{数字视频}をもらったのをきっかけに、（　　）。",
+      "Option": ["まったく撮影がしなかった", "かなり撮影が上手だ", "普通程度にはできそうだ", "撮影に夢中になった"],
+      "Analysis": "知识点188\n自从父亲给了他一台数码摄像机后，他就对拍摄产生了浓厚的兴趣。\nかなり撮影が上手だ: 摄影效果相当不错。",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この[曲]{きょく}を[聞く]{きく}たびに、[楽しか]{たのしか}った[子ども]{こども}[時代]{じだい}が（　　）。",
+      "Option": ["思い出す", "思い出される", "思い出させる", "思い出させられる"],
+      "Analysis": "知识点182自发态",
+      "Unit": 19,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[彼女]{かのじょ}は[日本]{にっぽん}に10[年]{ねん}も[住ん]{すん}でいたので、[日本]{にっぽん}の[事情]{じじょう}に（　　）。",
+      "Option": ["詳しいわけだ", "詳しいらしい", "詳しくようになった", "詳しいようがない"],
+      "Analysis": "知识点184",
+      "Unit": 19,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "お[世話]{せわ}になった[人]{にん}の[頼み]{たのみ}だから、（　　）。",
+      "Option": ["断るわけでもない", "断るんじゃない", "断るわけにはいかない", "断るんだって"],
+      "Analysis": "知识点186",
+      "Unit": 19,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "\nA「[山田]{やまだ}[先生]{せんせい}にちょっとお（　　）たいことがありますが、[今い]{いまい}らっしゃいますか。」\nB「あ、すこし[前]{まえ}に[実験]{じっけん}[実に]{じつに}[行か]{いか}れましたよ。」",
+      "Option": ["うかがい", "なさい", "もうし", "まいり"],
+      "Analysis": "自谦语\nA：“我有事想跟山田教授说。现在在吗？”\nB：“哦，他刚才去做实验了。”",
+      "Unit": 20,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "\nA「あ、これ、おいしそうだね、[一日]{ついたち}[食べて]{たべて}もいいの。」\nB「だめよ。[先生]{せんせい}に（　　）ものだから。」",
+      "Option": ["めしあがる", "いただく", "さしあげる", "ちょうだい"],
+      "Analysis": "自谦语\nA：“哦，这个看起来很好吃。我可以吃一整天。”\nB：“不，不行。我要把它送给我的老师。”",
+      "Unit": 20,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "\nA「[後で]{あとで}こちらからご[連絡]{れんらく}（　　）。」\nB「はい、お[願い]{ねがい}します。」",
+      "Option": ["です", "します", "います", "なります"],
+      "Analysis": "自谦语知识点2",
+      "Unit": 20,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[先生]{せんせい}がくださった[本]{ほん}を[大事]{だいじ}にして（　　）。",
+      "Option": ["おります", "なります", "あります", "します"],
+      "Analysis": "自谦语注意例句\n我珍惜老师送给我的那本书。\n「おります」是「いる」的自谦语（謙譲語），用于表示自己或自己一方的人在做某事或处于某种状态。",
+      "Unit": 20,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "どうぞたくさんお（　　）ください。",
+      "Option": ["召し上がって", "召し上がれ", "召し上がり", "召し上がい"],
+      "Analysis": "尊他语\n请尽情享受。",
+      "Unit": 20,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[先生]{せんせい}から（　　）[本]{ほん}なので、[他の]{ほかの}[人]{にん}に[貸し]{かし}てやるわけにはいかない。",
+      "Option": ["お借りになった", "お貸しした", "お貸しになった", "お借りした"],
+      "Analysis": "直接根据句意选，自谦语知识点2",
+      "Unit": 20,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "わたしはまだ[パリ]{巴黎}に[行った]{いった}ことがないので、[今回]{こんかい}はぜひ（　　）。",
+      "Option": ["行ってください", "行かせてください", "行かれてください", "行かされてください"],
+      "Analysis": "我从来没有去过巴黎，所以这次我很想去。\n通义千问3-235B-A22B解析：\n\"Since I've never been to Paris before, this time I really want you to let me go.\"\n\n行かせてください (\"Please let me go\") is the correct choice because:\nIt uses the causative form (行かせる) with てください, which is used to request permission to do something.\nThe speaker is expressing a desire to be allowed to go to Paris, not giving a command or stating ability.\nWhy the Others Don’t Fit:\n行ってください (\"Please go\")\nUsed to tell someone else to go, not to request permission.\nExample: 学校に行ってください。 (\"Please go to school.\")\n行かれてください (\"Please can go\")\nUses the potential form (行ける) incorrectly.\nPotential form + ください is grammatically unnatural and doesn't convey a request for permission.\n行かされてください (\"Please make me go\")\nUses the passive-causative form (行かされる), implying unwillingness or coercion.\nExample: 強制されて行った (\"Forced to go\").",
+      "Unit": 20,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[今夜]{こんや}はうちにお[食事]{しょくじ}に（　　）か。",
+      "Option": ["いらっしゃるです", "いらっしゃいです", "いらっしゃいません", "いらっしゃりではありません"],
+      "Analysis": "尊他语",
+      "Unit": 20,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "\nA「すみません、107[号室]{ごうしつ}はどこですか。」\nB「わたしもよくわかりませんので、[受付]{うけつけ}の[人]{にん}に（　　）ください。」",
+      "Option": ["お聞きになって", "お聞きして", "お伺いになって", "お伺って"],
+      "Analysis": "尊他语知识点3，伺う是自谦语不能描述对方行为",
+      "Unit": 20,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[社長]{しゃちょう}はいつも[自分]{じぶん}でお[部屋]{へや}を[掃除]{そうじ}（　　）そうです。",
+      "Option": ["いらっしゃいる", "めしあげる", "おっしゃる", "なさる"],
+      "Analysis": "尊他语知识点5\n社长总是亲自打扫他的房间。",
+      "Unit": 20,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "どうぞ[温かい]{あたたかい}うちに（　　）ください。",
+      "Option": ["くださいます", "なさいます", "いたします", "ございます"],
+      "Analysis": "尊他语，和知识点9",
+      "Unit": 20,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[旅行]{りょこう}の[スケジュール]{日程}に[関し]{かんし}ては、[後日]{ごじつ}またご[連絡]{れんらく}（　　）。",
+      "Option": ["断るわけでもない", "断るんじゃない", "断るわけにはいかない", "断るんだって"],
+      "Analysis": "知识点136\n关于旅行计划，我无法拒绝稍后再次联系。",
+      "Unit": 20,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[無理]{むり}は[承知]{しょうち}の[上で]{うえで}すが、[何とか]{なんとか}（　　）ませんでしょうか。",
+      "Option": ["お引き受け願い", " お引き受け願え", "ご引き受け願い", "ご引き受け願え"],
+      "Analysis": "我知道这是不可能的，但是你能以某种方式接受它吗？",
+      "Unit": 20,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[会議]{かいぎ}の[時間]{じかん}をわたしから[社長]{しゃちょう}に（　　）おきます。",
+      "Option": ["もうしあげて", "もうしになって", "おもうしあげて", "おもうしになって"],
+      "Analysis": "自谦语\n我会通知社长会议时间。",
+      "Unit": 20,
+      "Correct Answer": 1
     }
 ]
