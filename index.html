@@ -637,8 +637,14 @@
   }
 
   window.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem("lang") || "zh";
+
     const theme = localStorage.getItem('theme') || (isNightTime() ? 'dark' : 'light');
     const isDark = theme === 'dark';
+
+    document.getElementById("languageSelect").value = savedLang;
+    applyLanguage(savedLang);
+    
     document.body.classList.toggle('dark-theme', isDark);
     document.getElementById("themeToggleSwitch").checked = isDark;
   });

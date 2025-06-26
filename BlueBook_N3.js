@@ -1318,7 +1318,7 @@ window.bluebook_n3 = [
     {
       "Question": "[ヘリコプター]{helicopter}が[東]{ひがし}の[空]{そら}へ[飛ん]{とん}で（　　）。",
       "Option": ["いった", "みた", "いる", "ある"],
-      "Analysis": "直升机飞向东方天空。",
+      "Analysis": "知识点84用法1,注意例句，本质上是动词て形+行く\n行きます\n- ます形：いきます\n- て形：いって\n- 字典形：いく\n- ない形：いかない\n- た形：いった\n直升机飞向东方天空。",
       "Unit": 9,
       "Correct Answer": 1
     },
@@ -1391,6 +1391,62 @@ window.bluebook_n3 = [
       "Analysis": "知识点89\n我最好的朋友转学了，我感到非常孤独。",
       "Unit": 9,
       "Correct Answer": 1
+    },
+    {
+      "Question": "[朝起き]{あさおき}てみると、もう[朝食]{ちょうしょく}が（　　）。",
+      "Option": ["作っていた", "作っておいた", "作ってあった", "作ってみたいと思った"],
+      "Analysis": "知识点83\nあります\n- て形：あって\n- 字典形：ある\n- ない形：无\n- た形：あった\n早上醒来的时候，早餐已经做好了。",
+      "Unit": 9,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "もう[遅い]{おそい}ですから、[私]{わたし}が[車]{くるま}で（　　）。",
+      "Option": ["送らせてください", "送ってくださいましょうか", "送らせることにしてください", "送りましょうか"],
+      "Analysis": "知识点87和注意部分排除所有てください选项\n时间不早了，我送你回家好吗？",
+      "Unit": 9,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この[作品]{さくひん}が[有名]{ゆうめい}になるにつれて、[批判]{ひはん}の[声]{こえ}も（　　）。",
+      "Option": ["増やしてください", "増えてきた", "増やさないほうがいい", "増えるつもりだ"],
+      "Analysis": "知识点86用法4\n来ます\n- ます形：きます\n- て形：きて\n- 字典形：くる\n- ない形：こない\n- た形：きた",
+      "Unit": 9,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[レンタルカー]{Rental Car}だと[少なくとも]{すくなくとも}2[万円]{まんえん}かかるが、[新幹線]{しんかんせん}で[行く]{いく}と5[千円]{せんえん}（　　）。",
+      "Option": ["でもない", "できる", "で済む", "でいられる"],
+      "Analysis": "知识点90",
+      "Unit": 9,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[中田]{なかだ}さんはとても[親切]{しんせつ}で、いつも[日本語]{にほんご}の[発音]{はつおん}を（　　）。",
+      "Option": ["直してくれます", "直していらっしゃいました", "お直しました", "お直しになります"],
+      "Analysis": "知识点87",
+      "Unit": 9,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[今回]{こんかい}のこと、（　　）と[思った]{おもった}ら[大間違い]{おおまちがい}だぞ。",
+      "Option": ["謝ってたまらない", "謝らないですむ", "謝ってごらん", "謝ってみせる"],
+      "Analysis": "知识点90\n如果你认为这次可以不道歉，那你就大错特错了。",
+      "Unit": 9,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[大学]{だいがく}を[卒業]{そつぎょう}（　　）、[一度]{いちど}も[母校]{ぼこう}に[帰っ]{かえっ}たことがない。",
+      "Option": ["して以来", "したきり", "したために", "しては"],
+      "Analysis": "知识点72，知识点85",
+      "Unit": 9,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[彼の]{かの}[無礼]{ぶれい}な[態度]{たいど}に、（　　）しかたがない。",
+      "Option": ["腹が立つ", "腹が立った", "腹が立ち", "腹が立って"],
+      "Analysis": "我禁不住对他的粗鲁态度感到愤怒。\n通义千问3-235B-A22B解析：\nTranslation:\n\"I can't help but be angry at his rude attitude.\"\n\nKey Explanation:\n腹が立って is the te-form of 腹が立つ (to get angry), which pairs with しかたがない to express an unavoidable emotional reaction.\nThe structure V-て + しかたがない means \"can't help (doing something)\" or \"nothing can be done about (it).\"\nExample: 寂しくてしかたない → \"Can't help feeling lonely.\"\nWhy the Others Don’t Fit:\n腹が立つ (dictionary form):\nWould create 「腹が立つしかたがない」, which is grammatically awkward and doesn't align with the standard pattern of expressing uncontrollable emotions.\n腹が立った (past tense):\nRefers to a completed action, which clashes with the ongoing nature of the emotion implied by しかたがない.\n腹が立ち (stem form):\nUsed in constructions like 腹が立ちそう (\"about to get angry\") or 腹が立ちっぱなし (\"angry the whole time\"), but not with しかたがない.",
+      "Unit": 9,
+      "Correct Answer": 4
     },
     {
       "Question": "そんな[大き]{おおき}な[声]{こえ}を（　　）[子ども]{こども}が[泣い]{ない}てしまうよ。",
@@ -2088,7 +2144,7 @@ window.bluebook_n3 = [
     {
       "Question": "[田中]{たなか}さん（　　）、[仕事]{しごと}が[人生]{じんせい}のすべてである。",
       "Option": ["によって", "に向けて", "にとって", "にかわって"],
-      "Analysis": "知识点145，知识点147",
+      "Analysis": "知识点145，知识点147，知识点135",
       "Unit": 15,
       "Correct Answer": 3
     },
@@ -2126,6 +2182,55 @@ window.bluebook_n3 = [
       "Analysis": "知识点148，知识点38，但还需根据句意找到正确选项\nAccording to this morning's newspaper, two new medical universities will be established next year.",
       "Unit": 15,
       "Correct Answer": 3
+    },
+    {
+      "Question": "[都会]{とかい}には[人]{にん}が[絶え]{たえ}ず[増え]{ふえ}ている。（　　）、[田舎]{いなか}には[人口]{じんこう}が[減り]{へり}[続け]{つづけ}ている。",
+      "Option": ["というのは", "これみたいに", "なぜかというと", "これに対して"],
+      "Analysis": "知识点141",
+      "Unit": 15,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[経済]{けいざい}の[発展]{はってん}につれて、[人々]{ひとびと}の[生活]{せいかつ}も（　　）。",
+      "Option": ["豊かになってきた", "豊かだっただろう", "豊かになるぐらいだ", "豊かにならぬだろう"],
+      "Analysis": "知识点143理解前半句，根据句意排除过去时态，知识点149排除带ぬ的选项，知识点30排除ぐらい",
+      "Unit": 15,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[老後]{ろうご}を[有意義]{ゆういぎ}に[過ご]{すご}すには（　　）が[大事]{だいじ}だ。",
+      "Option": ["趣味がおもしろくなるの", "趣味を持つこと", "趣味ができるようになるの", "趣味を持つことができる"],
+      "Analysis": "知识点146\n为了让你的退休生活过得有意义，拥有一项爱好是很重要的。",
+      "Unit": 15,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "いい[レポート]{report}を[書く]{かく}ためには、もっとたくさんの[資料]{しりょう}を（　　）。",
+      "Option": ["集めそうもない", "集まりそうもない", "集めねばならぬ", "集まらねばならぬ"],
+      "Analysis": "知识点150\n为了写出一份好的报告，我需要收集更多信息。",
+      "Unit": 15,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[彼女]{かのじょ}は[事実]{じじつ}を[知って]{しって}いるくせに、（　　）[顔]{かお}をしている。",
+      "Option": ["知っていた", "知りにくい", "知るならの", "知らぬ"],
+      "Analysis": "知识点29和知识点149",
+      "Unit": 15,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この[曲]{きょく}は[新人歌手]{しんじんかしゅ}の[中森]{なかもり}さんによって（　　）。",
+      "Option": ["作らせた", "作った", "作っていた", "作られた"],
+      "Analysis": "知识点147\n通义千问3-235B-A22B解析：\n作られた (\"was created\") is the passive form of 作る (to create), which matches the sentence structure where:\nSubject: この曲 (this song)\nAgent: 中森さんによって (by Nakamori-san)\nPassive voice is required because the song is the recipient of the action (created by someone).\nWhy the Others Don’t Fit:\n- 作らせた (\"had [someone] create\"):\nCausative form implies Nakamori-san made another person create the song, which contradicts the context.\n- 作った (\"created\"):\nActive form requires Nakamori-san as the subject (e.g., 中森さんが曲を作った → \"Nakamori created the song\"). Here, the song is the subject, so passive is needed.\n- 作っていた (\"was creating\"):\nPast progressive tense implies ongoing action, but the sentence states a completed action (the song exists because it was created).",
+      "Unit": 15,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[物価]{ぶっか}の[上昇]{じょうしょう}につれて、[生活]{せいかつ}が（　　）。",
+      "Option": ["苦しいはずがない", "苦しくなってきた", "苦しくてはいけなかった", "苦しそうにもない"],
+      "Analysis": "知识点143，知识点86用法4\n物价上涨，生活越来越艰难",
+      "Unit": 15,
+      "Correct Answer": 2
     },
     {
       "Question": "[作業]{さぎょう}を[開始]{かいし}する[前]{まえ}に[注意]{ちゅうい}（　　）ことを[読んで]{よんで}おいてください。",
@@ -2593,6 +2698,48 @@ window.bluebook_n3 = [
       "Question": "[会議]{かいぎ}の[時間]{じかん}をわたしから[社長]{しゃちょう}に（　　）おきます。",
       "Option": ["もうしあげて", "もうしになって", "おもうしあげて", "おもうしになって"],
       "Analysis": "自谦语\n我会通知社长会议时间。",
+      "Unit": 20,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "\nA「すみません、[婦人服]{ふじんふく}[売り場]{うりば}は[何階]{なんかい}ですか。」\nB「2[階]{かい}に（　　）。」",
+      "Option": ["おります", "ございます", "おあります", "いらっしゃいます"],
+      "Analysis": "礼貌语知识点1",
+      "Unit": 20,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "\n[学生]{がくせい}「[先生]{せんせい}、もう[一度]{いちど}[日本語]{にほんご}で（　　）。」\n[先生]{せんせい}「ええ、いいですよ。」",
+      "Option": ["説明したいでしょうか", "説明してはいけないでしょうか", "説明してもかまいませんか", "説明していただけませんか"],
+      "Analysis": "自谦语知识点4,注意例句",
+      "Unit": 20,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\nA「[山田]{やまだ}さんはいらっしゃいますか。」\nB「すみませんが、[今]{いま}あいにく[席]{せき}を[外し]{はずし}て（　　）。」",
+      "Option": ["おります", "いたします", "なさいます", "さしあげます"],
+      "Analysis": "自谦语\nなさいます是尊他语",
+      "Unit": 20,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[次の]{つぎの}[企画]{きかく}が[決ま]{きま}りましたら、ぜひわたしに（　　）。",
+      "Option": ["担当しましょう", "担当しませんか", "担当させてください", "担当してください"],
+      "Analysis": "使役动词",
+      "Unit": 20,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[申し訳]{もうしわけ}ありませんが、[東京都内]{とうきょうとない}を（　　）。",
+      "Option": ["ご案内していいでしょうか", "ご案内になりますか", "ご案内してくださいませんか", "ご案内いただけませんか"],
+      "Analysis": "自谦语知识点4\n不好意思，您能带我参观一下东京吗？",
+      "Unit": 20,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\n[課長]{かちょう}「この[ファイル]{file}の[整理]{せいり}、[誰か]{だれか}やってくれないかな。」\n[社員]{しゃいん}「わたしでよければ、（　　）。」",
+      "Option": ["やらせていただきます", "やらせましょうか", "やらせてあります", "おやりいただきます"],
+      "Analysis": "自谦语知识点5",
       "Unit": 20,
       "Correct Answer": 1
     }
