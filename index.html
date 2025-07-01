@@ -276,9 +276,9 @@
     <div class="question" id="questionText"></div>
     <div class="options" id="optionsContainer"></div>
     <div class="navigation">
-      <button onclick="prevQuestion()" class="theme-base-button">← 上一题</button>
+      <button id="prevBtn" onclick="prevQuestion()" class="theme-base-button">← 上一题</button>
       <button id="analysisBtn" class="analysis-button" onclick="showAnalysis()">查看解析</button>
-      <button onclick="nextQuestion()" class="theme-base-button">下一题 →</button>
+      <button id="nextBtn" onclick="nextQuestion()" class="theme-base-button">下一题 →</button>
     </div>
   </div>
   <div class="right">
@@ -312,7 +312,9 @@
       startQuiz: "开始答题",
       loading: "加载中...",
       chooseBookFirst: "请先选择一本书",
-      warningNoQuestion: "该单元没有题目，请检查 JSON 数据！"
+      warningNoQuestion: "该单元没有题目，请检查 JSON 数据！",
+      questionNext: "下一题 →",
+      questionPrev: "← 上一题"
     },
     en: {
       selectBook: "Please select a book",
@@ -320,7 +322,9 @@
       startQuiz: "Start Quiz",
       loading: "Loading...",
       chooseBookFirst: "Please select a book first",
-      warningNoQuestion: "There is no question for this unit, please check the JSON data!"
+      warningNoQuestion: "There is no question for this unit, please check the JSON data!",
+      questionPrev: "← Previous",
+      questionNext: "Next →"
     },
     jp: {
       selectBook: "本を選択してください",
@@ -328,7 +332,9 @@
       startQuiz: "質問に答え始める",
       loading: "読み込み中...",
       chooseBookFirst: "まず本を選択してください",
-      warningNoQuestion: "ユニットに問題はないので、JSON データを確認してください。"
+      warningNoQuestion: "ユニットに問題はないので、JSON データを確認してください。",
+      questionPrev: "← Previous",
+      questionNext: "Next →"
     }
   };
 
@@ -355,6 +361,8 @@
     document.querySelector("#startScreen h2:nth-of-type(2)").textContent = t.selectUnit;
     document.querySelector("#unitSelector option").textContent = t.chooseBookFirst;
     document.querySelector(".theme-base-button").textContent = t.startQuiz;
+    document.getElementById("prevBtn").textContent = t.questionPrev;
+    document.getElementById("nextBtn").textContent = t.questionNext;
   }
 
   // 第一步：加载书籍列表

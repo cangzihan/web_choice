@@ -9,7 +9,7 @@ window.simulate_n3 = [
     {
       "Question": "[インタビュー]{Interview}といっても、1[分]{ふん}ほどの[短い]{みじかい}もの（　　）そうだ。",
       "Option": ["ぐらいだ", "を通じて", "にすぎない", "にとって"],
-      "Analysis": "蓝宝书N3知识点141接续1\n虽然说是一次短采访，但其实只有一分钟左右的时间。",
+      "Analysis": "蓝宝书N3知识点161接续1\n虽然说是一次短采访，但其实只有一分钟左右的时间。",
       "Unit": 1,
       "Correct Answer": 3
     },
@@ -44,7 +44,7 @@ window.simulate_n3 = [
     {
       "Question": "\nA「[今度]{こんど}の[国際会議]{こくさいかいぎ}は[何日間]{なんにちかん}[行わ]{おこなわ}れるんですか。」\nB「10[日]{にち}（　　）[行わ]{おこなわ}れるそうです。」",
       "Option": ["にわたって", "あいだ", "うちに", "際に"],
-      "Analysis": "蓝宝书N2知识点51,知识点134，蓝宝书N3知识点1，知识点9",
+      "Analysis": "蓝宝书N2知识点51，知识点134，蓝宝书N3知识点1，知识点9",
       "Unit": 1,
       "Correct Answer": 1
     },
@@ -86,7 +86,7 @@ window.simulate_n3 = [
     {
       "Question": "（[夫婦]{ふうふ}の[会話]{かいわ}）\n[夫]{おっと}「[太郎]{たろう}、[寝て]{ねて}いる[時]{とき}も[グローブ]{gloves}をはめてるよ。」\n[妻]{つま}「[買っ]{かっ}てあげでよかったね。」\n[夫]{おっと}「きっと、（　　）。」",
       "Option": ["うれしいはずがないんだな", "うれしいおそれがあるんだな", "うれしくてしょうがないんだな", "うれしくてもしょうがないんだな"],
-      "Analysis": "通义千问3-235B-A22B解析：\nTranslation:\nHusband: \"Taro’s still wearing his glove even while sleeping.\"\nWife: \"I’m glad we bought it for him.\"\nHusband: \"Of course. He must be so happy he can’t help it.\"\n\nKey Explanation:\nうれしくてしょうがないんだな (\"He must be so happy he can’t help it\") fits perfectly because:\nThe husband observes Taro’s behavior (wearing the glove constantly) and concludes that Taro’s overwhelming joy explains it.\nThe structure [adjective + くて] + しょうがない is a common expression to emphasize an uncontrollable emotion or state.\nExample: 楽しくてしょうがない = \"Too excited to control.\"\nWhy the Others Don’t Fit:\nうれしいはずがないんだな (\"There’s no way he’s happy\") contradicts the wife’s positive tone (\"買ってあげてよかったね\").\nうれしいおそれがあるんだな (\"There’s a fear he’s happy\") uses おそれ (fear), which implies a negative outcome, not suitable for expressing joy.\nうれしくてもしょうがないんだな (\"Even if he’s happy, it can’t be helped\") implies resignation, not the enthusiastic agreement the husband is making.",
+      "Analysis": "蓝宝书N3知识点89，通义千问3-235B-A22B解析：\nTranslation:\nHusband: \"Taro’s still wearing his glove even while sleeping.\"\nWife: \"I’m glad we bought it for him.\"\nHusband: \"Of course. He must be so happy he can’t help it.\"\n\nKey Explanation:\nうれしくてしょうがないんだな (\"He must be so happy he can’t help it\") fits perfectly because:\nThe husband observes Taro’s behavior (wearing the glove constantly) and concludes that Taro’s overwhelming joy explains it.\nThe structure [adjective + くて] + しょうがない is a common expression to emphasize an uncontrollable emotion or state.\nExample: 楽しくてしょうがない = \"Too excited to control.\"\nWhy the Others Don’t Fit:\nうれしいはずがないんだな (\"There’s no way he’s happy\") contradicts the wife’s positive tone (\"買ってあげてよかったね\").\nうれしいおそれがあるんだな (\"There’s a fear he’s happy\") uses おそれ (fear), which implies a negative outcome, not suitable for expressing joy.\nうれしくてもしょうがないんだな (\"Even if he’s happy, it can’t be helped\") implies resignation, not the enthusiastic agreement the husband is making.",
       "Unit": 1,
       "Correct Answer": 3
     },
@@ -196,7 +196,7 @@ window.simulate_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[走れ]{はしれ}る（　　）、[マラソン]{まらそん}を[続け]{つづけ}るつもりだ。",
+      "Question": "[走れ]{はしれ}る（　　）、[マラソン]{marathon}を[続け]{つづけ}るつもりだ。",
       "Option": ["までは", "限りは", "ばかりは", "中は"],
       "Analysis": "我计划尽可能长时间地坚持跑马拉松。",
       "Unit": 3,
@@ -245,6 +245,34 @@ window.simulate_n3 = [
       "Correct Answer": 4
     },
     {
+      "Question": "\n[店長]{てんちょう}「[明日]{あした}から、もう[バイト]{アルバイト的简写}に[来ない]{こない}でください。」\n[店員]{てんいん}「えっ、（　　）ことですか。[理由]{りゆう}を[教え]{おしえ}てください。」",
+      "Option": ["あのくらいの", "どのくらいの", "ああいう", "どういう"],
+      "Analysis": "",
+      "Unit": 3,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "いくら[チョコレート]{chocolate}が[好き]{すき}でも、[一度]{いちど}に（　　）[体]{からだ}によくないだろう。",
+      "Option": ["あんなに食べたら", "こんなに食べてみて", "あれほどに食べたいなら", "これくらい食べても"],
+      "Analysis": "蓝宝书N3知识点33注意部分\n「あんなに」＝＞あれほど、あれくらい≪程度が大きいことを表す【ex】あんなにひどい状態だとは思わなかった≫",
+      "Unit": 3,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "\n[加藤]{かとう}「[週末]{しゅうまつ}、[一緒に]{いっしょに}[映画]{えいが}を[見に行き]{みにいき}ませんか。」\n[高田]{たかだ}「すみません。[仕事]{しごと}がいそがしくて、[映画]{えいが}を（　　）のです。」",
+      "Option": ["見に行くことがない", "見に行くことではない", "見に行くところがない", "見に行くどころではない"],
+      "Analysis": "",
+      "Unit": 3,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\n[姉]{あね}はある[歌手]{かしゅ}の[大ファン]{big fan}で、「[彼]{かれ}くらい[歌]{うた}が（　　）」と、[必ず]{かならず}[ライブ]{live}に[行く]{いく}。",
+      "Option": ["上手な人がいるだろう", "上手な人はいない", "上手な人もいた", "上手な人になりえない"],
+      "Analysis": "蓝宝书N3知识点30用法4",
+      "Unit": 3,
+      "Correct Answer": 2
+    },
+    {
       "Question": "[夏]{なつ}から[秋]{あき}（　　）、いろいろな[祭り]{まつり}がひらかれる。",
       "Option": ["をかけて", "にかけて", "でかけて", "とかけて"],
       "Analysis": "蓝宝书N3知识点23",
@@ -260,7 +288,7 @@ window.simulate_n3 = [
     },
     {
       "Question": "[山田]{やまだ}さんは[アメリカ]{American}に[住ん]{すん}でいた（　　）、[英語]{えいご}の[発音]{はつおん}がきれいですね。",
-      "Option": ["だけは", "だりに", "ところは", "ところに"],
+      "Option": ["だけは", "だけに", "ところは", "ところに"],
       "Analysis": "蓝宝书N2知识点61用法2",
       "Unit": 4,
       "Correct Answer": 2
@@ -296,7 +324,7 @@ window.simulate_n3 = [
     {
       "Question": "これは、2、3[日前]{にちまえ}に[先生]{せんせい}から（　　）[本]{ほん}です。",
       "Option": ["お借りした", "借りてあげた", "借りてくださった", "お借りになった"],
-      "Analysis": "蓝宝书N3自谦语知识点2",
+      "Analysis": "蓝宝书N3自谦语知识点2，になった是尊敬语的知识点",
       "Unit": 4,
       "Correct Answer": 1
     },
@@ -333,6 +361,279 @@ window.simulate_n3 = [
       "Option": ["がんばるのではないですか", " がんばったではありませんか", "がんばらないのではないですか", "がんばろうではありませんか"],
       "Analysis": "蓝宝书N2知识点10",
       "Unit": 4,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この[レポート]{report}を、[明日]{あした}の[夜]{よる}（　　）[書き]{かき}[終え]{おえ}るつもりだ。",
+      "Option": ["までを", "までは", "までの", "までに"],
+      "Analysis": "蓝宝书N3知识点163/大家的日语17课",
+      "Unit": 5,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[高校生]{こうこうせい}の[妹]{いもうと}は、[毎日]{まいにち}[遊んで]{あそんで}（　　）いる。",
+      "Option": ["より", "しか", "から", "ばかり"],
+      "Analysis": "蓝宝书N3知识点155",
+      "Unit": 5,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[日本]{にっぽん}はほとんどの[食料]{しょくりょう}を[輸入]{ゆにゅう}する（　　）、[毎日]{まいにち}[多く]{おおく}の[食べ物]{たべもの}が[捨て]{すて}られている。",
+      "Option": ["一方で", "一方なら", "だけで", "だけなら"],
+      "Analysis": "蓝宝书N3知识点5",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[朝]{あさ}から[体]{からだ}の[調子]{ちょうし}が（　　）、[今日は]{こんにちは}[遊び]{あそび}に[行け]{いけ}ません。",
+      "Option": ["悪かったり", "悪くて", "悪いことと", "悪さで"],
+      "Analysis": "て表原因",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "この[子]{こ}ねこは、[見れ]{みれ}ば（　　）かわいい。",
+      "Option": ["見ようほど", "見ないほど", "見るほど", "見たほど"],
+      "Analysis": "蓝宝书N3知识点158",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[来年]{らいねん}の[試験]{しけん}を[受ける]{うける}なら、[今か]{いまか}ら[勉強]{べんきょう}を（　　）ほうがいい。",
+      "Option": ["始めて", "始めた", "始めよう", "始め"],
+      "Analysis": "蓝宝书N3知识点70",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "この[店]{みせ}の[料理]{りょうり}は、[多す]{おおす}ぎて（　　）。",
+      "Option": ["食べきってない", "食べきらない", "食べきれない", "食べきりがない"],
+      "Analysis": "蓝宝书N3知识点28",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[先生]{せんせい}は、4[時]{とき}ごろに（　　）。",
+      "Option": ["帰ってまいりました", "お帰りになりました", "帰っておりました", "お帰りいたしました"],
+      "Analysis": "蓝宝书N3尊敬语知识点3，おりました是自谦语",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "1[週間]{しゅうかん}で[外国語]{がいこくご}を[話せ]{はなせ}るようになるなんて（　　）。",
+      "Option": ["あり得よう", "あり得ない", "あり得る", "あり得た"],
+      "Analysis": "蓝宝书N2知识点12，知识点11",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "\n[佐藤]{さとう}「[高尾山]{たかおざん}に[行った]{いった}んでしょ。[込ん]{こん}でいなかった?」\n[鈴木]{すずき}「ううん、（　　）[人]{にん}が[少なく]{すくなく}て、ゆっくり[観光]{かんこう}できたよ。」",
+      "Option": ["思っていたよりも", "思わなかったより", "思っていたほど", "思うほどには"],
+      "Analysis": "佐藤：“你去高尾山了吧？那里人多吗？”\n铃木：“没有，人比我想象的要少，所以我可以按照自己的节奏去游览。”",
+      "Unit": 5,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "\n[部長]{ぶちょう}「もう[時間]{じかん}が[遅い]{おそい}ので、[仕事]{しごと}を[終わり]{おわり}にして（　　）。」\n[部下]{ぶか}「はい、わかりました。」",
+      "Option": ["帰ることもいいですよ", "帰るだけですよ", "帰ってもいいですよ", "帰ったところですよ"],
+      "Analysis": "大家的日语15课",
+      "Unit": 5,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[彼は]{かれは}[毎日]{まいにち}[遊んで]{あそんで}いる。このままでは[次の]{つぎの}[試験]{しけん}に（　　）。",
+      "Option": ["落ちないかもしれない", "落ちかねない", "落ちたかもしれない", "落ちようがない"],
+      "Analysis": "蓝宝书2知识点27，蓝宝书N3知识点18，动词ます型+かねない，动词普通型+かもしれない",
+      "Unit": 5,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[今日は]{こんにちは}とても[暑い]{あつい}ので、[冷たい]{つめたい}[ジュース]{juice}が（　　）。",
+      "Option": ["飲むことにならない", "飲んでもしょうがない", "飲まなくはない", "飲みたくてたまらない"],
+      "Analysis": "蓝宝书N3知识点91",
+      "Unit": 5,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\n[吉田]{よしだ}「あなたも[一緒に]{いっしょに}[食事]{しょくじ}に[行く]{いく}（　　）。」\n[山本]{やまもと}「うん、[行く]{いく}よ。」",
+      "Option": ["わ", "の", "し", "のに"],
+      "Analysis": "蓝宝书N3知识点151",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[自分]{じぶん}でやると[決め]{きめ}た（　　）、[何]{なに}が[何で]{なんで}もやり[抜く]{ぬく}ぞ。",
+      "Option": ["以上", "以上の", "以上から", "以上も"],
+      "Analysis": "蓝宝书N3知识点3",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "50[個]{こ}（　　）[セール]{sale}[品]{ひん}はなくなりますので、お[早め]{はやめ}に。",
+      "Option": ["あいだに", "しか", "限りで", "まで"],
+      "Analysis": "",
+      "Unit": 6,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[林]{はやし}さんがなくなったなんて、まさか（　　）はずはない。",
+      "Option": ["そんな", "どんな", "この", "あの"],
+      "Analysis": "蓝宝书N3知识点33注意部分，そ指前面说过的事物\n林先生不可能已经去世了。",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[明日]{あした}の[ハイキング]{hiking}が[行わ]{おこなわ}れるかどうかは、[大気]{たいき}（　　）。",
+      "Option": ["限りだ", "次第だ", "ばかりだ", "通りだ"],
+      "Analysis": "蓝宝书N2知识点54(2)用法2",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "うれしい（　　）、みんなから[結婚]{けっこん}のお[祝い]{いわい}をもらった。",
+      "Option": ["ものに", "ことに", "ほどに", "わけに"],
+      "Analysis": "蓝宝书N3知识点36",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[参加]{さんか}したい[人]{にん}は、[男女]{だんじょ}に[関係]{かんけい}なくだれでも[参加]{さんか}して（　　）。",
+      "Option": ["できます", "うがない", "かまいます", "かまいません"],
+      "Analysis": "",
+      "Unit": 6,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[試験]{しけん}は[明日]{あした}なのだから、[今か]{いまか}ら（　　）ようがない。もうあきらめた。",
+      "Option": ["準備", "準備する", "準備して", "準備し"],
+      "Analysis": "蓝宝书N3知识点172",
+      "Unit": 6,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "たとえこの[先]{さき}（　　）、[私たち]{わたしたち}はずっと[友]{とも}だちだ。",
+      "Option": ["会えなくなったとしても", "会ったとしても", "会うまいとしたら", "会えるとしたら"],
+      "Analysis": "看见转折选も",
+      "Unit": 6,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "\n[鈴木]{すずき}「[森]{もり}[先生]{せんせい}が[学校]{がっこう}をやめるんだって。」\n[川村]{かわむら}「ちっとも（　　）よ。」",
+      "Option": ["知っていた", "知らなかった", "知ればよかった", "知らないはずだ"],
+      "Analysis": "",
+      "Unit": 6,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[社長]{しゃちょう}は、あの[新聞記事]{しんぶんきじ}をもう（　　）。",
+      "Option": ["読ませていただきましたか", "お読みいたしましたか", "読んでまいりましたか", "お読みになりましたか"],
+      "Analysis": "蓝宝书N3尊敬语知识点3",
+      "Unit": 6,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この[国]{くに}の[将来]{しょうらい}が（　　）。",
+      "Option": ["楽しんでできます", "楽しみでできません", "楽しみでなります", "楽しみでなりません"],
+      "Analysis": "蓝宝书N3知识点93的注意部分2",
+      "Unit": 6,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "このまま[木村]{きむら}さんが（　　）、[木村]{きむら}さんの[意見]{いけん}は[聞か]{きか}ないことにします。",
+      "Option": ["来たそうなら", "来そうなら", "来ないようなら", "来るようなら"],
+      "Analysis": "蓝宝书N3知识点132",
+      "Unit": 6,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "もし[時間]{じかん}があったら、あそこでお[茶]{ちゃ}（　　）[飲み]{のみ}ませんか。",
+      "Option": ["ほど", "でも", "から", "きり"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "よけいなことを[言った]{いった}（　　）、[母]{はは}が[怒っ]{いかっ}てしまった。",
+      "Option": ["たびに", "ところに", "ばかりに", "ごとに"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[私]{わたし}は25[歳]{とし}なので、もう（　　））[以上]{いじょう}、[背]{せ}は[高く]{たかく}ならないだろう。",
+      "Option": ["どこ", "ここ", "どれ", "これ"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[一度]{いちど}に[バナナ]{banana}を 20[本]{ほん}も[食べ]{たべ}られる（　　）。",
+      "Option": ["ようがない", "ものがない", "ことがない", "しわけがない"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\n[高橋]{たかはし}「[山田]{やまだ}さん、[英語]{えいご}がお[上手]{じょうず}ですね。」\n[山田]{やまだ}「いいえ、（　　） [上手]{じょうず}じゃありません。」",
+      "Option": ["めったに", "たいして", "やたらに", "ほんの"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "この[食品]{しょくひん}は、[味]{あじ}がいいのに（　　）、[値段]{ねだん}も[安い]{やすい}です。",
+      "Option": ["加えずに", "加えないで", "加えて", "加えたら"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[病気]{びょうき}になってから、もうたばこは（　　）まいと[思った]{おもった}。",
+      "Option": ["吸う", "吸い", "吸おう", "吸って"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[卒業]{そつぎょう}するときに、[先生]{せんせい}から[プレゼント]{present}を（　　）。",
+      "Option": ["あげました", "さしあげました", "やりました", "いただきました"],
+      "Analysis": "根据主语（我）排除あげました，やりました",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\n[社員]{しゃいん}「[社長]{しゃちょう}の[来月]{らいげつ}の[予定]{よてい}を[教え]{おしえ}ていただけますか。」\n[課長]{かちょう}「もうしわけありませんが、[社長]{しゃちょう}の[予定]{よてい}は（　　）。」",
+      "Option": ["わかります", "わかりました", "わかりかねます", "わかりかねました"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[日本]{にっぽん}では、[新しい]{あたらしい}[学年]{がくねん}は4[月]{がつ}に[始ま]{はじま}る（　　）。",
+      "Option": ["ものとなっている", "こととなっている", "わけになっている", "ほどになっている"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[彼は]{かれは}[何も]{なにも}[準備]{じゅんび}をしていないのだから、[明日]{あした}の[試験]{しけん}に（　　）。",
+      "Option": ["落ちるに決めている", "落ちるところに決めている", "落ちるに決まっている", "落ちるところに決まっている"],
+      "Analysis": "",
+      "Unit": 7,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[小さい]{ちーさい}[子ども]{こども}は、たばこを（　　）。",
+      "Option": ["吸ってもらいません", "吸うわけではありません", "吸わなくしてください", "吸ってはいけません"],
+      "Analysis": "大家的日语15课",
+      "Unit": 7,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "\n[店員]{てんいん}「いらっしゃいませ。」\n「すみません。この[服]{ふく}を（　　）。」",
+      "Option": ["着てみたらいいでしょうか", "着てみるのもいいですか", "着てみるのがいいでしょうか", "着てみてもいいですか"],
+      "Analysis": "",
+      "Unit": 7,
       "Correct Answer": 4
     }
 ]
