@@ -283,7 +283,7 @@
   </div>
   <div class="right">
     <div style="display: flex; justify-content: space-between; align-items: right;">
-      <button onclick="goBackToStart()" style="font-size: 14px; padding: 5px 10px;">返回首页</button>
+      <button id="homeBtn" onclick="goBackToStart()" style="font-size: 14px; padding: 5px 10px;">返回首页</button>
     </div>
     <div style="display: flex; justify-content: space-between; align-items: center;">
       <h3>解析</h3>
@@ -314,7 +314,8 @@
       chooseBookFirst: "请先选择一本书",
       warningNoQuestion: "该单元没有题目，请检查 JSON 数据！",
       questionNext: "下一题 →",
-      questionPrev: "← 上一题"
+      questionPrev: "← 上一题",
+      home: "返回首页"
     },
     en: {
       selectBook: "Please select a book",
@@ -324,7 +325,8 @@
       chooseBookFirst: "Please select a book first",
       warningNoQuestion: "There is no question for this unit, please check the JSON data!",
       questionPrev: "← Previous",
-      questionNext: "Next →"
+      questionNext: "Next →",
+      home: "Home"
     },
     jp: {
       selectBook: "本を選択してください",
@@ -334,7 +336,8 @@
       chooseBookFirst: "まず本を選択してください",
       warningNoQuestion: "ユニットに問題はないので、JSON データを確認してください。",
       questionPrev: "← Previous",
-      questionNext: "Next →"
+      questionNext: "Next →",
+      home: "Home"
     }
   };
 
@@ -363,6 +366,7 @@
     document.querySelector(".theme-base-button").textContent = t.startQuiz;
     document.getElementById("prevBtn").textContent = t.questionPrev;
     document.getElementById("nextBtn").textContent = t.questionNext;
+    document.getElementById("homeBtn").textContent = t.home;
   }
 
   // 第一步：加载书籍列表
