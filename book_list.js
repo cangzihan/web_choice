@@ -18,5 +18,10 @@ const bookList = [
     Title: "JLPT",
     Path: "JLPT_Test.js",
     DataVar: "jlpt_test"
+  },
+  {
+    Title: "ITパスポート公式",
+    Path: "IT_PASSPORT_OFFICIAL.js",
+    DataVar: "IT_PASSPORT_OFFICIAL"
   }
 ];
