@@ -7,6 +7,7 @@ IT_PASSPORT_OFFICIAL = [
           "a, c ",
           "b, c"
       ],
+      "Analysis": "[ストラテジ系/企業と法務/法務/労働関連法]\n找到所有“A社の責任者の指揮命令の下で”的选项",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -18,6 +19,7 @@ IT_PASSPORT_OFFICIAL = [
           "ISO/IEC 27017",
           "ISO 9001"
       ],
+      "Analysis": "[ストラテジ系/企業と法務/法務/標準化]\nISO 9000シリーズ：品質マネジメントシステム\nISO 14000シリーズ：環境マネジメントシステム\nISO 27000シリーズ：情報セキュリティーマネジメントシステム(Security Management System)",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -29,6 +31,7 @@ IT_PASSPORT_OFFICIAL = [
           "a, b, d ",
           "a, с, d"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -40,17 +43,19 @@ IT_PASSPORT_OFFICIAL = [
           "SWOT 分析 ",
           "VRIO 分析"
       ],
+      "Analysis": "ストラテジ系/経営戦略\n- 4P: 「Product Price Place Promotion」\n- PPM: 花形，问题儿，金のなる木，负け犬\n- SWOT「Strength Weaknesses Opportunities Threats」\n- VRIO分析は、自社の経営資源をValue（経済的価値）、Rarity（希少性）、Imitability（模倣困難性）、Organization（組織体制）の4つの視点で評価し、競争優位性を見極めるフレームワークです。",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
   {
-      "Question": "A社ではB [商品]{しょうひん}の[仕入れ]{しいれ}と[販売]{はんばい}を[行って]{いって}いる。ある期のB [商品]{しょうひん}の[仕入]{しいれ}[単価]{たんか}は[期首]{きしゅ}から[上昇]{じょうしょう}し[続け]{つづけ}、[期末]{きまつ}が[最も]{もっとも}[高く]{たかく}なった。[当該]{とうがい}期の[売上原価]{うりあげげんか}を“[期首]{きしゅ}[棚卸]{たなおろし}高+[当期]{とうき}[商品]{しょうひん}[仕入]{しいれ}[高一]{こういち}[期末]{きまつ}[棚卸]{たなおろし}高”で[計算]{けいさん}するとき、[期末]{きまつ}[棚卸]{たなおろし}[高の]{たかの}[計算]{けいさん}に[期末]{きまつ}の[仕入]{しいれ}[単価]{たんか}を[用い]{もちい}ると、B [商品]{しょうひん}の[期末]{きまつ}[棚卸]{たなおろし}高[及び]{および}[売上原価]{うりあげげんか}は、[期中]{きちゅう}の[仕入]{しいれ}[単価]{たんか}の[平均値]{へいきんち}を[用い]{もちい}る[場合]{ばあい}に[比べ]{くらべ}てどのようになるか。\n\n",
+      "Question": "A社ではB [商品]{しょうひん}の[仕入れ]{しいれ}と[販売]{はんばい}を[行って]{いって}いる。ある期のB [商品]{しょうひん}の[仕入]{しいれ}[単価]{たんか}は[期首]{きしゅ}から[上昇]{じょうしょう}し[続け]{つづけ}、[期末]{きまつ}が[最も]{もっとも}[高く]{たかく}なった。[当該]{とうがい}期の[売上原価]{うりあげげんか}を“[期首]{きしゅ}[棚卸]{たなおろし}高+[当期]{とうき}[商品]{しょうひん}[仕入]{しいれ}高-[期末]{きまつ}[棚卸]{たなおろし}高”で[計算]{けいさん}するとき、[期末]{きまつ}[棚卸]{たなおろし}[高の]{たかの}[計算]{けいさん}に[期末]{きまつ}の[仕入]{しいれ}[単価]{たんか}を[用い]{もちい}ると、B [商品]{しょうひん}の[期末]{きまつ}[棚卸]{たなおろし}高[及び]{および}[売上原価]{うりあげげんか}は、[期中]{きちゅう}の[仕入]{しいれ}[単価]{たんか}の[平均値]{へいきんち}を[用い]{もちい}る[場合]{ばあい}に[比べ]{くらべ}てどのようになるか。\n\n",
       "Option": [
           "期末棚卸高,売上原価ともに上がる。",
           "期末棚卸高,売上原価ともに変わらない。",
           "期末棚卸高は上がり、売上原価は下がる。",
           "期末棚卸高は下がり、売上原価は上がる。"
       ],
+      "Analysis": "売上原価：销售成本\n期首棚卸高：期初库存\n当期商品仕入高：本期采购金额\n期末棚卸高：期末库存金额\n\nに比べてどのようになるか。\n相比之下如何？\n\n使用“期末单价”来评估库存\n\n→ 用“最高的单价”来评估期末库存\n→ 也就是说，哪怕之前的进货价格较低，但只用最后一次（可能价格最高）来算库存单价\n\n→ 所以期末库存金额（期末棚卸高）会被高估\n→ 比如同样是10个产品，按最高单价评估会算出一个更大的库存金额\n\n→ 然后计算销售成本（売上原価） = 总进货成本 − 期末库存\n→ 因为期末库存金额大了，所以销售成本就小了\n→ ⇒ 结论：销售成本被压低",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -62,6 +67,7 @@ IT_PASSPORT_OFFICIAL = [
           "内容は事務連絡と料金請求なので問題ないと考え、受信者本人の同意なく、メールを送信した。",
           "長年の取引関係にある企業担当者に対して、これまで納入してきた製品の新バージョンが完成したので、その製品に関する広告宣伝メールを送信した。"
       ],
+      "Analysis": "以下哪项可能受到《特定商业电子邮件法》的监管？\n“收件人发出拒绝通知的情况下，只要在那之后停止发送就可以了”——抱着这样的想法，对方发送了广告宣传邮件。”",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -73,6 +79,7 @@ IT_PASSPORT_OFFICIAL = [
           "RAS ",
           "SLA"
       ],
+      "Analysis": "CRM：顧客関係管理\nPoC：Proof of Concept，概念验证\nSLA：Service Level Agreement，サービスレベル合意書",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -84,6 +91,7 @@ IT_PASSPORT_OFFICIAL = [
           "a, d ",
           "b, c, d"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -95,6 +103,7 @@ IT_PASSPORT_OFFICIAL = [
           "プログラマーやデザイナーなどから成る複数の参加チームが、与えられたテーマに関するプロトタイプを短期間で作成し、その成果を発表して競い合う。",
           "問題解決や利用者獲得などゲーム的な要素のない分野に、デジタル技術を活用したゲームの要素を取り入れることによって、利用者の参加を動機づける。"
       ],
+      "Analysis": "ストラテジ系/経営戦略/技術開発マネジメント/技術開発戦略\n参赛队伍由程序员、设计师等组成，需要在短时间内针对给定的主题制作原型，并展示成果进行比赛。",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -106,6 +115,7 @@ IT_PASSPORT_OFFICIAL = [
           "ディープフェイク",
           "ハルシネーション"
       ],
+      "Analysis": "以下哪个术语最适合描述看似合理但不符合事实的内容输出？\nエコーチェンバー：Echo chamber，回音室\nシンギュラリティ：Singularity，奇点\nディープフェイク：Deep fake\nハルシネーション：幻觉",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -117,6 +127,7 @@ IT_PASSPORT_OFFICIAL = [
           " 生産時に必要となる部品などを必要な分だけ供給することによって、生産リードタイムを短縮する。",
           " 複数の工作機械や産業用ロボットなどを有機的に結合し、生産プロセス全体を統括的に制御・管理する。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -128,6 +139,7 @@ IT_PASSPORT_OFFICIAL = [
           "大規模小売業者が開発したプライベートブランドの商品を、他社の商品と区別するために表示する商標である。",
           "輸送業者,金融業者などが提供する役務を、他社の役務と区別するために表示する商標である。"
       ],
+      "Analysis": "为了区分运输公司、金融机构等提供的服务与其他公司的服务而显示的商标。\n找那个选项体现了“サービス”",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -139,6 +151,7 @@ IT_PASSPORT_OFFICIAL = [
           "RFI",
           "RFP"
       ],
+      "Analysis": "ストラテジ系/システム戦略/调達計画",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -150,6 +163,7 @@ IT_PASSPORT_OFFICIAL = [
           "MOT (Management of Technology)",
           "SWOT分析"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -161,6 +175,7 @@ IT_PASSPORT_OFFICIAL = [
           "プロジェクト組織",
           "マトリックス組織"
       ],
+      "Analysis": "カンパニー制組織とは、企業内の事業部門を独立した会社のように位置づけ、各部門に権限と責任を委譲する組織形態です。",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -172,6 +187,7 @@ IT_PASSPORT_OFFICIAL = [
           "b, c ",
           "c"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -183,6 +199,7 @@ IT_PASSPORT_OFFICIAL = [
           "コンタクトセンターへの問合せ内容や SNS の投稿内容の分析などの業務プロセスで用いられる、膨大な文章データから必要な情報を抽出して分析する手法である。",
           "大量の計算処理で正しい値を算出する一連のプロセスを通じて、暗号資産を取得する手段である。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -194,6 +211,7 @@ IT_PASSPORT_OFFICIAL = [
           "製品, システム, サービスなどにおいて、それらを使用する場面をイメージしたり実際に利用したりすることで得られる人の感じ方や反応",
           "特定のファイルやデータベースなどの情報資産に対し、参照や更新などの権限の認可や制限を確実にする手段"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -205,6 +223,7 @@ IT_PASSPORT_OFFICIAL = [
           "史跡などにスマートフォンを向けることによって、昔あった建物の画像や説明情報が現実の風景と重なって画面に表示される。",
           "図鑑にスマートフォンをかざすことによって、図鑑の絵や写真に重なって生物の動画が見られる。"
       ],
+      "Analysis": "通过将护目镜戴在头上遮住脸部，并观看投射在护目镜内的虚拟空间中的火灾或地震图像，想象如何避难，即可进行防灾训练。",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -216,6 +235,7 @@ IT_PASSPORT_OFFICIAL = [
           "システム構築を進めるに当たっての発注元企業の役割",
           "ベンダー企業の技術者が保有している技術資格"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -227,6 +247,7 @@ IT_PASSPORT_OFFICIAL = [
           "フリーライド",
           "フリーランス"
       ],
+      "Analysis": "フリーウェア：免费软件\nフリーミアム：免费增值版\nフリーライド：免费搭乘\nフリーランス：自由职业",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -238,6 +259,7 @@ IT_PASSPORT_OFFICIAL = [
           "入力したデータを、加工して見せるオフィスツール",
           "ビッグデータを、様々な手法で分析するデータサイエンス"
       ],
+      "Analysis": "オフィスツール：Office Tools",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -249,6 +271,7 @@ IT_PASSPORT_OFFICIAL = [
           "b, c ",
           "c"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -260,6 +283,7 @@ IT_PASSPORT_OFFICIAL = [
           "システムの利用者が、主体的にシステム管理や運用を行うことによって、利用者のIT リテラシーの向上や、システムベンダーへの依存の軽減などを実現する。",
           "ホワイトカラーの定型的な事務作業を、ソフトウェアのロボットに代替させることによって、自動化や効率化を図る。"
       ],
+      "Analysis": "Robot Process Automation",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -271,6 +295,7 @@ IT_PASSPORT_OFFICIAL = [
           "ビジネス路線を中心に運航する航空会社が、顧客の利便性向上と競合他社に対する競争力強化を目的として、出発1時間前まで何回でも予約の変更を可能とする新しいサービスを開始した。",
           "服飾雑貨製造会社が、自社の商品企画に活用することを目的として、過去の全ての自社商品に関する大量の画像及び社内会議の音声データをデータベースに保存し、従業員がいつでも検索できるようにした。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -282,6 +307,7 @@ IT_PASSPORT_OFFICIAL = [
           "2,300 ",
           "2,700"
       ],
+      "Analysis": "受注: 已收到订单\n売上計上: 已记录销售额。未“売上計上”的受注 不影响当前的应收账款（只是未来的可能销售）。\n現金回收: 已收现金\n6月30日回収予定：计划于6月30日收款\n回収予定日未定：计划收款日期未定\n取引先：客户\n売掛金：应收账款是指，已经确认销售（＝売上計上）但尚未收到现金的部分。\n\nここで、4月1日時点で売掛金残高はないものとする。\n假设截至 4 月 1 日没有未偿还的应收账款。\n各取引逐一分析：\n✅ 取引①\n売上計上：4月10日 → 800万円\n回収：4月30日 → 已回收\n✅ → 売掛金为 0\n\n✅ 取引②\n売上計上：4月15日 → 500万円\n回収：4月30日 → 已回收\n✅ → 売掛金为 0\n\n✅ 取引③\n売上計上：5月10日 → 1300万円\n回収：6月30日（未来） → 还没回收\n✅ → 売掛金为 1300万円\n\n✅ 取引④\n売上計上：5月15日 → 1000万円\n回収：未定（但截至5月31日肯定未回收）\n✅ → 売掛金为 1000万円\n\n✅ 取引⑤\n只有受注，没有売上計上 → 売掛金为 0\n\n✅ 总结：5月31日時点の売掛金\n取引①：0\n取引②：0\n取引③：1300\n取引④：1000\n取引⑤：0\n合計：1300 + 1000 = 2300万円",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -293,6 +319,7 @@ IT_PASSPORT_OFFICIAL = [
           "MOT (Management of Technology)",
           "SOA (Service Oriented Architecture)"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -304,6 +331,7 @@ IT_PASSPORT_OFFICIAL = [
           "作成したシナリオに基づいて動作するソフトウェアロボットによって、業務を自動化する。",
           "自然言語で指示された内容に従って、事前に学習したデータを基に、新しいコンテンツを生成する。"
       ],
+      "Analysis": "コンテンツ：content\n\n一切の学習を必要とせずに、新しいコンテンツを生成する。\n无需任何学习即可生成新内容。",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -315,17 +343,19 @@ IT_PASSPORT_OFFICIAL = [
           "戦略を実現するために重要となる業績管理指標",
           "戦略を実現するために重要となる成功要因"
       ],
+      "Analysis": "[ストラテジ系/企業と法務/企業活動]",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
   {
-      "Question": "[著作権]{ちょさくけん}に[関し]{かんし}て、[次の]{つぎの}[記述]{きじゅつ}[中の]{なかの} a, b に[入れ]{いれ}る[字句]{じく}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。a 「は[著作権法]{ちょさくけんほう}による[保護]{ほご}の[対象]{たいしょう}になるが、 b は[対象]{たいしょう}にならない。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 45%; padding: 10px;\">a</th>\n      <th style=\"width: 45%; padding: 10px;\">b</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">[アルゴリズム]{algorithm}</td>\n      <td style=\"padding: 10px;\">[操作]{そうさ}[マニュアル]{manual}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">[アルゴリズム]{algorithm}</td>\n      <td style=\"padding: 10px;\">[通信]{つうしん}[プロトコル]{protocol, 协议}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[ソースプログラム]{源程序}</td>\n      <td style=\"padding: 10px;\">[操作]{そうさ}[マニュアル]{manual}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[ソースプログラム]{源程序}</td>\n      <td style=\"padding: 10px;\">[通信]{つうしん}[プロトコル]{protocol, 协议}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Question": "[著作権]{ちょさくけん}に[関し]{かんし}て、[次の]{つぎの}[記述]{きじゅつ}[中の]{なかの} a, b に[入れ]{いれ}る[字句]{じく}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。a は[著作権法]{ちょさくけんほう}による[保護]{ほご}の[対象]{たいしょう}になるが、 b は[対象]{たいしょう}にならない。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 45%; padding: 10px;\">a</th>\n      <th style=\"width: 45%; padding: 10px;\">b</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">[アルゴリズム]{algorithm}</td>\n      <td style=\"padding: 10px;\">[操作]{そうさ}[マニュアル]{manual}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">[アルゴリズム]{algorithm}</td>\n      <td style=\"padding: 10px;\">[通信]{つうしん}[プロトコル]{protocol, 协议}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[ソースプログラム]{源程序}</td>\n      <td style=\"padding: 10px;\">[操作]{そうさ}[マニュアル]{manual}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[ソースプログラム]{源程序}</td>\n      <td style=\"padding: 10px;\">[通信]{つうしん}[プロトコル]{protocol, 协议}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
       "Option": [
           "ア",
           "イ",
           "ウ",
           "エ"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -337,6 +367,7 @@ IT_PASSPORT_OFFICIAL = [
           "原材料の調達から生産、販売に関する情報を、企業間で共有・管理することによって、ビジネスプロセスの全体最適を目指すシステム",
           "個々の顧客に関する情報や対応履歴などを管理することによって、きめ細かい顧客対応を実施し、顧客満足度の向上を支援するシステム"
       ],
+      "Analysis": "ストラテジ系/経営戦略/事業戦略",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -348,6 +379,7 @@ IT_PASSPORT_OFFICIAL = [
           "ライフログ",
           "レコードキーピング"
       ],
+      "Analysis": "アクティビティ：活动\nトランザクション：交易\nライフログ：生活日志\nレコードキーピング：记录保存",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -359,6 +391,7 @@ IT_PASSPORT_OFFICIAL = [
           "運転の主体は人間であり、高速道路で車線を維持しながら前の自動車に付いて走る機能のように、ハンドルと加減速の操作をシステムが支援する。",
           "運転の主体は人間であり、自動ブレーキや急発進防止システムのように、前方又は後方の状況によって、システムが運転の一部を支援する。"
       ],
+      "Analysis": "L1 (驾驶辅助):\n系统可以辅助驾驶员完成部分驾驶任务，例如自适应巡航控制(ACC) 或车道保持辅助(LKA)。驾驶员仍然需要全程掌控车辆。\nL2 (部分自动驾驶):\n系统可以同时控制多个驾驶任务，例如ACC和LKA的结合，实现跟车和车道保持。但驾驶员需要时刻准备接管车辆，并且不能长时间脱手。\nL3 (有条件自动驾驶):\n在特定条件下，系统可以独立完成驾驶任务，例如在高速公路上，驾驶员可以在系统激活后放松，但需要在系统发出接管请求时及时接管车辆。\nL4 (高度自动驾驶):\n系统可以在特定区域和条件下，完全接管车辆的驾驶，无需驾驶员干预。\nL5 (完全自动驾驶):\n系统可以在任何条件下，完全自动驾驶，驾驶员完全转变为乘客的角色。",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -370,6 +403,7 @@ IT_PASSPORT_OFFICIAL = [
           "6,200 ",
           "7,500"
       ],
+      "Analysis": "売上げ：销售量\n\n少なくともあと何個販売すればよいか。\n至少还需要卖出多少？",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -381,6 +415,7 @@ IT_PASSPORT_OFFICIAL = [
           "ターゲティング",
           "ポジショニング"
       ],
+      "Analysis": "Segmentation\nPromotion\nTargeting\nPositioning",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -392,6 +427,7 @@ IT_PASSPORT_OFFICIAL = [
           "効率性 ",
           "使用性"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -403,6 +439,7 @@ IT_PASSPORT_OFFICIAL = [
           "ウ",
           "エ"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -414,6 +451,7 @@ IT_PASSPORT_OFFICIAL = [
           "組織体の価値及び組織体への信頼を向上させるために、組織体における IT システムの利活用のあるべき姿を示す IT 戦略と方針の策定及びその実現のための活動",
           "組織の情報資産に関わるリスクマネジメントが効果的に実施されているかどうかの検証又は評価"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -425,6 +463,7 @@ IT_PASSPORT_OFFICIAL = [
           "ウ",
           "エ"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -436,6 +475,7 @@ IT_PASSPORT_OFFICIAL = [
           "変更管理委員会は、スコープに変更が発生しない範囲で変更要求を受け付けな",
           "変更要求は、全てプロジェクトマネージャが承認した後に変更管理委員会で審"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -447,6 +487,7 @@ IT_PASSPORT_OFFICIAL = [
           "b, c ",
           "c, d"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -458,6 +499,7 @@ IT_PASSPORT_OFFICIAL = [
           "フリースペース",
           "フリースポット"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -469,6 +511,7 @@ IT_PASSPORT_OFFICIAL = [
           "営業員は出張の事前申請を行って上長の承認を得た後に、切符や宿泊施設の手配を旅行会社に依頼する。",
           "会計年度における営業部門の旅費精算の書類と証票類から、監査人がサンプリングして、営業員の処理内容の適切性を確認する。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -480,6 +523,7 @@ IT_PASSPORT_OFFICIAL = [
           "スパイラル",
           "プロトタイピング"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -491,6 +535,7 @@ IT_PASSPORT_OFFICIAL = [
           "ウ",
           "エ"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -502,6 +547,7 @@ IT_PASSPORT_OFFICIAL = [
           "妥当性確認",
           "利用者教育"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -513,6 +559,7 @@ IT_PASSPORT_OFFICIAL = [
           "ハードウェアと OSのインタフェース",
           "利用者とパネルのインタフェース"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -524,6 +571,7 @@ IT_PASSPORT_OFFICIAL = [
           "b, c ",
           "c"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -535,6 +583,7 @@ IT_PASSPORT_OFFICIAL = [
           "問合せの受付時間を拡大することが可能になる。",
           "ホームページ上に掲載している FAQ の内容が充実する。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -546,6 +595,7 @@ IT_PASSPORT_OFFICIAL = [
           "人間に代わって荷物を運ぶなどの作業を行う機械的な仕組み",
           "ルール化された定型的な操作を人間の代わりにソフトウェアが自動で行う仕組み"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -557,6 +607,7 @@ IT_PASSPORT_OFFICIAL = [
           "経理システムの利用者である経理担当者",
           "経理と IT の知識を有する経営者直轄組織の従業員"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -568,6 +619,7 @@ IT_PASSPORT_OFFICIAL = [
           "会計システムの再構築を担当する B社のシステム開発リーダー",
           "会計システムの再構築を担当するB社の品質管理責任者"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -579,17 +631,19 @@ IT_PASSPORT_OFFICIAL = [
           "全ての業務プロセスを IT で自動化することによって、業務プロセスを大幅に修正することが容易になる。",
           "組織の業務が IT に大きく依存すると、内部統制の目的を達成することが難しくなる。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
   {
-      "Question": "ある[コールセンター]{Call Center}では、[顧客]{こきゃく}からの[電話]{でんわ}による[問合せ]{といあわせ}に[対応]{たいおう}する[オペレーター]{操作员}を[支援]{しえん}する[システム]{system}に、[顧客]{こきゃく}と[オペレーター]{操作员}の[会話]{かいわ}の[音声]{おんせい}を[認識]{にんしき}し、[顧客]{こきゃく}の[問合せ]{といあわせ}に[対する]{たいする}[回答]{かいとう}の[候補]{こうほ}を[オペレーター]{操作员}の PCの[画面]{がめん}に[表示す]{ひょうじす}る AI を[導入]{どうにゅう}した。1日の[対応]{たいおう}[件数]{けんすう}は1,000件であり、[問合せ]{といあわせ}[内容]{ないよう}によって[二つ]{ふたつ}の[グループ]{group} A,B に[分け]{わけ}た。AI[導入前]{どうにゅうまえ}[後の]{のちの}各[グループ]{group}の[対応]{たいおう}[件数]{けんすう},[対応]{たいおう}[時間]{じかん}が表のとおりであるとき, AI [導入]{どうにゅう}[後に]{のちに}、1,000件の[問合せ]{といあわせ}に[対応]{たいおう}する[時間]{じかん}は何%[短縮]{たんしゅく}できたか。\nAI [導入前]{どうにゅうまえ}[後の]{のちの}[グループ]{group}[別の]{べつの}[対応]{たいおう}[件数]{けんすう}と[対応]{たいおう}[時間]{じかん}\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th colspan=\"2\" style=\"width: 45%; padding: 10px;\">[グループ]{group} A</th>\n      <th colspan=\"2\" style=\"width: 45%; padding: 10px;\">[グループ]{group} B</th>\n    </tr>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 20%; padding: 10px;\">[対応]{たいおう}[件数]{けんすう}</th>\n      <th style=\"width: 25%; padding: 10px;\">[対応]{たいおう}[時間]{じかん}</th>\n      <th style=\"width: 20%; padding: 10px;\">[対応]{たいおう}[件数]{けんすう}</th>\n      <th style=\"width: 25%; padding: 10px;\">[対応]{たいおう}[時間]{じかん}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">AI [導入前]{どうにゅうまえ}</td>\n      <td style=\"padding: 10px;\">800件</td>\n      <td style=\"padding: 10px;\">[全体]{ぜんたい}の60%</td>\n      <td style=\"padding: 10px;\">200件</td>\n      <td style=\"padding: 10px;\">[全体]{ぜんたい}の40%</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">AI [導入]{どうにゅう}後</td>\n      <td style=\"padding: 10px;\">800件</td>\n      <td style=\"padding: 10px;\">AI [導入前]{どうにゅうまえ}と[比べ]{くらべ}て50%[短縮]{たんしゅく}</td>\n      <td style=\"padding: 10px;\">200件</td>\n      <td style=\"padding: 10px;\">AI [導入前]{どうにゅうまえ}と[同じ]{おなじ}[時間]{じかん}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Question": "ある[コールセンター]{Call Center}では、[顧客]{こきゃく}からの[電話]{でんわ}による[問合せ]{といあわせ}に[対応]{たいおう}する[オペレーター]{操作员}を[支援]{しえん}する[システム]{system}に、[顧客]{こきゃく}と[オペレーター]{操作员}の[会話]{かいわ}の[音声]{おんせい}を[認識]{にんしき}し、[顧客]{こきゃく}の[問合せ]{といあわせ}に[対する]{たいする}[回答]{かいとう}の[候補]{こうほ}を[オペレーター]{操作员}の PCの[画面]{がめん}に[表示す]{ひょうじす}る AI を[導入]{どうにゅう}した。1日の[対応]{たいおう}[件数]{けんすう}は1,000件であり、[問合せ]{といあわせ}[内容]{ないよう}によって[二つ]{ふたつ}の[グループ]{group} A,B に[分け]{わけ}た。AI[導入前]{どうにゅうまえ}[後の]{のちの}各[グループ]{group}の[対応]{たいおう}[件数]{けんすう},[対応]{たいおう}[時間]{じかん}が表のとおりであるとき, AI [導入]{どうにゅう}[後に]{のちに}、1,000件の[問合せ]{といあわせ}に[対応]{たいおう}する[時間]{じかん}は何%[短縮]{たんしゅく}できたか。\nAI [導入前]{どうにゅうまえ}[後の]{のちの}[グループ]{group}[別の]{べつの}[対応]{たいおう}[件数]{けんすう}と[対応]{たいおう}[時間]{じかん}\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 14%; padding: 10px;\"></th>\n      <th colspan=\"2\" style=\"width: 43%; padding: 10px;\">[グループ]{group} A</th>\n      <th colspan=\"2\" style=\"width: 43%; padding: 10px;\">[グループ]{group} B</th>\n    </tr>\n    <tr>\n      <th style=\"width: 14%; padding: 10px;\"></th>\n      <th style=\"width: 18%; padding: 10px;\">[対応]{たいおう}[件数]{けんすう}</th>\n      <th style=\"width: 25%; padding: 10px;\">[対応]{たいおう}[時間]{じかん}</th>\n      <th style=\"width: 18%; padding: 10px;\">[対応]{たいおう}[件数]{けんすう}</th>\n      <th style=\"width: 25%; padding: 10px;\">[対応]{たいおう}[時間]{じかん}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">AI [導入前]{どうにゅうまえ}</td>\n      <td style=\"padding: 10px; text-align: right;\">800件</td>\n      <td style=\"padding: 10px;\">[全体]{ぜんたい}の60%</td>\n      <td style=\"padding: 10px; text-align: right;\">200件</td>\n      <td style=\"padding: 10px;\">[全体]{ぜんたい}の40%</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">AI [導入]{どうにゅう}後</td>\n      <td style=\"padding: 10px; text-align: right;\">800件</td>\n      <td style=\"padding: 10px;\">AI [導入前]{どうにゅうまえ}と[比べ]{くらべ}て50%[短縮]{たんしゅく}</td>\n      <td style=\"padding: 10px; text-align: right;\">200件</td>\n      <td style=\"padding: 10px;\">AI [導入前]{どうにゅうまえ}と[同じ]{おなじ}[時間]{じかん}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
       "Option": [
           "30 ",
           "40 ",
           "50 ",
           "60"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -601,6 +655,7 @@ IT_PASSPORT_OFFICIAL = [
           "a, c ",
           "c"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -612,6 +667,7 @@ IT_PASSPORT_OFFICIAL = [
           "NFC ",
           "PLC"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -623,6 +679,7 @@ IT_PASSPORT_OFFICIAL = [
           "Web サーバの URL に対応する IPアドレスを求める要求をPCから受け付けて、そのIP アドレスを返す。",
           "Web サーバのコンテンツが検索結果の上位に表示されるように、その Web サーバが管理するコンテンツを書き換える。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -634,6 +691,7 @@ IT_PASSPORT_OFFICIAL = [
           "ホスト名やドメイン名と, IPアドレスを対応付ける仕組みである。",
           "ホスト名やドメイン名と, MAC アドレスを対応付ける仕組みである。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -645,6 +703,7 @@ IT_PASSPORT_OFFICIAL = [
           "内部監査の実施のためのプログラムを確立するときには、前回の内部監査の結果は考慮しない。",
           "不定期かつ抜き打ちでの実施を原則とする。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -656,6 +715,7 @@ IT_PASSPORT_OFFICIAL = [
           "ネットワーク接続に必要な IP アドレスなどの情報を自動的に割り当てる。",
           "ファイルをPC 間で転送する。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -667,6 +727,7 @@ IT_PASSPORT_OFFICIAL = [
           "データベースに対する一連の処理が全て成功したら変更結果を確定し、途中で失敗したら処理前の状態に戻す。",
           "データベースの表の索引を作成し、検索時には索引を使用する。"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -678,6 +739,7 @@ IT_PASSPORT_OFFICIAL = [
           "ウ",
           "エ"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }	,
@@ -689,6 +751,7 @@ IT_PASSPORT_OFFICIAL = [
           "時刻 ",
           "睡眠時間"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 3
   }	,
@@ -700,17 +763,439 @@ IT_PASSPORT_OFFICIAL = [
           "ネットワーク上にブックマークを登録することによって、利用価値の高い Web サイト情報を他の利用者と共有するサービス",
           "ブラウザと Web サーバ間で、データを暗号化して安全に送受信するためのプロトコル"
       ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
   {
-      "Question": "DBMS において、[データ]{data}の[検索]{けんさく}を[高速]{こうそく}に[行う]{おこなう}[目的]{もくてき}で、[必要]{ひつよう}に[応じ]{おうじ}て[設定]{せってい}して[利用]{りよう}する[情報]{じょうほう}はどれか。\n",
+      "Question": "DBMS において、[データ]{data}の[検索]{けんさく}を[高速]{こうそく}に[行う]{おこなう}[目的]{もくてき}で、[必要]{ひつよう}に[応じ]{おうじ}て[設定]{せってい}して[利用]{りよう}する[情報]{じょうほう}はどれか。\n\n",
       "Option": [
           "インデックス",
           "外部キー",
           "主キー",
           "スキーマ"
       ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 1
+  }	,
+  {
+      "Question": "[関係]{かんけい}[データベース]{Data Science}で[管理]{かんり}している[次の]{つぎの}“[ログイン]{log in}[記録]{きろく}”表[及び]{および}“[部署]{ぶしょ}”表において、[ログイン]{log in}[結果]{けっか}が[失敗]{しっぱい}となったことのある、[又は]{または}、2022年4月10日 09:00:00[以前]{いぜん}に[ログイン]{log in}[結果]{けっか}が[成功]{せいこう}となったことのある[従業員]{じゅうぎょういん}が[所属]{しょぞく}する[部署名]{ぶしょめい}だけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\n[ログイン]{log in}[記録]{きろく}\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 40%; padding: 10px;\">[日時]{にちじ}</th>\n      <th style=\"width: 20%; padding: 10px;\">[従業員]{じゅうぎょういん}[番号]{ばんごう}</th>\n      <th style=\"width: 20%; padding: 10px;\">[部署]{ぶしょ}[番号]{ばんごう}</th>\n      <th style=\"width: 20%; padding: 10px;\">[ログイン]{log in}[結果]{けっか}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:50:42</td>\n      <td style=\"padding: 10px; text-align: center;\">10004</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:53:15</td>\n      <td style=\"padding: 10px; text-align: center;\">10004</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:55:48</td>\n      <td style=\"padding: 10px; text-align: center;\">10002</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:00:15</td>\n      <td style=\"padding: 10px; text-align: center;\">10001</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:01:05</td>\n      <td style=\"padding: 10px; text-align: center;\">10012</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:03:01</td>\n      <td style=\"padding: 10px; text-align: center;\">10008</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:10:28</td>\n      <td style=\"padding: 10px; text-align: center;\">10007</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:32:19</td>\n      <td style=\"padding: 10px; text-align: center;\">10002</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:39:22</td>\n      <td style=\"padding: 10px; text-align: center;\">10005</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:00:02</td>\n      <td style=\"padding: 10px; text-align: center;\">10011</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:05:51</td>\n      <td style=\"padding: 10px; text-align: center;\">10011</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:30:45</td>\n      <td style=\"padding: 10px; text-align: center;\">10009</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n  </tbody>\n</table>\n[部署]{ぶしょ}\n<table border=\"1\" style=\"width: 50%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 50%; padding: 10px;\">[部署]{ぶしょ}[番号]{ばんごう}</th>\n      <th style=\"width: 50%; padding: 10px;\">[部署名]{ぶしょめい}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px;\">[営業部]{えいぎょうぶ}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px;\">[システム]{system}部</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px;\">[人事部]{じんじぶ}</td>\n    </tr>\n  </tbody>\n</table>\n\n\n",
+      "Option": [
+          "営業部, システム部",
+          "営業部, システム部, 人事部",
+          "営業部, 人事部",
+          "ステム部, 人事部"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "3[次元画像処理]{じげんがぞうしょり}の[高速化]{こうそくか}や、[動画]{どうが}をなめらかにするなどの[機能]{きのう}をもつ、[描画]{びょうが}[処理]{しょり}のための[ハードウェア]{hardware}はどれか。\n\n",
+      "Option": [
+          "CGI ",
+          "GPU ",
+          "GUI ",
+          "UPS"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "CSIRT として[行う]{おこなう}[活動]{かつどう}の例として、[最も]{もっとも}[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "OS やアプリケーションソフトウェアのセキュリティパッチを定期的に適用する。",
+          "地震や洪水などの自然災害を想定し、情報資産を守るために全社的な事業継続計画を策定する。",
+          "セキュリティ事故の発生時に影響範囲を調査して、被害拡大を防止するための対策実施を支援する。",
+          "保守業者がサーバ室で作業した日に、作業員の入退出が適切に記録されていたことを監査する。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[バイオメトリクス]{生物识别技术}[認証]{にんしょう}の[他人]{たにん}[受入]{うけいれ}率と[本人]{ほんにん}[拒否]{きょひ}率に[関す]{かんす}る[次の]{つぎの}[記述]{きじゅつ}[中の]{なかの} a, bに[入れ]{いれ}る[字句]{じく}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。\n[バイオメトリクス]{生物识别技术}[認証]{にんしょう}の[認証]{にんしょう}[精度]{せいど}において、[他人]{たにん}[受入]{うけいれ}[率を]{ひきを}[低く]{ひくく}[抑え]{おさえ}ようとするとa が[高く]{たかく}なり、[本人]{ほんにん}[拒否]{きょひ}[率を]{ひきを}[低く]{ひくく}[抑え]{おさえ}ようとすると b が[高く]{たかく}なる。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 45%; padding: 10px;\">a</th>\n      <th style=\"width: 45%; padding: 10px;\">b</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">[安全性]{あんぜんせい}</td>\n      <td style=\"padding: 10px;\">[可用性]{かようせい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">[安全性]{あんぜんせい}</td>\n      <td style=\"padding: 10px;\">[利便性]{りべんせい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[利便性]{りべんせい}</td>\n      <td style=\"padding: 10px;\">[安全性]{あんぜんせい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[利便性]{りべんせい}</td>\n      <td style=\"padding: 10px;\">[可用性]{かようせい}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Option": [
+          "ア",
+          "イ",
+          "ウ",
+          "エ"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "[情報]{じょうほう}[セキュリティ]{安全功能}における[脅威]{きょうい}のうち、[脆弱]{ぜいじゃく}性を[是正]{ぜせい}する[セキュリティパッチ]{安全补丁}を[ソフトウェア]{software}に[適用]{てきよう}することが[最も]{もっとも}[有効]{ゆうこう}な[対策]{たいさく}になるものはどれか。\n\n",
+      "Option": [
+          "総当たり攻撃",
+          "ソーシャルエンジニアリング",
+          "パスワードリスト攻撃",
+          "バッファオーバーフロー"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 4
+  }	,
+  {
+      "Question": "[携帯電話]{けいたいでんわ}で[用い]{もちい}られる[電波]{でんぱ}に[関す]{かんす}る[次の]{つぎの}[記述]{きじゅつ}[中の]{なかの} a, b に[入れ]{いれ}る[字句]{じく}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。\n[電波]{でんぱ}には、[周波数が]{しゅうはすうが} a ほど[回り込み]{まわりこみ}やすくなり[障害物]{しょうがいぶつ}の裏にも[届き]{とどき}やすいという[性質]{せいしつ}がある。[日本国内]{にほんこくない}の[携帯電話]{けいたいでんわ}で[使用さ]{しようさ}れる[周波数]{しゅうはすう}のうち、700 b帯~900 b 帯の[周波数帯域]{しゅうはすうたいいき}はこの[性質]{せいしつ}をもちつながりやすいことなどから、[プラチナバンド]{白金乐队}と[呼ば]{よば}れている。\n<table border=\"1\" style=\"width: 60%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 45%; padding: 10px;\">a</th>\n      <th style=\"width: 45%; padding: 10px;\">b</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">[高い]{たかい}</td>\n      <td style=\"padding: 10px;\">GHz</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">[高い]{たかい}</td>\n      <td style=\"padding: 10px;\">MHz</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[低い]{ひくい}</td>\n      <td style=\"padding: 10px;\">GHz</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[低い]{ひくい}</td>\n      <td style=\"padding: 10px;\">MHz</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Option": [
+          "ア",
+          "イ",
+          "ウ",
+          "エ"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 4
+  }	,
+  {
+      "Question": "[見る]{みる}人に[意図]{いと}が[伝わ]{つたわ}りやすい[デザイン]{design}にするための[四つ]{よつ}の[原則]{げんそく}に[関す]{かんす}る[次の]{つぎの}[記述]{きじゅつ}[中の]{なかの}a, bに[入れ]{いれ}る[字句]{じく}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。\n[[四つ]{よつ}の[原則]{げんそく}]\n[近接]{きんせつ} : [互いに]{たがいに}[関連す]{かんれんす}る[要素]{ようそ}は[近づ]{ちかづ}けて[グループ]{group}にする。\na : [要素]{ようそ}を[意図]{いと}した[ルール]{rule}に[基づ]{もとづ}き[配置]{はいち}する。\n[反復]{はんぷく} : [要素]{ようそ}ごとに[デザインルール]{design rule}を[繰り返す]{くりかえす}。\nb : [要素]{ようそ}ごとの[大小]{だいしょう}や[強弱]{きょうじゃく}などの[違い]{ちがい}を[明確]{めいかく}にする。\n<table border=\"1\" style=\"width: 60%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 45%; padding: 10px;\">a</th>\n      <th style=\"width: 45%; padding: 10px;\">b</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">[整列]{せいれつ}</td>\n      <td style=\"padding: 10px;\">価值/td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">[整列]{せいれつ}</td>\n      <td style=\"padding: 10px;\">[対比]{たいひ}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[操作]{そうさ}</td>\n      <td style=\"padding: 10px;\">価值/td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[操作]{そうさ}</td>\n      <td style=\"padding: 10px;\">[対比]{たいひ}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Option": [
+          "ア",
+          "イ",
+          "ウ",
+          "エ"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "Web [サービス]{service}を[狙っ]{ねらっ}た[攻撃]{こうげき}に[関す]{かんす}る[記述]{きじゅつ}と[攻撃]{こうげき}の[名称]{めいしょう}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。\na Web [サービス]{service}が[利用]{りよう}している[ソフトウェア]{software}に[脆弱]{ぜいじゃく}性の[存在]{そんざい}が[判明]{はんめい}したとき、その[修正]{しゅうせい}[プログラム]{program}が[提供]{ていきょう}される前に、この[脆弱]{ぜいじゃく}性を[突い]{つい}て[攻撃]{こうげき}する。\nb [複数]{ふくすう}の[コンピュータ]{computer}から[大量]{たいりょう}の[パケット]{packet}を[一斉]{いっせい}に[送り]{おくり}[付ける]{つける}ことによって、Web [サービス]{service}を[正常]{せいじょう}に[提供]{ていきょう}できなくさせる。\nc [理論的]{りろんてき}にあり[得る]{える}[パスワード]{密码}の[パターン]{pattern}を[順次]{じゅんじ}[試す]{ためす}ことによって、[正しい]{ただしい}[パスワード]{密码}を[見つ]{みつ}け、[攻撃]{こうげき}[対象]{たいしょう}の Web [サービス]{service}に[侵入]{しんにゅう}する。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 30%; padding: 10px;\">a</th>\n      <th style=\"width: 30%; padding: 10px;\">b</th>\n      <th style=\"width: 30%; padding: 10px;\">c</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">DDoS 攻擊/td>\n      <td style=\"padding: 10px;\">[ゼロデイ]{零日漏洞}[攻撃]{こうげき}</td>\n      <td style=\"padding: 10px;\">[ブルートフォース]{Brute force，暴力破解}[攻撃]{こうげき}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">DDoS 攻擊/td>\n      <td style=\"padding: 10px;\">[ブルートフォース]{Brute force，暴力破解}[攻撃]{こうげき}</td>\n      <td style=\"padding: 10px;\">[ゼロデイ]{零日漏洞}[攻撃]{こうげき}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[ゼロデイ]{零日漏洞}[攻撃]{こうげき}</td>\n      <td style=\"padding: 10px;\">DDoS 攻擊/td>\n      <td style=\"padding: 10px;\">[ブルートフォース]{Brute force，暴力破解}[攻撃]{こうげき}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[ゼロデイ]{零日漏洞}[攻撃]{こうげき}</td>\n      <td style=\"padding: 10px;\">[ブルートフォース]{Brute force，暴力破解}[攻撃]{こうげき}</td>\n      <td style=\"padding: 10px;\">DDoS 攻擊/td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Option": [
+          "ア",
+          "イ",
+          "ウ",
+          "エ"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[デジタルフォレンジックス]{Digital Forensics，数字取证}の[説明]{せつめい}として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "コンピュータに関する犯罪や法的紛争が生じた際に、コンピュータから削除された電子メールを復元するなどして、証拠を収集し保全すること",
+          "システムを実際に攻撃して脆弱性の有無を調べること",
+          "通信経路を暗号化するなどして、公衆回線をあたかも専用回線であるかのように利用すること",
+          "電子メールやファイルなどのハッシュデータを本人の秘密鍵で暗号化すること"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 1
+  }	,
+  {
+      "Question": "[次の]{つぎの}[記憶媒体]{きおくばいたい}のうち、[記憶素子]{きおくそし}として[半導体]{はんどうたい}[メモリ]{memory}を[用いて]{もちいて}いるものだけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\na CD-ROM\nb DVD-RAM\nc RAM\nd SSD\ne USB [メモリ]{memory}\n\n",
+      "Option": [
+          "a, b, c ",
+          "a, b, e ",
+          "c, d, e ",
+          "c,е"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[商品]{しょうひん}の[税込]{ぜいこみ}[価格]{かかく}を[計算]{けいさん}する[表計算]{ひょうけいさん}の[ワークシート]{worksheet}がある。[セル]{cell} B1には[消費税率]{しょうひぜいりつ}が[入力]{にゅうりょく}されており、[セル]{cell} B4~B6には[税抜]{ぜいぬき}[価格]{かかく}が[入力]{にゅうりょく}されている。[セル]{cell} C4~C6に[税込]{ぜいこみ}[価格]{かかく}を[表示す]{ひょうじす}るために、[セル]{cell} C4に式を[入力]{にゅうりょく}し、[セル]{cell} C5, C6に[複写]{ふくしゃ}する。[セル]{cell} C4に[入力]{にゅうりょく}する式はどれか。ここで、[セル]{cell}B1は、[パーセント]{%}[形式]{けいしき}で[表示し]{ひょうじし}ている。\n<table border=\"1\" style=\"width: 80%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 30%; padding: 10px;\">A</th>\n      <th style=\"width: 30%; padding: 10px;\">B</th>\n      <th style=\"width: 30%; padding: 10px;\">C</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">1</td>\n      <td style=\"padding: 10px;\">[消費]{しょうひ}稅</td>\n      <td style=\"padding: 10px; text-align: right;\">10%</td>\n      <td style=\"padding: 10px;\"></td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2</td>\n      <td style=\"padding: 10px;\"></td>\n      <td style=\"padding: 10px;\"></td>\n      <td style=\"padding: 10px;\"></td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">3</td>\n      <td style=\"padding: 10px; text-align: center;\">[商品名]{しょうひんめい}</td>\n      <td style=\"padding: 10px;\">[税抜]{ぜいぬき}[価格]{かかく}(円)</td>\n      <td style=\"padding: 10px;\">[税込]{ぜいこみ}[価格]{かかく}(円)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">4</td>\n      <td style=\"padding: 10px;\">[商品]{しょうひん} X</td>\n      <td style=\"padding: 10px; text-align: right;\">200</td>\n      <td style=\"padding: 10px;\"></td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">5</td>\n      <td style=\"padding: 10px;\">[商品]{しょうひん} Y</td>\n      <td style=\"padding: 10px; text-align: right;\">500</td>\n      <td style=\"padding: 10px;\"></td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">6</td>\n      <td style=\"padding: 10px;\">[商品]{しょうひん} Z</td>\n      <td style=\"padding: 10px; text-align: right;\">100</td>\n      <td style=\"padding: 10px;\"></td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Option": [
+          "B$4* (1+B$1)",
+          "B$4*(1+B1)",
+          "B4*(1+B$1)",
+          "B4*(1+B1)"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[ネットワーク]{network}や[ホスト]{ホスト}を[監視]{かんし}することによって、[不正]{ふせい}[アクセス]{access}や[不審]{ふしん}な[通信]{つうしん}を[発見]{はっけん}し、[報告]{ほうこく}する[仕組み]{しくみ}はどれか。\n\n",
+      "Option": [
+          "DMZ ",
+          "IDS",
+          "アンチパスバック",
+          "ボット"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "[手続]{てつづき} calcMod3を[呼び出し]{よびだし}たときの[出力]{しゅつりょく}はどれか。\n[[プログラム]{program}]\nOcalcMod3()\n    [整数型]{せいすうがた}: totalValue, i\n    totalValue 0\n    for (i を 1 から 7 まで 1 ずつ[増やす]{ふやす})\n        if (i + 3 の[余り]{あまり} が 0 と[等しい]{ひとしい})\n            totalValue totalValue + i\n        endif\n    endfor\n    totalValue を[出力]{しゅつりょく}する\n\n",
+      "Option": [
+          "2 ",
+          "3 ",
+          "7 ",
+          "9"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 4
+  }	,
+  {
+      "Question": "[サムネイル]{thumbnail，缩略图}の[説明]{せつめい}として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "画像や文書ファイルの内容を縮小して表示したもの",
+          "処理の内容や対象が分かる小さな絵や記号のこと",
+          "ネット上で利用者の分身として動作するキャラクターのこと",
+          "複数のファイルを一つのファイルにまとめたもの"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 1
+  }	,
+  {
+      "Question": "AI において、[広範囲]{こうはんい}かつ[大量]{たいりょう}の[データ]{data}で[訓練]{くんれん}されたものであり、[ファインチューニング]{fine tuning}などによって[文章]{ぶんしょう}[生成]{せいせい} AI のような[様々な]{さまざまな}[用途]{ようと}に[適応]{てきおう}できる[特徴]{とくちょう}をもつものを[何と]{なんと}いうか。\n\n",
+      "Option": [
+          "アノテーション",
+          "エキスパートシステム",
+          "基盤モデル",
+          "畳み込みニューラルネットワーク"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[イメージスキャナー]{Image Scanner}で[読み]{よみ}[取っ]{とっ}た紙の[書類]{しょるい}の[画像]{がぞう}から、[印刷文字]{いんさつもじ}や[手書き]{てがき}の[文字]{もじ}を[読み取り]{よみとり}、[テキストデータ]{text data}に[変換]{へんかん}する[技術]{ぎじゅつ}を[何と]{なんと}[呼ぶ]{よぶ}か。\n\n",
+      "Option": [
+          "CCD ",
+          "DVI ",
+          "GPU ",
+          "OCR"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 4
+  }	,
+  {
+      "Question": "ある[コンピュータ]{computer}の[データベース]{Data Science}の[内容]{ないよう}を[他の]{ほかの}[コンピュータ]{computer}の[データベース]{Data Science}に[複製]{ふくせい}して、[両者]{りょうしゃ}の[内容]{ないよう}が[一致]{いっち}するように[同期]{どうき}させる DBMS の[機能]{きのう}はどれか。\n\n",
+      "Option": [
+          "アーカイブ",
+          "バックアップ",
+          "レプリケーション",
+          "ロールバック"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "ISMS の[運用]{うんよう}に PDCA [モデル]{model}を[採用]{さいよう}している[組織]{そしき}において、[サーバ]{server}[監視]{かんし}に[関す]{かんす}る[次の]{つぎの}[作業]{さぎょう}を[実施]{じっし}する。各[作業]{さぎょう}と PDCA [モデル]{model}の各[フェーズ]{phase}の[組合せ]{くみあわせ}として、[適切]{てきせつ}なものはどれか。\n[[作業]{さぎょう}]\n(1) [サーバ]{server}[監視]{かんし}の[具体的]{ぐたいてき}な[目的]{もくてき}[及び]{および}[手順]{てじゅん}を[定め]{さだめ}る。\n(2) [サーバ]{server}[監視]{かんし}の[作業内容]{さぎょうないよう}を[第三者]{だいさんしゃ}が[客観的]{きゃっかんてき}に[評価]{ひょうか}する。\n(3) [定め]{さだめ}られている[手順]{てじゅん}に[従って]{したがって}[サーバ]{server}を[監視]{かんし}する。\n(4) [発見]{はっけん}された[問題点]{もんだいてん}の[是正]{ぜせい}[処置]{しょち}として、[サーバ]{server}の[監視]{かんし}[方法]{ほうほう}を[変更]{へんこう}する。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 14%; padding: 10px;\"></th>\n      <th style=\"width: 18%; padding: 10px;\">P</th>\n      <th style=\"width: 25%; padding: 10px;\">D</th>\n      <th style=\"width: 18%; padding: 10px;\">C</th>\n      <th style=\"width: 25%; padding: 10px;\">A</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n    </tr>\n  </tbody>\n</table>\n\n",
+      "Option": [
+          "ア",
+          "イ",
+          "ウ",
+          "エ"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "ISMS における[情報]{じょうほう}[セキュリティ]{安全功能}[方針]{ほうしん}に[関す]{かんす}る[記述]{きじゅつ}として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "機密事項が記載されているので、伝達する範囲を社内に限定する必要がある。",
+          "情報セキュリティ対策は一度実施したら終わりではないので, ISMS を継続的に改善するコミットメントを含める必要がある。",
+          "部門の特性に応じて最適化するので, ISMS を適用する組織全体ではなく、部門ごとに定める必要がある。",
+          "ボトムアップを前提としているので、各職場の管理者によって承認される必要がある。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "[問題]{もんだい}を[解い]{とい}て[解答]{かいとう}群の中から[正解]{せいかい}を[選ぶ]{えらぶ}、ある AI [システム]{system}がある。この[システム]{system}は、1回の[学習]{がくしゅう}の[過程]{かてい}を[経る]{へる}ごとに、[学習]{がくしゅう}の[過程]{かてい}の[前後]{ぜんご}の[比較]{ひかく}において、[誤り率]{あやまりりつ}が5%[低下]{ていか}する([前回]{ぜんかい}の[誤り率]{あやまりりつ}の95%になる)。[現在]{げんざい}の[正解率]{せいかいりつ}が30%であるとき、[正解率]{せいかいりつ}が35%を[超え]{こえ}るためには、[少なくとも]{すくなくとも}あと[何回]{なんかい}の[学習]{がくしゅう}の[過程]{かてい}が[必要]{ひつよう}か。\n\n",
+      "Option": [
+          "1 ",
+          "2 ",
+          "3 ",
+          "4"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "[動物]{どうぶつ}が[写っ]{うつっ}ている[大量]{たいりょう}の[画像]{がぞう}から犬や猫などの[特徴]{とくちょう}を[自動的]{じどうてき}に[抽出]{ちゅうしゅつ}して、[動物]{どうぶつ}の[種類]{しゅるい}を[識別]{しきべつ}できるようにする AI の[技術]{ぎじゅつ}はどれか。\n\n",
+      "Option": [
+          "e-ラーニング",
+          "アクティブラーニング",
+          "アダプティブラーニング",
+          "ディープラーニング"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 4
+  }	,
+  {
+      "Question": "PKI において、ある[条件]{じょうけん}に[当て]{あて}はまる[デジタル]{digital}[証明書]{しょうめいしょ}の[情報]{じょうほう}が[公開]{こうかい}されている[リスト]{list}として CRL がある。この[リスト]{list}に[掲載]{けいさい}される[条件]{じょうけん}として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "有効期間が満了している。",
+          "有効期間が無期限である。",
+          "有効期間内に失効している。",
+          "有効期間を延長している。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[情報]{じょうほう}[セキュリティ]{安全功能}[対策]{たいさく}を、“[技術的]{ぎじゅつてき}[セキュリティ]{安全功能}[対策]{たいさく}”,“[人的]{じんてき}[セキュリティ]{安全功能}[対策]{たいさく}”[及び]{および}“[物理的]{ぶつりてき}[セキュリティ]{安全功能}[対策]{たいさく}”に[分類]{ぶんるい}したとき、“[物理的]{ぶつりてき}[セキュリティ]{安全功能}[対策]{たいさく}”の例として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "業務に関係のない掲示板や SNS などへの従業員による書込み、閲覧を防止するために, Web サーバへのアクセスログを取得し、必要に応じて通信を遮断する。",
+          "サーバ室、執務室などの場所ごとにセキュリティレベルを設定し、従業員ごとのアクセス権が付与された ICカードで入退室管理を行う。",
+          "従業員の採用時には、守秘義務に関する契約書を取り交わし、在籍中は機密情報の取扱いに関する教育、啓発を実施する。",
+          "退職者が、在籍中のアカウントを用いた不正アクセスを行わないように、従業員の退職時にアカウントを削除する。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "Aさんは、Bさんから[次の]{つぎの}4[種類]{しゅるい}の[メッセージ]{message}を[受け取っ]{うけとっ}た。Aさんが、[受け取っ]{うけとっ}た[メッセージ]{message}を[復号]{ふくごう}して[読む]{よむ}ことができるものだけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\na AさんとBさんとの[共通]{きょうつう}鍵で[暗号化]{あんごうか}した[メッセージ]{message}\nb Aさんの[公開]{こうかい}鍵で[暗号化]{あんごうか}した[メッセージ]{message}\nc Bさんの[公開]{こうかい}鍵で[暗号化]{あんごうか}した[メッセージ]{message}\nd Bさんの[秘密]{ひみつ}鍵で[暗号化]{あんごうか}した[メッセージ]{message}\n\n",
+      "Option": [
+          "a, b, d ",
+          "a, с, d ",
+          "b, d ",
+          "c,d"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 1
+  }	,
+  {
+      "Question": "[無線]{むせん}LANの[セキュリティ]{安全功能}[対策]{たいさく}に[関す]{かんす}る[記述]{きじゅつ}として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "API は、複数のアクセスポイントをグループ化して管理する IDである。",
+          "SSHは、アクセスポイントをステルス化することで無線LAN ネットワークを隠蔽する機能である。",
+          "VPN は、アクセスポイントに登録した MAC アドレスをもつ機器以外からの接続を拒否する機能である。",
+          "WPA2は, WEP よりも高い信頼性をもつ, 無線通信の暗号化技術である。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 4
+  }	,
+  {
+      "Question": "[情報]{じょうほう}[セキュリティ]{安全功能}の[リスクマネジメント]{Risk Management}における[リスク]{risk}[対応]{たいおう}を、[リスク]{risk}[移転]{いてん},[リスク]{risk}[回避]{かいひ}, [リスク]{risk}[低減]{ていげん}[及び]{および}[リスク]{risk}[保有]{ほゆう}の[四つ]{よつ}に[分け]{わけ}て[実施]{じっし}することにしたとき、これらに[関す]{かんす}る[記述]{きじゅつ}として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "リスク対応の実施手順であり、リスク回避,リスク移転、リスク低減、リスク保有の順番で進める。",
+          "リスク対応の実施手順であり、リスク保有, リスク低減, リスク移転、リスク回避の順番で進める。",
+          "リスク対応の選択肢であり,管理対象としたリスクの顕在化に備えて保険を掛けておくことは、リスク回避に該当する。",
+          "リスク対応の選択肢であり, ノートPC の紛失や盗難に備えて社外への持出しをより厳重に管理することは、リスク低減に該当する。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 4
+  }	,
+  {
+      "Question": "[従業員]{じゅうぎょういん}が[使用す]{しようす}る PC が[ランサムウェア]{ransomware,勒索软件}に[感染]{かんせん}した[場合]{ばあい}の[損害]{そんがい}を[軽減]{けいげん}する[対策]{たいさく}例として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "PCが接続するファイルサーバの HDD のバックアップデータを定期的に取得し、ネットワークから切り離して保管する。",
+          "PCに多要素認証の仕組みを導入する。",
+          "PCのHDDを暗号化する。",
+          "PCへのログイン時に、パスワードを複数回間違えたら、当該 IDをロックする。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 1
+  }	,
+  {
+      "Question": "[情報]{じょうほう}[セキュリティ]{安全功能}における[脅威]{きょうい}の[説明]{せつめい}として、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "攻撃者が付け込むことのできる情報システムの弱点",
+          "情報資産が被害に遭う確率と被害規模の組合せ",
+          "情報資産に損害を与える原因となるもの",
+          "情報システムの弱点を利用した攻撃によって被害を受ける可能性"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[稼働率]{かどうりつ}0.9の[装置]{そうち}で[並列]{へいれつ}[システム]{system}を[構成]{こうせい}したい。この[システム]{system}の[稼働率]{かどうりつ}を0.999とするためには、[最低]{さいてい}[何台]{なんだい}の[装置]{そうち}で[並列]{へいれつ}[システム]{system}を[構成]{こうせい}する[必要]{ひつよう}があるか。ここで、[並列]{へいれつ}[システム]{system}を[構成]{こうせい}したときに、[少なくとも]{すくなくとも}1台の[装置]{そうち}が[稼働]{かどう}していれば[システム]{system}は[正常]{せいじょう}に[稼働]{かどう}しているものとする。\n\n",
+      "Option": [
+          "2 ",
+          "3 ",
+          "4 ",
+          "5"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 2
+  }	,
+  {
+      "Question": "[データベース]{Data Science}[設計]{せっけい}における[データ]{data}[分析]{ぶんせき}で[行う]{おこなう}こととして、[適切]{てきせつ}なものはどれか。\n\n",
+      "Option": [
+          "データウェアハウスから業務ごとに必要な情報を抽出する。",
+          "データ項目の内容が、指定された条件を満足する行だけを抽出する。",
+          "必要なデータ項目を洗い出し,項目間の関連を整理する。",
+          "膨大な情報から統計的手法などを用いて、ビジネスに活用できる情報を探索する。"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "OSS (Open Source Software)に[関す]{かんす}る[次の]{つぎの}[記述]{きじゅつ}のうち、[適切]{てきせつ}なものだけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\na [個人]{こじん}だけではなく、[企業]{きぎょう}や[団体]{だんたい}が[開発]{かいはつ}した[ソフトウェア]{software}もある。\nb [著作権]{ちょさくけん}が[放棄]{ほうき}されている。\nc [入手]{にゅうしゅ}した[ソフトウェア]{software}は、[自由]{じゆう}に[再配布]{さいはいふ}してもよい。\n\n",
+      "Option": [
+          "a, b ",
+          "a, b, c ",
+          "а, с ",
+          "b, с"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[情報]{じょうほう}[セキュリティ]{安全功能}において、[可用性]{かようせい}が[損な]{そこな}われた[事象]{じしょう}だけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\na [関連]{かんれん}[取引先]{とりひきさき}との[電子]{でんし}[決済]{けっさい}[システム]{system}が DoS [攻撃]{こうげき}を[受け]{うけ}、[処理]{しょり}ができなくなった。\nb [顧客]{こきゃく}[情報管理]{じょうほうかんり}[システム]{system}の[顧客]{こきゃく}[情報]{じょうほう}が[誤っ]{あやまっ}た[内容]{ないよう}のまま[運用]{うんよう}されていた。\nc [社内]{しゃない}の[サーバ]{server}に[不正]{ふせい}[侵入]{しんにゅう}されて、[社外秘]{しゃがいひ}の[情報]{じょうほう}が漏えいした。\n\n",
+      "Option": [
+          "a ",
+          "a, b ",
+          "b, c ",
+          "c"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 1
+  }	,
+  {
+      "Question": "4個の[要素]{ようそ}から[成る]{なる}[データ]{data}の[並び]{ならび}を、[次の]{つぎの}[手順]{てじゅん}を[繰り返し]{くりかえし}て[昇順]{しょうじゅん}に[整列]{せいれつ}するとき、[整列]{せいれつ}が[終了]{しゅうりょう}するまでに(1)から (3)の[一連]{いちれん}の[手順]{てじゅん}は、[何回]{なんかい}[実行]{じっこう}されるか。ここで、[最初]{さいしょ}は[データ]{data}の[並び]{ならび}[全体]{ぜんたい}を[整列]{せいれつ}[対象]{たいしょう}とする。\n[データ]{data}の[並び]{ならび}: [27, 42, 33, 12]\n[[手順]{てじゅん}]\n(1) [整列]{せいれつ}[対象]{たいしょう}[中の]{なかの}[要素]{ようそ}の[最大]{さいだい}の値を[選び]{えらび}、[最後]{さいご}の[要素]{ようそ}と[入れ替え]{いれかえ}る。\n(2) [最後]{さいご}の[要素]{ようそ}を[整列]{せいれつ}[対象]{たいしょう}から[外す]{はずす}。\n(3) [整列]{せいれつ}[対象]{たいしょう}に[要素]{ようそ}が1個[以上]{いじょう}[残っ]{のこっ}ていれば、(1)から (3)の[一連]{いちれん}の[手順]{てじゅん}を[実行]{じっこう}する。[残っ]{のこっ}ていなければ、[整列]{せいれつ}[完了]{かんりょう}なので[終了]{しゅうりょう}する。\n\n",
+      "Option": [
+          "2 ",
+          "3 ",
+          "4 ",
+          "5"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[関数]{かんすう} calculateAmountOfPrize は、[業務]{ぎょうむ}[改善]{かいぜん}の[効果]{こうか}における[改善]{かいぜん}額と[短縮]{たんしゅく}[期間]{きかん}を、それぞれ improvement と period で[受け取り]{うけとり}、[賞金]{しょうきん}額を[戻り値]{もどりち}とする。[改善]{かいぜん}額が20[万円]{まんえん}で[短縮]{たんしゅく}[期間]{きかん}が3日の[業務]{ぎょうむ}[改善]{かいぜん}と、[改善]{かいぜん}額が5[万円]{まんえん}で[短縮]{たんしゅく}[期間]{きかん}が14日の[業務]{ぎょうむ}[改善]{かいぜん}があった。この[二つ]{ふたつ}の[賞金]{しょうきん}額の[合計]{ごうけい}は[何円]{なんえん}か。ここで、[改善]{かいぜん}額と[短縮]{たんしゅく}[期間]{きかん}の値はそれぞれの[以上]{いじょう}とする。\n[[プログラム]{program}]\n○[整数型]{せいすうがた}:calculateAmountOfPrize([整数型]{せいすうがた}: improvement, // [改善]{かいぜん}額(円)\n    [整数型]{せいすうがた}: prize // [賞金]{しょうきん}額(円)\n    [整数型]{せいすうがた}: period) // [短縮]{たんしゅく}[期間]{きかん}(日)\nif (improvement が 100000 より[小さい]{ちーさい})\n    if (period が 7 より[小さい]{ちーさい})\n        prize <-- 500\n    else\n        prize <-- 1000\n    endif\nelse\n    if (period が 7 より[小さい]{ちーさい})\n        prize <-- 2000\n    else\n        prize <-- 5000\n    endif\nendif\nreturn prize\n\n",
+      "Option": [
+          "1,000 ",
+          "1,500 ",
+          "3,000 ",
+          "5,500"
+      ],
+      "Analysis": "",
+      "Unit": 2025,
+      "Correct Answer": 3
+  }	,
+  {
+      "Question": "[個人]{こじん}の[認証]{にんしょう}に[用い]{もちい}る[要素]{ようそ}を、[知識]{ちしき}、[所有物]{しょゆうぶつ}[及び]{および}[バイオメトリクス]{生物识别技术}の[三つ]{みっつ}に[分類]{ぶんるい}したとき、[所有物]{しょゆうぶつ}を[要素]{ようそ}として[用いた]{もちいた}[認証]{にんしょう}の例はどれか。\n",
+      "Option": [
+          "SMSを用いた認証",
+          "虹彩の特徴を用いた認証",
+          "筆跡や筆圧、スピードなど、文字を書くときの特徴を用いた認証",
+          "本人が事前に設定した質問とそれに対する答えを用いた認証"
+      ],
+      "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
   }

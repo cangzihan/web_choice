@@ -34,6 +34,9 @@
       font-size: 20px;
       margin-bottom: 20px;
     }
+    table {
+      font-size: 16px;
+    }
     .options button {
       display: block;
       width: 100%;
@@ -474,7 +477,7 @@
     document.getElementById("quizScreen").style.display = "flex";
     renderQuestion(currentIndex);
 
-    // 下方按钮
+    // 下方跳转题目按钮
     const navContainer = document.getElementById("questionNav");
     navContainer.innerHTML = ""; // 清空旧的
     filteredData.forEach((_, idx) => {
@@ -482,7 +485,8 @@
       btn.textContent = idx + 1;
       btn.id = `navBtn${idx}`;  // 加 ID
       btn.className = "nav-btn"; // 加 class，用于 CSS 统一样式
-      btn.style.padding = "6px 10px";
+      btn.style.padding = "2px 4px";
+      btn.style.textAlign = "center";  // 防止多行时居左
       btn.style.borderRadius = "4px";
       btn.style.border = "1px solid #aaa";
       btn.style.cursor = "pointer";
@@ -526,6 +530,7 @@
       container.appendChild(btn);
     });
 
+    // 渲染选项按钮
     if (userAnswers[index] != null) {
       const selected = userAnswers[index];
       const buttons = document.querySelectorAll(".options button");

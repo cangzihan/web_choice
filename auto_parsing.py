@@ -37,6 +37,7 @@ def problem_parsing(problem_path, answer_path, out_path, out_name, unit):
     option_exist = False    # Stage 2: parsing options
     problems_list = []
     problem_info = None  # Problem info dict
+    analysis = ""
     for line in problem_ori:
         # Every question should be start with "問"
         if line.startswith("問"):
@@ -44,13 +45,20 @@ def problem_parsing(problem_path, answer_path, out_path, out_name, unit):
                 if len(problem_info["Option"]) != 4:
                     print(f"[{current_index}]Abnormal option number:", len(problem_info["Option"]))
                 problems_list.append(problem_info)
+
             problem_info = {
                 "Question": remove_question_number(line),
                 "Option": [],
+                "Analysis": "",
                 "Unit": unit,
                 "Correct Answer": answers[current_index]}
             current_index += 1
             option_exist = False
+        # 读取问题分析部分
+        elif line.startswith("[Analysis]"):
+            if problem_info["Analysis"] != "":
+                problem_info["Analysis"] += "\n"
+            problem_info["Analysis"] += line[len("[Analysis]"):].strip()
         # The question part and the option part should be split with empty line
         elif not option_exist and line == '\n':
             option_exist = True
