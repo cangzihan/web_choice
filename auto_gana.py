@@ -5,45 +5,77 @@ import os
 
 kana_description_dict = {
     "アイディア": "idea",
+    "アジャイルモデル": "敏捷模型",
+    "アクセス": "access",
     "アクセシビリティ": "accessibility",
+    "アドレス": "address",
     "アノテーション": "annotation",
+    "インストール": "install",
+    "インタフェース": "interface",
     "アルゴリズム": "algorithm",
+    "ウォーターフォールモデル": "瀑布模型",
+    "オペレーター": "操作员",
     "ガイドライン": "guidelines",
     "クラウドサービス": "Cloud Services",
     "グラフ": "graph",
+    "コスト": "cost",
+    "コンピュータ": "computer",
+    "コールセンター": "Call Center",
+    "クリティカルパス": "关键路径",
+    "グループ": "group",
     "コーポレートガバナンス": "Corporate Governance",
     "サイト": "site",
     "サービス": "service",
+    "サービスデスク": "服务台",
     "サービスマネジメント": "Service Management",
     "サービスマーク": "Service Mark",
+    "サービスレベル": "Service Level",
+    "スキル": "skill",
     "ソースプログラム": "源程序",
     "システム": "system",
+    "スケジュール": "schedule",
+    "スコープ": "scope",
     "スマートファクトリー": "Smart Factory",
     "セキュリティ": "安全功能",
     "セキュリティマネジメントシステム": "Security Management System",
+    "ソフトウェア": "software",
     "ソフトウェアライフサイクル": "Software Life Cycle",
     "ソリューション": "solution",
+    "デバイス": "device",
     "データ": "data",
+    "チャットボット": "chatbots",
+    "ネットワーク": "network",
     "ツール": "tool",
+    "トランザクション": "transaction，交易",
+    "トレーニング": "training",
     "メール": "mail",
     "メールサーバ": "Mail Server",
     "ハッカソン": "黑客马拉松",
+    "パフォーマンス": "performance",
     "バイアス": "bias",
     "パスワード": "密码",
+    "パネル": "panel，控制板",
     "バリュー": "value",
     "ビジョン": "vision",
     "ビジネスモデル": "Business Model",
+    "フレキシブル": "flexible",
+    "プレシデンスダイアグラム": "优先图",
     "プロトコル": "protocol, 协议",
+    "プロキシサーバ": "Proxy Server",
     "ブログ": "blog",
+    "プログラム": "program",
+    "プロジェクト": "project",
     "プロセス": "process",
     "プロセスマイニング": "Process Mining",
     "ブロックチェーン": "区块链",
     "ベンダー": "供应商，卖方",
     "ポイント": "point",
+    "ホームページ": "Home page",
     "マニュアル": "manual",
     "マルウェア": "恶意软件",
     "マーケティング": "营销",
     "ミッション": "mission",
+    "モデル": "model",
     "レベル": "level"
 }
 
@@ -70,13 +102,15 @@ def process_jp_sentence(text):
 
     annotated_text = ''
     for item in result:
-        if item['orig'] != item['hira']:
+        if item['orig'] != item['hira'] and len(item['orig'])>1:
             description = item['hira']
 
             # 根据字典解析一些常见片假名
             if item['orig'] == item['kana']:
                 if item['kana'] in kana_description_dict:
                     description = kana_description_dict[item['kana']]
+                else:
+                    print(item['kana'])
 
             annotated_text += f"[{item['orig']}]" + "{" + f"{description}" + "}"
         else:
