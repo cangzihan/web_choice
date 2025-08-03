@@ -23,5 +23,11 @@ const bookList = [
     Title: "ITパスポート公式",
     Path: "IT_PASSPORT_OFFICIAL.js",
     DataVar: "IT_PASSPORT_OFFICIAL"
+  },
+  {
+    Title: "单词匹配",
+    Path: "Word.js",
+    DataVar: "word",
+    QuestionType: "match"
   }
 ];

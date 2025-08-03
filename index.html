@@ -240,6 +240,71 @@
       transform: translateX(24px);
       content: "🌙";
     }
+
+    .match-card.matched {
+      background-color: #e0ffe0;
+      border-color: #0a0;
+      cursor: default;
+    }
+
+    .word-card.selected {
+      background-color: rgb(198, 235, 250);
+      border-color: #0984e3;
+    }
+
+    .dark-theme .word-card.selected {
+      background-color: rgb(6, 16, 68);
+      border-color: #5fdaf9;
+    }
+
+    .word-card {
+      width: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      background-color: white;
+      border-radius: 8px;
+      box-sizing: border-box;
+      border: 1px solid #aaa;
+    }
+
+    .meaning-card {
+      width: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
+      background-color: white;
+      border-radius: 8px;
+      box-sizing: border-box;
+      border: 1px solid #aaa;
+    }
+
+    .dark-theme .word-card {
+      background-color: black;
+    }
+
+    .dark-theme .meaning-card {
+      background-color: black;
+    }
+
+    .correct_match{
+      background-color: rgb(203, 255, 177) !important;
+      border: 2px solid green !important;
+    }
+
+    .wrong_match{
+      background-color: rgb(255, 230, 230);
+      border: 2px solid red;
+    }
+
+    .dark-theme .correct_match{
+      background-color: rgb(16, 44, 6) !important;
+      border: 2px solid rgb(54, 178, 54) !important;
+    }
+
+    .dark-theme .wrong_match{
+      background-color: rgb(66, 0, 0);
+      border: 2px solid red;
+    }
+
   </style>
   <script src="book_list.js"></script>
   <script src="BlueBook_N3.js"></script>
@@ -247,6 +312,7 @@
   <script src="Simulate_N3.js"></script>
   <script src="JLPT_Test.js"></script>
   <script src="IT_PASSPORT_OFFICIAL.js"></script>
+  <script src="Word.js"></script>
 </head>
 <body>
   <div id="navigationBar" style="position: absolute; top: 10px; right: 10px; display: flex; gap: 16px; align-items: center;">
@@ -299,6 +365,21 @@
 </div>
 <div id="questionNav" style="margin-top: 20px; display: grid; grid-template-columns: repeat(20, auto); gap: 8px;"></div>
 
+<!-- 匹配题界面 -->
+<div class="container" id="matchScreen" style="display:none; flex-direction: column; gap: 20px;">
+  <div id="matchQuestionText" style="font-size: 20px; font-weight: bold; gap: 40px;"></div>
+
+  <div style="display: flex; justify-content: space-between;">
+    <!-- 左侧词卡（外语词汇） -->
+    <div id="matchLeft" style="flex: 1; display: flex; flex-direction: column; gap: 10px;"></div>
+
+    <!-- 右侧词卡（释义） -->
+    <div id="matchRight" style="flex: 1; display: flex; flex-direction: column; gap: 10px;"></div>
+  </div>
+
+  <button onclick="goBackToStart()" style="align-self: flex-end;">返回首页</button>
+</div>
+
 <script>
   // display: grid：用网格布局。
   // grid-template-columns: repeat(20, auto)：一行最多20列，每列自动宽度。
@@ -308,6 +389,8 @@
   let filteredData = [];
   let currentIndex = 0;
   let userAnswers = [];
+
+  let isMatchQuestion = false;  // 标记是否是匹配题
 
   const translations = {
     zh: {
@@ -401,6 +484,7 @@
     const bookInfo = bookList[selectedIdx];
     const dataVarName = bookInfo.DataVar;
     allData = window[dataVarName];  // <-- 动态拿变量里的题目数据
+    isMatchQuestion = bookInfo.QuestionType === "match";
 
     const unitSet = new Set(allData.map(q => q.Unit));
     unitSelector.innerHTML = `<option disabled selected>` + t.selectUnit + `</option>`;
@@ -411,15 +495,17 @@
       unitSelector.appendChild(opt);
     });
 
-    const optRandom_10 = document.createElement("option");
-    optRandom_10.value = "__RANDOM_10__";
-    optRandom_10.textContent = "随机抽取 10 题";
-    unitSelector.appendChild(optRandom_10);
+    if (!isMatchQuestion) {
+      const optRandom_10 = document.createElement("option");
+      optRandom_10.value = "__RANDOM_10__";
+      optRandom_10.textContent = "随机抽取 10 题";
+      unitSelector.appendChild(optRandom_10);
 
-    const optRandom_15 = document.createElement("option");
-    optRandom_15.value = "__RANDOM_15__";
-    optRandom_15.textContent = "随机抽取 15 题";
-    unitSelector.appendChild(optRandom_15);
+      const optRandom_15 = document.createElement("option");
+      optRandom_15.value = "__RANDOM_15__";
+      optRandom_15.textContent = "随机抽取 15 题";
+      unitSelector.appendChild(optRandom_15);
+    }
   });
 
   function shuffleOptionsAndFixAnswer(q) {
@@ -464,7 +550,10 @@
     }
 
     // 对每题打乱选项并修正正确答案
-    filteredData = filteredData.map(shuffleOptionsAndFixAnswer);
+    // 匹配题不需要处理选项
+    if (!isMatchQuestion) {
+      filteredData = filteredData.map(shuffleOptionsAndFixAnswer);
+    }
 
     if (filteredData.length === 0) {
       alert(t.warningNoQuestion);
@@ -474,29 +563,40 @@
     userAnswers = new Array(filteredData.length).fill(null);
     currentIndex = 0;
     document.getElementById("startScreen").style.display = "none";
-    document.getElementById("quizScreen").style.display = "flex";
-    renderQuestion(currentIndex);
+
+    if (isMatchQuestion) {
+      document.getElementById("matchScreen").style.display = "flex";
+      document.getElementById("quizScreen").style.display = "none";
+      renderMatchQuestion();
+    } else {
+      document.getElementById("quizScreen").style.display = "flex";
+      document.getElementById("matchScreen").style.display = "none";
+      renderQuestion(currentIndex);
+    }
 
     // 下方跳转题目按钮
     const navContainer = document.getElementById("questionNav");
     navContainer.innerHTML = ""; // 清空旧的
-    filteredData.forEach((_, idx) => {
-      const btn = document.createElement("button");
-      btn.textContent = idx + 1;
-      btn.id = `navBtn${idx}`;  // 加 ID
-      btn.className = "nav-btn"; // 加 class，用于 CSS 统一样式
-      btn.style.padding = "2px 4px";
-      btn.style.textAlign = "center";  // 防止多行时居左
-      btn.style.borderRadius = "4px";
-      btn.style.border = "1px solid #aaa";
-      btn.style.cursor = "pointer";
+    
+    if (!isMatchQuestion) {
+      filteredData.forEach((_, idx) => {
+        const btn = document.createElement("button");
+        btn.textContent = idx + 1;
+        btn.id = `navBtn${idx}`;  // 加 ID
+        btn.className = "nav-btn"; // 加 class，用于 CSS 统一样式
+        btn.style.padding = "2px 4px";
+        btn.style.textAlign = "center";  // 防止多行时居左
+        btn.style.borderRadius = "4px";
+        btn.style.border = "1px solid #aaa";
+        btn.style.cursor = "pointer";
 
-      btn.onclick = () => {
-        currentIndex = idx;
-        renderQuestion(currentIndex);
-      };
-      navContainer.appendChild(btn);
-    });
+        btn.onclick = () => {
+          currentIndex = idx;
+          renderQuestion(currentIndex);
+        };
+        navContainer.appendChild(btn);
+      });
+    }
   }
 
   function renderQuestion(index) {
@@ -611,6 +711,7 @@
 
   function goBackToStart() {
     document.getElementById("quizScreen").style.display = "none";   // 隐藏答题界面
+    document.getElementById("matchScreen").style.display = "none";  // 隐藏答题界面
     document.getElementById("startScreen").style.display = "block"; // 显示选书界面
 
     // 👉 清空题号按钮
@@ -670,6 +771,94 @@
   function isNightTime() {
     const hour = new Date().getHours();
     return hour >= 0 && hour < 5;
+  }
+
+  function renderMatchQuestion() {
+    const questionData = filteredData[currentIndex];
+    const wordPairs = Object.entries(questionData.WordList);
+
+    const sampledPairs = shuffle([...wordPairs]).slice(0, 6); // 抽6对
+    const leftWords = shuffle(sampledPairs); // 左边打乱
+    const rightMeanings = shuffle(sampledPairs.map(([_, m]) => m)); // 右边打乱
+
+    const leftContainer = document.getElementById("matchLeft");
+    const rightContainer = document.getElementById("matchRight");
+    const questionText = document.getElementById("matchQuestionText");
+
+    // 清空
+    leftContainer.innerHTML = "";
+    rightContainer.innerHTML = "";
+    questionText.textContent = "请将左边的单词与右边的释义配对";
+
+    let selectedLeft = null;
+
+    // 保存已配对信息
+    const matched = new Map();
+
+    // 渲染左边词卡
+    leftWords.forEach(([word]) => {
+      const card = document.createElement("div");
+      card.textContent = word;
+      card.className = "word-card";
+      card.style.padding = "8px 12px";
+      card.style.borderRadius = "8px";
+      card.style.cursor = "pointer";
+
+      card.addEventListener("click", () => {
+        if (matched.has(word)) return; // 已匹配则不可再点
+        if (selectedLeft) {
+          selectedLeft.classList.remove("selected");
+        }
+        selectedLeft = card;
+        card.classList.add("selected");
+      });
+
+      leftContainer.appendChild(card);
+    });
+
+    // 渲染右边释义卡
+    rightMeanings.forEach(meaning => {
+      const card = document.createElement("div");
+      card.textContent = meaning;
+      card.className = "meaning-card";
+      card.style.padding = "8px 12px";
+      card.style.borderRadius = "8px";
+      card.style.cursor = "pointer";
+
+      card.addEventListener("click", () => {
+        if (!selectedLeft || matched.has(selectedLeft.textContent)) return;
+
+        const selectedWord = selectedLeft.textContent;
+        if (questionData.WordList[selectedWord] === meaning) {
+          // 匹配成功
+          selectedLeft.classList.add("correct_match");
+          card.classList.add("correct_match");
+
+          matched.set(selectedWord, meaning);
+
+          selectedLeft.classList.remove("selected");
+          card.classList.remove("selected");
+        } else {
+          // 错误提示（可选）
+          card.classList.add("wrong_match");
+          selectedLeft.classList.add("wrong_match");
+          setTimeout(() => {
+            card.classList.remove("wrong_match");
+            selectedLeft.classList.remove("wrong_match");
+          }, 600);
+
+          selectedLeft.classList.remove("selected");
+          card.classList.remove("selected");
+        }
+        selectedLeft = null;
+      });
+
+      rightContainer.appendChild(card);
+    });
+  }
+
+  function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
   }
 
 applyDefaultThemeByTime();
