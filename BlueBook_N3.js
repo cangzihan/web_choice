@@ -1519,6 +1519,13 @@ window.bluebook_n3 = [
       "Correct Answer": 4
     },
     {
+      "Question": "[彼女]{かのじょ}の[表情]{ひょうじょう}からみると、そのことを[知って]{しって}いる（　　）と[思う]{おもう}。",
+      "Option": ["そうもない", "のではないか", "ことがある", "おかげた"],
+      "Analysis": "知识点98\n通义千问3-235B-A22B解析：\n- 知っているのではないかと思う means \"I think she probably knows\" and is used to express a supposition based on observation (e.g., her expression).\n- そうもない (\"not likely\") contradicts the context, as the speaker seems to lean toward her knowing the information.\n- ことがある (\"there are times when\") does not fit a specific situation or observation.\n- おかげた is grammatically incorrect here (likely a distractor).\n\nCompleted Sentence:\n「彼女の表情からみると、そのことを知っているのではないかと思う。」\n(\"Judging from her expression, I think she probably knows that.\")",
+      "Unit": 10,
+      "Correct Answer": 2
+    },
+    {
       "Question": "[私]{わたし}は[地元]{じもと}の[人]{にん}（　　）[町]{まち}を[案内]{あんない}してもらいました。",
       "Option": ["に", "と", "が", "でも"],
       "Analysis": "前面是【もらいました】的对象所以选に，知识点106\n我让一位当地人带我参观了小镇。",
@@ -2348,6 +2355,97 @@ window.bluebook_n3 = [
       "Question": "この[一年間]{いちねんかん}、[物価]{ぶっか}は[上昇]{じょうしょう}する（　　）だ。",
       "Option": ["ほど", "ばかり", "べき", "ぐらい"],
       "Analysis": "知识点156",
+      "Unit": 16,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "この[都市]{とし}の、[通勤]{つうきん}[ラッシュ]{匆忙}の[電車]{でんしゃ}の[混雑]{こんざつ}（　　）は[異常]{いじょう}だ。",
+      "Option": ["ぶり", "ごと", "おき", "ほど"],
+      "Analysis": "知识点159接续2",
+      "Unit": 16,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "きみが[謝ら]{あやまら}なくてもいい。[要す]{ようす}るに、彼が[悪い]{わるい}（　　）。",
+      "Option": ["だね", "んだろう", "だった", "んだ"],
+      "Analysis": "知识点152",
+      "Unit": 16,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "ここ[数年]{すうねん}、[住宅]{じゅうたく}の[価格]{かかく}は（　　）[一方]{いっぽう}だ。",
+      "Option": ["上がった", "上がらなかった", "上がろう", "上がる"],
+      "Analysis": "知识点5",
+      "Unit": 16,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "うちの母はちょっと[帰り]{かえり}が違くなると、いつも[電話]{でんわ}をかけてくれる（　　）。",
+      "Option": ["な", "の", "し", "が"],
+      "Analysis": "知识点151",
+      "Unit": 16,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[事故]{じこ}の[原因]{げんいん}を[調査]{ちょうさ}する（　　）2ヵ月もかかった。",
+      "Option": ["ばかり", "より", "のに", "ほど"],
+      "Analysis": "知识点153",
+      "Unit": 16,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[住所]{じゅうしょ}が（　　）、[渡辺]{わたなべ}さんに[聞い]{きい}てみてください。",
+      "Option": ["分からなければ", "分かるようになって", "分かりたいと思って", "分かるといったら"],
+      "Analysis": "知识点154",
+      "Unit": 16,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "この[マンション]{公寓}は[都心]{としん}から[近く]{ちかく}て、（　　）のに、どうしてまた[引っ越さ]{ひっこさ}なければならないの。",
+      "Option": ["便利になりやすくなる", "便利なはずがない", "不便になりやすくなる", "不便なはずがない"],
+      "Analysis": "知识点157",
+      "Unit": 16,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "車に（　　）と、足が[弱く]{よわく}なるよ。",
+      "Option": ["乗りさえする", "乗ってばかりいる", "乗り始めてみる", "乗れるはずがない"],
+      "Analysis": "知识点155",
+      "Unit": 16,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[手伝い]{てつだい}に[行った]{いった}が、（　　）は[何も]{なにも}なかった。",
+      "Option": ["やるべきなこと", "やるはずなもの", "やるべきこと", "やるはずもの"],
+      "Analysis": "知识点160\n我去帮忙，但却无能为力。",
+      "Unit": 16,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "人は[有名]{ゆうめい}になればなるほど（　　）のではないだろうか。",
+      "Option": ["忙しくなる", "忙しくなくてもいい", "忙しければ", "忙しくてはいけない"],
+      "Analysis": "一个人越出名，就越忙碌，不是吗？",
+      "Unit": 16,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "この[ボタン]{button}を（　　）、[音楽]{おんがく}が[流れ]{ながれ}てきます。",
+      "Option": ["押しておいたら", "押すと", "押すによって", "押すによると"],
+      "Analysis": "Explanation:\n- 押すと (when pressing) is used to express a natural consequence or habitual action: \"When you press the button, music plays.\"\n- 押しておいたら implies a prolonged action (\"if you keep pressing\"), which doesn't fit the instantaneous cause-effect relationship.\n- 押すによって and 押すによると are grammatically incorrect here, as they don\'t convey the conditional relationship between the action and the result.\n\nCompleted Sentence:\n「このボタンを押すと、音楽が流れてきます。」\n(\"When you press this button, music will play.\")",
+      "Unit": 16,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[考え]{かんがえ}れば（　　）、[分か]{わか}らなくなってきた。",
+      "Option": ["考えるほど", "考えたらそれで", "考えるにつれて", "考えるには"],
+      "Analysis": "知识点158",
+      "Unit": 16,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[会社]{かいしゃ}の[電話]{でんわ}を[私用]{しよう}に（　　）。",
+      "Option": ["せねばならない", "使うべきではない", "しなくてもかまわない", "使わないかな"],
+      "Analysis": "知识点160",
       "Unit": 16,
       "Correct Answer": 2
     },

@@ -308,6 +308,7 @@
   </style>
   <script src="book_list.js"></script>
   <script src="BlueBook_N3.js"></script>
+  <script src="BlueBook_N2.js"></script>
   <script src="GPT_N3.js"></script>
   <script src="Simulate_N3.js"></script>
   <script src="JLPT_Test.js"></script>
@@ -377,7 +378,11 @@
     <div id="matchRight" style="flex: 1; display: flex; flex-direction: column; gap: 10px;"></div>
   </div>
 
-  <button onclick="goBackToStart()" style="align-self: flex-end;">返回首页</button>
+
+  <div style="display:flex; justify-content: flex-end; gap: 10px;">
+    <button onclick="resetMatchQuiz()">再来一组</button>
+    <button onclick="goBackToStart()">返回首页</button>
+  </div>
 </div>
 
 <script>
@@ -859,6 +864,11 @@
 
   function shuffle(array) {
     return array.sort(() => Math.random() - 0.5);
+  }
+
+  function resetMatchQuiz() {
+    // 每次点击重新抽取新的 6 对
+    renderMatchQuestion();
   }
 
 applyDefaultThemeByTime();

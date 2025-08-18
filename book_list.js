@@ -5,6 +5,11 @@ const bookList = [
     DataVar: "bluebook_n3"
   },
   {
+    Title: "蓝宝书N2文法",
+    Path: "BlueBook_N2.js",
+    DataVar: "bluebook_n2"
+  },
+  {
     Title: "JLPT-N3-GPT版",
     Path: "GPT_N3.js",
     DataVar: "gpt_n3"
