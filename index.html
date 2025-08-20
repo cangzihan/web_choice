@@ -381,7 +381,7 @@
 
   <div style="display:flex; justify-content: flex-end; gap: 10px;">
     <button onclick="resetMatchQuiz()">再来一组</button>
-    <button onclick="goBackToStart()">返回首页</button>
+    <button id="homeBtn2" onclick="goBackToStart()">返回首页</button>
   </div>
 </div>
 
@@ -429,7 +429,7 @@
       warningNoQuestion: "ユニットに問題はないので、JSON データを確認してください。",
       questionPrev: "← Previous",
       questionNext: "Next →",
-      home: "Home"
+      home: "ホーム"
     }
   };
 
@@ -459,6 +459,7 @@
     document.getElementById("prevBtn").textContent = t.questionPrev;
     document.getElementById("nextBtn").textContent = t.questionNext;
     document.getElementById("homeBtn").textContent = t.home;
+    document.getElementById("homeBtn2").textContent = t.home;
   }
 
   // 第一步：加载书籍列表
