@@ -315,7 +315,7 @@ window.bluebook_n3 = [
       "Correct Answer": 1
     },
     {
-      "Question": "もう30[分]{ふん}も[待っ]{まっ}ているんだ。もしかして[彼女]{かのじょ}は（　　）。",
+      "Question": "もう30[分]{ふん}も[待っ]{まっ}ているんだ。[もしかして]{或许；说不定}[彼女]{かのじょ}は（　　）。",
       "Option": ["来なくてはいけない", "来てもいいだろう", "来ないかもしれない", "来ていただろう"],
       "Analysis": "知识点18",
       "Unit": 2,
@@ -644,9 +644,9 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[彼女]{かのじょ}は[アメリカ]{あめりか}に[行く]{いく}ことを[親]{おや}に（　　）[言わ]{いわ}なかった。",
+      "Question": "[彼女]{かのじょ}は[アメリカ]{America}に[行く]{いく}ことを[親]{おや}に（　　）[言わ]{いわ}なかった。",
       "Option": ["こそ", "さえ", "ばかり", "だけ"],
-      "Analysis": "知识点44、知识点31",
+      "Analysis": "知识点44、知识点31\nShe didn't even tell her parents that she was going to America.\n言わなかった：言います的过去否定简体形",
       "Unit": 5,
       "Correct Answer": 2
     },
@@ -798,9 +798,9 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[午後]{ごご}の[会議]{かいぎ}の（　　）に、[携帯電話]{けいたいでんわ}がなり[出し]{だし}てびっくりした。",
+      "Question": "[午後]{ごご}の[会議]{かいぎ}の（　　）に、[携帯電話]{けいたいでんわ}が[鳴り出し]{なりだし：开始鸣叫；开始发出声音}てびっくりした。",
       "Option": ["最中", "こと", "うえは", "ぐらい"],
-      "Analysis": "知识点43\n原题有一个汉字打不出来\n当我的手机在下午的会议期间开始响起时，我感到很惊讶。",
+      "Analysis": "知识点43\n当我的手机在下午的会议期间开始响起时，我感到很惊讶。",
       "Unit": 5,
       "Correct Answer": 1
     },
@@ -919,7 +919,7 @@ window.bluebook_n3 = [
     {
       "Question": "[最近]{さいきん}、[ストレス]{stress}を[抱え]{かかえ}ているせいか、[夜]{よる}２、３[時に]{ときに}なっても（　　）。",
       "Option": ["眠くなってきた", "眠るようにする", "さっそく寝よう", "なかなか眠れない"],
-      "Analysis": "语感、知识点54",
+      "Analysis": "语感、知识点54，知识点176",
       "Unit": 6,
       "Correct Answer": 4
     },
@@ -940,7 +940,7 @@ window.bluebook_n3 = [
     {
       "Question": "[子ども]{こども}の[頃]{ごろ}、[大きく]{おおきく}なった[歌手]{かしゅ}（　　）と[思って]{おもって}いた。",
       "Option": ["になるようにする", "になってくれる", "になるこはある", "になりたい"],
-      "Analysis": "",
+      "Analysis": "根据句意判断想成为歌手",
       "Unit": 6,
       "Correct Answer": 4
     },
@@ -954,14 +954,14 @@ window.bluebook_n3 = [
     {
       "Question": "[隣]{となり}の[息子]{むすこ}さんは10[年前]{ねんまえ}に[家出]{いえで}を（　　）、[帰っ]{かえっ}ていないそうだ。",
       "Option": ["になるようにする", "になってくれる", "になるこはある", "になりたい"],
-      "Analysis": "",
+      "Analysis": "根据句意排除たい和くれる的选项",
       "Unit": 6,
       "Correct Answer": 1
     },
     {
       "Question": "[先週]{せんしゅう}[町]{まち}で[彼女]{かのじょ}に[会っ]{あっ}たが、あまり（　　）[顔]{かお}をしていた。",
       "Option": ["元気ではない", "元気ではなさそうな", "元気な最中の", "元気ではないぎみの"],
-      "Analysis": "",
+      "Analysis": "I met her in town last week and she didn't seem very well.",
       "Unit": 6,
       "Correct Answer": 2
     },
@@ -1120,7 +1120,7 @@ window.bluebook_n3 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[健康]{けんこう}によくないので、[夜更かし]{よふかし}を（　　）。",
+      "Question": "[健康]{けんこう}によくないので、[夜更かし]{よふかし：熬夜}を（　　）。",
       "Option": ["しないことになる", "しただけではいけない", "しそうではない", "しないほうがいい"],
       "Analysis": "知识点70+根据句意判断肯否定",
       "Unit": 7,
@@ -1444,7 +1444,7 @@ window.bluebook_n3 = [
     {
       "Question": "[彼の]{かの}[無礼]{ぶれい}な[態度]{たいど}に、（　　）しかたがない。",
       "Option": ["腹が立つ", "腹が立った", "腹が立ち", "腹が立って"],
-      "Analysis": "我禁不住对他的粗鲁态度感到愤怒。\n通义千问3-235B-A22B解析：\nTranslation:\n\"I can't help but be angry at his rude attitude.\"\n\nKey Explanation:\n腹が立って is the te-form of 腹が立つ (to get angry), which pairs with しかたがない to express an unavoidable emotional reaction.\nThe structure V-て + しかたがない means \"can't help (doing something)\" or \"nothing can be done about (it).\"\nExample: 寂しくてしかたない → \"Can't help feeling lonely.\"\nWhy the Others Don’t Fit:\n腹が立つ (dictionary form):\nWould create 「腹が立つしかたがない」, which is grammatically awkward and doesn't align with the standard pattern of expressing uncontrollable emotions.\n腹が立った (past tense):\nRefers to a completed action, which clashes with the ongoing nature of the emotion implied by しかたがない.\n腹が立ち (stem form):\nUsed in constructions like 腹が立ちそう (\"about to get angry\") or 腹が立ちっぱなし (\"angry the whole time\"), but not with しかたがない.",
+      "Analysis": "知识点104注意部分\n我禁不住对他的粗鲁态度感到愤怒。\n通义千问3-235B-A22B解析：\nTranslation:\n\"I can't help but be angry at his rude attitude.\"\n\nKey Explanation:\n腹が立って is the te-form of 腹が立つ (to get angry), which pairs with しかたがない to express an unavoidable emotional reaction.\nThe structure V-て + しかたがない means \"can't help (doing something)\" or \"nothing can be done about (it).\"\nExample: 寂しくてしかたない → \"Can't help feeling lonely.\"\nWhy the Others Don’t Fit:\n腹が立つ (dictionary form):\nWould create 「腹が立つしかたがない」, which is grammatically awkward and doesn't align with the standard pattern of expressing uncontrollable emotions.\n腹が立った (past tense):\nRefers to a completed action, which clashes with the ongoing nature of the emotion implied by しかたがない.\n腹が立ち (stem form):\nUsed in constructions like 腹が立ちそう (\"about to get angry\") or 腹が立ちっぱなし (\"angry the whole time\"), but not with しかたがない.",
       "Unit": 9,
       "Correct Answer": 4
     },
@@ -1524,6 +1524,55 @@ window.bluebook_n3 = [
       "Analysis": "知识点98\n通义千问3-235B-A22B解析：\n- 知っているのではないかと思う means \"I think she probably knows\" and is used to express a supposition based on observation (e.g., her expression).\n- そうもない (\"not likely\") contradicts the context, as the speaker seems to lean toward her knowing the information.\n- ことがある (\"there are times when\") does not fit a specific situation or observation.\n- おかげた is grammatically incorrect here (likely a distractor).\n\nCompleted Sentence:\n「彼女の表情からみると、そのことを知っているのではないかと思う。」\n(\"Judging from her expression, I think she probably knows that.\")",
       "Unit": 10,
       "Correct Answer": 2
+    },
+    {
+      "Question": "あんなにひどく（　　）、[子ども]{こども}がかわいそうだ。",
+      "Option": ["叱っては", "叱っても", "叱るには", "叱らなくて"],
+      "Analysis": "那样严厉地申斥，孩子真可怜。",
+      "Unit": 10,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[自動車]{じどうしゃ}の[クラクション]{喇叭}のおとが（　　）たまらない。",
+      "Option": ["うるさく", "うるさかった", "うるさくて", "うるさい"],
+      "Analysis": "知识点91",
+      "Unit": 10,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[試験]{しけん}の[時に]{ときに}、[辞書]{じしょ}を[持ち込む]{もちこむ}なんて[駄目]{だめ}（　　）。",
+      "Option": ["ならない", "くらいだ", "どうですか", "じゃないか"],
+      "Analysis": "知识点97",
+      "Unit": 10,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "この[デジカメ]{Digital camera}、ちょっと（　　）。",
+      "Option": ["使えるようになった", "使ってみせてくれないか", "使えることになる", "使ってあげようか"],
+      "Analysis": "直接根据句意，知识点100",
+      "Unit": 10,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[達也]{たつや}、[台所]{だいどころ}からお皿を（　　）。",
+      "Option": ["取ってくることになっている", "取ってくるのではなかった", "取ってきてちょうだい", "取っていってちょうだい"],
+      "Analysis": "知识点92，根据句意判断是“取过来”。",
+      "Unit": 10,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[病気]{びょうき}に（　　）[健康]{けんこう}の[ありがたさ]{难能可贵；感谢}に[気づ]{きづ}いた。",
+      "Option": ["ならないうちに", "なってはじめて", "なるかどうかは", "なりながらも"],
+      "Analysis": "知识点96\n直到我生病了，我才意识到健康是多么珍贵。\nなって是なります的て形",
+      "Unit": 10,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "週からは[大事]{だいじ}な[試験]{しけん}があるので、（　　）。",
+      "Option": ["遊ぶことになっている", "遊ばなければならない", "遊んでばかりではいられない", "遊んでも意味がない"],
+      "Analysis": "知识点95，知识点155",
+      "Unit": 10,
+      "Correct Answer": 3
     },
     {
       "Question": "[私]{わたし}は[地元]{じもと}の[人]{にん}（　　）[町]{まち}を[案内]{あんない}してもらいました。",
@@ -2753,7 +2802,7 @@ window.bluebook_n3 = [
     {
       "Question": "こうなった[以上]{いじょう}、[二人]{ふたり}の[関係]{かんけい}はもう[修復]{しゅうふく}の（　　）。",
       "Option": ["ようとする", "しようがない", "ようにする", "ようになる"],
-      "Analysis": "知识点172注意例句",
+      "Analysis": "知识点172注意例句，知识点176",
       "Unit": 18,
       "Correct Answer": 2
     },
