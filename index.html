@@ -311,21 +311,152 @@
     }
 
     .circle-btn {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%; /* 使按钮变为圆形 */
       border: none;
       background-color: #bcd49c; /* 按钮背景颜色 */
       color: white; /* 按钮文字颜色 */
       font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
-      text-align: center;
       line-height: 50px; /* 让文字垂直居中 */
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
     }
     .dark-theme .circle-btn {
       background-color: rgba(0, 0, 0, 0); /* 按钮背景颜色 */
       box-shadow: 0 7px 14px rgba(63, 209, 202, 0.35), 0 0 0 3px #bcd49c;
+    }
+
+    #homeBtn {
+      border: none;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .dark-theme #homeBtn {
+      box-shadow: 0 7px 14px rgba(63, 209, 202, 0.35), 0 0 0 3px #bcd49c;
+    }
+
+    #homeBtn2 {
+      border: none;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .dark-theme #homeBtn2 {
+      box-shadow: 0 7px 14px rgba(63, 209, 202, 0.35), 0 0 0 3px #bcd49c;
+    }
+
+    .split-layout {
+      display: flex;
+      height: 100%;
+    }
+
+    /* 左侧栏 */
+    .sidebar {
+      width: 240px;
+      background-color: #f8f9fa;
+      border-right: 1px solid #ddd;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      border-radius: 10px;
+    }
+
+    /* 左侧栏 */
+    .dark-theme .sidebar {
+      background-color: #00354634;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .book-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .book-list li {
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+    }
+
+    .dark-theme .book-list li:hover {
+      background-color: #e0f0ff54;
+    }
+
+    .book-list li:hover {
+      background-color: #e0f0ff;
+    }
+
+    .book-list li.active {
+      background-color: #cce5ff;
+      font-weight: bold;
+    }
+
+    .dark-theme .book-list li.active {
+      background-color: #102b47;
+    }
+    
+
+    /* 右侧内容 */
+    .content {
+      width: 500px;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .unit-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .unit-list li {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      margin-bottom: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .unit-list li:hover {
+      background-color: #f0f8ff;
+    }
+
+    .dark-theme .unit-list li:hover {
+      background-color: #f0f8ff3b;
+    }
+
+    .unit-list li.active {
+      background-color: #d6ecff;
+      border-color: #339af0;
+    }
+
+    .dark-theme .unit-list li.active {
+      background-color: #102b47;
+      border-color: #5dc5f8;
     }
 
   </style>
@@ -352,18 +483,20 @@
     </select>
   </div>
 
-<div class="start-screen" id="startScreen">
-  <h2>请选择一本书</h2>
-  <select id="bookSelector">
-    <option disabled selected>加载中...</option>
-  </select>
-  <br><br>
-  <h2>请选择单元或随机抽取题目</h2>
-  <select id="unitSelector">
-    <option disabled selected>请先选择一本书</option>
-  </select>
-  <br><br>
-  <button onclick="startQuiz()" class="theme-base-button">开始答题</button>
+<!-- 首页界面 -->
+<div id="startScreen" class="split-layout">
+  <!-- 左侧书籍列表 -->
+  <div class="sidebar">
+    <h3 id="selectedBookTitle"></h3>
+    <ul id="bookList" class="book-list"></ul>
+    <button onclick="startQuiz()" class="theme-base-button" style="margin-top: 20px;">开始答题</button>
+  </div>
+
+  <!-- 右侧单元 -->
+  <div class="content">
+    <h3 id="selectedUnitTitle">📖 </h3>
+    <ul id="unitList" class="unit-list"></ul>
+  </div>
 </div>
 
 <div class="container" id="quizScreen" style="display:none;">
@@ -378,7 +511,9 @@
   </div>
   <div class="right">
     <div style="display: flex; justify-content: space-between; align-items: right;">
-      <button id="homeBtn" onclick="goBackToStart()" style="font-size: 14px; padding: 5px 10px;">返回首页</button>
+      <button id="homeBtn" onclick="goBackToStart()">
+        <i class="fas fa-home"></i>
+      </button>
     </div>
     <div style="display: flex; justify-content: space-between; align-items: center;">
       <h3>解析</h3>
@@ -403,8 +538,10 @@
   </div>
 
 
-  <div style="display:flex; justify-content: flex-end; gap: 10px;">
-    <button onclick="resetMatchQuiz()" class="circle-btn">@</button>
+  <div style="display:flex; justify-content: flex-end; gap: 15px;">
+    <button onclick="resetMatchQuiz()" class="circle-btn">
+      <i class="fas fa-arrows-rotate"></i>
+    </button>
     <button id="homeBtn2" onclick="goBackToStart()">
       <i class="fas fa-home"></i>
     </button>
@@ -421,11 +558,12 @@
   let currentIndex = 0;
   let userAnswers = [];
 
+  let selectedUnit = null;
   let isMatchQuestion = false;  // 标记是否是匹配题
 
   const translations = {
     zh: {
-      selectBook: "请选择一本书",
+      selectBook: "📚 请选择一本书",
       selectUnit: "请选择单元或随机抽取题目",
       startQuiz: "开始答题",
       loading: "加载中...",
@@ -433,10 +571,10 @@
       warningNoQuestion: "该单元没有题目，请检查 JSON 数据！",
       questionNext: "下一题 →",
       questionPrev: "← 上一题",
-      home: "返回首页"
+      matchGuide: "请将左边的单词与右边的释义配对"
     },
     en: {
-      selectBook: "Please select a book",
+      selectBook: "📚 Please select a book",
       selectUnit: "Please select a unit or choose random questions",
       startQuiz: "Start Quiz",
       loading: "Loading...",
@@ -444,10 +582,10 @@
       warningNoQuestion: "There is no question for this unit, please check the JSON data!",
       questionPrev: "← Previous",
       questionNext: "Next →",
-      home: "Home"
+      matchGuide: "Please match the word on the left with its meaning on the right"
     },
     jp: {
-      selectBook: "本を選択してください",
+      selectBook: "📚 本を選択してください",
       selectUnit: "ユニットを選択するか、トピックをランダムに選択してください",
       startQuiz: "質問に答え始める",
       loading: "読み込み中...",
@@ -455,7 +593,7 @@
       warningNoQuestion: "ユニットに問題はないので、JSON データを確認してください。",
       questionPrev: "← Previous",
       questionNext: "Next →",
-      home: "ホーム"
+      matchGuide: "左側の単語と右側の意味を一致させてください"
     }
   };
 
@@ -467,78 +605,71 @@
 
   function applyLanguage(lang) {
     const t = translations[lang];
-    const bookSelector = document.getElementById("bookSelector");
-    const currentOption = bookSelector.options[0];
 
-    if (bookSelector.disabled) {
-      // 加载中
-      currentOption.textContent = t.loading;
-    } else {
-      // 加载完成但未选择书
-      currentOption.textContent = t.chooseBookFirst;
-    }
-
-    document.querySelector("#startScreen h2:nth-of-type(1)").textContent = t.selectBook;
-    document.querySelector("#startScreen h2:nth-of-type(2)").textContent = t.selectUnit;
-    document.querySelector("#unitSelector option").textContent = t.chooseBookFirst;
+    document.getElementById("selectedBookTitle").textContent = t.selectBook;
     document.querySelector(".theme-base-button").textContent = t.startQuiz;
     document.getElementById("prevBtn").textContent = t.questionPrev;
     document.getElementById("nextBtn").textContent = t.questionNext;
-    document.getElementById("homeBtn").textContent = t.home;
-    document.getElementById("homeBtn2").textContent = t.home;
+    document.getElementById("matchQuestionText").textContent = t.matchGuide;
   }
 
-  // 第一步：加载书籍列表
-  // 直接用 bookList
-  const bookListData = bookList;
+  // 初始化书籍列表
+const bookListContainer = document.getElementById("bookList");
+bookList.forEach((book, idx) => {
+  const li = document.createElement("li");
+  li.textContent = book.Title;
+  li.dataset.index = idx;
+  li.addEventListener("click", () => selectBook(idx, li));
+  bookListContainer.appendChild(li);
+});
 
-  const bookSelector = document.getElementById("bookSelector");
-  // 清除“加载中...”这个 option，但保留一个默认提示
-  bookSelector.innerHTML = `<option disabled selected>请选择一本书</option>`;
+function selectBook(idx, li) {
+  // 选中效果
+  document.querySelectorAll("#bookList li").forEach(el => el.classList.remove("active"));
+  li.classList.add("active");
 
-  bookListData.forEach((book, idx) => {
-    const opt = document.createElement("option");
-    opt.value = idx;  // 把下拉框的 value 设成书的索引
-    opt.textContent = book.Title;
-    document.getElementById("bookSelector").appendChild(opt);
+  const bookInfo = bookList[idx];
+  const dataVarName = bookInfo.DataVar;
+  allData = window[dataVarName];
+  isMatchQuestion = bookInfo.QuestionType === "match";
+
+  document.getElementById("selectedUnitTitle").textContent = "📖 " + bookInfo.Title;
+
+  // 渲染单元列表
+  const unitListContainer = document.getElementById("unitList");
+  unitListContainer.innerHTML = "";
+  const unitSet = new Set(allData.map(q => q.Unit));
+
+  unitSet.forEach(unit => {
+    const unitLi = document.createElement("li");
+    unitLi.textContent = `Unit ${unit}`;
+    unitLi.dataset.unit = unit;
+    unitLi.addEventListener("click", () => selectUnit(unit, unitLi));
+    unitListContainer.appendChild(unitLi);
   });
 
-  // 当选择了书本之后，加载对应题库
-  document.getElementById("bookSelector").addEventListener("change", function() {
-    const selectedIdx = this.value;
-    const savedLang = localStorage.getItem("lang") || "zh";
-    const t = translations[savedLang];
-    if (selectedIdx === undefined || selectedIdx === null || selectedIdx === "") return;
+  // 随机抽题选项（仅非匹配题）
+  if (!isMatchQuestion) {
+    const random10 = document.createElement("li");
+    random10.textContent = "🎲 随机抽取 10 题";
+    random10.dataset.unit = "__RANDOM_10__";
+    random10.addEventListener("click", () => selectUnit("__RANDOM_10__", random10));
+    unitListContainer.appendChild(random10);
 
-    const unitSelector = document.getElementById("unitSelector");
-    unitSelector.innerHTML = `<option disabled selected>加载中...</option>`;
+    const random15 = document.createElement("li");
+    random15.textContent = "🎲 随机抽取 15 题";
+    random15.dataset.unit = "__RANDOM_15__";
+    random15.addEventListener("click", () => selectUnit("__RANDOM_15__", random15));
+    unitListContainer.appendChild(random15);
+  }
+}
 
-    const bookInfo = bookList[selectedIdx];
-    const dataVarName = bookInfo.DataVar;
-    allData = window[dataVarName];  // <-- 动态拿变量里的题目数据
-    isMatchQuestion = bookInfo.QuestionType === "match";
+function selectUnit(unit, li) {
+  document.querySelectorAll("#unitList li").forEach(el => el.classList.remove("active"));
+  li.classList.add("active");
 
-    const unitSet = new Set(allData.map(q => q.Unit));
-    unitSelector.innerHTML = `<option disabled selected>` + t.selectUnit + `</option>`;
-    unitSet.forEach(unit => {
-      const opt = document.createElement("option");
-      opt.value = unit;
-      opt.textContent = `Unit ${unit}`;
-      unitSelector.appendChild(opt);
-    });
-
-    if (!isMatchQuestion) {
-      const optRandom_10 = document.createElement("option");
-      optRandom_10.value = "__RANDOM_10__";
-      optRandom_10.textContent = "随机抽取 10 题";
-      unitSelector.appendChild(optRandom_10);
-
-      const optRandom_15 = document.createElement("option");
-      optRandom_15.value = "__RANDOM_15__";
-      optRandom_15.textContent = "随机抽取 15 题";
-      unitSelector.appendChild(optRandom_15);
-    }
-  });
+  selectedUnit = unit; // 保存全局选中单元
+}
 
   function shuffleOptionsAndFixAnswer(q) {
     const originalOptions = q.Option;
@@ -568,7 +699,7 @@
   function startQuiz() {
     const savedLang = localStorage.getItem("lang") || "zh";
     const t = translations[savedLang];
-    const selectedUnit = document.getElementById("unitSelector").value;
+
     if (!selectedUnit) return alert("请选择一个单元！");
 
     if (selectedUnit === "__RANDOM_10__") {
@@ -744,7 +875,7 @@
   function goBackToStart() {
     document.getElementById("quizScreen").style.display = "none";   // 隐藏答题界面
     document.getElementById("matchScreen").style.display = "none";  // 隐藏答题界面
-    document.getElementById("startScreen").style.display = "block"; // 显示选书界面
+    document.getElementById("startScreen").style.display = "flex"; // 显示选书界面
 
     // 👉 清空题号按钮
     document.getElementById("questionNav").innerHTML = "";
@@ -787,6 +918,9 @@
     }
   }
 
+  // 当浏览器把 HTML 页面的结构全部加载完毕后，就执行括号里的代码块。
+  // window 是浏览器中代表 全局对象 的变量
+  // () => { ... } 是ES6 中的 箭头函数（Arrow Function），是一个简洁的函数写法。
   window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem("lang") || "zh";
 
@@ -815,12 +949,12 @@
 
     const leftContainer = document.getElementById("matchLeft");
     const rightContainer = document.getElementById("matchRight");
-    const questionText = document.getElementById("matchQuestionText");
+    const matchQuestionText = document.getElementById("matchQuestionText");
 
     // 清空
     leftContainer.innerHTML = "";
     rightContainer.innerHTML = "";
-    questionText.textContent = "请将左边的单词与右边的释义配对";
+    //matchQuestionText.textContent = "请将左边的单词与右边的释义配对";
 
     let selectedLeft = null;
 

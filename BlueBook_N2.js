@@ -616,93 +616,93 @@ window.bluebook_n2 = [
       "Correct Answer": 3
     },
     {
-      "Question": "[厳しい]{いかめしい}[暑さ]{あつさ}が[続い]{つづい}ておりますが、お[気に]{きに}[過ご]{すご}して（　　）。",
+      "Question": "[厳しい]{きびしい}[暑さ]{あつさ}が[続い]{つづい}ておりますが、お[気に]{きに}[過ご]{すご}して（　　）。",
       "Option": ["いらっしゃいますか", "存じていますか", "見えていますか", "伺っていますか"],
-      "Analysis": "",
+      "Analysis": "不规则变化的敬语动词，尊敬语",
       "Unit": 19,
       "Correct Answer": 1
     },
     {
       "Question": "[課長]{かちょう}、[新しい]{あたらしい}[企画書]{きかくしょ}を（　　）か。",
       "Option": ["ご覧になられました", "お目にかけました", "拝見しました", "ご覧いただけました"],
-      "Analysis": "",
+      "Analysis": "- ご覧いただけましたか is the appropriate honorific expression when asking a superior (課長) if they have viewed the document. It uses the structure ～ていただけましたか, which politely inquires whether the listener (the superior) has performed the action (viewing) as a favor to the speaker.\n- ご覧になられました is grammatically incorrect due to 二重敬語 (double honorifics): both なられる and ご覧になる are honorifics, making the phrase redundant.\n- お目にかけました means \"to show/present\" something, not \"to view,\" and does not fit the context.\n- 拝見しました is humble speech used when the speaker themselves has viewed something, not when asking about someone else’s action.",
       "Unit": 19,
       "Correct Answer": 4
     },
     {
       "Question": "[常に]{つねに}お[客様]{きゃくさま}に[喜んで]{よろこんで}いただけるように[頑張っ]{がんばっ}て（　　）。",
       "Option": ["いらっしゃいます", "めしあがります", "参ります", "見えます"],
-      "Analysis": "",
+      "Analysis": "不规则变化的敬语动词\n参ります: 「行く」の謙譲語\nいらっしゃいます：尊敬語\nめしあがります：「食べる/のむ」の尊敬語",
       "Unit": 19,
       "Correct Answer": 3
     },
     {
       "Question": "[社長]{しゃちょう}、桜[物産]{ぶっさん}の[鈴木]{すずき}[部長]{ぶちょう}が（　　）。",
       "Option": ["お見えになりました", "まいりました", "お越しになられました", "お目にかかりました"],
-      "Analysis": "",
+      "Analysis": "不规则变化的敬语动词，尊敬语",
       "Unit": 19,
       "Correct Answer": 1
     },
     {
       "Question": "お[客様]{きゃくさま}、[失礼]{しつれい}ですが、お[名前]{なまえ}は[何と]{なんと}（　　）か。",
       "Option": ["申しますか", "存じますか", "承知しますか", "おっしゃいます"],
-      "Analysis": "",
+      "Analysis": "不规则变化的敬语动词，尊敬语\n存じます: 「思う」の謙譲語",
       "Unit": 19,
       "Correct Answer": 4
     },
     {
       "Question": "[新しく]{あたらしく}[担当]{たんとう}になりました[田中]{たなか}です。[本日]{ほんじつ}はごあいさつに（　　）。",
       "Option": ["見えました", "なさいました", "伺いました", "いたしました"],
-      "Analysis": "",
+      "Analysis": "我叫田中，是新来的负责人。今天来这里是为了打个招呼。",
       "Unit": 19,
       "Correct Answer": 3
     },
     {
       "Question": "お[客様]{きゃくさま}、お茶と[コーヒー]{coffee}、どちらに（　　）。",
       "Option": ["いたしますか", "なさいますか", "おりますか", "みえますか"],
-      "Analysis": "",
+      "Analysis": "不规则变化的敬语动词，N3知识点140",
       "Unit": 19,
       "Correct Answer": 2
     },
     {
       "Question": "どうぞ、[冷め]{さめ}ないうちに（　　）。",
       "Option": ["頂戴してください", "申し上げてください", "おいでになってください", "召し上がってください"],
-      "Analysis": "",
+      "Analysis": "召し上がる（めしあがる）： 「食べる」「食う」「飲む」「吸う」などの尊敬語。",
       "Unit": 19,
       "Correct Answer": 4
     },
     {
       "Question": "A「どうぞよろしくお[願い]{ねがい}します。」\nB「わかりました。[検討]{けんとう}（　　）。」",
       "Option": ["させてくださいます", "させていただきます", "もうしあげます", "していらっしゃいます"],
-      "Analysis": "",
+      "Analysis": "自谦语知识点3，自谦语知识点5",
       "Unit": 19,
       "Correct Answer": 2
     },
     {
       "Question": "[今日]{きょう}、[田中]{たなか}[部長]{ぶちょう}に[初めて]{はじめて}（　　）。",
       "Option": ["ご覧くださいました", "お目にかかりました", "かしこまりました", "お見えになりました"],
-      "Analysis": "",
+      "Analysis": "不规则变化的敬语动词",
       "Unit": 19,
       "Correct Answer": 2
     },
     {
       "Question": "（[レストラン]{restaurant}で）\nA「[注文]{ちゅうもん}、お[願い]{ねがい}します」。\nB「（　　）、ただいままいります」。",
       "Option": ["お待ちいたしました", "お待ってくださいました", "お待たせいたしました", "お待ちいたしました"],
-      "Analysis": "",
+      "Analysis": "自谦语知识点2",
       "Unit": 19,
       "Correct Answer": 3
     },
     {
       "Question": "（[得意先]{とくいさき}からの[電話]{でんわ}）\nA「[田村]{たむら}さんはいらっしゃいますか。」\nB「[申し訳]{もうしわけ}ございませんが、[田村]{たむら}は[本日]{ほんじつ}、（　　）。」",
       "Option": ["お休みくださっております", "休ませております", "休ませていただいております", "休まれております"],
-      "Analysis": "",
+      "Analysis": "自谦语知识点3注意例句",
       "Unit": 19,
       "Correct Answer": 3
     },
     {
       "Question": "[山本]{やまもと}[社長]{しゃちょう}がお[戻り]{もどり}になりましたら、（　　）。",
       "Option": ["お伝えていただけますか", "お伝えてください", "お伝えさせてください", "お伝えいただけますか"],
-      "Analysis": "",
+      "Analysis": "N3自谦语知识点4，但是接续是て形，和答案不一致\n能否请您转告山本社长回来后联系我？\n- お伝えいただけますか is a polite and grammatically correct expression used to request someone to convey a message. It combines the honorific form お伝え (from 伝える) with the potential form いただけます (to receive the favor of), forming a respectful request: \"Could you please convey...?\"\n- お伝えていただけますか (Option 1) is incorrect because お伝えて uses the wrong conjugation (連用形 of 伝える is 伝え, not 伝えて).\n- お伝えてください (Option 2) is too direct and lacks the nuanced politeness required in a formal business context.\n- お伝えさせてください (Option 3) implies the speaker is offering to convey the message themselves, which does not align with the context of requesting someone else to act.\n\n- Completed Sentence:\n- 「山本社長がお戻りになりましたら、お伝えいただけますか。」\n(\"When President Yamamoto returns, could you please let him know?\")",
       "Unit": 19,
       "Correct Answer": 4
     },
