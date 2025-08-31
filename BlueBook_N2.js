@@ -705,6 +705,89 @@ window.bluebook_n2 = [
       "Analysis": "N3自谦语知识点4，但是接续是て形，和答案不一致\n能否请您转告山本社长回来后联系我？\n- お伝えいただけますか is a polite and grammatically correct expression used to request someone to convey a message. It combines the honorific form お伝え (from 伝える) with the potential form いただけます (to receive the favor of), forming a respectful request: \"Could you please convey...?\"\n- お伝えていただけますか (Option 1) is incorrect because お伝えて uses the wrong conjugation (連用形 of 伝える is 伝え, not 伝えて).\n- お伝えてください (Option 2) is too direct and lacks the nuanced politeness required in a formal business context.\n- お伝えさせてください (Option 3) implies the speaker is offering to convey the message themselves, which does not align with the context of requesting someone else to act.\n\n- Completed Sentence:\n- 「山本社長がお戻りになりましたら、お伝えいただけますか。」\n(\"When President Yamamoto returns, could you please let him know?\")",
       "Unit": 19,
       "Correct Answer": 4
+    },{
+      "Question": "ありがとうございました。またのご[来店]{らいてん}を（　　）。",
+      "Option": ["待っていただきます", "お待ちしております", "お待ちなさいます", "待たせていたします"],
+      "Analysis": "非常感谢！期待您的再次光临。",
+      "Unit": 19,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "ご[多忙]{たぼう}の中わざわざ（　　）、お礼を[申し上げ]{もうしあげ}ます。",
+      "Option": ["お見舞いくださいまして", "お見舞いしてくださいまして", "お見舞いになられて", "お見舞いしていただいて"],
+      "Analysis": "尊敬语知识点4\n感谢您在百忙之中抽出时间来拜访我。",
+      "Unit": 19,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "日はお[忙しい]{いそがしい}なか、（　　）ましてまことにありがとうございます。",
+      "Option": ["お越しいただき", "お越しになり", "お越しなさい", "お越しください"],
+      "Analysis": "三个选项尊敬语，1个自谦语\n非常感谢您在百忙之中抽空前来。",
+      "Unit": 19,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[貴社]{きしゃ}、[ますます]{益々: 越来越；更加}ご[清栄]{せいえい}のこととお[喜び]{よろこび}（　　）。",
+      "Option": ["存じております", "申し上げます", "承知いたします", "知ってさしあげます"],
+      "Analysis": "为贵公司日益繁荣感到高兴",
+      "Unit": 19,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[重い]{おもい}ようですが、私が[荷物]{にもつ}を（　　）。",
+      "Option": ["お持たせてください", "お持ちなさい", "お持ちします", "持ってさし上げます"],
+      "Analysis": "自谦语知识点1",
+      "Unit": 19,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "この[問題]{もんだい}について、[社長]{しゃちょう}のお[考え]{かんがえ}を（　　）と[思い]{おもい}ます。",
+      "Option": ["お聞かせになれば", "お聞かせすれば", "お聞かせてくだされば", "お聞かせいただければ"],
+      "Analysis": "自谦语知识点3注意部分\n关于这个问题，我想听听社长的想法。",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "ご[結婚]{けっこん}おめでとうございます。ぜひ[披露宴]{ひろうえん}に（　　）。",
+      "Option": ["出席してくださいます", "ご出席させてください", "ご出席させてさしあげます", "出席させていただきます"],
+      "Analysis": "自谦语知识点3注意部分",
+      "Unit": 19,
+      "Correct Answer": 4
+    },
+    {
+      "Question": "[本店]{ほんてん}は[クレジットカード]{Credit Card}は（　　）ので、ご[了承]{りょうしょう}ください。",
+      "Option": ["ご利用になれません", "ご利用していただけません", "ご利用させられません", "ご利用くだされません"],
+      "Analysis": "尊敬语知识点1注意部分",
+      "Unit": 19,
+      "Correct Answer": 1
+    },
+    {
+      "Question": "[申し訳]{もうしわけ}ございませんが、[佐藤]{さとう}はただいま（　　）。",
+      "Option": ["外出していらっしゃいます", "外出しております", "外出なさっています", "外出していられます"],
+      "Analysis": "不规则变化的敬语动词",
+      "Unit": 19,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "この[機械]{きかい}の[使い方]{つかいかた}を（　　）。",
+      "Option": ["お教えさしあげませんか", "教えさせていただけませんか", "お教え願えませんか", "お教えさせてくださいませんか"],
+      "Analysis": "自谦语知识点6注意例句",
+      "Unit": 19,
+      "Correct Answer": 3
+    },
+    {
+      "Question": "[店内]{てんない}の本や[雑誌]{ざっし}などはご[自由]{じゆう}に（　　）。",
+      "Option": ["お読みあげてください", "お読みください", "読ませていただきます", "お読みいたします"],
+      "Analysis": "「読ませていただきます」和「お読みいたします」是自谦语",
+      "Unit": 19,
+      "Correct Answer": 2
+    },
+    {
+      "Question": "[井上]{いのうえ}[部長]{ぶちょう}、[田中]{たなか}[社長]{しゃちょう}が（　　）。",
+      "Option": ["お呼びいたします", "お呼びいただきます", "お呼びです", "お呼びされます"],
+      "Analysis": "自谦语知识点1",
+      "Unit": 19,
+      "Correct Answer": 3
     },
     {
       "Question": "「おります」は（　　）。",
