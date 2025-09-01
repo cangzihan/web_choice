@@ -258,8 +258,8 @@
     }
 
     .dark-theme .word-card.selected {
-      background-color: rgb(6, 16, 68);
-      border-color: #5fdaf9;
+      background-color: #102b47;
+      border-color: #5dc5f8;
     }
 
     .word-card {
@@ -512,6 +512,7 @@
     <div class="navigation">
       <button id="prevBtn" onclick="prevQuestion()" class="theme-base-button">← 上一题</button>
       <button id="analysisBtn" class="analysis-button" onclick="showAnalysis()">查看解析</button>
+      <button id="sortSubmitBtn" class="theme-base-button" onclick="checkSortAnswer()">确认</button>
       <button id="nextBtn" onclick="nextQuestion()" class="theme-base-button">下一题 →</button>
     </div>
   </div>
@@ -566,6 +567,10 @@
 
   let selectedUnit = null;
   let isMatchQuestion = false;  // 标记是否是匹配题
+
+  // For order question
+  let tempOrder = [];
+  let selectedSet = new Set();
 
   const translations = {
     zh: {
@@ -678,6 +683,11 @@ function selectUnit(unit, li) {
 }
 
   function shuffleOptionsAndFixAnswer(q) {
+    // 如果是排序题（有 CorrectOrder 字段），不打乱，直接返回
+    if (q.CorrectOrder) {
+      return q;
+    }
+
     const originalOptions = q.Option;
     const correctIndex = q["Correct Answer"] - 1;
 
@@ -770,6 +780,16 @@ function selectUnit(unit, li) {
 
   function renderQuestion(index) {
     const question = filteredData[index];
+    const sortSubmitBtn = document.querySelector("#sortSubmitBtn");
+
+    // 👉 如果是排序题，走单独逻辑
+    if (question.CorrectOrder) {
+      sortSubmitBtn.style.visibility = "visible";
+      renderOrderQuestion(question, index);
+      return;
+    }
+    sortSubmitBtn.style.visibility = "hidden";
+
     const qText = document.getElementById("questionText");
     const container = document.getElementById("optionsContainer");
     const analysisBtn = document.getElementById("analysisBtn");
@@ -816,7 +836,7 @@ function selectUnit(unit, li) {
 
     // 控制上一题/下一题按钮状态。如果这道题是最后一题则禁用下一题按钮，如果这道题是第一题则禁用上一题按钮
     const prevBtn = document.querySelector(".navigation button:nth-child(1)");
-    const nextBtn = document.querySelector(".navigation button:nth-child(3)");
+    const nextBtn = document.getElementById("nextBtn")
 
     if (index === 0){
         prevBtn.style.visibility = "hidden";
@@ -1036,6 +1056,115 @@ function selectUnit(unit, li) {
   function resetMatchQuiz() {
     // 每次点击重新抽取新的 6 对
     renderMatchQuestion();
+  }
+
+  function checkSortAnswer() {
+    const analysisText = document.getElementById("analysisText");
+    const question = filteredData[currentIndex];
+
+    
+    const navBtn = document.querySelector(`#navBtn${currentIndex}`);
+
+    // 用户答案不足时提醒
+    if (tempOrder.length < question.Option.length) {
+      analysisText.textContent = "请先点完所有选项再确认。";
+      return;
+    }
+
+    const correctOrder = question.CorrectOrder;   // e.g. [1,3,4,2]
+    const keyPos = question.KeyPosition;          // e.g. 3
+    const keyCorrect = correctOrder[keyPos - 1];  // 正确答案在关键位置上应该是哪个
+
+    // 关键位置用户选择
+    const userAtKey = tempOrder[keyPos - 1];
+
+    if (arraysEqual(tempOrder, correctOrder)) {
+      // ✅ 全对
+      analysisText.textContent = "✅ 全部顺序正确！";
+      // 高亮题号按钮
+      navBtn.classList.remove("wrong");
+      navBtn.classList.add("correct");
+    } 
+    else if (userAtKey === keyCorrect) {
+      // ⚠️ 关键位置正确，其它顺序错误
+      analysisText.textContent = "⚠️ 关键位置正确，但顺序不完全正确。";
+      navBtn.classList.remove("wrong");
+      navBtn.classList.add("correct");
+    }
+    else {
+      // ❌ 错误
+      analysisText.textContent = "❌ 关键位置错误。";
+      // 高亮题号按钮
+      navBtn.classList.remove("correct");
+      navBtn.classList.add("wrong");
+    }
+
+    // 追加解析
+    analysisText.textContent += "\n\n【解析】 " + question.Analysis;
+  }
+
+  // 辅助函数：判断两个数组是否相等
+  function arraysEqual(a, b) {
+    if (a.length !== b.length) return false;
+    return a.every((val, idx) => val === b[idx]);
+  }
+
+  function renderOrderQuestion(question, index) {
+    const qText = document.getElementById("questionText");
+    const container = document.getElementById("optionsContainer");
+    const analysisBtn = document.getElementById("analysisBtn");
+    const analysisText = document.getElementById("analysisText");
+
+    // 1. 渲染题干，把 #space# 替换成 4 个空格位，并在关键位置插入 ⭐
+    const rawText = question.Question;
+    const keyPos = question.KeyPosition;
+
+    // 先构造 ["____", "____", "____", "____"]
+    const blanks = Array(4).fill("____");
+
+    // 在 keyPos（1-based 索引）处加 ⭐
+    blanks[keyPos - 1] = "__⭐__";
+
+    // 拼成字符串
+    const renderedBlanks = blanks.join("  ");
+
+    // 替换 #space# 占位符
+    const renderedHTML = rawText.replace(/#space#/g, renderedBlanks);
+
+    qText.innerHTML = `${index + 1}. ${renderedHTML}`;
+
+    container.innerHTML = "";
+    analysisBtn.style.visibility = "hidden";
+    analysisText.textContent = "依次点击选项，组成完整语句，然后点击确定";
+
+    tempOrder = [];
+    selectedSet = new Set();
+
+    // 渲染选项按钮
+    question.Option.forEach((opt, i) => {
+      const btn = document.createElement("button");
+      btn.textContent = opt;
+      btn.onclick = () => {
+        if (selectedSet.has(i)) {
+            // 如果已选择，则取消选择
+            selectedSet.delete(i);
+            // 从 tempOrder 中删除对应的元素
+            const index = tempOrder.indexOf(i + 1);
+            if (index > -1) {
+                tempOrder.splice(index, 1);
+            }
+        }
+        else{
+          selectedSet.add(i);
+          tempOrder.push(i + 1); // 保存顺序（1-based）
+        }
+
+        // 更新显示
+        const currentSentence = tempOrder.map(idx => question.Option[idx - 1]).join(" ");
+        qText.innerHTML = `${index + 1}. ${renderedHTML}<br><br><strong>你的选择:</strong> ${currentSentence}`;
+      };
+      container.appendChild(btn);
+    });
   }
 
 applyDefaultThemeByTime();
