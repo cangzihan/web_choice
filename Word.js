@@ -105,6 +105,7 @@ window.word = [
       "デジタルフォレンジックス": "Digital Forensics，数字取证",
       "デバイス": "device",
       "デバイスドライバ": "Device Drivers",
+      "デフォルトゲートウェイ": "默认网关",
       "データ": "data",
       "データベース": "Data Science",
       "チャットボット": "chatbots",
@@ -162,6 +163,7 @@ window.word = [
       "リファクタリング": "重构",
       "リリース": "release",
       "ルール": "rule",
+      "レコード": "记录，“行”",
       "レベル": "level",
       "ログイン": "log in",
       "ワークシート": "worksheet"

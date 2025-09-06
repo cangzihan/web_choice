@@ -291,7 +291,7 @@
     }
 
     .correct_match{
-      background-color: rgb(203, 255, 177) !important;
+      background-color: #c8f7c5 !important;
       border: 2px solid green !important;
     }
 
@@ -301,8 +301,8 @@
     }
 
     .dark-theme .correct_match{
-      background-color: rgb(16, 44, 6) !important;
-      border: 2px solid rgb(54, 178, 54) !important;
+      background-color: rgba(13, 82, 58, 0.373) !important;
+      border: 2px solid rgb(49, 162, 132) !important;
     }
 
     .dark-theme .wrong_match{
@@ -1128,8 +1128,10 @@ function selectUnit(unit, li) {
     // 拼成字符串
     const renderedBlanks = blanks.join("  ");
 
-    // 替换 #space# 占位符
-    const renderedHTML = rawText.replace(/#space#/g, renderedBlanks);
+    // 替换 #space# 占位符并渲染带注释的问题文本
+    const renderedHTML = rawText.replace(/#space#/g, renderedBlanks).replace(/\[([^\]]+)\]\{([^\}]+)\}/g, (match, visible, note) => {
+          return `<span class="annotated-word" data-note="${note}">${visible}</span>`;
+        });
 
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
 
@@ -1164,6 +1166,13 @@ function selectUnit(unit, li) {
         qText.innerHTML = `${index + 1}. ${renderedHTML}<br><br><strong>你的选择:</strong> ${currentSentence}`;
       };
       container.appendChild(btn);
+    });
+    document.querySelectorAll(".annotated-word").forEach(span => {
+      span.addEventListener("click", () => {
+        const note = span.getAttribute("data-note");
+        const analysisText = document.getElementById("analysisText");
+        analysisText.textContent = note;
+      });
     });
   }
 
