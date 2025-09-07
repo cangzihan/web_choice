@@ -248,7 +248,7 @@
 
     .match-card.matched {
       background-color: #e0ffe0;
-      border-color: #0a0;
+      border-color: rgb(34, 179, 34);
       cursor: default;
     }
 
@@ -258,7 +258,7 @@
     }
 
     .dark-theme .word-card.selected {
-      background-color: #102b47;
+      background-color: #0f2740c8;
       border-color: #5dc5f8;
     }
 
@@ -291,8 +291,9 @@
     }
 
     .correct_match{
-      background-color: #c8f7c5 !important;
-      border: 2px solid green !important;
+      background-color: #c9f7c5 !important;
+      border: 2px solid rgb(17, 106, 17) !important;
+      animation: correct-match-animation 0.8s forwards !important;
     }
 
     .wrong_match{
@@ -303,6 +304,18 @@
     .dark-theme .correct_match{
       background-color: rgba(13, 82, 58, 0.373) !important;
       border: 2px solid rgb(49, 162, 132) !important;
+    }
+
+    @keyframes correct-match-animation {
+        40% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.6;
+        }
     }
 
     .dark-theme .wrong_match{
