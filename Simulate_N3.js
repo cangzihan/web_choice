@@ -37,7 +37,7 @@ window.simulate_n3 = [
     {
       "Question": "\nA「[バス]{bus}[停]{てい}に[人]{にん}がいないね。」\nB「[今]{いま}、（　　）ね。あと10[分]{ふん}は[来ない]{こない}よ。」",
       "Option": ["出てからだ", "出たとたんだ", "出てはじめてだ", "出たばかりだ"],
-      "Analysis": "蓝宝书N3知识点96，「ばかりだ」本身有just的含义\n通义千问3-235B-A22B解析：\n出たばかりだ (\"has just left\") directly explains the reason for the empty bus stop: the bus left recently, so no one is waiting yet.\nThe other options do not fit the context:\n- 出てからだ (\"since it left\") implies a vague time frame, not immediacy.\n- 出たとたん (\"as soon as it left\") suggests an immediate consequence, but not the current state.\n- 出てはじめてだ (\"only after it leaves\") is grammatically awkward here and unrelated to the situation.\nThis choice logically connects the absence of people to the bus having just departed, aligning with B's explanation that the next bus will arrive in 10 minutes.",
+      "Analysis": "蓝宝书N2知识点66，蓝宝书N3知识点96，「ばかりだ」本身有just的含义\n通义千问3-235B-A22B解析：\n出たばかりだ (\"has just left\") directly explains the reason for the empty bus stop: the bus left recently, so no one is waiting yet.\nThe other options do not fit the context:\n- 出てからだ (\"since it left\") implies a vague time frame, not immediacy.\n- 出たとたん (\"as soon as it left\") suggests an immediate consequence, but not the current state.\n- 出てはじめてだ (\"only after it leaves\") is grammatically awkward here and unrelated to the situation.\nThis choice logically connects the absence of people to the bus having just departed, aligning with B's explanation that the next bus will arrive in 10 minutes.",
       "Unit": 1,
       "Correct Answer": 4
     },
