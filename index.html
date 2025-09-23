@@ -37,6 +37,13 @@
     table {
       font-size: 16px;
     }
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* 按钮间距，可调整 */
+      align-items: center;
+    }
+
     .options button {
       display: block;
       width: 100%;
@@ -477,6 +484,14 @@
     .dark-theme .unit-list li.active {
       background-color: #102b47;
       border-color: #5dc5f8;
+    }
+    
+    .sort-card{
+        display: inline-block;
+        width: auto !important;
+        padding: 8px 20px; /* 左右padding控制宽度稍微宽一点 */
+        font-size: 18px;
+        transition: box-shadow 0.2s;
     }
 
   </style>
@@ -1073,10 +1088,10 @@ function selectUnit(unit, li) {
   }
 
   function checkSortAnswer() {
+    // 获取用户答案
     const analysisText = document.getElementById("analysisText");
     const question = filteredData[currentIndex];
 
-    
     const navBtn = document.querySelector(`#navBtn${currentIndex}`);
 
     // 用户答案不足时提醒
@@ -1159,6 +1174,7 @@ function selectUnit(unit, li) {
     // 渲染选项按钮
     question.Option.forEach((opt, i) => {
       const btn = document.createElement("button");
+      btn.className = "sort-card";
       btn.textContent = opt;
       btn.onclick = () => {
         if (selectedSet.has(i)) {
