@@ -464,12 +464,18 @@
     }
 
     .unit-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
     .unit-list li {
+      display: flex;
+      align-items: center;
+      min-height: 24px; /* 可根据实际调整 */
       padding: 8px 12px;
       border: 1px solid #ddd;
       margin-bottom: 8px;
@@ -502,6 +508,22 @@
         padding: 8px 20px; /* 左右padding控制宽度稍微宽一点 */
         font-size: 18px;
         transition: box-shadow 0.2s;
+    }
+
+    .sort-card-selected{
+        display: inline-block;
+        background-color: #eee;
+        width: auto !important;
+        padding: 8px 20px; /* 左右padding控制宽度稍微宽一点 */
+        font-size: 18px;
+        transition: box-shadow 0.2s;
+        margin:0 4px;
+    }
+
+    .dark-theme .sort-card-selected{
+        background-color: #102b47;
+        color: #fff;
+        border: 1px solid white; /* 添加边界线并设置颜色 */
     }
 
   </style>

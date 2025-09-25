@@ -515,47 +515,36 @@ function resetMatchQuiz() {
 }
 
 function checkSortAnswer() {
-    // 获取用户答案
     const analysisText = document.getElementById("analysisText");
     const question = filteredData[currentIndex];
-
     const navBtn = document.querySelector(`#navBtn${currentIndex}`);
 
-    // 用户答案不足时提醒
-    if (tempOrder.length < question.Option.length) {
+    // 用户选项索引转为1-based序号
+    const userOrder = (question._selected || []).map(idx => idx + 1);
+    if (userOrder.length < question.Option.length) {
       analysisText.textContent = "请先点完所有选项再确认。";
       return;
     }
 
-    const correctOrder = question.CorrectOrder;   // e.g. [1,3,4,2]
-    const keyPos = question.KeyPosition;          // e.g. 3
-    const keyCorrect = correctOrder[keyPos - 1];  // 正确答案在关键位置上应该是哪个
+    const correctOrder = question.CorrectOrder;
+    const keyPos = question.KeyPosition;
+    const keyCorrect = correctOrder[keyPos - 1];
+    const userAtKey = userOrder[keyPos - 1];
 
-    // 关键位置用户选择
-    const userAtKey = tempOrder[keyPos - 1];
-
-    if (arraysEqual(tempOrder, correctOrder)) {
-      // ✅ 全对
+    if (arraysEqual(userOrder, correctOrder)) {
       analysisText.textContent = "✅ 全部顺序正确！";
-      // 高亮题号按钮
       navBtn.classList.remove("wrong");
       navBtn.classList.add("correct");
-    } 
-    else if (userAtKey === keyCorrect) {
-      // ⚠️ 关键位置正确，其它顺序错误
+    } else if (userAtKey === keyCorrect) {
       analysisText.textContent = "⚠️ 关键位置正确，但顺序不完全正确。";
       navBtn.classList.remove("wrong");
       navBtn.classList.add("correct");
-    }
-    else {
-      // ❌ 错误
+    } else {
       analysisText.textContent = "❌ 关键位置错误。";
-      // 高亮题号按钮
       navBtn.classList.remove("correct");
       navBtn.classList.add("wrong");
     }
 
-    // 追加解析
     analysisText.textContent += "\n\n【解析】 " + question.Analysis;
 }
 
@@ -571,70 +560,71 @@ function arraysEqual(a, b) {
 
 function renderOrderQuestion(question, index) {
     const qText = document.getElementById("questionText");
-    const container = document.getElementById("optionsContainer");
-    const analysisBtn = document.getElementById("analysisBtn");
-    const analysisText = document.getElementById("analysisText");
+    const optionsContainer = document.getElementById("optionsContainer");
 
-    // 1. 渲染题干，把 #space# 替换成 4 个空格位，并在关键位置插入 ⭐
+    // 初始化
+    if (!question._unselected) {
+        question._unselected = question.Option.map((_, i) => i);
+        question._selected = [];
+    }
+    const unselected = question._unselected;
+    const selected = question._selected;
+
+    // 渲染题干，把空格替换为已选卡片或占位符
+    let blanks = selected.map((idx, i) => {
+        if (typeof idx === "number") {
+            return `<button class="sort-card-selected"" onclick="removeOrderCard(${i})">${question.Option[idx]}</button>`;
+        } else {
+            return `<span class="sort-card-selected"">____</span>`;
+        }
+    });
+    // 补齐未选的空格
+    while (blanks.length < question.Option.length) {
+        blanks.push(`<span class="sort-card-selected"">____</span>`);
+    }
+    // 关键位置加星标
+    if (question.KeyPosition && blanks[question.KeyPosition - 1]) {
+        blanks[question.KeyPosition - 1] = blanks[question.KeyPosition - 1].replace("____", "__⭐__");
+    }
+    const renderedBlanks = blanks.join(" ");
+
+    // 题干替换
     const rawText = question.Question;
-    const keyPos = question.KeyPosition;
-
-    // 先构造 ["____", "____", "____", "____"]
-    const blanks = Array(4).fill("____");
-
-    // 在 keyPos（1-based 索引）处加 ⭐
-    blanks[keyPos - 1] = "__⭐__";
-
-    // 拼成字符串
-    const renderedBlanks = blanks.join("  ");
-
-    // 替换 #space# 占位符并渲染带注释的问题文本
-    const renderedHTML = rawText.replace(/#space#/g, renderedBlanks).replace(/\[([^\]]+)\]\{([^\}]+)\}/g, (match, visible, note) => {
-          return `<span class="annotated-word" data-note="${note}">${visible}</span>`;
-        });
-
+    const renderedHTML = rawText.replace(/#space#/g, renderedBlanks)
+        .replace(/\[([^\]]+)\]\{([^\}]+)\}/g, (match, visible, note) =>
+            `<span class="annotated-word" data-note="${note}">${visible}</span>`);
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
 
-    container.innerHTML = "";
-    analysisBtn.style.visibility = "hidden";
-    analysisText.textContent = "依次点击选项，组成完整语句，然后点击确定";
-
-    tempOrder = [];
-    selectedSet = new Set();
-
-    // 渲染选项按钮
-    question.Option.forEach((opt, i) => {
-      const btn = document.createElement("button");
-      btn.className = "sort-card";
-      btn.textContent = opt;
-      btn.onclick = () => {
-        if (selectedSet.has(i)) {
-            // 如果已选择，则取消选择
-            selectedSet.delete(i);
-            // 从 tempOrder 中删除对应的元素
-            const index = tempOrder.indexOf(i + 1);
-            if (index > -1) {
-                tempOrder.splice(index, 1);
-            }
-        }
-        else{
-          selectedSet.add(i);
-          tempOrder.push(i + 1); // 保存顺序（1-based）
-        }
-
-        // 更新显示
-        const currentSentence = tempOrder.map(idx => question.Option[idx - 1]).join(" ");
-        qText.innerHTML = `${index + 1}. ${renderedHTML}<br><br><strong>你的选择:</strong> ${currentSentence}`;
-      };
-      container.appendChild(btn);
+    // 渲染未选卡片
+    optionsContainer.innerHTML = "";
+    unselected.forEach(idx => {
+        const btn = document.createElement("button");
+        btn.className = "sort-card";
+        btn.textContent = question.Option[idx];
+        btn.onclick = () => {
+            // 移到已选
+            unselected.splice(unselected.indexOf(idx), 1);
+            selected.push(idx);
+            renderOrderQuestion(question, index);
+        };
+        optionsContainer.appendChild(btn);
     });
+
+    // 解析点击
     document.querySelectorAll(".annotated-word").forEach(span => {
-      span.addEventListener("click", () => {
-        const note = span.getAttribute("data-note");
-        const analysisText = document.getElementById("analysisText");
-        analysisText.textContent = note;
-      });
+        span.addEventListener("click", () => {
+            const note = span.getAttribute("data-note");
+            document.getElementById("analysisText").textContent = note;
+        });
     });
+}
+
+// 移除已选卡片函数
+function removeOrderCard(i) {
+    const question = filteredData[currentIndex];
+    question._unselected.push(question._selected[i]);
+    question._selected.splice(i, 1);
+    renderOrderQuestion(question, currentIndex);
 }
 
 applyDefaultThemeByTime();
