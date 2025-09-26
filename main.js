@@ -224,6 +224,25 @@ function renderQuestion(index) {
     const question = filteredData[index];
     const sortSubmitBtn = document.querySelector("#sortSubmitBtn");
 
+    // 控制上一题/下一题按钮状态。如果这道题是最后一题则禁用下一题按钮，如果这道题是第一题则禁用上一题按钮
+    const prevBtn = document.querySelector(".navigation button:nth-child(1)");
+    const nextBtn = document.getElementById("nextBtn")
+
+    if (index === 0){
+        prevBtn.style.visibility = "hidden";
+    }
+    else {
+        prevBtn.style.visibility = "visible";
+    }
+    if  (index === filteredData.length - 1){
+        nextBtn.style.visibility = "hidden";
+    }
+    else {
+        nextBtn.style.visibility = "visible";
+    }
+    const analysisBtn = document.getElementById("analysisBtn");
+    analysisBtn.style.visibility = "hidden";
+
     // 👉 如果是排序题，走单独逻辑
     if (question.CorrectOrder) {
       sortSubmitBtn.style.visibility = "visible";
@@ -234,7 +253,6 @@ function renderQuestion(index) {
 
     const qText = document.getElementById("questionText");
     const container = document.getElementById("optionsContainer");
-    const analysisBtn = document.getElementById("analysisBtn");
     const analysisText = document.getElementById("analysisText");
 
     // 渲染带注释的问题文本
@@ -245,7 +263,6 @@ function renderQuestion(index) {
 
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
     container.innerHTML = "";
-    analysisBtn.style.visibility = "hidden";
     analysisText.textContent = "请选择选项后点击“查看解析”以显示内容。";
 
     question.Option.forEach((opt, i) => {
@@ -274,23 +291,6 @@ function renderQuestion(index) {
       }
       analysisBtn.style.visibility = "visible";
       showAnalysis();
-    }
-
-    // 控制上一题/下一题按钮状态。如果这道题是最后一题则禁用下一题按钮，如果这道题是第一题则禁用上一题按钮
-    const prevBtn = document.querySelector(".navigation button:nth-child(1)");
-    const nextBtn = document.getElementById("nextBtn")
-
-    if (index === 0){
-        prevBtn.style.visibility = "hidden";
-    }
-    else {
-        prevBtn.style.visibility = "visible";
-    }
-    if  (index === filteredData.length - 1){
-        nextBtn.style.visibility = "hidden";
-    }
-    else {
-        nextBtn.style.visibility = "visible";
     }
 
     document.querySelectorAll(".annotated-word").forEach(span => {
@@ -531,16 +531,31 @@ function checkSortAnswer() {
     const keyCorrect = correctOrder[keyPos - 1];
     const userAtKey = userOrder[keyPos - 1];
 
+    const cards = document.querySelectorAll(".sort-card-selected");
+    // 检查每个位置的正确性
+    for (let i = 0; i < 4; i++) {
+        const indexCorrect = correctOrder[i];
+        const userAtIndex = userOrder[i];
+
+        if (indexCorrect !== userAtIndex) {
+          cards[i].classList.add("wrong-sort");
+        }
+        else {
+          cards[i].classList.add("correct-sort");
+        }
+    }
+
     if (arraysEqual(userOrder, correctOrder)) {
       analysisText.textContent = "✅ 全部顺序正确！";
       navBtn.classList.remove("wrong");
       navBtn.classList.add("correct");
     } else if (userAtKey === keyCorrect) {
-      analysisText.textContent = "⚠️ 关键位置正确，但顺序不完全正确。";
+      analysisText.textContent = "⚠️ 关键位置正确，但顺序不完全正确。"
       navBtn.classList.remove("wrong");
       navBtn.classList.add("correct");
     } else {
-      analysisText.textContent = "❌ 关键位置错误。";
+     // analysisText.textContent = "❌ 关键位置错误。" + userAtKey + " " + keyCorrect;
+      analysisText.textContent = "❌ 关键位置错误。"
       navBtn.classList.remove("correct");
       navBtn.classList.add("wrong");
     }

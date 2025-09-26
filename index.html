@@ -63,6 +63,21 @@
       background-color: #f7c5c5 !important;
       border-color: red;
     }
+    .correct-sort {
+      background-color: #c8f7c5 !important;
+      border-color: green;
+    }
+    .wrong-sort {
+      background-color: #f7c5c5 !important;
+      border-color: red;
+    }
+    .dark-theme .correct-sort {
+      background-color: rgba(13, 82, 58, 0.591) !important;
+      border: 2px solid rgb(49, 162, 132);
+    }
+    .dark-theme .wrong-sort {
+      background-color: rgb(66, 0, 0) !important;
+    }
     .navigation {
       margin-top: 20px;
       display: flex;
@@ -514,8 +529,9 @@
         display: inline-block;
         background-color: #eee;
         width: auto !important;
-        padding: 8px 20px; /* 左右padding控制宽度稍微宽一点 */
+        padding: 8px 12px; /* 左右padding控制宽度稍微宽一点 */
         font-size: 18px;
+        border-radius:  10px; /* 添加圆角矩形效果 */
         transition: box-shadow 0.2s;
         margin:0 4px;
     }

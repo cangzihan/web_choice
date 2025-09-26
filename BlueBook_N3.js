@@ -141,7 +141,7 @@ window.bluebook_n3 = [
     },
     {
       "Question": "[先生]{せんせい}が（　　）、この[論文]{ろんぶん}を[完成し]{かんせいし}た。",
-      "Option": ["指導したうちは", "指導してくれたおかげで", "指導してもらったうちは", "NULL"],
+      "Option": ["指導したうちは", "指導してくれたおかげで", "指導してもらったうちは"],
       "Analysis": "知识点10",
       "Unit": 1,
       "Correct Answer": 2
@@ -159,6 +159,46 @@ window.bluebook_n3 = [
       "Analysis": "知识点9",
       "Unit": 1,
       "Correct Answer": 4
+    },
+    {
+      "Question": "きのう#space#、[眠っ]{ねむっ}てしまった。",
+      "Option": ["うちに", "を", "見ている", "テレビ"],
+      "CorrectOrder": [4, 2, 3, 1], 
+      "KeyPosition": 3, 
+      "Analysis": "知识点9",
+      "Unit": 1
+    },
+    {
+      "Question": "[バス]{bus}の#space#、[財布]{さいふ}を[盗ま]{ぬすま}れた。",
+      "Option": ["をしている", "居眠り", "間に", "中で"],
+      "CorrectOrder": [4, 2, 1, 3], 
+      "KeyPosition": 3, 
+      "Analysis": "知识点1",
+      "Unit": 1
+    },
+    {
+      "Question": "もう#space#[以上]{いじょう}は、誰にすすめられても[絶対]{ぜったい}に[吸わ]{すわ}ないよ。",
+      "Option": ["吸わない", "タバコを", "決心した", "と"],
+      "CorrectOrder": [2, 1, 4, 3], 
+      "KeyPosition": 3, 
+      "Analysis": "知识点3",
+      "Unit": 1
+    },
+    {
+      "Question": "[彼女]{かのじょ}はきれいな#space#[人気]{にんき}が[高い]{たかい}。",
+      "Option": ["人", "優しい", "なので", "うえに"],
+      "CorrectOrder": [4, 2, 1, 3], 
+      "KeyPosition": 3, 
+      "Analysis": "知识点6确定うえに在这里只能放最前面",
+      "Unit": 1
+    },
+    {
+      "Question": "[鈴木]{すずき}[先生]{せんせい}が#space#[今回]{こんかい}の[コンクール]{竞赛}に[優勝]{ゆうしょう}できた。",
+      "Option": ["おかげで", "熱心に", "くださった", "教えて"],
+      "CorrectOrder": [2, 4, 3, 1], 
+      "KeyPosition": 2, 
+      "Analysis": "知识点10注意例句",
+      "Unit": 1
     },
     {
       "Question": "このお[酒]{さけ}は[変な]{へんな}におい（　　）する。",
