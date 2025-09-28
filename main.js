@@ -14,6 +14,8 @@ let isMatchQuestion = false;  // 标记是否是匹配题
 let tempOrder = [];
 let selectedSet = new Set();
 
+let wordHint = true;
+
 const translations = {
     zh: {
       selectBook: "📚 请选择一本书",
@@ -258,7 +260,11 @@ function renderQuestion(index) {
     // 渲染带注释的问题文本
     const rawText = question.Question;
     const renderedHTML = rawText.replace(/\[([^\]]+)\]\{([^\}]+)\}/g, (match, visible, note) => {
-      return `<span class="annotated-word" data-note="${note}">${visible}</span>`;
+      if (wordHint) {
+        return `<span class="annotated-word" data-note="${note}" style="cursor:pointer;">${visible}</span>`;
+      } else {
+        return `<span>${visible}</span>`; // 只显示文字，不带提示
+      };
     });
 
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
@@ -293,13 +299,15 @@ function renderQuestion(index) {
       showAnalysis();
     }
 
-    document.querySelectorAll(".annotated-word").forEach(span => {
-      span.addEventListener("click", () => {
-        const note = span.getAttribute("data-note");
-        const analysisText = document.getElementById("analysisText");
-        analysisText.textContent = note;
+    if (wordHint){
+      document.querySelectorAll(".annotated-word").forEach(span => {
+        span.addEventListener("click", () => {
+          const note = span.getAttribute("data-note");
+          const analysisText = document.getElementById("analysisText");
+          analysisText.textContent = note;
+        });
       });
-    });
+    }
 }
 
 function checkAnswer(selected, button, correct) {
@@ -605,9 +613,15 @@ function renderOrderQuestion(question, index) {
 
     // 题干替换
     const rawText = question.Question;
-    const renderedHTML = rawText.replace(/#space#/g, renderedBlanks)
-        .replace(/\[([^\]]+)\]\{([^\}]+)\}/g, (match, visible, note) =>
-            `<span class="annotated-word" data-note="${note}">${visible}</span>`);
+    const renderedHTML = rawText
+      .replace(/#space#/g, renderedBlanks)
+      .replace(/\[([^\]]+)\]\{([^\}]+)\}/g, (match, visible, note) => {
+        if (wordHint) {
+          return `<span class="annotated-word" data-note="${note}" style="cursor:pointer;">${visible}</span>`;
+        } else {
+          return `<span>${visible}</span>`; // 只显示文字，不带提示
+        }
+      });
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
 
     // 渲染未选卡片
@@ -626,12 +640,14 @@ function renderOrderQuestion(question, index) {
     });
 
     // 解析点击
-    document.querySelectorAll(".annotated-word").forEach(span => {
-        span.addEventListener("click", () => {
-            const note = span.getAttribute("data-note");
-            document.getElementById("analysisText").textContent = note;
-        });
-    });
+    if (wordHint){
+      document.querySelectorAll(".annotated-word").forEach(span => {
+          span.addEventListener("click", () => {
+              const note = span.getAttribute("data-note");
+              document.getElementById("analysisText").textContent = note;
+          });
+      });
+    }
 }
 
 // 移除已选卡片函数
@@ -640,6 +656,12 @@ function removeOrderCard(i) {
     question._unselected.push(question._selected[i]);
     question._selected.splice(i, 1);
     renderOrderQuestion(question, currentIndex);
+}
+
+function showHint(){
+  wordHint = !wordHint;
+  // 切换后，重新渲染当前题
+  renderQuestion(currentIndex);
 }
 
 applyDefaultThemeByTime();

@@ -376,6 +376,22 @@
       box-shadow: 0 7px 14px rgba(63, 209, 202, 0.35), 0 0 0 3px #bcd49c;
     }
 
+    #hintBtn {
+      border: none;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .dark-theme #hintBtn {
+      box-shadow: 0 7px 14px rgba(63, 209, 202, 0.35), 0 0 0 3px #bcd49c;
+    }
+
     #homeBtn {
       border: none;
       background-color: #f0f0f0;
@@ -594,9 +610,12 @@
       </div>
     </div>
     <div class="right">
-      <div style="display: flex; justify-content: space-between; align-items: right;">
+      <div style="display: flex; justify-content: flex-start; align-items: right; gap:16px;">
         <button id="homeBtn" onclick="goBackToStart()">
           <i class="fas fa-home"></i>
+        </button>
+        <button id="hintBtn" onclick="showHint()">
+          <i class="fas fa-exclamation-circle"></i>
         </button>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: center;">
