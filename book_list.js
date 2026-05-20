@@ -25,6 +25,11 @@ const bookList = [
     DataVar: "IT_PASSPORT_OFFICIAL"
   },
   {
+    Title: "BJT",
+    Path: "BJT_Test.js",
+    DataVar: "bjt_test"
+  },
+  {
     Title: "单词匹配",
     Path: "Word.js",
     DataVar: "word",

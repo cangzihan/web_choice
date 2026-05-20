@@ -91,6 +91,7 @@ def main():
     process_file("BlueBook_N2")
     process_file("Simulate_N3")
     process_file("JLPT_Test")
+    process_file("BJT_Test")
     process_file("IT_PASSPORT_OFFICIAL")
 
 
