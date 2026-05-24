@@ -265,6 +265,10 @@ function renderQuestion(index) {
       } else {
         return `<span>${visible}</span>`; // 只显示文字，不带提示
       };
+    }).replace(/\[!audio\]\(([^)]+)\)/g, (match, src) => {
+      return `<span class="question-audio"><audio controls src="${src}"></audio></span>`;
+    }).replace(/\[!image\]\(([^)]+)\)/g, (match, src) => {
+      return `<span class="question-image"><img src="${src}" alt="question image"></span>`;
     });
 
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
@@ -623,6 +627,12 @@ function renderOrderQuestion(question, index) {
         }
       });
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
+    qText.innerHTML = qText.innerHTML.replace(/\[!audio\]\(([^)]+)\)/g, (match, src) => {
+        return `<span class="question-audio"><audio controls src="${src}"></audio></span>`;
+    });
+    qText.innerHTML = qText.innerHTML.replace(/\[!image\]\(([^)]+)\)/g, (match, src) => {
+        return `<span class="question-image"><img src="${src}" alt="question image"></span>`;
+    });
 
     // 渲染未选卡片
     optionsContainer.innerHTML = "";
