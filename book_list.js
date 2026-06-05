@@ -20,7 +20,7 @@ const bookList = [
     DataVar: "jlpt_test"
   },
   {
-    Title: "ITパスポート公式",
+    Title: "ITパスポート",
     Path: "IT_PASSPORT_OFFICIAL.js",
     DataVar: "IT_PASSPORT_OFFICIAL"
   },
