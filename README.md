@@ -13,6 +13,8 @@
 - ✅ 自动判断正确/错误并高亮
 - ✅ 支持点击“查看解析”显示讲解
 - ✅ 自动记忆用户选择并高亮状态
+- ⏳ 支持mermaid chart式渲染
+- ⏳ 代码块
 
 ---
 
@@ -36,6 +38,46 @@
 - `Option`: 四个选项数组
 - `Correct Answer`: 正确选项索引（从 1 开始）
 - `Analysis`: 该题解析说明
+
+#### 表格渲染支持
+```html
+<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">
+    <thead>
+        <tr>
+            <th style=\"width: 10%; padding: 10px;\"></th>
+            <th style=\"width: 30%; padding: 10px;\">a</th>
+            <th style=\"width: 30%; padding: 10px;\">b</th>
+            <th style=\"width: 30%; padding: 10px;\">c</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style=\"padding: 10px; text-align: center;\">ア</td>
+            <td style=\"padding: 10px;\">[主記憶]{しゅきおく}</td>
+            <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>
+            <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>
+        </tr>
+        <tr>
+            <td style=\"padding: 10px; text-align: center;\">イ</td>
+            <td style=\"padding: 10px;\">[主記憶]{しゅきおく}</td>
+            <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>
+            <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>
+        </tr>
+        <tr>
+            <td style=\"padding: 10px; text-align: center;\">ウ</td>
+            <td style=\"padding: 10px;\">[補助記憶]{ほじょきおく}</td>
+            <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>
+            <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>
+        </tr>
+        <tr>
+            <td style=\"padding: 10px; text-align: center;\">エ</td>
+            <td style=\"padding: 10px;\">[補助記憶]{ほじょきおく}</td>
+            <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>
+            <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>
+        </tr>
+    </tbody>
+</table>
+```
 
 ### 排序题情况
 ```json
