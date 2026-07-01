@@ -361,6 +361,20 @@ function goBackToStart() {
     document.getElementById("questionNav").innerHTML = "";
 }
 
+function toggleImmersiveMode() {
+    const body = document.querySelector('body');
+    const enabled = !body.classList.contains('immersive-mode');
+    body.classList.toggle('immersive-mode', enabled);
+
+    const button = document.getElementById('immersiveModeBtn');
+    if (button) {
+        button.innerHTML = enabled ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        button.title = enabled ? '退出沉浸模式' : '沉浸模式';
+    }
+
+    localStorage.setItem('immersiveMode', enabled ? 'on' : 'off');
+}
+
 // 切换主题并保存到本地存储
 function toggleTheme() {
     const body = document.querySelector('body');
@@ -409,6 +423,14 @@ function applyDefaultThemeByTime() {
 
     document.getElementById("languageSelect").value = savedLang;
     applyLanguage(savedLang);
+
+    const immersiveMode = localStorage.getItem('immersiveMode') === 'on';
+    document.body.classList.toggle('immersive-mode', immersiveMode);
+    const immersiveBtn = document.getElementById('immersiveModeBtn');
+    if (immersiveBtn) {
+      immersiveBtn.innerHTML = immersiveMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+      immersiveBtn.title = immersiveMode ? '退出沉浸模式' : '沉浸模式';
+    }
     
     document.body.classList.toggle('dark-theme', isDark);
     document.getElementById("themeToggleSwitch").checked = isDark;

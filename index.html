@@ -16,6 +16,96 @@
         background-color: #012;
         color: #fff;
     }
+    .immersive-toggle-btn {
+      width: 34px;
+      height: 34px;
+      border: 1px solid #ccc;
+      background: #fff;
+      color: #222;
+      border-radius: 999px;
+      padding: 0;
+      cursor: pointer;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .immersive-mode {
+      background-color: #000;
+      color: #fff;
+    }
+    .immersive-mode .sidebar,
+    .immersive-mode .content,
+    .immersive-mode .container,
+    .immersive-mode .left,
+    .immersive-mode .right {
+      background: transparent;
+    }
+    .immersive-mode .theme-base-button,
+    .immersive-mode .analysis-button,
+    .immersive-mode .circle-btn,
+    .immersive-mode #homeBtn,
+    .immersive-mode #hintBtn,
+    .immersive-mode #homeBtn2 {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      box-shadow: none;
+    }
+    .immersive-mode .options button {
+      background: #000;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    .immersive-mode .book-list li,
+    .immersive-mode .unit-list li {
+      color: #fff;
+      border-color: #555;
+    }
+    .immersive-mode .book-list li:hover,
+    .immersive-mode .unit-list li:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .immersive-mode .book-list li.active,
+    .immersive-mode .unit-list li.active {
+      background: transparent !important;
+      border-color: #fff !important;
+      color: #fff !important;
+      box-shadow: none;
+    }
+    .immersive-mode .analysis-text {
+      background: #111;
+      color: #fff;
+      border: 1px solid #444;
+    }
+    .immersive-mode .options button.correct,
+    .immersive-mode .options button.wrong,
+    .immersive-mode .nav-btn.correct,
+    .immersive-mode .nav-btn.wrong {
+      background-color: transparent !important;
+      color: #fff;
+    }
+    .immersive-mode .options button.correct,
+    .immersive-mode .nav-btn.correct {
+      border-color: #2ecc71;
+    }
+    .immersive-mode .options button.wrong,
+    .immersive-mode .nav-btn.wrong {
+      border-color: #ff4d4f;
+    }
+    .immersive-mode .nav-btn {
+      background: #111;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    .immersive-mode .question,
+    .immersive-mode .right,
+    .immersive-mode .left {
+      color: #fff;
+    }
+    .immersive-mode .right {
+      border-left-color: #444;
+    }
     .container {
       display: flex;
       width: 100%;
@@ -600,6 +690,7 @@
       <input type="checkbox" id="themeToggleSwitch" onchange="toggleTheme()" />
       <span class="slider"></span>
     </label>
+    <button id="immersiveModeBtn" class="immersive-toggle-btn" onclick="toggleImmersiveMode()" title="沉浸模式"><i class="fas fa-moon"></i></button>
     <select id="languageSelect" onchange="changeLanguage()" style="padding: 3px 6px; font-size: 14px; border-radius: 4px; width: 105px;">
       <option value="zh">🇨🇳 中文</option>
       <option value="en">🇬🇧 EN</option>
@@ -613,7 +704,7 @@
     <div class="sidebar">
       <h3 id="selectedBookTitle"></h3>
       <ul id="bookList" class="book-list"></ul>
-      <button onclick="startQuiz()" class="theme-base-button" style="margin-top: 20px;">开始答题</button>
+      <button id="startQuizBtn" onclick="startQuiz()" class="theme-base-button" style="margin-top: 20px;">开始答题</button>
     </div>
 
     <!-- 右侧单元 -->
