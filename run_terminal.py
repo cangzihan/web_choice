@@ -91,100 +91,143 @@ def get_user_input(prompt_text):
     return input()
 
 
-fake_cmd_content()
-with open("book_list.js", "r", encoding="utf-8") as f:
-    text = f.read()
+def shuffle_question(question):
+    q = question.copy()
 
-# 提取 [...] 部分
-array_text = re.search(r'const\s+\w+\s*=\s*(\[.*\]);?', text, re.S).group(1)
+    options = q["Option"][:]
+    correct = q["Correct Answer"] - 1  # 转成0开始
 
-# 给 key 加双引号
-array_text = re.sub(r'([,{]\s*)([A-Za-z_]\w*)(\s*:)', r'\1"\2"\3', array_text)
+    # 原始索引
+    indices = list(range(len(options)))
+    random.shuffle(indices)
 
-book_list = json.loads(array_text)
-for i, item in enumerate(book_list):
-    logging.info(f"[{i}] {item['Path']}")
+    # 打乱后的选项
+    q["Option"] = [options[i] for i in indices]
 
-fake_cmd_content()
-book_selected = None
-while book_selected is None:
-    user_input = input(">> ") 
-    if user_input.isdigit():
-        user_input = int(user_input)
-        if user_input in range(len(book_list)):
-            book_selected = user_input
-            logging.info(f"{book_list[book_selected]['Path']}")
+    # 正确答案的新位置
+    q["Correct Answer"] = indices.index(correct) + 1
+
+    return q
 
 
-book_content_list = load_js_array(book_list[book_selected]['Path'])
+def run_choice_question(unit_content):
+    for q_content_ori in unit_content:
+        q_content = shuffle_question(q_content_ori)
+        time.sleep(0.2)
+        logging.info("Received inference request.")
+        time.sleep(0.2)
+        logging.info("Loading prompt...")
+        time.sleep(0.2)
+        logging.info("Prompt loaded.")
+        question = re.sub(r'\[([^\]]+)\]\{[^}]+\}', r'\1', q_content['Question'])
+        logging.info(question)
+        for i, item in enumerate(q_content["Option"], 1):
+            if i == 1:
+                prefix = random.randint(0, 9)
+            elif i == 2:
+                prefix = random.randint(10, 99)
+            elif i == 3:
+                prefix = random.randint(100, 999)
+            else:
+                prefix = random.randint(1000, 9999)
 
-unit_list = [item['Unit'] for item in book_content_list]
-unit_list = list(set(unit_list))
-unit_list.append("random")
-for i, item in enumerate(unit_list):
-    logging.info(f"[{i}] {item}")
+            suffix = random.randint(0, 999)
+            logging.info(f"[id={prefix}.{suffix:03d}] {item}")
+        fake_cmd_content()
+        
+        stop = threading.Event()
 
-fake_cmd_content()
-unit_selected = None
-while unit_selected is None:
-    user_input = input(">> ") 
-    if user_input.isdigit():
-        user_input = int(user_input)
-        if user_input in range(len(unit_list)):
-            unit_selected = unit_list[user_input]
+        t = threading.Thread(target=background_logs,args=(stop,),daemon=True)
+        t.start()
 
-if unit_selected != 'random':
-    unit_content = [item for item in book_content_list if item['Unit'] == unit_selected]
-else:
-    unit_content = random.choices(book_content_list, k=10)
+        ans = get_user_input("POST /v1/answer")
 
-for q_content in unit_content:
-    time.sleep(0.2)
-    logging.info("Received inference request.")
-    time.sleep(0.2)
-    logging.info("Loading prompt...")
-    time.sleep(0.2)
-    logging.info("Prompt loaded.")
-    question = re.sub(r'\[([^\]]+)\]\{[^}]+\}', r'\1', q_content['Question'])
-    logging.info(question)
-    for i, item in enumerate(q_content["Option"], 1):
-        if i == 1:
-            prefix = random.randint(0, 9)
-        elif i == 2:
-            prefix = random.randint(10, 99)
-        elif i == 3:
-            prefix = random.randint(100, 999)
+        stop.set()
+        
+        if ans == 'q':
+            return
+
+        ans = int(ans)
+        elapsed = random.randint(20,80)
+        time.sleep(1)
+        logging.info(f"Response generated in {elapsed} ms.")
+        if ans == q_content['Correct Answer']:
+            logging.info("Request completed successfully.")
         else:
-            prefix = random.randint(1000, 9999)
+            logging.error("Traceback (most recent call last):")
+            logging.error(
+                f'  File "quiz.py", line {random.randint(0,4096)}, in <module>'
+            )
+            logging.error(
+                f"ValueError: Expected {q_content['Correct Answer']}, got {ans}"
+            )
+        
+        analysis = {'Analysis' : q_content['Analysis']}
+        logging.info(f"{analysis}")
 
-        suffix = random.randint(0, 999)
-        logging.info(f"[id={prefix}.{suffix:03d}] {item}")
+
+def main():
     fake_cmd_content()
-    
-    stop = threading.Event()
+    with open("book_list.js", "r", encoding="utf-8") as f:
+        text = f.read()
 
-    t = threading.Thread(target=background_logs,args=(stop,),daemon=True)
-    t.start()
+    # 提取 [...] 部分
+    array_text = re.search(r'const\s+\w+\s*=\s*(\[.*\]);?', text, re.S).group(1)
 
-    ans = get_user_input("POST /v1/answer")
+    # 给 key 加双引号
+    array_text = re.sub(r'([,{]\s*)([A-Za-z_]\w*)(\s*:)', r'\1"\2"\3', array_text)
 
-    stop.set()
-    
-    ans = int(ans)
-    elapsed = random.randint(20,80)
-    time.sleep(1)
-    logging.info(f"Response generated in {elapsed} ms.")
-    if ans == q_content['Correct Answer']:
-        logging.info("Request completed successfully.")
-    else:
-        logging.error("Traceback (most recent call last):")
-        logging.error(
-            f'  File "quiz.py", line {random.randint(0,4096)}, in <module>'
-        )
-        logging.error(
-            f"ValueError: Expected {q_content['Correct Answer']}, got {ans}"
-        )
-    
-    analysis = {'Analysis' : q_content['Analysis']}
-    logging.info(f"{analysis}")
+    book_list = json.loads(array_text)
+    for i, item in enumerate(book_list):
+        logging.info(f"[{i}] {item['Path']}")
 
+    fake_cmd_content()
+    book_selected = None
+    while book_selected is None:
+        user_input = input(">> ") 
+        if user_input.isdigit():
+            user_input = int(user_input)
+            if user_input in range(len(book_list)):
+                book_selected = user_input
+                logging.info(f"{book_list[book_selected]['Path']}")
+
+
+    book_content_list = load_js_array(book_list[book_selected]['Path'])
+
+    while True:
+        unit_list = [item['Unit'] for item in book_content_list]
+        unit_list = list(set(unit_list))
+        unit_list.append("random")
+        for i, item in enumerate(unit_list):
+            logging.info(f"[{i}] {item}")
+
+        fake_cmd_content()
+        unit_selected = None
+        while unit_selected is None:
+            user_input = input(">> ") 
+            if user_input.isdigit():
+                user_input = int(user_input)
+                if user_input in range(len(unit_list)):
+                    unit_selected = unit_list[user_input]
+            elif user_input == 'q':
+                unit_selected = 'q'
+        
+        if unit_selected == 'q':
+            break
+
+        if unit_selected != 'random':
+            unit_content = [item for item in book_content_list if item['Unit'] == unit_selected]
+        else:
+            random_num = None
+            while random_num is None:
+                user_input = input(">> ") 
+                if user_input.isdigit():
+                    random_num = int(user_input)
+            unit_content = random.sample(book_content_list, k=min(random_num, len(book_content_list)))
+
+        run_choice_question(unit_content)
+
+
+if __name__ == "__main__":
+    while True:
+        main()
