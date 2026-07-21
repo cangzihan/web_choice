@@ -52,6 +52,16 @@
       border: 1px solid #fff;
       box-shadow: none;
     }
+    .immersive-mode .analysis-button {
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border-radius: 50%;
+      font-size: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
     .immersive-mode .options button {
       background: #000;
       color: #fff;
@@ -72,6 +82,12 @@
       border-color: #fff !important;
       color: #fff !important;
       box-shadow: none;
+    }
+    .immersive-mode #selectedBookTitle {
+      display: none;
+    }
+    .immersive-mode #analysisTitle {
+      color: transparent;
     }
     .immersive-mode .analysis-text {
       background: #111;
@@ -178,7 +194,7 @@
       font-size: 16px;
       border: none !important;
       outline: none;
-      padding: 5px 30px 5px 30px;
+      padding: 5px 12px;
       background: #ce9be3;
       color: #fff;
       border-radius: 6px;
@@ -505,6 +521,9 @@
     .dark-theme #hintBtn {
       box-shadow: 0 7px 14px rgba(63, 209, 202, 0.35), 0 0 0 3px #bcd49c;
     }
+    .immersive-mode #hintBtn{
+      box-shadow: none;
+    }
 
     #homeBtn {
       border: none;
@@ -520,6 +539,10 @@
     }
     .dark-theme #homeBtn {
       box-shadow: 0 7px 14px rgba(63, 209, 202, 0.35), 0 0 0 3px #bcd49c;
+    }
+
+    .immersive-mode #homeBtn{
+      box-shadow: none;
     }
 
     #homeBtn2 {
@@ -720,7 +743,7 @@
       <div class="options" id="optionsContainer"></div>
       <div class="navigation">
         <button id="prevBtn" onclick="prevQuestion()" class="theme-base-button">← 上一题</button>
-        <button id="analysisBtn" class="analysis-button" onclick="showAnalysis()">查看解析</button>
+        <button id="analysisBtn" class="analysis-button" onclick="showAnalysis()" title="查看解析">查看解析</button>
         <button id="sortSubmitBtn" class="theme-base-button" onclick="checkSortAnswer()">确认</button>
         <button id="nextBtn" onclick="nextQuestion()" class="theme-base-button">下一题 →</button>
       </div>
@@ -735,11 +758,9 @@
         </button>
       </div>
       <div style="display: flex; justify-content: space-between; align-items: center;">
-        <h3>解析</h3>
+        <h3 id="analysisTitle">解析</h3>
       </div>
-      <div class="analysis-text" id="analysisText">
-        请选择选项后点击“查看解析”以显示内容。
-      </div>
+      <div class="analysis-text" id="analysisText"></div>
     </div>
   </div>
   <div id="questionNav" style="margin-top: 20px; display: grid; grid-template-columns: repeat(20, auto); gap: 8px;"></div>

@@ -1960,6 +1960,75 @@ IT_PASSPORT_OFFICIAL = [
       "Correct Answer": 3
   },
   {
+      "Question": "[企画]{きかく}[プロセス]{process}、[要件]{ようけん}[定義]{ていぎ}[プロセス]{process}、[開発]{かいはつ}[プロセス]{process}、[保守]{ほしゅ}[プロセス]{process}と[続く]{つづく}[ソフトウェアライフサイクル]{Software Life Cycle}において、[企画]{きかく}[プロセス]{process}の[段階]{だんかい}で[行う]{おこなう}[作業]{さぎょう}として、[適切]{てきせつ}なものはどれか。（[平成]{へいせい}23[年度]{ねんど}）",
+      "Option": [
+        "機能要件と非機能要件の定義", 
+        "経営上のニーズと課題の確認", 
+        "システム方式の設計と評価", 
+        "ソフトウェア方式の設計と評価"
+      ],
+      "Analysis": "P169",
+      "Unit": 5,
+      "Correct Answer": 2
+  },
+  {
+      "Question": "[システム]{system}[開発]{かいはつ}[案件]{あんけん}A、B、Cのうち、[採算性]{さいさんせい}があるものはどれか。ここで、[採算]{さいさん}[検討]{けんとう}の[対象期間]{たいしょうきかん}は[システム]{system}の[サービス]{service}[開始後]{かいしご}の5[年目]{ねんめ}までとし、[サービス]{service}[開始後]{かいしご}は、[毎年]{まいとし}、[システム]{system}の[メンテナンス]{maintenance}[費用]{ひよう}が[初期投資額]{しょきとうしがく}の10%[発生]{はっせい}するものとする。\n<div style=\"display:inline-block; line-height:1.1;\">\n<div style=\"text-align:right; font-size:13px; margin:0; padding:0;\">\n    [単位]{たんい}  [百万円]{ひゃくまんえん}\n</div>\n\n  <table border=\"1\" style=\"border-collapse:collapse; width:100%; table-layout:fixed;\">\n    <tr>\n      <td style=\"text-align:center;\">[システム]{system}[開発]{かいはつ}[案件]{あんけん}</td>\n<td style=\"text-align:center;\">[初期投資額]{しょきとうしがく}</td>\n      <td style=\"text-align:center;\">[毎年]{まいとし}の[システム]{system}[効果]{こうか}</td>\n    </tr>\n\n    <tr>\n   <td style=\"text-align:center;\">A</td>\n  <td style=\"text-align:center;\">250</td>\n\n      <td style=\"text-align:center;\">80</td>\n </tr>\n\n    <tr>\n      <td style=\"text-align:center;\">B</td>\n      <td style=\"text-align:center;\">450</td>\n\n    <td style=\"text-align:center;\">140</td>\n     </tr>\n\n    <tr>\n      <td style=\"text-align:center;\">C</td>\n\n      <td style=\"text-align:center;\">700</td> <td style=\"text-align:center;\">200</td>\n  \n    </tr>\n\n  </table>\n</div>",
+      "Option": ["AとB", "BとC", "CとA", "AとBとC"],
+      "Analysis": "ROI大于100%才是属于【採算性があるもの】，不知道哪里定义的",
+      "Unit": 5,
+      "Correct Answer": 1
+  },
+  {
+      "Question": "図の[ソフトウェアライフサイクル]{Software Life Cycle}を、[運用]{うんよう}[プロセス]{process}、[開発]{かいはつ}[プロセス]{process}、[企画]{きかく}[プロセス]{process}、[保守]{ほしゅ}[プロセス]{process}、[要件]{ようけん}[定義]{ていぎ}[プロセス]{process}に[分類]{ぶんるい}したとき、aに[当て]{あて}はまるものはどれか。<br><br><svg width=\"660\" height=\"135\" viewBox=\"0 0 900 180\" xmlns=\"http://www.w3.org/2000/svg\"><defs><marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><polygon points=\"0 0,8 4,0 8\" fill=\"currentColor\"/></marker></defs><line x1=\"60\" y1=\"20\" x2=\"840\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"20\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"260\" y1=\"20\" x2=\"260\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"460\" y1=\"20\" x2=\"460\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"660\" y1=\"20\" x2=\"660\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><rect x=\"20\" y=\"60\" width=\"120\" height=\"60\" fill=\"#bfbfbf\" stroke=\"currentColor\"/><rect x=\"200\" y=\"60\" width=\"120\" height=\"60\" fill=\"white\" stroke=\"currentColor\"/><text x=\"260\" y=\"98\" font-size=\"28\" text-anchor=\"middle\">a</text><rect x=\"400\" y=\"60\" width=\"120\" height=\"60\" fill=\"#bfbfbf\" stroke=\"currentColor\"/><rect x=\"600\" y=\"60\" width=\"120\" height=\"60\" fill=\"#bfbfbf\" stroke=\"currentColor\"/><rect x=\"780\" y=\"60\" width=\"120\" height=\"60\" fill=\"white\" stroke=\"currentColor\"/><text x=\"840\" y=\"98\" font-size=\"20\" text-anchor=\"middle\">保守プロセス</text><line x1=\"840\" y1=\"20\"\nx2=\"840\" y2=\"60\"\nstroke=\"currentColor\"\nstroke-width=\"2\"\nmarker-end=\"url(#arrow)\"/><line x1=\"140\" y1=\"90\" x2=\"200\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"320\" y1=\"90\" x2=\"400\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"520\" y1=\"90\" x2=\"600\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"720\" y1=\"82\" x2=\"780\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/><line x1=\"780\" y1=\"98\" x2=\"720\" y2=\"98\" stroke=\"currentColor\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/></svg>",
+      "Option": ["運用プロセス", "開発プロセス", "企画プロセス", "要件定義プロセス"],
+      "Analysis": "P166",
+      "Unit": 5,
+      "Correct Answer": 4
+  },
+  {
+      "Question": "[ソフトウェアライフサイクル]{Software Life Cycle}を、[企画]{きかく}[プロセス]{process}、[要件]{ようけん}[定義]{ていぎ}[プロセス]{process}、[開発]{かいはつ}[プロセス]{process}、洗用[プロセス]{process}に[分け]{わけ}るとき、[要件]{ようけん}[定義]{ていぎ}[プロセス]{process}の[実施]{じっし}[内容]{ないよう}として、[適切]{てきせつ}なものはどれか。（[平成]{へいせい}27[年度]{ねんど}）",
+      "Option": ["業務及びシステムの移行", "システム化計画の立案", "ソフトウェアの詳細設計", "利害関係者のニーズの識別"],
+      "Analysis": "P170\n\n及び(および): 以及；和；与",
+      "Unit": 5,
+      "Correct Answer": 4
+  },
+  {
+      "Question": "[システム]{system}[開発]{かいはつ}における[業務]{ぎょうむ}[要件]{ようけん}を[定義]{ていぎ}する[目的]{もくてき}として、[適切]{てきせつ}なものはどれか。（[平成]{へいせい}24[年度]{ねんど}）",
+      "Option": [
+        "企業の経営資源を有効に活用し、統合的に管理すること", 
+        "業務フロー、組織、システムを抜本的に見直し、再構築すること", 
+        "経営目標を達成するためにIT化の方針と実施計画を作成すること", 
+        "システム化の範囲と機能を具体化し、利害関係者間で合意すること"
+      ],
+      "Analysis": "P170",
+      "Unit": 5,
+      "Correct Answer": 4
+  },
+  {
+      "Question": "ある[業務]{ぎょうむ}[システム]{system}の[新規]{しんき}[開発]{かいはつ}を[計画]{けいかく}している[企業]{きぎょう}が、SI[ベンダ]{供应商，卖方}に[出す]{だす}RFPの[目的]{もくてき}として、[最も]{もっとも}[適切]{てきせつ}なものはどれか。（[平成]{へいせい}23[年度]{ねんど}）",
+      "Option": [
+        "開発する業務システムの実現方法とその可能性を知るために、ベンダから必要な技術情報を得たい。", 
+        "業務システムの開発を依頼する候補を絞り込むために、得られる情報からベンダの能力を見たい。", 
+        "業務システムの開発を依頼するために、ベンダの示す提案内容から最適な依頼先を選定したい。", 
+        "業務システムの開発を依頼するベンダと機密保持契約を結ぶために、ベンダからの了解を取り付けたい。"
+      ],
+      "Analysis": "P174",
+      "Unit": 5,
+      "Correct Answer": 3
+  },
+  {
+      "Question": "ある[業務]{ぎょうむ}[システム]{system}の[新規]{しんき}[開発]{かいはつ}を[計画]{けいかく}している[企業]{きぎょう}が、SI[ベンダ]{供应商，卖方}に[出す]{だす}RFIの[目的]{もくてき}として、[適切]{てきせつ}なものはどれか。（[平成]{へいせい}28[年度]{ねんど}）",
+      "Option": [
+        "業務システムの開発のための契約を結ぶのに先立って、ベンダの開発計画とその体制が知りたい。", 
+        "業務システムの開発を依頼してよいベンダか否かを判断するための必要な情報を得たい。", 
+        "業務システムの開発を依頼するに当たって、ベンダの正式な見積り金額を知りたい。", 
+        "業務システムの開発をベンダに依頼するに当たって、ベンダとの間に機密保持契約を結びたい。"
+      ],
+      "Analysis": "P173",
+      "Unit": 5,
+      "Correct Answer": 2
+  },
+  {
       "Question": "[大吉]{だいきち}（2026[年度]{ねんど}）",
       "Option": [
           "",

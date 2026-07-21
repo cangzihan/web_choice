@@ -62,9 +62,26 @@ function applyLanguage(lang) {
     const t = translations[lang];
 
     document.getElementById("selectedBookTitle").textContent = t.selectBook;
-    document.querySelector(".theme-base-button").textContent = t.startQuiz;
-    document.getElementById("prevBtn").textContent = t.questionPrev;
-    document.getElementById("nextBtn").textContent = t.questionNext;
+    const startQuizBtn = document.getElementById("startQuizBtn");
+    if (startQuizBtn) {
+      startQuizBtn.innerHTML = document.body.classList.contains('immersive-mode') ? '⚔️' : t.startQuiz;
+      startQuizBtn.title = document.body.classList.contains('immersive-mode') ? '开始答题' : '';
+    }
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const analysisBtn = document.getElementById("analysisBtn");
+    if (prevBtn) {
+      prevBtn.innerHTML = document.body.classList.contains('immersive-mode') ? '←' : t.questionPrev;
+      prevBtn.title = document.body.classList.contains('immersive-mode') ? '上一题' : '';
+    }
+    if (nextBtn) {
+      nextBtn.innerHTML = document.body.classList.contains('immersive-mode') ? '→' : t.questionNext;
+      nextBtn.title = document.body.classList.contains('immersive-mode') ? '下一题' : '';
+    }
+    if (analysisBtn) {
+      analysisBtn.innerHTML = document.body.classList.contains('immersive-mode') ? '💡' : '查看解析';
+      analysisBtn.title = '查看解析';
+    }
     document.getElementById("matchQuestionText").textContent = t.matchGuide;
 }
 
@@ -273,7 +290,11 @@ function renderQuestion(index) {
 
     qText.innerHTML = `${index + 1}. ${renderedHTML}`;
     container.innerHTML = "";
-    analysisText.textContent = "请选择选项后点击“查看解析”以显示内容。";
+    if (document.body.classList.contains('immersive-mode')) {
+      analysisText.textContent = "";
+    } else {
+      analysisText.textContent = "请选择选项后点击“查看解析”以显示内容。";
+    }
 
     question.Option.forEach((opt, i) => {
       const btn = document.createElement("button");
@@ -335,7 +356,16 @@ function checkAnswer(selected, button, correct) {
 
 function showAnalysis() {
     const analysis = filteredData[currentIndex]["Analysis"];
-    document.getElementById("analysisText").textContent = analysis || "暂无解析";
+    const analysisText = document.getElementById("analysisText");
+    if (!analysisText) return;
+
+    if (document.body.classList.contains('immersive-mode')) {
+      analysisText.textContent = analysis || "";
+      analysisText.style.display = analysis ? 'block' : 'none';
+    } else {
+      analysisText.textContent = analysis || "暂无解析";
+      analysisText.style.display = 'block';
+    }
 }
 
 function nextQuestion() {
@@ -430,6 +460,12 @@ function applyDefaultThemeByTime() {
     if (immersiveBtn) {
       immersiveBtn.innerHTML = immersiveMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
       immersiveBtn.title = immersiveMode ? '退出沉浸模式' : '沉浸模式';
+    }
+
+    const analysisBtn = document.getElementById('analysisBtn');
+    if (analysisBtn) {
+      analysisBtn.innerHTML = immersiveMode ? '💡' : '查看解析';
+      analysisBtn.title = '查看解析';
     }
     
     document.body.classList.toggle('dark-theme', isDark);
