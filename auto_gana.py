@@ -1,14 +1,38 @@
 # Offline script(Python environment required)
 # pip install pykakasi
+# pip install openai
 import pykakasi
 import os
+import tomllib
 import jsonfiler
+
+# 以二进制模式打开文件
+with open("config.toml", "rb") as f:
+    config = tomllib.load(f)
+
+if len(config["API_KEY"]) > 0:    
+    from openai import OpenAI
+    client = OpenAI()
+else:
+    print("不启用AI翻译")
 
 kana_description_dict = jsonfiler.load("translate_dict.json")
 
 # 初始化 pykakasi 用于日语文本转换
 kks = pykakasi.kakasi()
 
+system_prompt = """
+你是一个翻译助手，请将输入的日文片假名以字典形式返回
+输出示例：
+{
+    "マナー": "礼仪、习惯",
+    "テクニック": "技术、技巧",
+    "ビール": "啤酒",
+    "ハードディスク": "Hard disk",
+    "デュアルシステム": "Dual system",
+    "シンクライアント": "Thin client"
+}
+"""
 
 def process_jp_sentence(text):
     """

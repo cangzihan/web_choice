@@ -1,16 +1,16 @@
 IT_PASSPORT_OFFICIAL = [
   {
-      "Question": "A社がB社に[作業]{さぎょう}の[一部]{いちぶ}を[請負]{うけおい}[契約]{けいやく}で[委託]{いたく}している。[作業]{さぎょう}[形態]{けいたい} a~cのうち、いわゆる[偽装]{ぎそう}[請負]{うけおい}とみなされる[状態]{じょうたい}だけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\na B社の[従業員]{じゅうぎょういん}が、A[社内]{しゃない}において、A社の[責任者]{せきにんしゃ}の[指揮]{しき}[命令]{めいれい}の下で、[請負]{うけおい}[契約]{けいやく}で[取り決め]{とりきめ}た[作業]{さぎょう}を[行って]{いって}いる。\nb B社の[従業員]{じゅうぎょういん}が,A [社内]{しゃない}において,B社の[責任者]{せきにんしゃ}の[指揮]{しき}[命令]{めいれい}の下で、[請負]{うけおい}[契約]{けいやく}で[取り決め]{とりきめ}た[作業]{さぎょう}を[行って]{いって}いる。\nc B 社の[従業員]{じゅうぎょういん}が、B [社内]{しゃない}において、A社の[責任者]{せきにんしゃ}の[指揮]{しき}[命令]{めいれい}の下で、[請負]{うけおい}[契約]{けいやく}で[取り決め]{とりきめ}た[作業]{さぎょう}を[行って]{いって}いる。\n\n",
+      "Question": "A社がB社に[作業]{さぎょう}の[一部]{いちぶ}を[請負]{うけおい}[契約]{けいやく}で[委託]{いたく}している。[作業]{さぎょう}[形態]{けいたい} a~cのうち、[いわゆる](所谓的 / 常说的 / 人们常讲的)[偽装]{ぎそう}[請負]{うけおい}とみなされる[状態]{じょうたい}だけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\na B社の[従業員]{じゅうぎょういん}が、A[社内]{しゃない}において、A社の[責任者]{せきにんしゃ}の[指揮]{しき}[命令]{めいれい}の下で、[請負]{うけおい}[契約]{けいやく}で[取り決め]{とりきめ}た[作業]{さぎょう}を[行って]{いって}いる。\nb B社の[従業員]{じゅうぎょういん}が,A [社内]{しゃない}において,B社の[責任者]{せきにんしゃ}の[指揮]{しき}[命令]{めいれい}の下で、[請負]{うけおい}[契約]{けいやく}で[取り決め]{とりきめ}た[作業]{さぎょう}を[行って]{いって}いる。\nc B 社の[従業員]{じゅうぎょういん}が、B [社内]{しゃない}において、A社の[責任者]{せきにんしゃ}の[指揮]{しき}[命令]{めいれい}の下で、[請負]{うけおい}[契約]{けいやく}で[取り決め]{とりきめ}た[作業]{さぎょう}を[行って]{いって}いる。\n\n",
       "Option": [
           "a ",
           "a, b ",
           "a, c ",
           "b, c"
       ],
-      "Analysis": "[ストラテジ系/企業と法務/法務/労働関連法]\n找到所有“A社の責任者の指揮命令の下で”的选项",
+      "Analysis": "[ストラテジ系/企業と法務/法務/労働関連法]\n找到所有“A社の責任者の指揮命令の下で”的选项\n\n考查劳动相关法律中的“伪装请负（伪装外包）”概念。在承包/外包（請負）合同中，发包方（A社）与承包方员工之间不存在指挥命令关系，受托方（B社）员工必须接受本公司（B社）责任人的指挥监督。如果受托方员工实际上接受发包方（A社）的指挥命令，形式上却是外包合同，这就构成了违法劳务派遣行为，即“伪装请负”。",
       "Unit": 2025,
       "Correct Answer": 3
-  }	,
+  },
   {
       "Question": "[従来]{じゅうらい}の[情報]{じょうほう}[セキュリティマネジメントシステム]{Security Management System}[規格]{きかく}を[基礎]{きそ}に[追加]{ついか}で[制定]{せいてい}されたもので、[クラウドサービス]{Cloud Services}に[対応]{たいおう}した[情報]{じょうほう}[セキュリティ]{安全}[管理体制]{かんりたいせい}を[構築]{こうちく}するための[ガイドライン]{guidelines}[規格]{きかく}として、[最も]{もっとも}[適切]{てきせつ}なものはどれか。\n\n",
       "Option": [
@@ -367,10 +367,10 @@ IT_PASSPORT_OFFICIAL = [
           "原材料の調達から生産、販売に関する情報を、企業間で共有・管理することによって、ビジネスプロセスの全体最適を目指すシステム",
           "個々の顧客に関する情報や対応履歴などを管理することによって、きめ細かい顧客対応を実施し、顧客満足度の向上を支援するシステム"
       ],
-      "Analysis": "ストラテジ系/経営戦略/事業戦略",
+      "Analysis": "ストラテジ系/経営戦略/事業戦略\n\n注意找到“一元管理”字样",
       "Unit": 2025,
       "Correct Answer": 2
-  }	,
+  },
   {
       "Question": "[公共交通機関]{こうきょうこうつうきかん}での[移動]{いどう}[履歴]{りれき}，Web [サイト]{site}での[商品]{しょうひん}[検索]{けんさく}[履歴]{りれき}，SNS や[ブログ]{blog}で[発信]{はっしん}した[データ]{data}など，[個人]{こじん}の[活動]{かつどう}を[記録]{きろく}する[技術]{ぎじゅつ}，[又は]{または}[記録]{きろく}そのものを[表す]{あらわす}[用語]{ようご}として，[最も]{もっとも}[適切]{てきせつ}なものはどれか。\n\n",
       "Option": [
@@ -451,10 +451,10 @@ IT_PASSPORT_OFFICIAL = [
           "組織体の価値及び組織体への信頼を向上させるために、組織体における IT システムの利活用のあるべき姿を示す IT 戦略と方針の策定及びその実現のための活動",
           "組織の情報資産に関わるリスクマネジメントが効果的に実施されているかどうかの検証又は評価"
       ],
-      "Analysis": "",
+      "Analysis": "考查信息安全审计的概念。根据日本经济产业省发行的《信息安全审计标准（情報セキュリティ監査基準）》，信息安全审计是指“由独立且专门的审计人员，独立地对组织的信息资产风险管理是否有效实施进行验证或评估，并对其保证程度或改善措施提供劝告”的活动。",
       "Unit": 2025,
       "Correct Answer": 4
-  }	,
+  },
   {
       "Question": "[ソフトウェア]{software}[開発]{かいはつ}[モデル]{model}である[アジャイルモデル]{敏捷模型}の[特徴]{とくちょう}に[関し]{かんし}て、[次の]{つぎの}[記述]{きじゅつ}[中の]{なかの} a,bに[入れ]{いれ}る[字句]{じく}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。\n[アジャイルモデル]{敏捷模型}とは、[要件]{ようけん}を[確定し]{かくていし}てから[開発]{かいはつ}を[実施]{じっし}する[ウォーターフォールモデル]{瀑布模型}の a する形で[提唱]{ていしょう}された, bするための[手法]{しゅほう}の[総称]{そうしょう}である。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 45%; padding: 10px;\">a</th>\n      <th style=\"width: 45%; padding: 10px;\">b</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">[課題]{かだい}を[改善]{かいぜん}</td>\n      <td style=\"padding: 10px;\">[開発工程]{かいはつこうてい}で[生じ]{しょうじ}る[種々]{しゅしゅ}の[変更]{へんこう}に[迅速]{じんそく}に[対応]{たいおう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">[課題]{かだい}を[改善]{かいぜん}</td>\n      <td style=\"padding: 10px;\">[開発工程]{かいはつこうてい}を[順に]{じゅんに}[実施]{じっし}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[特徴]{とくちょう}を[継承]{けいしょう}</td>\n      <td style=\"padding: 10px;\">[開発工程]{かいはつこうてい}で[生じ]{しょうじ}る[種々]{しゅしゅ}の[変更]{へんこう}に[迅速]{じんそく}に[対応]{たいおう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[特徴]{とくちょう}を[継承]{けいしょう}</td>\n      <td style=\"padding: 10px;\">[開発工程]{かいはつこうてい}を[順に]{じゅんに}[実施]{じっし}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
       "Option": [
@@ -463,10 +463,10 @@ IT_PASSPORT_OFFICIAL = [
           "ウ",
           "エ"
       ],
-      "Analysis": "",
+      "Analysis": "考查敏捷开发的定义与特征。\n- 【a（改善课题/克服缺陷）】：瀑布模型（Waterfall Model）要求在开发初期就确定所有需求并按部就班推进，导致难以应对后续的需求变更（这是瀑布模型的课题/缺陷）。敏捷模型正是为了【改善/解决瀑布模型的这些课题】而提唱出来的，而非“继承其特征”。\n- 【b（迅速应对各类变更）】：敏捷开发的特点是将系统划分为小规模的迭代周期，灵活敏捷地【应对开发过程中产生的各种需求及环境变更】。\n因此，a填入「課題を改善」，b填入「開発工程で生じる種々の変更に迅速に対応」",
       "Unit": 2025,
       "Correct Answer": 1
-  }	,
+  },
   {
       "Question": "[変更]{へんこう}[管理委員会]{かんりいいんかい}が[設置]{せっち}されている[プロジェクト]{project}で[変更要求]{へんこうようきゅう}が[発生]{はっせい}した[場合]{ばあい}の[記述]{きじゅつ}として、[最も]{もっとも}[適切]{てきせつ}なものはどれか。\n\n",
       "Option": [
@@ -475,10 +475,10 @@ IT_PASSPORT_OFFICIAL = [
           "変更管理委員会は、スコープに変更が発生しない範囲で変更要求を受け付けなければならない。",
           "変更要求は、全てプロジェクトマネージャが承認した後に変更管理委員会で審議される。"
       ],
-      "Analysis": "",
+      "Analysis": "选择题中含有过度绝对化、强制性的词汇（如「全て」「～しなければならない」「～限定」），往往是命题人设置的陷阱选项，可优先排除：\n- 看到「受け付けなければならない（必须受理）」：CCB有权根据项目实际情况拒绝变更，不可能“必须无条件接受”。\n- 看到「全て～承認した後に（全部……批准之后）」：出现绝对词「全て」。\n\n考查项目管理中的变更控制流程（CCB）。变更控制委员会（Change Control Board）的主要职责是综合评估变更请求对项目的成本、进度、质量及范围等造成的影响，并做出“批准”或“驳回（拒绝）”的决策。如果某项变更请求会导致超出预算（成本增加）或无法按时交付（工期延期），且整体影响不可接受，CCB有权以此为由驳回该变更请求。\n\n1. CCB成员通常包括项目发起人、客户、PM等主要相关方（ステークホルダ），并非“项目相关方以外的第三方”；\n2. CCB的职责正是评估是否可以变更范围（Scope），并非仅限于“范围不发生变更”的请求；\n3. PM通常负责整理并提交变更请求及其影响评估报告，而决策与审议权在于CCB，并非需要PM先“批准”后再由CCB审议。",
       "Unit": 2025,
       "Correct Answer": 2
-  }	,
+  },
   {
       "Question": "[システム]{system}[開発]{かいはつ}[プロジェクト]{project}で[使用さ]{しようさ}れる[技法]{ぎほう}のうち、[スケジュール]{schedule}[作成]{さくせい}に[用い]{もちい}る[技法]{ぎほう}として、[適切]{てきせつ}なものだけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\na DFD (Data Flow Diagram) b [回帰]{かいき}[分析]{ぶんせき}\nc [クリティカルパス]{关键路径}法 d [プレシデンスダイアグラム]{优先图}法\n\n",
       "Option": [
@@ -523,7 +523,7 @@ IT_PASSPORT_OFFICIAL = [
           "スパイラル",
           "プロトタイピング"
       ],
-      "Analysis": "Agile，敏捷开发\nWaterfall，瀑布式开发\nSpiral，螺旋式开发\nPrototyping",
+      "Analysis": "Agile，敏捷开发\nWaterfall，瀑布式开发\nSpiral，螺旋式开发\nPrototyping\n\nプロトタイピング（Prototyping / 原型开发法）\n用最通俗的白话来说，它就是：“先做一个简易的样品（原型/草稿），拿给客户试用确认，没问题了再正式做” 的系统开发方法。",
       "Unit": 2025,
       "Correct Answer": 4
   }	,
@@ -607,10 +607,10 @@ IT_PASSPORT_OFFICIAL = [
           "経理システムの利用者である経理担当者",
           "経理と IT の知識を有する経営者直轄組織の従業員"
       ],
-      "Analysis": "",
+      "Analysis": "- 独立性原则（独立性の確保）： 系统审计人（システム監査人）必须处于客观、公正的立场。因此，审计人绝对不能由参与了被审计系统“开发、运维或实际使用”的人员担任（即：不能“自己审计自己”）。\n- 能力与组织定位： “经营者直属组织（経営者直轄組織）”具备客观独立性（不属于开发、运维或经理使用部门），且该员工同时具备“财务（経理）与 IT 的知识”，具备执行专业审计的能力，因此是最合适的人选。\n\n- （错误）経理システムの運用担当者\n运维人员直接参与了系统的日常运行，让他审计自己运维的系统，属于“自己检查自己（自我点検）”，失去客观独立性。\n\n- （错误）経理システムの開発を担当した委託会社の従業員\n参与了开发的外包员工是利益相关方，同样无法保证审计的客观公正。\n\n- （错误）経理システムの利用者である経理担当者\n财务部门是该系统的实际使用者，让使用者来担当审计人同样违背独立性。\n\n1. 普通业务部门员工（被审计对象）：\n  - 经理部的员工 → 听经理部部长的；\n  - IT 部门的员工 → 听 IT 部门部长的。\n  - 如果让 IT 部门的人去查 IT 部门的账，他不敢查，因为这会得罪他的直接领导（部门利益冲突）。\n2. 经营者直属组织（経営者直轄組織 / 内部監査室）：\n  - 这个部门的员工，不属于任何具体的业务部门（经理部、IT部、销售部等都不管他）。\n  - 他们直接向最高经营者（社長/董事会）汇报。\n  - 因为他们不参与任何系统的开发、运维或使用，所以他们在业务利益上是完全独立的。",
       "Unit": 2025,
       "Correct Answer": 4
-  }	,
+  },
   {
       "Question": "A 社は[会計]{かいけい}[システム]{system}の[再構築]{さいこうちく}の[プロジェクト]{project}を[立ち上げ]{たちあげ}、[システム]{system}[開発]{かいはつ}を B 社に[外部]{がいぶ}[委託]{いたく}している。B 社から[納品]{のうひん}される[成果物]{せいかぶつ}の[検収]{けんしゅう}において、[プロジェクト]{project}の[品質管理]{ひんしつかんり}に[係る]{かかる}[手続]{てつづき}を[遵守]{じゅんしゅ}しているかどうかの[システム]{system}[監査]{かんさ}を[行う]{おこなう}[監査人]{かんさにん}として、[適切]{てきせつ}な者は[誰か]{だれか}。\n\n",
       "Option": [
@@ -619,10 +619,10 @@ IT_PASSPORT_OFFICIAL = [
           "会計システムの再構築を担当する B社のシステム開発リーダー",
           "会計システムの再構築を担当するB社の品質管理責任者"
       ],
-      "Analysis": "",
+      "Analysis": "A 公司的管理部门领导（管理部門のリーダー）没有参与这次会计系统的重构项目（再構築に関与しない），因此具备客观、公正的立场，适合担任该验收环节的系统审计人。\n\n（错误）会計システムの再構築を担当するA社のプロジェクトマネージャ\n- A 公司的项目经理（PM）是直接负责这个重构项目的项目负责人，如果让他来审计，属于“自己审计自己的项目管理与验收”，违背独立性。\n（错误）会計システムの再構築を担当する B社のシステム開発リーダー\n- B 公司是承接外包的开发方，B 公司的开发组长是交付成果物的当事人，绝对不能担任审计人。\n- （错误）会計システムの再構築を担当するB社の品質管理責任者\n虽然他是 B 公司的“质量管理负责人”，但他属于乙方（B 公司）的利益相关者。本题是 A 公司要对验收手续进行审计，乙方的员工无法代表甲方（A 公司）执行独立的系统审计。",
       "Unit": 2025,
       "Correct Answer": 1
-  }	,
+  },
   {
       "Question": "[内部]{ないぶ}[統制]{とうせい}の[基本的]{きほんてき}[要素]{ようそ}の[一つ]{ひとつ}である“IT への[対応]{たいおう}”に[関す]{かんす}る[記述]{きじゅつ}として、[最も]{もっとも}[適切]{てきせつ}なものはどれか。\n\n",
       "Option": [
@@ -727,10 +727,10 @@ IT_PASSPORT_OFFICIAL = [
           "データベースに対する一連の処理が全て成功したら変更結果を確定し、途中で失敗したら処理前の状態に戻す。",
           "データベースの表の索引を作成し、検索時には索引を使用する。"
       ],
-      "Analysis": "",
+      "Analysis": "数据库中“事务（Transaction）”的核心特征是原子性（Atomicity），即“要么全部成功，要么完全不生效（All or Nothing）”。\n- 看到“全部成功（全て成功）就确定（提交/Commit），中途失败就恢复原状（回滚/Rollback）",
       "Unit": 2025,
       "Correct Answer": 3
-  }	,
+  },
   {
       "Question": "OS の[仮想記憶]{かそうきおく}[方式]{ほうしき}に[関す]{かんす}る[次の]{つぎの}[記述]{きじゅつ}[中の]{なかの} a~c に[入れ]{いれ}る[字句]{じく}の[適切]{てきせつ}な[組合せ]{くみあわせ}はどれか。\n[プログラム]{program}の[実行時]{じっこうじ}に、[コンピュータ]{computer}の a [装置]{そうち}の b な[容量]{ようりょう}に[制約]{せいやく}されない、 c な[アドレス]{address}[空間]{くうかん}を[提供]{ていきょう}する。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 10%; padding: 10px;\"></th>\n      <th style=\"width: 30%; padding: 10px;\">a</th>\n      <th style=\"width: 30%; padding: 10px;\">b</th>\n      <th style=\"width: 30%; padding: 10px;\">c</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px;\">[主記憶]{しゅきおく}</td>\n      <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>\n      <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px;\">[主記憶]{しゅきおく}</td>\n      <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>\n      <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px;\">[補助記憶]{ほじょきおく}</td>\n      <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>\n      <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px;\">[補助記憶]{ほじょきおく}</td>\n      <td style=\"padding: 10px;\">[論理的]{ろんりてき}</td>\n      <td style=\"padding: 10px;\">[物理的]{ぶつりてき}</td>\n    </tr>\n  </tbody>\n</table>\n\n",
       "Option": [
@@ -775,19 +775,19 @@ IT_PASSPORT_OFFICIAL = [
           "主キー",
           "スキーマ"
       ],
-      "Analysis": "",
+      "Analysis": "- 「検索を高速に行う（快速检索）」 → 映射 「インデックス（索引 / Index）」（就像书本末尾的索引页，能成倍提升翻查速度）。\n\n- 主キー（主键 / Primary Key）：用于唯一标识表中的每一行记录（确保唯一性与非空），主要目的并非“根据需要灵活设置以优化速度”。\n- 外部キー（外键 / Foreign Key）：用于建立表与表之间的参照完整性（关联关系）。\n- スキーマ（模式 / Schema）：数据库的结构定义或设计蓝图（如表结构、字段类型等）。",
       "Unit": 2025,
       "Correct Answer": 1
-  }	,
+  },
   {
-      "Question": "[関係]{かんけい}[データベース]{Data Science}で[管理]{かんり}している[次の]{つぎの}“[ログイン]{log in}[記録]{きろく}”表[及び]{および}“[部署]{ぶしょ}”表において、[ログイン]{log in}[結果]{けっか}が[失敗]{しっぱい}となったことのある、[又は]{または}、2022年4月10日 09:00:00[以前]{いぜん}に[ログイン]{log in}[結果]{けっか}が[成功]{せいこう}となったことのある[従業員]{じゅうぎょういん}が[所属]{しょぞく}する[部署名]{ぶしょめい}だけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\n[ログイン]{log in}[記録]{きろく}\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 40%; padding: 10px;\">[日時]{にちじ}</th>\n      <th style=\"width: 20%; padding: 10px;\">[従業員]{じゅうぎょういん}[番号]{ばんごう}</th>\n      <th style=\"width: 20%; padding: 10px;\">[部署]{ぶしょ}[番号]{ばんごう}</th>\n      <th style=\"width: 20%; padding: 10px;\">[ログイン]{log in}[結果]{けっか}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:50:42</td>\n      <td style=\"padding: 10px; text-align: center;\">10004</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:53:15</td>\n      <td style=\"padding: 10px; text-align: center;\">10004</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:55:48</td>\n      <td style=\"padding: 10px; text-align: center;\">10002</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:00:15</td>\n      <td style=\"padding: 10px; text-align: center;\">10001</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:01:05</td>\n      <td style=\"padding: 10px; text-align: center;\">10012</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:03:01</td>\n      <td style=\"padding: 10px; text-align: center;\">10008</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:10:28</td>\n      <td style=\"padding: 10px; text-align: center;\">10007</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:32:19</td>\n      <td style=\"padding: 10px; text-align: center;\">10002</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:39:22</td>\n      <td style=\"padding: 10px; text-align: center;\">10005</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:00:02</td>\n      <td style=\"padding: 10px; text-align: center;\">10011</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:05:51</td>\n      <td style=\"padding: 10px; text-align: center;\">10011</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:30:45</td>\n      <td style=\"padding: 10px; text-align: center;\">10009</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n  </tbody>\n</table>\n[部署]{ぶしょ}\n<table border=\"1\" style=\"width: 50%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 50%; padding: 10px;\">[部署]{ぶしょ}[番号]{ばんごう}</th>\n      <th style=\"width: 50%; padding: 10px;\">[部署名]{ぶしょめい}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px;\">[営業部]{えいぎょうぶ}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px;\">[システム]{system}部</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px;\">[人事部]{じんじぶ}</td>\n    </tr>\n  </tbody>\n</table>\n\n\n",
+      "Question": "[関係]{かんけい}[データベース]{Data Science}で[管理]{かんり}している[次の]{つぎの}“[ログイン]{log in}[記録]{きろく}”表[及び]{および}“[部署]{ぶしょ}”表において、[ログイン]{log in}[結果]{けっか}が[失敗]{しっぱい}となったことのある、[又は]{または，或}、2022年4月10日 09:00:00[以前]{いぜん}に[ログイン]{log in}[結果]{けっか}が[成功]{せいこう}となったことのある[従業員]{じゅうぎょういん}が[所属]{しょぞく}する[部署名]{ぶしょめい}だけを[全て]{すべて}[挙げ]{あげ}たものはどれか。\n[ログイン]{log in}[記録]{きろく}\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 40%; padding: 10px;\">[日時]{にちじ}</th>\n      <th style=\"width: 20%; padding: 10px;\">[従業員]{じゅうぎょういん}[番号]{ばんごう}</th>\n      <th style=\"width: 20%; padding: 10px;\">[部署]{ぶしょ}[番号]{ばんごう}</th>\n      <th style=\"width: 20%; padding: 10px;\">[ログイン]{log in}[結果]{けっか}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:50:42</td>\n      <td style=\"padding: 10px; text-align: center;\">10004</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:53:15</td>\n      <td style=\"padding: 10px; text-align: center;\">10004</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 08:55:48</td>\n      <td style=\"padding: 10px; text-align: center;\">10002</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:00:15</td>\n      <td style=\"padding: 10px; text-align: center;\">10001</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:01:05</td>\n      <td style=\"padding: 10px; text-align: center;\">10012</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:03:01</td>\n      <td style=\"padding: 10px; text-align: center;\">10008</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:10:28</td>\n      <td style=\"padding: 10px; text-align: center;\">10007</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:32:19</td>\n      <td style=\"padding: 10px; text-align: center;\">10002</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 09:39:22</td>\n      <td style=\"padding: 10px; text-align: center;\">10005</td>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:00:02</td>\n      <td style=\"padding: 10px; text-align: center;\">10011</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[失敗]{しっぱい}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:05:51</td>\n      <td style=\"padding: 10px; text-align: center;\">10011</td>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">2022-04-10 10:30:45</td>\n      <td style=\"padding: 10px; text-align: center;\">10009</td>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px; text-align: center;\">[成功]{せいこう}</td>\n    </tr>\n  </tbody>\n</table>\n[部署]{ぶしょ}\n<table border=\"1\" style=\"width: 50%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 50%; padding: 10px;\">[部署]{ぶしょ}[番号]{ばんごう}</th>\n      <th style=\"width: 50%; padding: 10px;\">[部署名]{ぶしょめい}</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">001</td>\n      <td style=\"padding: 10px;\">[営業部]{えいぎょうぶ}</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">002</td>\n      <td style=\"padding: 10px;\">[システム]{system}部</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">003</td>\n      <td style=\"padding: 10px;\">[人事部]{じんじぶ}</td>\n    </tr>\n  </tbody>\n</table>\n\n\n",
       "Option": [
           "営業部, システム部",
           "営業部, システム部, 人事部",
           "営業部, 人事部",
-          "ステム部, 人事部"
+          "システム部, 人事部"
       ],
-      "Analysis": "",
+      "Analysis": "请找出符合以下【条件 1】或【条件 2】的员工所所属的“部门名称（部署名）”（全部列出）",
       "Unit": 2025,
       "Correct Answer": 2
   }	,
@@ -919,10 +919,10 @@ IT_PASSPORT_OFFICIAL = [
           "アンチパスバック",
           "ボット"
       ],
-      "Analysis": "",
+      "Analysis": "IDS（Intrusion Detection System：入侵检测系统）\nDMZ（非军事区）\nボット（Bot / 机器人）：受黑客远程控制、自动执行恶意指令的自动化程序。",
       "Unit": 2025,
       "Correct Answer": 2
-  }	,
+  },
   {
       "Question": "[手続]{てつづき} calcMod3を[呼び出し]{よびだし}たときの[出力]{しゅつりょく}はどれか。\n[[プログラム]{program}]\nOcalcMod3()\n    [整数型]{せいすうがた}: totalValue, i\n    totalValue <-- 0\n    for (i を 1 から 7 まで 1 ずつ[増やす]{ふやす})\n        if (i + 3 の[余り]{あまり} が 0 と[等しい]{ひとしい})\n            totalValue <-- totalValue + i\n        endif\n    endfor\n    totalValue を[出力]{しゅつりょく}する\n\n",
       "Option": [
@@ -946,7 +946,7 @@ IT_PASSPORT_OFFICIAL = [
       "Analysis": "",
       "Unit": 2025,
       "Correct Answer": 1
-  }	,
+  },
   {
       "Question": "AI において、[広範囲]{こうはんい}かつ[大量]{たいりょう}の[データ]{data}で[訓練]{くんれん}されたものであり、[ファインチューニング]{fine tuning}などによって[文章]{ぶんしょう}[生成]{せいせい} AI のような[様々な]{さまざまな}[用途]{ようと}に[適応]{てきおう}できる[特徴]{とくちょう}をもつものを[何と]{なんと}いうか。\n\n",
       "Option": [
@@ -979,10 +979,10 @@ IT_PASSPORT_OFFICIAL = [
           "レプリケーション",
           "ロールバック"
       ],
-      "Analysis": "",
+      "Analysis": "レプリケーション（Replication / 数据库复制）\nアーカイブ（Archive / 归档）\nバックアップ（Backup / 备份）\nロールバック（Rollback / 回滚）",
       "Unit": 2025,
       "Correct Answer": 3
-  }	,
+  },
   {
       "Question": "ISMS の[運用]{うんよう}に PDCA [モデル]{model}を[採用]{さいよう}している[組織]{そしき}において、[サーバ]{server}[監視]{かんし}に[関す]{かんす}る[次の]{つぎの}[作業]{さぎょう}を[実施]{じっし}する。各[作業]{さぎょう}と PDCA [モデル]{model}の各[フェーズ]{phase}の[組合せ]{くみあわせ}として、[適切]{てきせつ}なものはどれか。\n[[作業]{さぎょう}]\n(1) [サーバ]{server}[監視]{かんし}の[具体的]{ぐたいてき}な[目的]{もくてき}[及び]{および}[手順]{てじゅん}を[定め]{さだめ}る。\n(2) [サーバ]{server}[監視]{かんし}の[作業内容]{さぎょうないよう}を[第三者]{だいさんしゃ}が[客観的]{きゃっかんてき}に[評価]{ひょうか}する。\n(3) [定め]{さだめ}られている[手順]{てじゅん}に[従って]{したがって}[サーバ]{server}を[監視]{かんし}する。\n(4) [発見]{はっけん}された[問題点]{もんだいてん}の[是正]{ぜせい}[処置]{しょち}として、[サーバ]{server}の[監視]{かんし}[方法]{ほうほう}を[変更]{へんこう}する。\n<table border=\"1\" style=\"width: 100%; table-layout: fixed;\">\n  <thead>\n    <tr>\n      <th style=\"width: 14%; padding: 10px;\"></th>\n      <th style=\"width: 18%; padding: 10px;\">P</th>\n      <th style=\"width: 25%; padding: 10px;\">D</th>\n      <th style=\"width: 18%; padding: 10px;\">C</th>\n      <th style=\"width: 25%; padding: 10px;\">A</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ア</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">イ</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">ウ</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; text-align: center;\">エ</td>\n      <td style=\"padding: 10px; text-align: center;\">(1)</td>\n      <td style=\"padding: 10px; text-align: center;\">(3)</td>\n      <td style=\"padding: 10px; text-align: center;\">(4)</td>\n      <td style=\"padding: 10px; text-align: center;\">(2)</td>\n    </tr>\n  </tbody>\n</table>\n\n",
       "Option": [
@@ -1186,7 +1186,7 @@ IT_PASSPORT_OFFICIAL = [
       "Analysis": "関数：函数\nそれぞれ：分别、各自\n函数c以业务改善效果中的改善金额i和时间缩短周期p为参数，返回对应的奖金数额。\n这里，改善量和缩短时间必须等于或大于各自的值。\n基本上算完第一个奖金是2000就能猜出来答案了，因为剩余选项只有2000+1000这一种情况可能发生",
       "Unit": 2025,
       "Correct Answer": 3
-  }	,
+  },
   {
       "Question": "[個人]{こじん}の[認証]{にんしょう}に[用い]{もちい}る[要素]{ようそ}を、[知識]{ちしき}、[所有物]{しょゆうぶつ}[及び]{および}[バイオメトリクス]{生物识别技术}の[三つ]{みっつ}に[分類]{ぶんるい}したとき、[所有物]{しょゆうぶつ}を[要素]{ようそ}として[用いた]{もちいた}[認証]{にんしょう}の例はどれか。\n",
       "Option": [
@@ -1195,12 +1195,12 @@ IT_PASSPORT_OFFICIAL = [
           "筆跡や筆圧、スピードなど、文字を書くときの特徴を用いた認証",
           "本人が事前に設定した質問とそれに対する答えを用いた認証"
       ],
-      "Analysis": "",
+      "Analysis": "解答身份验证（Authentication）三要素题，只需匹配核心属性：\n- 1. 知识信息（What you know）：只有你知道的东西（密码、密保问题答案、PIN码等）。\n- 2. 所有物（What you have）：只有你持有的物理实体（手机/SIM卡/SMS验证码、IC卡、硬件令牌等）。\n- 3. 生物特征（What you are）：你身体或行为固有的特征（指纹、虹彩、笔迹/书写习惯等）。\n看到「SMS（手机短信）」 → 依赖于用户持有的手机设备（SIM卡） → 标准“所有物”验证\n【其他干扰项概念辨析】\n- 虹彩（Iris）：眼部生理特征，属于“生物特征”验证。\n- 笔迹与笔压：属于动态行为生物特征（动态笔迹识别），归为“生物特征”验证。\n- 事先设定的提问与答案（密保问题）：依赖记忆中的答案，属于“知识信息”验证。",
       "Unit": 2025,
       "Correct Answer": 1
   },
   {
-      "Question": "[生成]{せいせい}AIを[用いた]{もちいた}[生成物]{せいせいぶつ}の[取扱い]{とりあつかい}に[関し]{かんし}て, [既存]{きぞん}の[著作物]{ちょさくぶつ}の[著作権者]{ちょさくけんしゃ}から[許諾]{きょだく}を[得る]{える}ことが[必要]{ひつよう}となる[可能性]{かのうせい}のあるものだけを, [全て]{すべて}[挙げ]{あげ}たものはどれか。\n\na [好み]{このみ}の[アーティスト]{artist}の[楽曲]{がっきょく}に[似た]{にた}[音楽]{おんがく}が[得ら]{えら}れるように[生成]{せいせい} At を[用いて]{もちいて}[楽曲]{がっきょく}を[生成し]{せいせいし}, その[楽曲]{がっきょく}を[インターネット]{Internet}[上に]{うえに}[アップロード]{upload}し, [無料]{むりょう}で[公開]{こうかい}した。\nb [好み]{このみ}の[アーティスト]{artist}の[楽曲]{がっきょく}に[似た]{にた}[音楽]{おんがく}が[得ら]{えら}れるように[生成]{せいせい} Al を[用いて]{もちいて}[楽曲]{がっきょく}を[生成し]{せいせいし}, その[楽曲]{がっきょく}を[自分]{じぶん}の PC [上に]{うえに}[保管]{ほかん}し, [個人]{こじん}で[視聴]{しちょう}した。\nc [生成]{せいせい} AI で[音楽]{おんがく}を[生成し]{せいせいし}たところ, [偶然]{ぐうぜん}[好み]{このみ}の[アーティスト]{artist}の[楽曲]{がっきょく}に[似た]{にた}[音楽]{おんがく}が[生成]{せいせい}できたので, [自分]{じぶん}の PC [上に]{うえに}[保管]{ほかん}し, [個人]{こじん}で[視聴]{しちょう}した。",
+      "Question": "[生成]{せいせい}AIを[用いた]{もちいた}[生成物]{せいせいぶつ}の[取扱い]{とりあつかい}に[関し]{かんし}て, [既存]{きぞん}の[著作物]{ちょさくぶつ}の[著作権者]{ちょさくけんしゃ}から[許諾]{きょだく}を[得る]{える}ことが[必要]{ひつよう}となる[可能性]{かのうせい}のあるものだけを, [全て]{すべて}[挙げ]{あげ}たものはどれか。\n\na [好み]{このみ}の[アーティスト]{artist}の[楽曲]{がっきょく}に[似た]{にた}[音楽]{おんがく}が[得ら]{えら}れるように[生成]{せいせい} AI を[用いて]{もちいて}[楽曲]{がっきょく}を[生成し]{せいせいし}, その[楽曲]{がっきょく}を[インターネット]{Internet}[上に]{うえに}[アップロード]{upload}し, [無料]{むりょう}で[公開]{こうかい}した。\nb [好み]{このみ}の[アーティスト]{artist}の[楽曲]{がっきょく}に[似た]{にた}[音楽]{おんがく}が[得ら]{えら}れるように[生成]{せいせい} Al を[用いて]{もちいて}[楽曲]{がっきょく}を[生成し]{せいせいし}, その[楽曲]{がっきょく}を[自分]{じぶん}の PC [上に]{うえに}[保管]{ほかん}し, [個人]{こじん}で[視聴]{しちょう}した。\nc [生成]{せいせい} AI で[音楽]{おんがく}を[生成し]{せいせいし}たところ, [偶然]{ぐうぜん}[好み]{このみ}の[アーティスト]{artist}の[楽曲]{がっきょく}に[似た]{にた}[音楽]{おんがく}が[生成]{せいせい}できたので, [自分]{じぶん}の PC [上に]{うえに}[保管]{ほかん}し, [個人]{こじん}で[視聴]{しちょう}した。",
       "Option": [
           "a",
           "a, b",
@@ -1423,7 +1423,7 @@ IT_PASSPORT_OFFICIAL = [
           "アウトツソーシング",
           "データウェアハウス"
       ],
-      "Analysis": "",
+      "Analysis": "ASP（Application Service Provider / 应用服务提供商）\n定义： 指通过互联网（网络）向用户提供软件（应用程序）功能服务的企业，或者这种服务本身。\n如Gemini",
       "Unit": 2026,
       "Correct Answer": 1
   },
@@ -1677,7 +1677,7 @@ IT_PASSPORT_OFFICIAL = [
           "取締役会等が規範を策定し, 率先して遵守しないと, 組織体にその倫理的な行動が徹底されない。",
           "取締役会等が組織体の IT ガバナンス方針を明示すると, 情報システム部門主導の活動に偏重してしまう。"
       ],
-      "Analysis": "",
+      "Analysis": "- 极端条件：「～もたせないと……果たせない（不让负责部门承担最终责任，董事会就无法履行解释责任）」：把“下放责任”当作履行解释责任的**绝对前提**（甩锅逻辑），说法过于极端，排除。\n- 极端否定：「～関与すると……達成できない（董事会一旦参与，就必然陷入因循守旧而无法达成目标）」：含有极端的否定断定（无法达成），逻辑荒谬，排除。\n- 强加因果/极端结果：「～明示すると……偏重してしまう（一旦明确方针，就必然导致偏向IT部门）」：将正常的管理动作必然推导至负面极端结果，逻辑不成立，排除。\n\nIT 治理（IT Governance）的核心是由最高管理层（董事会）主导并建立规范。因此，如果管理层制定了规范却“不带头遵守（率先して遵守しない）”，下面就无法贯彻伦理行为（彻底されない），这正是企业治理中最典型的领导力失效风险。\n\n- 在 IT 治理中，尽管具体的技术方案可以授权给 IT 部门（権限委譲），但最终说明责任（アカウンタビリティ / 说明责任与最高责任）永远属于董事会与经营层。绝对不能把最终责任推给担当部门。\n- 设定期望绩效与组织目标（パフォーマンスの期待値の設定）正是董事会的核心职责。如果高管层不设定明确的高标准目标，组织才会失去方向与变革动力。\n- 董事会明确制定 IT 治理方针（ガバナンス方針の明示），是为了确保 IT 投资符合整个企业的经营战略（経営戦略との整合）。如果不明确方针，才更容易陷入“IT 部门自嗨、各自为政”的混乱状态。",
       "Unit": 2026,
       "Correct Answer": 3
   },
@@ -1827,7 +1827,7 @@ IT_PASSPORT_OFFICIAL = [
           "複数のトランザクションを並列に処理しているときに, ロックの影響によってトランザクション同士が互いに相手のロックの解放を待つ状態になること",
           "複数のトランザクションによるメモリ上のデータ更新の結果を, 一度にまとめて HDD などの外部記憶装置に書き込む操作や, 操作が行われた時点のこと"
       ],
-      "Analysis": "",
+      "Analysis": "- 选项描述“事务正常处理完毕时确认提交” → 这是コミット（Commit / 提交）。\n- 选项描述“事务失败时恢复到处理前的状态” → 这是ロールバック（Rollback / 回滚）。\n- 选项描述“事务间互相等待对方释放锁” → 这是デッドロック（Deadlock / 死锁）",
       "Unit": 2026,
       "Correct Answer": 4
   },
@@ -1851,7 +1851,7 @@ IT_PASSPORT_OFFICIAL = [
           "アクティビティ, バリュー, ペルソナ",
           "インタラクション, バリュー, ペルソナ"
       ],
-      "Analysis": "",
+      "Analysis": "结构化シナリオ法通常包含以下三个阶段/层面的シナリオ（由抽象到具体）：\n\nバリューシナリオ（Value Scenario / 价值场景）：\n- 关注“用户想获得什么价值/满足什么需求”。定义产品或服务能为用户带来的核心价值与宏观使用场景。\n\nアクティビティシナリオ（Activity Scenario / 行动场景）：\n- 关注“用户为了达成目的会做哪些事情/采取什么行动”。描述用户在具体情境下的行为流程和任务。\n\nインタラクションシナリオ（Interaction Scenario / 交互场景）：\n- 关注“用户与系统/设备之间如何进行具体的交互与操作”。将前一步的行动细化为具体的界面操作、点击或输入等。",
       "Unit": 2026,
       "Correct Answer": 4
   },
@@ -1875,7 +1875,7 @@ IT_PASSPORT_OFFICIAL = [
           "スマートフォンなどの端末向けの Web アプリケーションにおいて, 歩数や移動速度などを計測できるように, 端末に内蔵された加速度センサーやジャイロセンサーのデータを使用する。",
           "操作説明書を読まなくても Web サイトの使用方法を理解できるように, Web ブラウザの利用者がマウスポインタを Web コンテンツに重ねたとき, ポップアップを用いて機能の説明, 対象の状態などを表示する。"
       ],
-      "Analysis": "",
+      "Analysis": "レスポンシブ Web デザイン（Responsive Web Design / 响应式网页设计）： 指的是同一套网页代码，能够通过 CSS（如 Media Queries）动态检测浏览设备的屏幕尺寸（画面サイズ）与分辨率，并自动调整版面布局（レイアウトが変化する）。使得无论是大屏电脑（PC）、平板还是小屏手机（スマートフォン），都能获得最佳的视效与操作体验。",
       "Unit": 2026,
       "Correct Answer": 1
   },
