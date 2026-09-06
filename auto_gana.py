@@ -4,25 +4,30 @@
 import pykakasi
 import os
 import tomllib
+import json
 import jsonfiler
 
 # 以二进制模式打开文件
 with open("config.toml", "rb") as f:
     config = tomllib.load(f)
 
-if len(config["API_KEY"]) > 0:    
+api_key = config.get("API_KEY", "").strip()
+if api_key:
     from openai import OpenAI
-    client = OpenAI()
+    client = OpenAI(api_key=api_key)
 else:
+    client = None
     print("不启用AI翻译")
 
 kana_description_dict = jsonfiler.load("translate_dict.json")
+missing_kana = set()
 
 # 初始化 pykakasi 用于日语文本转换
 kks = pykakasi.kakasi()
 
 system_prompt = """
 你是一个翻译助手，请将输入的日文片假名以字典形式返回
+请严格返回一个有效的 JSON 对象，不要添加 Markdown 代码块或其他说明文字。
 输出示例：
 {
     "マナー": "礼仪、习惯",
@@ -61,7 +66,7 @@ def process_jp_sentence(text):
                 if item['kana'] in kana_description_dict:
                     description = kana_description_dict[item['kana']]
                 else:
-                    print(item['kana'])
+                    missing_kana.add(item['kana'])
 
             annotated_text += f"[{item['orig']}]" + "{" + f"{description}" + "}"
         else:
@@ -69,6 +74,44 @@ def process_jp_sentence(text):
             annotated_text += item['orig']
 
     return annotated_text
+
+
+def translate_missing_kana():
+    """使用 OpenAI 翻译本次扫描到、且字典中没有的片假名。"""
+    if not missing_kana:
+        return
+    if client is None:
+        print(f"未启用AI翻译，缺少 {len(missing_kana)} 个片假名")
+        return
+
+    kana_list = sorted(missing_kana)
+    try:
+        response = client.chat.completions.create(
+            model=config.get("MODEL", "gpt-5.6-luna"),
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {
+                    "role": "user",
+                    "content": json.dumps(kana_list, ensure_ascii=False),
+                },
+            ],
+            response_format={"type": "json_object"},
+        )
+        translations = json.loads(response.choices[0].message.content)
+        if not isinstance(translations, dict):
+            raise ValueError("模型返回的内容不是 JSON 对象")
+
+        for kana in kana_list:
+            description = translations.get(kana)
+            if isinstance(description, str) and description.strip():
+                kana_description_dict[kana] = description.strip()
+
+        jsonfiler.dump(kana_description_dict, "translate_dict.json", indent=4)
+        print(f"已翻译并保存 {len(kana_list)} 个片假名")
+    except (json.JSONDecodeError, KeyError, TypeError, ValueError) as exc:
+        print(f"AI翻译结果无法解析：{exc}")
+    except Exception as exc:
+        print(f"AI翻译失败：{exc}")
 
 
 def test():
@@ -83,7 +126,7 @@ def test():
     print(annotated_text)
 
 
-def process_file(fname):
+def process_file(fname, write=True):
     """
     主函数：
     读取 JS 文件中的题干行（包含 "Question" 关键字），
@@ -92,6 +135,16 @@ def process_file(fname):
     """
     with open(f"{fname}.js", 'r', encoding='utf-8') as f:
         content = f.readlines()
+
+    if not write:
+        for line in content:
+            if "Question" in line:
+                if len(line.split('"')) > 5:
+                    question = '"'.join(line.split('"')[3:-1])
+                else:
+                    question = line.split('"')[3]
+                process_jp_sentence(question)
+        return
 
     with open(f"{fname}_temp.js", 'w+', encoding='utf-8') as f:
         for line in content:
@@ -111,12 +164,22 @@ def process_file(fname):
 
 
 def main():
-    process_file("BlueBook_N3")
-    process_file("BlueBook_N2")
-    process_file("Simulate_N3")
-    process_file("JLPT_Test")
-    process_file("BJT_Test")
-    process_file("IT_PASSPORT_OFFICIAL")
+    filenames = [
+        "BlueBook_N3",
+        "BlueBook_N2",
+        "Simulate_N3",
+        "JLPT_Test",
+        "BJT_Test",
+        "IT_PASSPORT_OFFICIAL",
+    ]
+
+    # 先扫描全部题库，避免每遇到一个新词就请求一次 API。
+    for fname in filenames:
+        process_file(fname, write=False)
+    translate_missing_kana()
+
+    for fname in filenames:
+        process_file(fname)
 
 
 main()
