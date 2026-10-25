@@ -87,7 +87,7 @@ def translate_missing_kana():
     kana_list = sorted(missing_kana)
     try:
         response = client.chat.completions.create(
-            model=config.get("MODEL", "gpt-5.6-luna"),
+            model=config.get("MODEL", "gpt-6-luna"),
             messages=[
                 {"role": "system", "content": system_prompt},
                 {

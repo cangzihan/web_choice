@@ -2292,7 +2292,7 @@ IT_PASSPORT_OFFICIAL = [
       ],
       "Analysis": "",
       "Unit": 2026,
-      "Correct Answer": 12
+      "Correct Answer": 2
   },
   {
       "Question": "手続 sort は, 要素数が 2 以上の整数型の配列を引数 numberArray で受け取り, その要素を昇順に並べ替えた結果を出力する。手続 sort の動作確認のために, 処理の途中でjの値と workArray の全ての要素を出力する。配列 numberArray を{3, 5, 1, 2, 4) とし, 手続 sort を sort(numberArray) として呼び出したとき, jの値が 3 と出力された直後の workArray の全ての要素の出力はどれか。ここで, 配列の要素番号は 1 から始まる。\n\n〔プログラム〕\n⭕sort(BHA DEF: numberArray)\n 整数型: minIndex, j, k\n 整数型の配列: workArray ← numberArray// 配列の複製を作る for(j% 1 から(workArray の要素数 - 1) まで 1 ずつ増やす)\n// j番目から末尾までの要素の中で最も小さい値をもつ要素の要素番号\n// を一つ求める\nminIndex ← j\nfor(k を(j + 1) から workArray の要素数まで 1 ずつ増やす)\n    if(workArray[k] が workArray[minIndex] より小さい)\n      minIndex ← k\n    endif\n  endfor\n  workArray[j] と workArray[minIndex] の値を入れ替える\n\n  // 動作確認のために, j の値と workArray の全ての要素を出力する\n  jの値を出力する\n workArray の全ての要素を先頭から順にコンマ区切りで出力する\nendfor\nworkArray の全ての要素を先頭から順にコンマ区切りで出力する",
@@ -2323,8 +2323,8 @@ IT_PASSPORT_OFFICIAL = [
       "Option": [
           "a: 圧縮率を向上させる  b: 複数の表がーつの表に統合される",
           "a: 圧縮率を向上させる  b: ーつの表が複数の表に分割される",
-          "a: ー貫性を保つ  b: 複数の表がーつの表に統合される",
-          "a: ー貫性を保つ  b: ーつの表が複数の表に分割される"
+          "a: ー貫性を保つ  b: ーつの表が複数の表に分割される",
+          "a: ー貫性を保つ  b: 複数の表がーつの表に統合される"
       ],
       "Analysis": "",
       "Unit": 2026,
