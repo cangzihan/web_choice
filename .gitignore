@@ -2,3 +2,4 @@
 .idea*
 input_data/*
 .vscode/
+temp.txt
